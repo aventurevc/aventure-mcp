@@ -1,12 +1,36 @@
 #!/usr/bin/env node
-import { $ as esm_exports$2, At as __require, Dt as __commonJSMin, Et as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toESM, N as logWarn, Ot as __esmMin, P as otelResourceAttributes, Q as resourceFromAttributes, St as ValueType, T as materializeAuth, W as capEnvelope, X as defaultResource, Y as init_esm$3, _t as metrics, at as hrTimeDuration, bt as context, d as flagName, dt as init_esm$4, et as init_esm$2, f as mcpToolForIntent, ft as globalErrorHandler, ht as init_esm$1, it as hrTime, j as logError, jt as __toCommonJS, k as describeError, kt as __exportAll, l as cliShellQuote, lt as millisToHrTime, mt as esm_exports$1, nt as ExportResultCode, ot as hrTimeToMicroseconds, st as hrTimeToSeconds, tt as internal, ut as esm_exports$3, vt as diag, wt as createNoopMeter } from "../chunks/cli-help-policy-DpIwx3cU.js";
-import { A as $ZodType, C as union, D as datetime, F as clone, I as defineLazy, L as normalizeParams, M as parseAsync, N as safeParse$1, O as toJSONSchema, P as safeParseAsync$1, R as $constructor, S as string, _ as object$1, a as _enum, b as record, c as boolean, d as int, f as intersection, g as number, h as looseObject, i as ZodOptional$1, j as parse, k as $ZodObject, l as custom, m as literal, o as _null, s as array, u as discriminatedUnion, v as optional, w as unknown, y as preprocess } from "../chunks/data-source-type-CL6KYqKO.js";
-import { _ as resolveOpenApiOperationSelector, c as expandedTokens, d as queryMutationIntent, f as queryTermForms, l as meaningfulTokens, m as cliParameterInputName, n as asCliResponseText, o as addWithInflections, p as cliBodyParameterInputName, r as visibleMcpGenerationContracts, s as coversEveryQueryTerm, t as MCP_GENERATION_CONTRACT, u as normalize, v as runOpenApiCall } from "../chunks/mcp-generation-contract-wwWI82VM.js";
+import { $ as esm_exports$2, At as __require, Dt as __commonJSMin, Et as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toESM, N as logWarn, Ot as __esmMin, P as otelResourceAttributes, Q as resourceFromAttributes, St as ValueType, T as materializeAuth, W as capEnvelope, X as defaultResource, Y as init_esm$3, _t as metrics, at as hrTimeDuration, bt as context, d as flagName, dt as init_esm$4, et as init_esm$2, f as mcpToolForIntent, ft as globalErrorHandler, ht as init_esm$1, it as hrTime, j as logError, jt as __toCommonJS, k as describeError, kt as __exportAll, l as cliShellQuote, lt as millisToHrTime, mt as esm_exports$1, nt as ExportResultCode, ot as hrTimeToMicroseconds, st as hrTimeToSeconds, tt as internal, ut as esm_exports$3, vt as diag, wt as createNoopMeter } from "../chunks/cli-help-policy-B_93jELZ.js";
+import { A as datetime, B as defineLazy, D as url$2, E as unknown, F as parse, H as $constructor, I as parseAsync, L as safeParse$1, M as _coercedNumber, N as $ZodObject, P as $ZodType, R as safeParseAsync$1, S as record, T as union, U as NEVER, V as normalizeParams, _ as looseObject, a as ZodOptional$1, b as optional, c as any, d as custom, f as discriminatedUnion, g as literal, i as ZodNumber$1, j as toJSONSchema, l as array, m as intersection, o as _enum, p as int, s as _null, u as boolean, v as number$1, w as string, x as preprocess, y as object$1, z as clone } from "../chunks/data-source-type-B2O1SiZK.js";
+import { S as mcpServerUrlFromApiHost, _ as runOpenApiCall, a as addWithInflections, c as meaningfulTokens, d as queryTermForms, f as cliBodyParameterInputName, g as resolveOpenApiOperationSelector, l as normalize, n as asCliResponseText, o as coversEveryQueryTerm, p as cliParameterInputName, r as visibleMcpGenerationContracts, s as expandedTokens, t as MCP_GENERATION_CONTRACT, u as queryMutationIntent, v as verifyUserBearerToken, y as withUserBearerToken } from "../chunks/mcp-generation-contract-BB8AXhOg.js";
 import { createHash, randomUUID, timingSafeEqual } from "node:crypto";
 import { Buffer as Buffer$1 } from "node:buffer";
 import { isIP, isIPv6 } from "node:net";
 import { Readable } from "node:stream";
 import { Http2ServerRequest, constants } from "node:http2";
+//#region ../node_modules/zod/v4/classic/compat.js
+/** @deprecated Use the raw string literal codes instead, e.g. "invalid_type". */
+var ZodIssueCode$1 = {
+	invalid_type: "invalid_type",
+	too_big: "too_big",
+	too_small: "too_small",
+	invalid_format: "invalid_format",
+	not_multiple_of: "not_multiple_of",
+	unrecognized_keys: "unrecognized_keys",
+	invalid_union: "invalid_union",
+	invalid_key: "invalid_key",
+	invalid_element: "invalid_element",
+	invalid_value: "invalid_value",
+	custom: "custom"
+};
+/** @deprecated Do not use. Stub definition, only included for zod-to-json-schema compatibility. */
+var ZodFirstPartyTypeKind$1;
+ZodFirstPartyTypeKind$1 || (ZodFirstPartyTypeKind$1 = {});
+//#endregion
+//#region ../node_modules/zod/v4/classic/coerce.js
+function number(params) {
+	return _coercedNumber(ZodNumber$1, params);
+}
+//#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/AggregationTemporality.js
 var AggregationTemporality;
 var init_AggregationTemporality = __esmMin((() => {
@@ -20257,7 +20281,7 @@ var require_etag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module dependencies.
 	* @private
 	*/
-	var crypto$2 = __require("crypto");
+	var crypto$3 = __require("crypto");
 	var Stats = __require("fs").Stats;
 	/**
 	* Module variables.
@@ -20273,7 +20297,7 @@ var require_etag = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function entitytag(entity) {
 		if (entity.length === 0) return "\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\"";
-		var hash = crypto$2.createHash("sha1").update(entity, "utf8").digest("base64").substring(0, 27);
+		var hash = crypto$3.createHash("sha1").update(entity, "utf8").digest("base64").substring(0, 27);
 		return "\"" + (typeof entity === "string" ? Buffer.byteLength(entity, "utf8") : entity.length).toString(16) + "-" + hash + "\"";
 	}
 	/**
@@ -24923,7 +24947,7 @@ var require_cookie_signature = /* @__PURE__ */ __commonJSMin(((exports) => {
 	/**
 	* Module dependencies.
 	*/
-	var crypto$1 = __require("crypto");
+	var crypto$2 = __require("crypto");
 	/**
 	* Sign the given `val` with `secret`.
 	*
@@ -24935,7 +24959,7 @@ var require_cookie_signature = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.sign = function(val, secret) {
 		if ("string" != typeof val) throw new TypeError("Cookie value must be provided as a string.");
 		if (null == secret) throw new TypeError("Secret key must be provided.");
-		return val + "." + crypto$1.createHmac("sha256", secret).update(val).digest("base64").replace(/\=+$/, "");
+		return val + "." + crypto$2.createHmac("sha256", secret).update(val).digest("base64").replace(/\=+$/, "");
 	};
 	/**
 	* Unsign and decode the given `input` with `secret`,
@@ -24950,7 +24974,7 @@ var require_cookie_signature = /* @__PURE__ */ __commonJSMin(((exports) => {
 		if ("string" != typeof input) throw new TypeError("Signed cookie string must be provided.");
 		if (null == secret) throw new TypeError("Secret key must be provided.");
 		var tentativeValue = input.slice(0, input.lastIndexOf(".")), expectedInput = exports.sign(tentativeValue, secret), expectedBuffer = Buffer.from(expectedInput), inputBuffer = Buffer.from(input);
-		return expectedBuffer.length === inputBuffer.length && crypto$1.timingSafeEqual(expectedBuffer, inputBuffer) ? tentativeValue : false;
+		return expectedBuffer.length === inputBuffer.length && crypto$2.timingSafeEqual(expectedBuffer, inputBuffer) ? tentativeValue : false;
 	};
 }));
 //#endregion
@@ -30452,7 +30476,7 @@ var AssertObjectSchema = custom((v) => v !== null && (typeof v === "object" || t
 /**
 * A progress token, used to associate progress notifications with the original request.
 */
-var ProgressTokenSchema = union([string(), number().int()]);
+var ProgressTokenSchema = union([string(), number$1().int()]);
 /**
 * An opaque token used to represent a cursor for pagination.
 */
@@ -30461,13 +30485,13 @@ looseObject({
 	/**
 	* Requested duration in milliseconds to retain task from creation.
 	*/
-	ttl: number().optional(),
+	ttl: number$1().optional(),
 	/**
 	* Time in milliseconds to wait between task status requests.
 	*/
-	pollInterval: number().optional()
+	pollInterval: number$1().optional()
 });
-var TaskMetadataSchema = object$1({ ttl: number().optional() });
+var TaskMetadataSchema = object$1({ ttl: number$1().optional() });
 /**
 * Metadata for associating messages with a task.
 * Include this in the `_meta` field under the key `io.modelcontextprotocol/related-task`.
@@ -30534,7 +30558,7 @@ _meta: RequestMetaSchema.optional() });
 /**
 * A uniquely identifying ID for a request in JSON-RPC.
 */
-var RequestIdSchema = union([string(), number().int()]);
+var RequestIdSchema = union([string(), number$1().int()]);
 /**
 * A request that expects a response.
 */
@@ -30591,7 +30615,7 @@ var JSONRPCErrorResponseSchema = object$1({
 		/**
 		* The error type that occurred.
 		*/
-		code: number().int(),
+		code: number$1().int(),
 		/**
 		* A short description of the error. The message SHOULD be limited to a concise single sentence.
 		*/
@@ -30931,11 +30955,11 @@ var ProgressSchema = object$1({
 	/**
 	* The progress thus far. This should increase every time progress is made, even if the total is unknown.
 	*/
-	progress: number(),
+	progress: number$1(),
 	/**
 	* Total number of items to process (or total progress required), if known.
 	*/
-	total: optional(number()),
+	total: optional(number$1()),
 	/**
 	* An optional message describing the current progress.
 	*/
@@ -30991,7 +31015,7 @@ var TaskSchema = object$1({
 	* Time in milliseconds to keep task results available after completion.
 	* If null, the task has unlimited lifetime until manually cleaned up.
 	*/
-	ttl: union([number(), _null()]),
+	ttl: union([number$1(), _null()]),
 	/**
 	* ISO 8601 timestamp when the task was created.
 	*/
@@ -31000,7 +31024,7 @@ var TaskSchema = object$1({
 	* ISO 8601 timestamp when the task was last updated.
 	*/
 	lastUpdatedAt: string(),
-	pollInterval: optional(number()),
+	pollInterval: optional(number$1()),
 	/**
 	* Optional diagnostic message for failed tasks or other status information.
 	*/
@@ -31115,7 +31139,7 @@ var AnnotationsSchema = object$1({
 	/**
 	* Importance hint for the resource, from 0 (least) to 1 (most).
 	*/
-	priority: number().min(0).max(1).optional(),
+	priority: number$1().min(0).max(1).optional(),
 	/**
 	* ISO 8601 timestamp for the most recent modification.
 	*/
@@ -31146,7 +31170,7 @@ var ResourceSchema = object$1({
 	*
 	* This can be used by Hosts to display file sizes and estimate context window usage.
 	*/
-	size: optional(number()),
+	size: optional(number$1()),
 	/**
 	* Optional annotations for the client.
 	*/
@@ -31672,7 +31696,7 @@ object$1({
 	*
 	* @default 300
 	*/
-	debounceMs: number().int().nonnegative().default(300)
+	debounceMs: number$1().int().nonnegative().default(300)
 });
 /**
 * The severity of a log message.
@@ -31745,15 +31769,15 @@ var ModelPreferencesSchema = object$1({
 	/**
 	* How much to prioritize cost when selecting a model.
 	*/
-	costPriority: number().min(0).max(1).optional(),
+	costPriority: number$1().min(0).max(1).optional(),
 	/**
 	* How much to prioritize sampling speed (latency) when selecting a model.
 	*/
-	speedPriority: number().min(0).max(1).optional(),
+	speedPriority: number$1().min(0).max(1).optional(),
 	/**
 	* How much to prioritize intelligence and capabilities when selecting a model.
 	*/
-	intelligencePriority: number().min(0).max(1).optional()
+	intelligencePriority: number$1().min(0).max(1).optional()
 });
 /**
 * Controls tool usage behavior in sampling requests.
@@ -31843,13 +31867,13 @@ var CreateMessageRequestParamsSchema = TaskAugmentedRequestParamsSchema.extend({
 		"thisServer",
 		"allServers"
 	]).optional(),
-	temperature: number().optional(),
+	temperature: number$1().optional(),
 	/**
 	* The requested maximum number of tokens to sample (to prevent runaway completions).
 	*
 	* The client MAY choose to sample fewer tokens than the requested maximum.
 	*/
-	maxTokens: number().int(),
+	maxTokens: number$1().int(),
 	stopSequences: array(string()).optional(),
 	/**
 	* Optional metadata to pass through to the LLM provider. The format of this metadata is provider-specific.
@@ -31953,8 +31977,8 @@ var StringSchemaSchema = object$1({
 	type: literal("string"),
 	title: string().optional(),
 	description: string().optional(),
-	minLength: number().optional(),
-	maxLength: number().optional(),
+	minLength: number$1().optional(),
+	maxLength: number$1().optional(),
 	format: _enum([
 		"email",
 		"uri",
@@ -31970,9 +31994,9 @@ var NumberSchemaSchema = object$1({
 	type: _enum(["number", "integer"]),
 	title: string().optional(),
 	description: string().optional(),
-	minimum: number().optional(),
-	maximum: number().optional(),
-	default: number().optional()
+	minimum: number$1().optional(),
+	maximum: number$1().optional(),
+	default: number$1().optional()
 });
 /**
 * Schema for single-selection enumeration without display titles for options.
@@ -32017,8 +32041,8 @@ var UntitledMultiSelectEnumSchemaSchema = object$1({
 	type: literal("array"),
 	title: string().optional(),
 	description: string().optional(),
-	minItems: number().optional(),
-	maxItems: number().optional(),
+	minItems: number$1().optional(),
+	maxItems: number$1().optional(),
 	items: object$1({
 		type: literal("string"),
 		enum: array(string())
@@ -32032,8 +32056,8 @@ var TitledMultiSelectEnumSchemaSchema = object$1({
 	type: literal("array"),
 	title: string().optional(),
 	description: string().optional(),
-	minItems: number().optional(),
-	maxItems: number().optional(),
+	minItems: number$1().optional(),
+	maxItems: number$1().optional(),
 	items: object$1({ anyOf: array(object$1({
 		const: string(),
 		title: string()
@@ -32162,7 +32186,7 @@ var ElicitResultSchema = ResultSchema.extend({
 	*/
 	content: preprocess((val) => val === null ? void 0 : val, record(string(), union([
 		string(),
-		number(),
+		number$1(),
 		boolean(),
 		array(string())
 	])).optional())
@@ -32235,7 +32259,7 @@ var CompleteResultSchema = ResultSchema.extend({ completion: looseObject({
 	/**
 	* The total number of completion options available. This can exceed the number of values actually sent in the response.
 	*/
-	total: optional(number().int()),
+	total: optional(number$1().int()),
 	/**
 	* Indicates whether there are additional completion options beyond those provided in the current response, even if the exact total is unknown.
 	*/
@@ -33181,6 +33205,341 @@ var StreamableHTTPServerTransport = class {
 		this._webStandardTransport.closeStandaloneSSEStream();
 	}
 };
+//#endregion
+//#region ../node_modules/@modelcontextprotocol/sdk/dist/esm/shared/auth.js
+/**
+* Reusable URL validation that disallows javascript: scheme
+*/
+var SafeUrlSchema = url$2().superRefine((val, ctx) => {
+	if (!URL.canParse(val)) {
+		ctx.addIssue({
+			code: ZodIssueCode$1.custom,
+			message: "URL must be parseable",
+			fatal: true
+		});
+		return NEVER;
+	}
+}).refine((url) => {
+	const u = new URL(url);
+	return u.protocol !== "javascript:" && u.protocol !== "data:" && u.protocol !== "vbscript:";
+}, { message: "URL cannot use javascript:, data:, or vbscript: scheme" });
+looseObject({
+	resource: string().url(),
+	authorization_servers: array(SafeUrlSchema).optional(),
+	jwks_uri: string().url().optional(),
+	scopes_supported: array(string()).optional(),
+	bearer_methods_supported: array(string()).optional(),
+	resource_signing_alg_values_supported: array(string()).optional(),
+	resource_name: string().optional(),
+	resource_documentation: string().optional(),
+	resource_policy_uri: string().url().optional(),
+	resource_tos_uri: string().url().optional(),
+	tls_client_certificate_bound_access_tokens: boolean().optional(),
+	authorization_details_types_supported: array(string()).optional(),
+	dpop_signing_alg_values_supported: array(string()).optional(),
+	dpop_bound_access_tokens_required: boolean().optional()
+});
+/**
+* RFC 8414 OAuth 2.0 Authorization Server Metadata
+*/
+var OAuthMetadataSchema = looseObject({
+	issuer: string(),
+	authorization_endpoint: SafeUrlSchema,
+	token_endpoint: SafeUrlSchema,
+	registration_endpoint: SafeUrlSchema.optional(),
+	scopes_supported: array(string()).optional(),
+	response_types_supported: array(string()),
+	response_modes_supported: array(string()).optional(),
+	grant_types_supported: array(string()).optional(),
+	token_endpoint_auth_methods_supported: array(string()).optional(),
+	token_endpoint_auth_signing_alg_values_supported: array(string()).optional(),
+	service_documentation: SafeUrlSchema.optional(),
+	revocation_endpoint: SafeUrlSchema.optional(),
+	revocation_endpoint_auth_methods_supported: array(string()).optional(),
+	revocation_endpoint_auth_signing_alg_values_supported: array(string()).optional(),
+	introspection_endpoint: string().optional(),
+	introspection_endpoint_auth_methods_supported: array(string()).optional(),
+	introspection_endpoint_auth_signing_alg_values_supported: array(string()).optional(),
+	code_challenge_methods_supported: array(string()).optional(),
+	client_id_metadata_document_supported: boolean().optional()
+});
+/**
+* OpenID Connect Discovery 1.0 Provider Metadata
+* see: https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata
+*/
+var OpenIdProviderMetadataSchema = looseObject({
+	issuer: string(),
+	authorization_endpoint: SafeUrlSchema,
+	token_endpoint: SafeUrlSchema,
+	userinfo_endpoint: SafeUrlSchema.optional(),
+	jwks_uri: SafeUrlSchema,
+	registration_endpoint: SafeUrlSchema.optional(),
+	scopes_supported: array(string()).optional(),
+	response_types_supported: array(string()),
+	response_modes_supported: array(string()).optional(),
+	grant_types_supported: array(string()).optional(),
+	acr_values_supported: array(string()).optional(),
+	subject_types_supported: array(string()),
+	id_token_signing_alg_values_supported: array(string()),
+	id_token_encryption_alg_values_supported: array(string()).optional(),
+	id_token_encryption_enc_values_supported: array(string()).optional(),
+	userinfo_signing_alg_values_supported: array(string()).optional(),
+	userinfo_encryption_alg_values_supported: array(string()).optional(),
+	userinfo_encryption_enc_values_supported: array(string()).optional(),
+	request_object_signing_alg_values_supported: array(string()).optional(),
+	request_object_encryption_alg_values_supported: array(string()).optional(),
+	request_object_encryption_enc_values_supported: array(string()).optional(),
+	token_endpoint_auth_methods_supported: array(string()).optional(),
+	token_endpoint_auth_signing_alg_values_supported: array(string()).optional(),
+	display_values_supported: array(string()).optional(),
+	claim_types_supported: array(string()).optional(),
+	claims_supported: array(string()).optional(),
+	service_documentation: string().optional(),
+	claims_locales_supported: array(string()).optional(),
+	ui_locales_supported: array(string()).optional(),
+	claims_parameter_supported: boolean().optional(),
+	request_parameter_supported: boolean().optional(),
+	request_uri_parameter_supported: boolean().optional(),
+	require_request_uri_registration: boolean().optional(),
+	op_policy_uri: SafeUrlSchema.optional(),
+	op_tos_uri: SafeUrlSchema.optional(),
+	client_id_metadata_document_supported: boolean().optional()
+});
+object$1({
+	...OpenIdProviderMetadataSchema.shape,
+	...OAuthMetadataSchema.pick({ code_challenge_methods_supported: true }).shape
+});
+object$1({
+	access_token: string(),
+	id_token: string().optional(),
+	token_type: string(),
+	expires_in: number().optional(),
+	scope: string().optional(),
+	refresh_token: string().optional()
+}).strip();
+object$1({
+	error: string(),
+	error_description: string().optional(),
+	error_uri: string().optional()
+});
+/**
+* Optional version of SafeUrlSchema that allows empty string for retrocompatibility on tos_uri and logo_uri
+*/
+var OptionalSafeUrlSchema = SafeUrlSchema.optional().or(literal("").transform(() => void 0));
+/**
+* RFC 7591 OAuth 2.0 Dynamic Client Registration metadata
+*/
+var OAuthClientMetadataSchema = object$1({
+	redirect_uris: array(SafeUrlSchema),
+	token_endpoint_auth_method: string().optional(),
+	grant_types: array(string()).optional(),
+	response_types: array(string()).optional(),
+	client_name: string().optional(),
+	client_uri: SafeUrlSchema.optional(),
+	logo_uri: OptionalSafeUrlSchema,
+	scope: string().optional(),
+	contacts: array(string()).optional(),
+	tos_uri: OptionalSafeUrlSchema,
+	policy_uri: string().optional(),
+	jwks_uri: SafeUrlSchema.optional(),
+	jwks: any().optional(),
+	software_id: string().optional(),
+	software_version: string().optional(),
+	software_statement: string().optional()
+}).strip();
+/**
+* RFC 7591 OAuth 2.0 Dynamic Client Registration client information
+*/
+var OAuthClientInformationSchema = object$1({
+	client_id: string(),
+	client_secret: string().optional(),
+	client_id_issued_at: number$1().optional(),
+	client_secret_expires_at: number$1().optional()
+}).strip();
+OAuthClientMetadataSchema.merge(OAuthClientInformationSchema);
+object$1({
+	error: string(),
+	error_description: string().optional()
+}).strip();
+object$1({
+	token: string(),
+	token_type_hint: string().optional()
+}).strip();
+//#endregion
+//#region ../node_modules/@modelcontextprotocol/sdk/dist/esm/server/auth/errors.js
+/**
+* Base class for all OAuth errors
+*/
+var OAuthError = class extends Error {
+	constructor(message, errorUri) {
+		super(message);
+		this.errorUri = errorUri;
+		this.name = this.constructor.name;
+	}
+	/**
+	* Converts the error to a standard OAuth error response object
+	*/
+	toResponseObject() {
+		const response = {
+			error: this.errorCode,
+			error_description: this.message
+		};
+		if (this.errorUri) response.error_uri = this.errorUri;
+		return response;
+	}
+	get errorCode() {
+		return this.constructor.errorCode;
+	}
+};
+/**
+* Invalid request error - The request is missing a required parameter,
+* includes an invalid parameter value, includes a parameter more than once,
+* or is otherwise malformed.
+*/
+var InvalidRequestError = class extends OAuthError {};
+InvalidRequestError.errorCode = "invalid_request";
+/**
+* Invalid client error - Client authentication failed (e.g., unknown client, no client
+* authentication included, or unsupported authentication method).
+*/
+var InvalidClientError = class extends OAuthError {};
+InvalidClientError.errorCode = "invalid_client";
+/**
+* Invalid grant error - The provided authorization grant or refresh token is
+* invalid, expired, revoked, does not match the redirection URI used in the
+* authorization request, or was issued to another client.
+*/
+var InvalidGrantError = class extends OAuthError {};
+InvalidGrantError.errorCode = "invalid_grant";
+/**
+* Unauthorized client error - The authenticated client is not authorized to use
+* this authorization grant type.
+*/
+var UnauthorizedClientError = class extends OAuthError {};
+UnauthorizedClientError.errorCode = "unauthorized_client";
+/**
+* Unsupported grant type error - The authorization grant type is not supported
+* by the authorization server.
+*/
+var UnsupportedGrantTypeError = class extends OAuthError {};
+UnsupportedGrantTypeError.errorCode = "unsupported_grant_type";
+/**
+* Invalid scope error - The requested scope is invalid, unknown, malformed, or
+* exceeds the scope granted by the resource owner.
+*/
+var InvalidScopeError = class extends OAuthError {};
+InvalidScopeError.errorCode = "invalid_scope";
+/**
+* Access denied error - The resource owner or authorization server denied the request.
+*/
+var AccessDeniedError = class extends OAuthError {};
+AccessDeniedError.errorCode = "access_denied";
+/**
+* Server error - The authorization server encountered an unexpected condition
+* that prevented it from fulfilling the request.
+*/
+var ServerError = class extends OAuthError {};
+ServerError.errorCode = "server_error";
+/**
+* Temporarily unavailable error - The authorization server is currently unable to
+* handle the request due to a temporary overloading or maintenance of the server.
+*/
+var TemporarilyUnavailableError = class extends OAuthError {};
+TemporarilyUnavailableError.errorCode = "temporarily_unavailable";
+/**
+* Unsupported response type error - The authorization server does not support
+* obtaining an authorization code using this method.
+*/
+var UnsupportedResponseTypeError = class extends OAuthError {};
+UnsupportedResponseTypeError.errorCode = "unsupported_response_type";
+/**
+* Unsupported token type error - The authorization server does not support
+* the requested token type.
+*/
+var UnsupportedTokenTypeError = class extends OAuthError {};
+UnsupportedTokenTypeError.errorCode = "unsupported_token_type";
+/**
+* Invalid token error - The access token provided is expired, revoked, malformed,
+* or invalid for other reasons.
+*/
+var InvalidTokenError = class extends OAuthError {};
+InvalidTokenError.errorCode = "invalid_token";
+/**
+* Method not allowed error - The HTTP method used is not allowed for this endpoint.
+* (Custom, non-standard error)
+*/
+var MethodNotAllowedError = class extends OAuthError {};
+MethodNotAllowedError.errorCode = "method_not_allowed";
+/**
+* Too many requests error - Rate limit exceeded.
+* (Custom, non-standard error based on RFC 6585)
+*/
+var TooManyRequestsError = class extends OAuthError {};
+TooManyRequestsError.errorCode = "too_many_requests";
+/**
+* Invalid client metadata error - The client metadata is invalid.
+* (Custom error for dynamic client registration - RFC 7591)
+*/
+var InvalidClientMetadataError = class extends OAuthError {};
+InvalidClientMetadataError.errorCode = "invalid_client_metadata";
+/**
+* Insufficient scope error - The request requires higher privileges than provided by the access token.
+*/
+var InsufficientScopeError = class extends OAuthError {};
+InsufficientScopeError.errorCode = "insufficient_scope";
+/**
+* Invalid target error - The requested resource is invalid, missing, unknown, or malformed.
+* (Custom error for resource indicators - RFC 8707)
+*/
+var InvalidTargetError = class extends OAuthError {};
+InvalidTargetError.errorCode = "invalid_target";
+InvalidRequestError.errorCode, InvalidClientError.errorCode, InvalidGrantError.errorCode, UnauthorizedClientError.errorCode, UnsupportedGrantTypeError.errorCode, InvalidScopeError.errorCode, AccessDeniedError.errorCode, ServerError.errorCode, TemporarilyUnavailableError.errorCode, UnsupportedResponseTypeError.errorCode, UnsupportedTokenTypeError.errorCode, InvalidTokenError.errorCode, MethodNotAllowedError.errorCode, TooManyRequestsError.errorCode, InvalidClientMetadataError.errorCode, InsufficientScopeError.errorCode, InvalidTargetError.errorCode;
+globalThis.crypto?.webcrypto ?? globalThis.crypto ?? import("node:crypto").then((m) => m.webcrypto);
+object$1({
+	client_id: string(),
+	client_secret: string().optional()
+});
+object$1({ grant_type: string() });
+object$1({
+	code: string(),
+	code_verifier: string(),
+	redirect_uri: string().optional(),
+	resource: string().url().optional()
+});
+object$1({
+	refresh_token: string(),
+	scope: string().optional(),
+	resource: string().url().optional()
+});
+object$1({
+	client_id: string(),
+	redirect_uri: string().optional().refine((value) => value === void 0 || URL.canParse(value), { message: "redirect_uri must be a valid URL" })
+});
+object$1({
+	response_type: literal("code"),
+	code_challenge: string(),
+	code_challenge_method: literal("S256"),
+	scope: string().optional(),
+	state: string().optional(),
+	resource: string().url().optional()
+});
+if (process.env.MCP_DANGEROUSLY_ALLOW_INSECURE_ISSUER_URL === "true" || process.env.MCP_DANGEROUSLY_ALLOW_INSECURE_ISSUER_URL === "1") console.warn("MCP_DANGEROUSLY_ALLOW_INSECURE_ISSUER_URL is enabled - HTTP issuer URLs are allowed. Do not use in production.");
+/**
+* Helper function to construct the OAuth 2.0 Protected Resource Metadata URL
+* from a given server URL. This replaces the path with the standard metadata endpoint.
+*
+* @param serverUrl - The base URL of the protected resource server
+* @returns The URL for the OAuth protected resource metadata endpoint
+*
+* @example
+* getOAuthProtectedResourceMetadataUrl(new URL('https://api.example.com/mcp'))
+* // Returns: 'https://api.example.com/.well-known/oauth-protected-resource/mcp'
+*/
+function getOAuthProtectedResourceMetadataUrl(serverUrl) {
+	const u = new URL(serverUrl.href);
+	const rsPath = u.pathname && u.pathname !== "/" ? u.pathname : "";
+	return new URL(`/.well-known/oauth-protected-resource${rsPath}`, u).href;
+}
 //#endregion
 //#region ../node_modules/@opentelemetry/exporter-prometheus/build/src/PrometheusSerializer.js
 var require_PrometheusSerializer = /* @__PURE__ */ __commonJSMin(((exports) => {
@@ -51967,10 +52326,10 @@ var AVENTURE_WRITE_TOOL_NAME = "aventure_write";
 var AVENTURE_DELETE_TOOL_NAME = "aventure_delete";
 var ScalarSchema = union([
 	string(),
-	number(),
+	number$1(),
 	boolean()
 ]);
-var PathParamsSchema = record(string(), union([string(), number()])).optional();
+var PathParamsSchema = record(string(), union([string(), number$1()])).optional();
 var QuerySchema = record(string(), union([ScalarSchema, array(ScalarSchema)])).optional();
 var MethodSchema = _enum([
 	"GET",
@@ -52145,7 +52504,7 @@ function configuredCredentials(options) {
 		clientSecret
 	};
 }
-function authorize(req, creds) {
+async function authorize(req, creds) {
 	const authorization = req.header("authorization");
 	const bearer = parseBearerToken(authorization);
 	const apiKey = req.header("x-api-key");
@@ -52174,6 +52533,11 @@ function authorize(req, creds) {
 	]) if (candidate !== void 0 && expected !== void 0 && secretEquals(candidate, expected)) return {
 		ok: true,
 		scope
+	};
+	if (bearer !== void 0 && await verifyUserBearerToken(bearer)) return {
+		ok: true,
+		scope: "write",
+		userBearerToken: bearer
 	};
 	return {
 		ok: false,
@@ -52257,6 +52621,13 @@ var HTTP_ERROR_STATUS_MIN = 400;
 var BAD_REQUEST_STATUS = 400;
 var PAYLOAD_TOO_LARGE_STATUS = 413;
 var DEFAULT_JSON_BODY_LIMIT = "10mb";
+var AUTHORIZATION_SERVER = "https://clerk.aventure.vc";
+var OAUTH_SCOPE = [
+	"openid",
+	"profile",
+	"email",
+	"offline_access"
+];
 async function startStreamableHttpServer(options) {
 	const creds = configuredCredentials(options);
 	const jsonBodyLimit = options.jsonBodyLimit ?? DEFAULT_JSON_BODY_LIMIT;
@@ -52303,6 +52674,14 @@ async function startStreamableHttpServer(options) {
 	app.get("/health", (...args) => {
 		args[1].status(200).json({ status: "UP" });
 	});
+	const protectedResourceMetadataPath = `/.well-known/oauth-protected-resource${options.path}`;
+	app.get(["/.well-known/oauth-protected-resource", protectedResourceMetadataPath], (...args) => {
+		args[1].status(200).json({
+			resource: options.resourceUrl.href,
+			authorization_servers: [AUTHORIZATION_SERVER],
+			scopes_supported: OAUTH_SCOPE
+		});
+	});
 	registerMetricsRoute(app, creds.clientSecret);
 	app.get("/", (...args) => {
 		args[1].status(200).json({
@@ -52321,8 +52700,9 @@ async function startStreamableHttpServer(options) {
 		limit: 120
 	});
 	app.post(options.path, mcpLimiter, async (req, res) => {
-		const decision = authorize(req, creds);
+		const decision = await authorize(req, creds);
 		if (!decision.ok) {
+			const resourceMetadataUrl = getOAuthProtectedResourceMetadataUrl(options.resourceUrl);
 			logWarn({
 				component: "aventure-mcp-server",
 				event: "unauthorized_request",
@@ -52338,6 +52718,8 @@ async function startStreamableHttpServer(options) {
 					candidateFingerprint: decision.candidateFingerprint.join(",")
 				}
 			});
+			const invalidToken = decision.reason === "credential_mismatch" ? ", error=\"invalid_token\", error_description=\"The bearer token is invalid or expired\"" : "";
+			res.set("WWW-Authenticate", `Bearer resource_metadata="${resourceMetadataUrl}", scope="${OAUTH_SCOPE.join(" ")}"${invalidToken}`);
 			sendProblem(res, 401, "Unauthorized", authFailureDetail(decision.reason, creds));
 			return;
 		}
@@ -52362,8 +52744,12 @@ async function startStreamableHttpServer(options) {
 			logCloseFailure(() => mcp.close(), "mcp_close_failed", req);
 		});
 		try {
-			await mcp.connect(transport);
-			await transport.handleRequest(req, res, req.body);
+			const handleRequest = async () => {
+				await mcp.connect(transport);
+				await transport.handleRequest(req, res, req.body);
+			};
+			if (decision.userBearerToken === void 0) await handleRequest();
+			else await withUserBearerToken(decision.userBearerToken, handleRequest);
 		} catch (error) {
 			logError({
 				component: "aventure-mcp-server",
@@ -52469,6 +52855,7 @@ var path = process.env.AVENTURE_MCP_PATH ?? "/mcp";
 var jsonBodyLimit = process.env.AVENTURE_MCP_JSON_LIMIT ?? "10mb";
 var adminApiKey = process.env.ADMIN_API_KEY || void 0;
 var clientSecret = process.env.CLIENT_SECRET || void 0;
+var resourceUrl = mcpServerUrlFromApiHost(readEnv().host, path, port);
 var isShuttingDown = false;
 function shutdownLoggingThenExit(exitCode) {
 	shutdownLogging().catch((error) => {
@@ -52479,6 +52866,7 @@ function shutdownLoggingThenExit(exitCode) {
 startStreamableHttpServer({
 	port,
 	path,
+	resourceUrl,
 	jsonBodyLimit,
 	adminApiKey,
 	clientSecret
