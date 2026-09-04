@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { $ as esm_exports$2, At as __require, Dt as __commonJSMin, Et as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toESM, N as logWarn, Ot as __esmMin, P as otelResourceAttributes, Q as resourceFromAttributes, St as ValueType, T as materializeAuth, W as capEnvelope, X as defaultResource, Y as init_esm$3, _t as metrics, at as hrTimeDuration, bt as context, d as flagName, dt as init_esm$4, et as init_esm$2, f as mcpToolForIntent, ft as globalErrorHandler, ht as init_esm$1, it as hrTime, j as logError, jt as __toCommonJS, k as describeError, kt as __exportAll, l as cliShellQuote, lt as millisToHrTime, mt as esm_exports$1, nt as ExportResultCode, ot as hrTimeToMicroseconds, st as hrTimeToSeconds, tt as internal, ut as esm_exports$3, vt as diag, wt as createNoopMeter } from "../chunks/cli-help-policy-DQ_p5vjo.js";
-import { A as datetime, B as defineLazy, D as url$2, E as unknown, F as parse, H as $constructor, I as parseAsync, L as safeParse$1, M as _coercedNumber, N as $ZodObject, P as $ZodType, R as safeParseAsync$1, S as record, T as union, U as NEVER, V as normalizeParams, _ as looseObject, a as ZodOptional$1, b as optional, c as any, d as custom, f as discriminatedUnion, g as literal, i as ZodNumber$1, j as toJSONSchema, l as array, m as intersection, o as _enum, p as int, s as _null, u as boolean, v as number$1, w as string, x as preprocess, y as object$1, z as clone } from "../chunks/data-source-type-B2O1SiZK.js";
-import { S as mcpServerUrlFromApiHost, _ as runOpenApiCall, a as addWithInflections, c as meaningfulTokens, d as queryTermForms, f as cliBodyParameterInputName, g as resolveOpenApiOperationSelector, l as normalize, n as asCliResponseText, o as coversEveryQueryTerm, p as cliParameterInputName, r as visibleMcpGenerationContracts, s as expandedTokens, t as MCP_GENERATION_CONTRACT, u as queryMutationIntent, v as verifyUserBearerToken, y as withUserBearerToken } from "../chunks/mcp-generation-contract-chnE2tzl.js";
+import { At as __exportAll, Ct as ValueType, Dt as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toCommonJS, N as logWarn, Nt as __toESM, Ot as __commonJSMin, P as otelResourceAttributes, Q as defaultResource, T as materializeAuth, Tt as createNoopMeter, W as capEnvelope, X as resourceFromAttributes, Y as defaultResource$1, Z as init_esm$3, at as hrTime$1, ct as hrTimeToSeconds$1, d as flagName, dt as esm_exports$3, et as esm_exports$2, f as mcpToolForIntent, ft as init_esm$4, gt as init_esm$1, ht as esm_exports$1, j as logError, jt as __require, k as describeError, kt as __esmMin, l as cliShellQuote, nt as internal, ot as hrTimeDuration$1, pt as globalErrorHandler, rt as ExportResultCode, st as hrTimeToMicroseconds$1, tt as init_esm$2, ut as millisToHrTime$1, vt as metrics, xt as context, yt as diag } from "../chunks/cli-help-policy-C-YXYlYA.js";
+import { A as datetime, B as defineLazy, D as url$2, E as unknown, F as parse, H as $constructor, I as parseAsync, L as safeParse$1, M as _coercedNumber, N as $ZodObject, P as $ZodType, R as safeParseAsync$1, S as record, T as union, U as NEVER, V as normalizeParams, _ as looseObject, a as ZodOptional$1, b as optional, c as any, d as custom, f as discriminatedUnion, g as literal, i as ZodNumber$1, j as toJSONSchema, l as array, m as intersection, o as _enum, p as int, s as _null, u as boolean, v as number$1, w as string, x as preprocess, y as object$1, z as clone } from "../chunks/data-source-type-CEoBo_qP.js";
+import { S as mcpServerUrlFromApiHost, _ as runOpenApiCall, a as addWithInflections, c as meaningfulTokens, d as queryTermForms, f as cliBodyParameterInputName, g as resolveOpenApiOperationSelector, l as normalize, n as asCliResponseText, o as coversEveryQueryTerm, p as cliParameterInputName, r as visibleMcpGenerationContracts, s as expandedTokens, t as MCP_GENERATION_CONTRACT, u as queryMutationIntent, v as verifyUserBearerToken, y as withUserBearerToken } from "../chunks/mcp-generation-contract-CZ4CX0Dg.js";
 import { createHash, randomUUID, timingSafeEqual } from "node:crypto";
 import { Buffer as Buffer$1 } from "node:buffer";
 import { isIP, isIPv6 } from "node:net";
@@ -32,16 +32,16 @@ function number(params) {
 }
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/AggregationTemporality.js
-var AggregationTemporality;
+var AggregationTemporality$1;
 var init_AggregationTemporality = __esmMin((() => {
 	(function(AggregationTemporality) {
 		AggregationTemporality[AggregationTemporality["DELTA"] = 0] = "DELTA";
 		AggregationTemporality[AggregationTemporality["CUMULATIVE"] = 1] = "CUMULATIVE";
-	})(AggregationTemporality || (AggregationTemporality = {}));
+	})(AggregationTemporality$1 || (AggregationTemporality$1 = {}));
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricData.js
-var InstrumentType, DataPointType;
+var InstrumentType$1, DataPointType$1;
 var init_MetricData = __esmMin((() => {
 	(function(InstrumentType) {
 		InstrumentType["COUNTER"] = "COUNTER";
@@ -51,7 +51,7 @@ var init_MetricData = __esmMin((() => {
 		InstrumentType["OBSERVABLE_COUNTER"] = "OBSERVABLE_COUNTER";
 		InstrumentType["OBSERVABLE_GAUGE"] = "OBSERVABLE_GAUGE";
 		InstrumentType["OBSERVABLE_UP_DOWN_COUNTER"] = "OBSERVABLE_UP_DOWN_COUNTER";
-	})(InstrumentType || (InstrumentType = {}));
+	})(InstrumentType$1 || (InstrumentType$1 = {}));
 	(function(DataPointType) {
 		/**
 		* A histogram data point contains a histogram statistics of collected
@@ -75,7 +75,7 @@ var init_MetricData = __esmMin((() => {
 		* monotonicity-indicator.
 		*/
 		DataPointType[DataPointType["SUM"] = 3] = "SUM";
-	})(DataPointType || (DataPointType = {}));
+	})(DataPointType$1 || (DataPointType$1 = {}));
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/utils.js
@@ -83,7 +83,7 @@ var init_MetricData = __esmMin((() => {
 * Converting the unordered attributes into unique identifier string.
 * @param attributes user provided unordered Attributes.
 */
-function hashAttributes(attributes) {
+function hashAttributes$1(attributes) {
 	let keys = Object.keys(attributes);
 	if (keys.length === 0) return "";
 	keys = keys.sort();
@@ -93,7 +93,7 @@ function hashAttributes(attributes) {
 * Converting the instrumentation scope object to a unique identifier string.
 * @param instrumentationScope
 */
-function instrumentationScopeId(instrumentationScope) {
+function instrumentationScopeId$1(instrumentationScope) {
 	return `${instrumentationScope.name}:${instrumentationScope.version ?? ""}:${instrumentationScope.schemaUrl ?? ""}`;
 }
 /**
@@ -105,11 +105,11 @@ function instrumentationScopeId(instrumentationScope) {
 * @param promise promise to use with timeout.
 * @param timeout the timeout in milliseconds until the returned promise is rejected.
 */
-function callWithTimeout(promise, timeout) {
+function callWithTimeout$1(promise, timeout) {
 	let timeoutHandle;
 	const timeoutPromise = new Promise(function timeoutFunction(_resolve, reject) {
 		timeoutHandle = setTimeout(function timeoutHandler() {
-			reject(new TimeoutError("Operation timed out."));
+			reject(new TimeoutError$1("Operation timed out."));
 		}, timeout);
 	});
 	return Promise.race([promise, timeoutPromise]).then((result) => {
@@ -120,7 +120,7 @@ function callWithTimeout(promise, timeout) {
 		throw reason;
 	});
 }
-function setEquals(lhs, rhs) {
+function setEquals$1(lhs, rhs) {
 	if (lhs.size !== rhs.size) return false;
 	for (const item of lhs) if (!rhs.has(item)) return false;
 	return true;
@@ -131,7 +131,7 @@ function setEquals(lhs, rhs) {
 * @param value
 * @returns
 */
-function binarySearchUB(arr, value) {
+function binarySearchUB$1(arr, value) {
 	let lo = 0;
 	let hi = arr.length - 1;
 	let ret = arr.length;
@@ -145,21 +145,21 @@ function binarySearchUB(arr, value) {
 	}
 	return ret;
 }
-function equalsCaseInsensitive(lhs, rhs) {
+function equalsCaseInsensitive$1(lhs, rhs) {
 	return lhs.toLowerCase() === rhs.toLowerCase();
 }
-var TimeoutError;
+var TimeoutError$1;
 var init_utils = __esmMin((() => {
-	TimeoutError = class TimeoutError extends Error {
+	TimeoutError$1 = class TimeoutError$1 extends Error {
 		constructor(message) {
 			super(message);
-			Object.setPrototypeOf(this, TimeoutError.prototype);
+			Object.setPrototypeOf(this, TimeoutError$1.prototype);
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/types.js
-var AggregatorKind;
+var AggregatorKind$1;
 var init_types$1 = __esmMin((() => {
 	(function(AggregatorKind) {
 		AggregatorKind[AggregatorKind["DROP"] = 0] = "DROP";
@@ -167,15 +167,15 @@ var init_types$1 = __esmMin((() => {
 		AggregatorKind[AggregatorKind["LAST_VALUE"] = 2] = "LAST_VALUE";
 		AggregatorKind[AggregatorKind["HISTOGRAM"] = 3] = "HISTOGRAM";
 		AggregatorKind[AggregatorKind["EXPONENTIAL_HISTOGRAM"] = 4] = "EXPONENTIAL_HISTOGRAM";
-	})(AggregatorKind || (AggregatorKind = {}));
+	})(AggregatorKind$1 || (AggregatorKind$1 = {}));
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Drop.js
-var DropAggregator;
+var DropAggregator$1;
 var init_Drop = __esmMin((() => {
 	init_types$1();
-	DropAggregator = class {
-		kind = AggregatorKind.DROP;
+	DropAggregator$1 = class {
+		kind = AggregatorKind$1.DROP;
 		createAccumulation() {}
 		merge(_previous, _delta) {}
 		diff(_previous, _current) {}
@@ -184,7 +184,7 @@ var init_Drop = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Histogram.js
-function createNewEmptyCheckpoint(boundaries) {
+function createNewEmptyCheckpoint$1(boundaries) {
 	const counts = boundaries.map(() => 0);
 	counts.push(0);
 	return {
@@ -199,17 +199,17 @@ function createNewEmptyCheckpoint(boundaries) {
 		max: -Infinity
 	};
 }
-var HistogramAccumulation, HistogramAggregator;
+var HistogramAccumulation$1, HistogramAggregator$1;
 var init_Histogram = __esmMin((() => {
 	init_types$1();
 	init_MetricData();
 	init_utils();
-	HistogramAccumulation = class {
+	HistogramAccumulation$1 = class {
 		startTime;
 		_boundaries;
 		_recordMinMax;
 		_current;
-		constructor(startTime, boundaries, recordMinMax = true, current = createNewEmptyCheckpoint(boundaries)) {
+		constructor(startTime, boundaries, recordMinMax = true, current = createNewEmptyCheckpoint$1(boundaries)) {
 			this.startTime = startTime;
 			this._boundaries = boundaries;
 			this._recordMinMax = recordMinMax;
@@ -224,7 +224,7 @@ var init_Histogram = __esmMin((() => {
 				this._current.max = Math.max(value, this._current.max);
 				this._current.hasMinMax = true;
 			}
-			const idx = binarySearchUB(this._boundaries, value);
+			const idx = binarySearchUB$1(this._boundaries, value);
 			this._current.buckets.counts[idx] += 1;
 		}
 		setStartTime(startTime) {
@@ -234,8 +234,8 @@ var init_Histogram = __esmMin((() => {
 			return this._current;
 		}
 	};
-	HistogramAggregator = class {
-		kind = AggregatorKind.HISTOGRAM;
+	HistogramAggregator$1 = class {
+		kind = AggregatorKind$1.HISTOGRAM;
 		_boundaries;
 		_recordMinMax;
 		/**
@@ -247,7 +247,7 @@ var init_Histogram = __esmMin((() => {
 			this._recordMinMax = recordMinMax;
 		}
 		createAccumulation(startTime) {
-			return new HistogramAccumulation(startTime, this._boundaries, this._recordMinMax);
+			return new HistogramAccumulation$1(startTime, this._boundaries, this._recordMinMax);
 		}
 		/**
 		* Return the result of the merge of two histogram accumulations. As long as one Aggregator
@@ -275,7 +275,7 @@ var init_Histogram = __esmMin((() => {
 					max = deltaValue.max;
 				}
 			}
-			return new HistogramAccumulation(previous.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
+			return new HistogramAccumulation$1(previous.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
 				buckets: {
 					boundaries: previousValue.buckets.boundaries,
 					counts: mergedCounts
@@ -297,7 +297,7 @@ var init_Histogram = __esmMin((() => {
 			const currentCounts = currentValue.buckets.counts;
 			const diffedCounts = new Array(previousCounts.length);
 			for (let idx = 0; idx < previousCounts.length; idx++) diffedCounts[idx] = currentCounts[idx] - previousCounts[idx];
-			return new HistogramAccumulation(current.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
+			return new HistogramAccumulation$1(current.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
 				buckets: {
 					boundaries: previousValue.buckets.boundaries,
 					counts: diffedCounts
@@ -313,10 +313,10 @@ var init_Histogram = __esmMin((() => {
 			return {
 				descriptor,
 				aggregationTemporality,
-				dataPointType: DataPointType.HISTOGRAM,
+				dataPointType: DataPointType$1.HISTOGRAM,
 				dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
 					const pointValue = accumulation.toPointValue();
-					const allowsNegativeValues = descriptor.type === InstrumentType.GAUGE || descriptor.type === InstrumentType.UP_DOWN_COUNTER || descriptor.type === InstrumentType.OBSERVABLE_GAUGE || descriptor.type === InstrumentType.OBSERVABLE_UP_DOWN_COUNTER;
+					const allowsNegativeValues = descriptor.type === InstrumentType$1.GAUGE || descriptor.type === InstrumentType$1.UP_DOWN_COUNTER || descriptor.type === InstrumentType$1.OBSERVABLE_GAUGE || descriptor.type === InstrumentType$1.OBSERVABLE_UP_DOWN_COUNTER;
 					return {
 						attributes,
 						startTime: accumulation.startTime,
@@ -336,9 +336,9 @@ var init_Histogram = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/Buckets.js
-var Buckets, BucketsBacking;
+var Buckets$1, BucketsBacking$1;
 var init_Buckets = __esmMin((() => {
-	Buckets = class Buckets {
+	Buckets$1 = class Buckets$1 {
 		backing;
 		indexBase;
 		indexStart;
@@ -360,7 +360,7 @@ var init_Buckets = __esmMin((() => {
 		* indexEnd is the largest index value represented in
 		* the backing array.
 		*/
-		constructor(backing = new BucketsBacking(), indexBase = 0, indexStart = 0, indexEnd = 0) {
+		constructor(backing = new BucketsBacking$1(), indexBase = 0, indexStart = 0, indexEnd = 0) {
 			this.backing = backing;
 			this.indexBase = indexBase;
 			this.indexStart = indexStart;
@@ -469,7 +469,7 @@ var init_Buckets = __esmMin((() => {
 		* @returns {Buckets}
 		*/
 		clone() {
-			return new Buckets(this.backing.clone(), this.indexBase, this.indexStart, this.indexEnd);
+			return new Buckets$1(this.backing.clone(), this.indexBase, this.indexStart, this.indexEnd);
 		}
 		/**
 		* _rotate shifts the backing array contents so that indexStart ==
@@ -497,7 +497,7 @@ var init_Buckets = __esmMin((() => {
 			this.incrementBucket(dest, this.backing.emptyBucket(src));
 		}
 	};
-	BucketsBacking = class BucketsBacking {
+	BucketsBacking$1 = class BucketsBacking$1 {
 		_counts;
 		constructor(counts = [0]) {
 			this._counts = counts;
@@ -562,7 +562,7 @@ var init_Buckets = __esmMin((() => {
 		* clone returns a deep copy of BucketsBacking
 		*/
 		clone() {
-			return new BucketsBacking([...this._counts]);
+			return new BucketsBacking$1([...this._counts]);
 		}
 	};
 }));
@@ -577,10 +577,10 @@ var init_Buckets = __esmMin((() => {
 *    exponent for
 * @returns {number} the normalized base-2 exponent
 */
-function getNormalBase2(value) {
+function getNormalBase2$1(value) {
 	const dv = /* @__PURE__ */ new DataView(/* @__PURE__ */ new ArrayBuffer(8));
 	dv.setFloat64(0, value);
-	return ((dv.getUint32(0) & EXPONENT_MASK) >> 20) - EXPONENT_BIAS;
+	return ((dv.getUint32(0) & EXPONENT_MASK$1) >> 20) - EXPONENT_BIAS$1;
 }
 /**
 * GetSignificand returns the 52 bit (unsigned) significand as a signed value.
@@ -592,16 +592,16 @@ function getSignificand(value) {
 	dv.setFloat64(0, value);
 	const hiBits = dv.getUint32(0);
 	const loBits = dv.getUint32(4);
-	return (hiBits & SIGNIFICAND_MASK) * Math.pow(2, 32) + loBits;
+	return (hiBits & SIGNIFICAND_MASK$1) * Math.pow(2, 32) + loBits;
 }
-var EXPONENT_MASK, SIGNIFICAND_MASK, EXPONENT_BIAS, MIN_NORMAL_EXPONENT, MAX_NORMAL_EXPONENT, MIN_VALUE;
+var EXPONENT_MASK$1, SIGNIFICAND_MASK$1, EXPONENT_BIAS$1, MIN_NORMAL_EXPONENT$1, MAX_NORMAL_EXPONENT$1, MIN_VALUE$1;
 var init_ieee754 = __esmMin((() => {
-	EXPONENT_MASK = 2146435072;
-	SIGNIFICAND_MASK = 1048575;
-	EXPONENT_BIAS = 1023;
-	MIN_NORMAL_EXPONENT = -1022;
-	MAX_NORMAL_EXPONENT = EXPONENT_BIAS;
-	MIN_VALUE = Math.pow(2, -1022);
+	EXPONENT_MASK$1 = 2146435072;
+	SIGNIFICAND_MASK$1 = 1048575;
+	EXPONENT_BIAS$1 = 1023;
+	MIN_NORMAL_EXPONENT$1 = -1022;
+	MAX_NORMAL_EXPONENT$1 = EXPONENT_BIAS$1;
+	MIN_VALUE$1 = Math.pow(2, -1022);
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/util.js
@@ -618,7 +618,7 @@ var init_ieee754 = __esmMin((() => {
 * @param exp
 * @returns {number}
 */
-function ldexp(frac, exp) {
+function ldexp$1(frac, exp) {
 	if (frac === 0 || frac === Number.POSITIVE_INFINITY || frac === Number.NEGATIVE_INFINITY || Number.isNaN(frac)) return frac;
 	return frac * Math.pow(2, exp);
 }
@@ -629,7 +629,7 @@ function ldexp(frac, exp) {
 * @param v
 * @returns {number}
 */
-function nextGreaterSquare(v) {
+function nextGreaterSquare$1(v) {
 	v--;
 	v |= v >> 1;
 	v |= v >> 2;
@@ -642,18 +642,18 @@ function nextGreaterSquare(v) {
 var init_util = __esmMin((() => {}));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/types.js
-var MappingError;
+var MappingError$1;
 var init_types = __esmMin((() => {
-	MappingError = class extends Error {};
+	MappingError$1 = class extends Error {};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/ExponentMapping.js
-var ExponentMapping;
+var ExponentMapping$1;
 var init_ExponentMapping = __esmMin((() => {
 	init_ieee754();
 	init_util();
 	init_types();
-	ExponentMapping = class {
+	ExponentMapping$1 = class {
 		_shift;
 		constructor(scale) {
 			this._shift = -scale;
@@ -664,8 +664,8 @@ var init_ExponentMapping = __esmMin((() => {
 		* @returns {number} index for provided value at the current scale
 		*/
 		mapToIndex(value) {
-			if (value < MIN_VALUE) return this._minNormalLowerBoundaryIndex();
-			return getNormalBase2(value) + this._rightShift(getSignificand(value) - 1, 52) >> this._shift;
+			if (value < MIN_VALUE$1) return this._minNormalLowerBoundaryIndex();
+			return getNormalBase2$1(value) + this._rightShift(getSignificand(value) - 1, 52) >> this._shift;
 		}
 		/**
 		* Returns the lower bucket boundary for the given index for scale
@@ -675,10 +675,10 @@ var init_ExponentMapping = __esmMin((() => {
 		*/
 		lowerBoundary(index) {
 			const minIndex = this._minNormalLowerBoundaryIndex();
-			if (index < minIndex) throw new MappingError(`underflow: ${index} is < minimum lower boundary: ${minIndex}`);
+			if (index < minIndex) throw new MappingError$1(`underflow: ${index} is < minimum lower boundary: ${minIndex}`);
 			const maxIndex = this._maxNormalLowerBoundaryIndex();
-			if (index > maxIndex) throw new MappingError(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
-			return ldexp(1, index << this._shift);
+			if (index > maxIndex) throw new MappingError$1(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
+			return ldexp$1(1, index << this._shift);
 		}
 		/**
 		* The scale used by this mapping
@@ -689,12 +689,12 @@ var init_ExponentMapping = __esmMin((() => {
 			return -this._shift;
 		}
 		_minNormalLowerBoundaryIndex() {
-			let index = MIN_NORMAL_EXPONENT >> this._shift;
+			let index = MIN_NORMAL_EXPONENT$1 >> this._shift;
 			if (this._shift < 2) index--;
 			return index;
 		}
 		_maxNormalLowerBoundaryIndex() {
-			return MAX_NORMAL_EXPONENT >> this._shift;
+			return MAX_NORMAL_EXPONENT$1 >> this._shift;
 		}
 		_rightShift(value, shift) {
 			return Math.floor(value * Math.pow(2, -shift));
@@ -703,19 +703,19 @@ var init_ExponentMapping = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/LogarithmMapping.js
-var LogarithmMapping;
+var LogarithmMapping$1;
 var init_LogarithmMapping = __esmMin((() => {
 	init_ieee754();
 	init_util();
 	init_types();
-	LogarithmMapping = class {
+	LogarithmMapping$1 = class {
 		_scale;
 		_scaleFactor;
 		_inverseFactor;
 		constructor(scale) {
 			this._scale = scale;
-			this._scaleFactor = ldexp(Math.LOG2E, scale);
-			this._inverseFactor = ldexp(Math.LN2, -scale);
+			this._scaleFactor = ldexp$1(Math.LOG2E, scale);
+			this._inverseFactor = ldexp$1(Math.LN2, -scale);
 		}
 		/**
 		* Maps positive floating point values to indexes corresponding to scale
@@ -723,8 +723,8 @@ var init_LogarithmMapping = __esmMin((() => {
 		* @returns {number} index for provided value at the current scale
 		*/
 		mapToIndex(value) {
-			if (value <= MIN_VALUE) return this._minNormalLowerBoundaryIndex() - 1;
-			if (getSignificand(value) === 0) return (getNormalBase2(value) << this._scale) - 1;
+			if (value <= MIN_VALUE$1) return this._minNormalLowerBoundaryIndex() - 1;
+			if (getSignificand(value) === 0) return (getNormalBase2$1(value) << this._scale) - 1;
 			const index = Math.floor(Math.log(value) * this._scaleFactor);
 			const maxIndex = this._maxNormalLowerBoundaryIndex();
 			if (index >= maxIndex) return maxIndex;
@@ -740,13 +740,13 @@ var init_LogarithmMapping = __esmMin((() => {
 			const maxIndex = this._maxNormalLowerBoundaryIndex();
 			if (index >= maxIndex) {
 				if (index === maxIndex) return 2 * Math.exp((index - (1 << this._scale)) / this._scaleFactor);
-				throw new MappingError(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
+				throw new MappingError$1(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
 			}
 			const minIndex = this._minNormalLowerBoundaryIndex();
 			if (index <= minIndex) {
-				if (index === minIndex) return MIN_VALUE;
+				if (index === minIndex) return MIN_VALUE$1;
 				else if (index === minIndex - 1) return Math.exp((index + (1 << this._scale)) / this._scaleFactor) / 2;
-				throw new MappingError(`overflow: ${index} is < minimum lower boundary: ${minIndex}`);
+				throw new MappingError$1(`overflow: ${index} is < minimum lower boundary: ${minIndex}`);
 			}
 			return Math.exp(index * this._inverseFactor);
 		}
@@ -758,10 +758,10 @@ var init_LogarithmMapping = __esmMin((() => {
 			return this._scale;
 		}
 		_minNormalLowerBoundaryIndex() {
-			return MIN_NORMAL_EXPONENT << this._scale;
+			return MIN_NORMAL_EXPONENT$1 << this._scale;
 		}
 		_maxNormalLowerBoundaryIndex() {
-			return (MAX_NORMAL_EXPONENT + 1 << this._scale) - 1;
+			return (MAX_NORMAL_EXPONENT$1 + 1 << this._scale) - 1;
 		}
 	};
 }));
@@ -774,25 +774,25 @@ var init_LogarithmMapping = __esmMin((() => {
 * @param scale a number in the range [-10, 20]
 * @returns {Mapping}
 */
-function getMapping(scale) {
-	if (scale > MAX_SCALE$1 || scale < MIN_SCALE) throw new MappingError(`expected scale >= ${MIN_SCALE} && <= ${MAX_SCALE$1}, got: ${scale}`);
-	return PREBUILT_MAPPINGS[scale + 10];
+function getMapping$1(scale) {
+	if (scale > MAX_SCALE$3 || scale < MIN_SCALE$1) throw new MappingError$1(`expected scale >= ${MIN_SCALE$1} && <= ${MAX_SCALE$3}, got: ${scale}`);
+	return PREBUILT_MAPPINGS$1[scale + 10];
 }
-var MIN_SCALE, MAX_SCALE$1, PREBUILT_MAPPINGS;
+var MIN_SCALE$1, MAX_SCALE$3, PREBUILT_MAPPINGS$1;
 var init_getMapping = __esmMin((() => {
 	init_ExponentMapping();
 	init_LogarithmMapping();
 	init_types();
-	MIN_SCALE = -10;
-	MAX_SCALE$1 = 20;
-	PREBUILT_MAPPINGS = Array.from({ length: 31 }, (_, i) => {
-		if (i > 10) return new LogarithmMapping(i - 10);
-		return new ExponentMapping(i - 10);
+	MIN_SCALE$1 = -10;
+	MAX_SCALE$3 = 20;
+	PREBUILT_MAPPINGS$1 = Array.from({ length: 31 }, (_, i) => {
+		if (i > 10) return new LogarithmMapping$1(i - 10);
+		return new ExponentMapping$1(i - 10);
 	});
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/ExponentialHistogram.js
-var HighLow, MAX_SCALE, DEFAULT_MAX_SIZE, MIN_MAX_SIZE, ExponentialHistogramAccumulation, ExponentialHistogramAggregator;
+var HighLow$1, MAX_SCALE$2, DEFAULT_MAX_SIZE$1, MIN_MAX_SIZE$1, ExponentialHistogramAccumulation$1, ExponentialHistogramAggregator$1;
 var init_ExponentialHistogram = __esmMin((() => {
 	init_types$1();
 	init_MetricData();
@@ -800,9 +800,9 @@ var init_ExponentialHistogram = __esmMin((() => {
 	init_Buckets();
 	init_getMapping();
 	init_util();
-	HighLow = class HighLow {
+	HighLow$1 = class HighLow$1 {
 		static combine(h1, h2) {
-			return new HighLow(Math.min(h1.low, h2.low), Math.max(h1.high, h2.high));
+			return new HighLow$1(Math.min(h1.low, h2.low), Math.max(h1.high, h2.high));
 		}
 		low;
 		high;
@@ -811,10 +811,10 @@ var init_ExponentialHistogram = __esmMin((() => {
 			this.high = high;
 		}
 	};
-	MAX_SCALE = 20;
-	DEFAULT_MAX_SIZE = 160;
-	MIN_MAX_SIZE = 2;
-	ExponentialHistogramAccumulation = class ExponentialHistogramAccumulation {
+	MAX_SCALE$2 = 20;
+	DEFAULT_MAX_SIZE$1 = 160;
+	MIN_MAX_SIZE$1 = 2;
+	ExponentialHistogramAccumulation$1 = class ExponentialHistogramAccumulation$1 {
 		startTime;
 		_maxSize;
 		_recordMinMax;
@@ -826,7 +826,7 @@ var init_ExponentialHistogram = __esmMin((() => {
 		_positive;
 		_negative;
 		_mapping;
-		constructor(startTime, maxSize = DEFAULT_MAX_SIZE, recordMinMax = true, sum = 0, count = 0, zeroCount = 0, min = Number.POSITIVE_INFINITY, max = Number.NEGATIVE_INFINITY, positive = new Buckets(), negative = new Buckets(), mapping = getMapping(MAX_SCALE)) {
+		constructor(startTime, maxSize = DEFAULT_MAX_SIZE$1, recordMinMax = true, sum = 0, count = 0, zeroCount = 0, min = Number.POSITIVE_INFINITY, max = Number.NEGATIVE_INFINITY, positive = new Buckets$1(), negative = new Buckets$1(), mapping = getMapping$1(MAX_SCALE$2)) {
 			this.startTime = startTime;
 			this._maxSize = maxSize;
 			this._recordMinMax = recordMinMax;
@@ -838,10 +838,10 @@ var init_ExponentialHistogram = __esmMin((() => {
 			this._positive = positive;
 			this._negative = negative;
 			this._mapping = mapping;
-			if (this._maxSize < MIN_MAX_SIZE) {
+			if (this._maxSize < MIN_MAX_SIZE$1) {
 				diag.warn(`Exponential Histogram Max Size set to ${this._maxSize}, \
-                changing to the minimum size of: ${MIN_MAX_SIZE}`);
-				this._maxSize = MIN_MAX_SIZE;
+                changing to the minimum size of: ${MIN_MAX_SIZE$1}`);
+				this._maxSize = MIN_MAX_SIZE$1;
 			}
 		}
 		/**
@@ -992,7 +992,7 @@ var init_ExponentialHistogram = __esmMin((() => {
 		* @returns {ExponentialHistogramAccumulation}
 		*/
 		clone() {
-			return new ExponentialHistogramAccumulation(this.startTime, this._maxSize, this._recordMinMax, this._sum, this._count, this._zeroCount, this._min, this._max, this.positive.clone(), this.negative.clone(), this._mapping);
+			return new ExponentialHistogramAccumulation$1(this.startTime, this._maxSize, this._recordMinMax, this._sum, this._count, this._zeroCount, this._min, this._max, this.positive.clone(), this.negative.clone(), this._mapping);
 		}
 		/**
 		* _updateBuckets maps the incoming value to a bucket index for the current
@@ -1055,7 +1055,7 @@ var init_ExponentialHistogram = __esmMin((() => {
 			const size = buckets.backing.length;
 			const bias = buckets.indexBase - buckets.indexStart;
 			const oldPositiveLimit = size - bias;
-			let newSize = nextGreaterSquare(needed);
+			let newSize = nextGreaterSquare$1(needed);
 			if (newSize > this._maxSize) newSize = this._maxSize;
 			const newPositiveLimit = newSize - bias;
 			buckets.backing.growTo(newSize, oldPositiveLimit, newPositiveLimit);
@@ -1082,24 +1082,24 @@ var init_ExponentialHistogram = __esmMin((() => {
 			const newScale = this._mapping.scale - change;
 			this._positive.downscale(change);
 			this._negative.downscale(change);
-			this._mapping = getMapping(newScale);
+			this._mapping = getMapping$1(newScale);
 		}
 		/**
 		* _minScale is used by diff and merge to compute an ideal combined scale
 		*/
 		_minScale(other) {
 			const minScale = Math.min(this.scale, other.scale);
-			const highLowPos = HighLow.combine(this._highLowAtScale(this.positive, this.scale, minScale), this._highLowAtScale(other.positive, other.scale, minScale));
-			const highLowNeg = HighLow.combine(this._highLowAtScale(this.negative, this.scale, minScale), this._highLowAtScale(other.negative, other.scale, minScale));
+			const highLowPos = HighLow$1.combine(this._highLowAtScale(this.positive, this.scale, minScale), this._highLowAtScale(other.positive, other.scale, minScale));
+			const highLowNeg = HighLow$1.combine(this._highLowAtScale(this.negative, this.scale, minScale), this._highLowAtScale(other.negative, other.scale, minScale));
 			return Math.min(minScale - this._changeScale(highLowPos.high, highLowPos.low), minScale - this._changeScale(highLowNeg.high, highLowNeg.low));
 		}
 		/**
 		* _highLowAtScale is used by diff and merge to compute an ideal combined scale.
 		*/
 		_highLowAtScale(buckets, currentScale, newScale) {
-			if (buckets.length === 0) return new HighLow(0, -1);
+			if (buckets.length === 0) return new HighLow$1(0, -1);
 			const shift = currentScale - newScale;
-			return new HighLow(buckets.indexStart >> shift, buckets.indexEnd >> shift);
+			return new HighLow$1(buckets.indexStart >> shift, buckets.indexEnd >> shift);
 		}
 		/**
 		* _mergeBuckets translates index values from another histogram and
@@ -1125,8 +1125,8 @@ var init_ExponentialHistogram = __esmMin((() => {
 			ours.trim();
 		}
 	};
-	ExponentialHistogramAggregator = class {
-		kind = AggregatorKind.EXPONENTIAL_HISTOGRAM;
+	ExponentialHistogramAggregator$1 = class {
+		kind = AggregatorKind$1.EXPONENTIAL_HISTOGRAM;
 		_maxSize;
 		_recordMinMax;
 		/**
@@ -1140,7 +1140,7 @@ var init_ExponentialHistogram = __esmMin((() => {
 			this._recordMinMax = recordMinMax;
 		}
 		createAccumulation(startTime) {
-			return new ExponentialHistogramAccumulation(startTime, this._maxSize, this._recordMinMax);
+			return new ExponentialHistogramAccumulation$1(startTime, this._maxSize, this._recordMinMax);
 		}
 		/**
 		* Return the result of the merge of two exponential histogram accumulations.
@@ -1162,10 +1162,10 @@ var init_ExponentialHistogram = __esmMin((() => {
 			return {
 				descriptor,
 				aggregationTemporality,
-				dataPointType: DataPointType.EXPONENTIAL_HISTOGRAM,
+				dataPointType: DataPointType$1.EXPONENTIAL_HISTOGRAM,
 				dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
 					const pointValue = accumulation.toPointValue();
-					const allowsNegativeValues = descriptor.type === InstrumentType.GAUGE || descriptor.type === InstrumentType.UP_DOWN_COUNTER || descriptor.type === InstrumentType.OBSERVABLE_GAUGE || descriptor.type === InstrumentType.OBSERVABLE_UP_DOWN_COUNTER;
+					const allowsNegativeValues = descriptor.type === InstrumentType$1.GAUGE || descriptor.type === InstrumentType$1.UP_DOWN_COUNTER || descriptor.type === InstrumentType$1.OBSERVABLE_GAUGE || descriptor.type === InstrumentType$1.OBSERVABLE_UP_DOWN_COUNTER;
 					return {
 						attributes,
 						startTime: accumulation.startTime,
@@ -1194,12 +1194,12 @@ var init_ExponentialHistogram = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/LastValue.js
-var LastValueAccumulation, LastValueAggregator;
+var LastValueAccumulation$1, LastValueAggregator$1;
 var init_LastValue = __esmMin((() => {
 	init_types$1();
 	init_esm$2();
 	init_MetricData();
-	LastValueAccumulation = class {
+	LastValueAccumulation$1 = class {
 		startTime;
 		_current;
 		sampleTime;
@@ -1210,7 +1210,7 @@ var init_LastValue = __esmMin((() => {
 		}
 		record(value) {
 			this._current = value;
-			this.sampleTime = millisToHrTime(Date.now());
+			this.sampleTime = millisToHrTime$1(Date.now());
 		}
 		setStartTime(startTime) {
 			this.startTime = startTime;
@@ -1219,10 +1219,10 @@ var init_LastValue = __esmMin((() => {
 			return this._current;
 		}
 	};
-	LastValueAggregator = class {
-		kind = AggregatorKind.LAST_VALUE;
+	LastValueAggregator$1 = class {
+		kind = AggregatorKind$1.LAST_VALUE;
 		createAccumulation(startTime) {
-			return new LastValueAccumulation(startTime);
+			return new LastValueAccumulation$1(startTime);
 		}
 		/**
 		* Returns the result of the merge of the given accumulations.
@@ -1230,8 +1230,8 @@ var init_LastValue = __esmMin((() => {
 		* Return the newly captured (delta) accumulation for LastValueAggregator.
 		*/
 		merge(previous, delta) {
-			const latestAccumulation = hrTimeToMicroseconds(delta.sampleTime) >= hrTimeToMicroseconds(previous.sampleTime) ? delta : previous;
-			return new LastValueAccumulation(previous.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
+			const latestAccumulation = hrTimeToMicroseconds$1(delta.sampleTime) >= hrTimeToMicroseconds$1(previous.sampleTime) ? delta : previous;
+			return new LastValueAccumulation$1(previous.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
 		}
 		/**
 		* Returns a new DELTA aggregation by comparing two cumulative measurements.
@@ -1240,14 +1240,14 @@ var init_LastValue = __esmMin((() => {
 		* the newly captured (delta) accumulation for LastValueAggregator.
 		*/
 		diff(previous, current) {
-			const latestAccumulation = hrTimeToMicroseconds(current.sampleTime) >= hrTimeToMicroseconds(previous.sampleTime) ? current : previous;
-			return new LastValueAccumulation(current.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
+			const latestAccumulation = hrTimeToMicroseconds$1(current.sampleTime) >= hrTimeToMicroseconds$1(previous.sampleTime) ? current : previous;
+			return new LastValueAccumulation$1(current.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
 		}
 		toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
 			return {
 				descriptor,
 				aggregationTemporality,
-				dataPointType: DataPointType.GAUGE,
+				dataPointType: DataPointType$1.GAUGE,
 				dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
 					return {
 						attributes,
@@ -1262,11 +1262,11 @@ var init_LastValue = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Sum.js
-var SumAccumulation, SumAggregator;
+var SumAccumulation$1, SumAggregator$1;
 var init_Sum = __esmMin((() => {
 	init_types$1();
 	init_MetricData();
-	SumAccumulation = class {
+	SumAccumulation$1 = class {
 		startTime;
 		monotonic;
 		_current;
@@ -1288,14 +1288,14 @@ var init_Sum = __esmMin((() => {
 			return this._current;
 		}
 	};
-	SumAggregator = class {
-		kind = AggregatorKind.SUM;
+	SumAggregator$1 = class {
+		kind = AggregatorKind$1.SUM;
 		monotonic;
 		constructor(monotonic) {
 			this.monotonic = monotonic;
 		}
 		createAccumulation(startTime) {
-			return new SumAccumulation(startTime, this.monotonic);
+			return new SumAccumulation$1(startTime, this.monotonic);
 		}
 		/**
 		* Returns the result of the merge of the given accumulations.
@@ -1303,8 +1303,8 @@ var init_Sum = __esmMin((() => {
 		merge(previous, delta) {
 			const prevPv = previous.toPointValue();
 			const deltaPv = delta.toPointValue();
-			if (delta.reset) return new SumAccumulation(delta.startTime, this.monotonic, deltaPv, delta.reset);
-			return new SumAccumulation(previous.startTime, this.monotonic, prevPv + deltaPv);
+			if (delta.reset) return new SumAccumulation$1(delta.startTime, this.monotonic, deltaPv, delta.reset);
+			return new SumAccumulation$1(previous.startTime, this.monotonic, prevPv + deltaPv);
 		}
 		/**
 		* Returns a new DELTA aggregation by comparing two cumulative measurements.
@@ -1317,14 +1317,14 @@ var init_Sum = __esmMin((() => {
 			* greater than the current one, a reset is deemed to be happened.
 			* Return the current point value to prevent the value from been reset.
 			*/
-			if (this.monotonic && prevPv > currPv) return new SumAccumulation(current.startTime, this.monotonic, currPv, true);
-			return new SumAccumulation(current.startTime, this.monotonic, currPv - prevPv);
+			if (this.monotonic && prevPv > currPv) return new SumAccumulation$1(current.startTime, this.monotonic, currPv, true);
+			return new SumAccumulation$1(current.startTime, this.monotonic, currPv - prevPv);
 		}
 		toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
 			return {
 				descriptor,
 				aggregationTemporality,
-				dataPointType: DataPointType.SUM,
+				dataPointType: DataPointType$1.SUM,
 				dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
 					return {
 						attributes,
@@ -1346,37 +1346,37 @@ var init_aggregator = __esmMin((() => {
 	init_ExponentialHistogram();
 	init_LastValue();
 	init_Sum();
-})), DropAggregation, SumAggregation, LastValueAggregation, HistogramAggregation, ExplicitBucketHistogramAggregation, ExponentialHistogramAggregation, DefaultAggregation, DROP_AGGREGATION, SUM_AGGREGATION, LAST_VALUE_AGGREGATION, HISTOGRAM_AGGREGATION, DEFAULT_AGGREGATION;
+})), DropAggregation$1, SumAggregation$1, LastValueAggregation$1, HistogramAggregation$1, ExplicitBucketHistogramAggregation$1, ExponentialHistogramAggregation$1, DefaultAggregation$1, DROP_AGGREGATION$1, SUM_AGGREGATION$1, LAST_VALUE_AGGREGATION$1, HISTOGRAM_AGGREGATION$1, DEFAULT_AGGREGATION$1;
 var init_Aggregation = __esmMin((() => {
 	init_esm$1();
 	init_aggregator();
 	init_MetricData();
-	DropAggregation = class DropAggregation {
-		static DEFAULT_INSTANCE = new DropAggregator();
+	DropAggregation$1 = class DropAggregation$1 {
+		static DEFAULT_INSTANCE = new DropAggregator$1();
 		createAggregator(_instrument) {
-			return DropAggregation.DEFAULT_INSTANCE;
+			return DropAggregation$1.DEFAULT_INSTANCE;
 		}
 	};
-	SumAggregation = class SumAggregation {
-		static MONOTONIC_INSTANCE = new SumAggregator(true);
-		static NON_MONOTONIC_INSTANCE = new SumAggregator(false);
+	SumAggregation$1 = class SumAggregation$1 {
+		static MONOTONIC_INSTANCE = new SumAggregator$1(true);
+		static NON_MONOTONIC_INSTANCE = new SumAggregator$1(false);
 		createAggregator(instrument) {
 			switch (instrument.type) {
-				case InstrumentType.COUNTER:
-				case InstrumentType.OBSERVABLE_COUNTER:
-				case InstrumentType.HISTOGRAM: return SumAggregation.MONOTONIC_INSTANCE;
-				default: return SumAggregation.NON_MONOTONIC_INSTANCE;
+				case InstrumentType$1.COUNTER:
+				case InstrumentType$1.OBSERVABLE_COUNTER:
+				case InstrumentType$1.HISTOGRAM: return SumAggregation$1.MONOTONIC_INSTANCE;
+				default: return SumAggregation$1.NON_MONOTONIC_INSTANCE;
 			}
 		}
 	};
-	LastValueAggregation = class LastValueAggregation {
-		static DEFAULT_INSTANCE = new LastValueAggregator();
+	LastValueAggregation$1 = class LastValueAggregation$1 {
+		static DEFAULT_INSTANCE = new LastValueAggregator$1();
 		createAggregator(_instrument) {
-			return LastValueAggregation.DEFAULT_INSTANCE;
+			return LastValueAggregation$1.DEFAULT_INSTANCE;
 		}
 	};
-	HistogramAggregation = class HistogramAggregation {
-		static DEFAULT_INSTANCE = new HistogramAggregator([
+	HistogramAggregation$1 = class HistogramAggregation$1 {
+		static DEFAULT_INSTANCE = new HistogramAggregator$1([
 			0,
 			5,
 			10,
@@ -1394,10 +1394,10 @@ var init_Aggregation = __esmMin((() => {
 			1e4
 		], true);
 		createAggregator(_instrument) {
-			return HistogramAggregation.DEFAULT_INSTANCE;
+			return HistogramAggregation$1.DEFAULT_INSTANCE;
 		}
 	};
-	ExplicitBucketHistogramAggregation = class {
+	ExplicitBucketHistogramAggregation$1 = class {
 		_boundaries;
 		_recordMinMax;
 		/**
@@ -1415,10 +1415,10 @@ var init_Aggregation = __esmMin((() => {
 			this._recordMinMax = recordMinMax;
 		}
 		createAggregator(_instrument) {
-			return new HistogramAggregator(this._boundaries, this._recordMinMax);
+			return new HistogramAggregator$1(this._boundaries, this._recordMinMax);
 		}
 	};
-	ExponentialHistogramAggregation = class {
+	ExponentialHistogramAggregation$1 = class {
 		_maxSize;
 		_recordMinMax;
 		constructor(maxSize = 160, recordMinMax = true) {
@@ -1426,57 +1426,57 @@ var init_Aggregation = __esmMin((() => {
 			this._recordMinMax = recordMinMax;
 		}
 		createAggregator(_instrument) {
-			return new ExponentialHistogramAggregator(this._maxSize, this._recordMinMax);
+			return new ExponentialHistogramAggregator$1(this._maxSize, this._recordMinMax);
 		}
 	};
-	DefaultAggregation = class {
+	DefaultAggregation$1 = class {
 		_resolve(instrument) {
 			switch (instrument.type) {
-				case InstrumentType.COUNTER:
-				case InstrumentType.UP_DOWN_COUNTER:
-				case InstrumentType.OBSERVABLE_COUNTER:
-				case InstrumentType.OBSERVABLE_UP_DOWN_COUNTER: return SUM_AGGREGATION;
-				case InstrumentType.GAUGE:
-				case InstrumentType.OBSERVABLE_GAUGE: return LAST_VALUE_AGGREGATION;
-				case InstrumentType.HISTOGRAM:
-					if (instrument.advice.explicitBucketBoundaries) return new ExplicitBucketHistogramAggregation(instrument.advice.explicitBucketBoundaries);
-					return HISTOGRAM_AGGREGATION;
+				case InstrumentType$1.COUNTER:
+				case InstrumentType$1.UP_DOWN_COUNTER:
+				case InstrumentType$1.OBSERVABLE_COUNTER:
+				case InstrumentType$1.OBSERVABLE_UP_DOWN_COUNTER: return SUM_AGGREGATION$1;
+				case InstrumentType$1.GAUGE:
+				case InstrumentType$1.OBSERVABLE_GAUGE: return LAST_VALUE_AGGREGATION$1;
+				case InstrumentType$1.HISTOGRAM:
+					if (instrument.advice.explicitBucketBoundaries) return new ExplicitBucketHistogramAggregation$1(instrument.advice.explicitBucketBoundaries);
+					return HISTOGRAM_AGGREGATION$1;
 			}
 			diag.warn(`Unable to recognize instrument type: ${instrument.type}`);
-			return DROP_AGGREGATION;
+			return DROP_AGGREGATION$1;
 		}
 		createAggregator(instrument) {
 			return this._resolve(instrument).createAggregator(instrument);
 		}
 	};
-	DROP_AGGREGATION = new DropAggregation();
-	SUM_AGGREGATION = new SumAggregation();
-	LAST_VALUE_AGGREGATION = new LastValueAggregation();
-	HISTOGRAM_AGGREGATION = new HistogramAggregation();
-	new ExponentialHistogramAggregation();
-	DEFAULT_AGGREGATION = new DefaultAggregation();
+	DROP_AGGREGATION$1 = new DropAggregation$1();
+	SUM_AGGREGATION$1 = new SumAggregation$1();
+	LAST_VALUE_AGGREGATION$1 = new LastValueAggregation$1();
+	HISTOGRAM_AGGREGATION$1 = new HistogramAggregation$1();
+	new ExponentialHistogramAggregation$1();
+	DEFAULT_AGGREGATION$1 = new DefaultAggregation$1();
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/AggregationOption.js
-function toAggregation(option) {
+function toAggregation$1(option) {
 	switch (option.type) {
-		case AggregationType.DEFAULT: return DEFAULT_AGGREGATION;
-		case AggregationType.DROP: return DROP_AGGREGATION;
-		case AggregationType.SUM: return SUM_AGGREGATION;
-		case AggregationType.LAST_VALUE: return LAST_VALUE_AGGREGATION;
-		case AggregationType.EXPONENTIAL_HISTOGRAM: {
+		case AggregationType$1.DEFAULT: return DEFAULT_AGGREGATION$1;
+		case AggregationType$1.DROP: return DROP_AGGREGATION$1;
+		case AggregationType$1.SUM: return SUM_AGGREGATION$1;
+		case AggregationType$1.LAST_VALUE: return LAST_VALUE_AGGREGATION$1;
+		case AggregationType$1.EXPONENTIAL_HISTOGRAM: {
 			const expOption = option;
-			return new ExponentialHistogramAggregation(expOption.options?.maxSize, expOption.options?.recordMinMax);
+			return new ExponentialHistogramAggregation$1(expOption.options?.maxSize, expOption.options?.recordMinMax);
 		}
-		case AggregationType.EXPLICIT_BUCKET_HISTOGRAM: {
+		case AggregationType$1.EXPLICIT_BUCKET_HISTOGRAM: {
 			const expOption = option;
-			if (expOption.options == null) return HISTOGRAM_AGGREGATION;
-			else return new ExplicitBucketHistogramAggregation(expOption.options?.boundaries, expOption.options?.recordMinMax);
+			if (expOption.options == null) return HISTOGRAM_AGGREGATION$1;
+			else return new ExplicitBucketHistogramAggregation$1(expOption.options?.boundaries, expOption.options?.recordMinMax);
 		}
 		default: throw new Error("Unsupported Aggregation");
 	}
 }
-var AggregationType;
+var AggregationType$1;
 var init_AggregationOption = __esmMin((() => {
 	init_Aggregation();
 	(function(AggregationType) {
@@ -1486,46 +1486,46 @@ var init_AggregationOption = __esmMin((() => {
 		AggregationType[AggregationType["LAST_VALUE"] = 3] = "LAST_VALUE";
 		AggregationType[AggregationType["EXPLICIT_BUCKET_HISTOGRAM"] = 4] = "EXPLICIT_BUCKET_HISTOGRAM";
 		AggregationType[AggregationType["EXPONENTIAL_HISTOGRAM"] = 5] = "EXPONENTIAL_HISTOGRAM";
-	})(AggregationType || (AggregationType = {}));
+	})(AggregationType$1 || (AggregationType$1 = {}));
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/AggregationSelector.js
-var DEFAULT_AGGREGATION_SELECTOR, DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR;
+var DEFAULT_AGGREGATION_SELECTOR$1, DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR$1;
 var init_AggregationSelector = __esmMin((() => {
 	init_AggregationTemporality();
 	init_AggregationOption();
-	DEFAULT_AGGREGATION_SELECTOR = (_instrumentType) => {
-		return { type: AggregationType.DEFAULT };
+	DEFAULT_AGGREGATION_SELECTOR$1 = (_instrumentType) => {
+		return { type: AggregationType$1.DEFAULT };
 	};
-	DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR = (_instrumentType) => AggregationTemporality.CUMULATIVE;
+	DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR$1 = (_instrumentType) => AggregationTemporality$1.CUMULATIVE;
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/semconv.js
-var ATTR_OTEL_COMPONENT_NAME, ATTR_OTEL_COMPONENT_TYPE, OTEL_COMPONENT_TYPE_VALUE_PERIODIC_METRIC_READER, METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION, ATTR_ERROR_TYPE;
+var ATTR_OTEL_COMPONENT_NAME$1, ATTR_OTEL_COMPONENT_TYPE$1, OTEL_COMPONENT_TYPE_VALUE_PERIODIC_METRIC_READER, METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION$1, ATTR_ERROR_TYPE$1;
 var init_semconv = __esmMin((() => {
-	ATTR_OTEL_COMPONENT_NAME = "otel.component.name";
-	ATTR_OTEL_COMPONENT_TYPE = "otel.component.type";
+	ATTR_OTEL_COMPONENT_NAME$1 = "otel.component.name";
+	ATTR_OTEL_COMPONENT_TYPE$1 = "otel.component.type";
 	OTEL_COMPONENT_TYPE_VALUE_PERIODIC_METRIC_READER = "periodic_metric_reader";
-	METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION = "otel.sdk.metric_reader.collection.duration";
-	ATTR_ERROR_TYPE = "error.type";
+	METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION$1 = "otel.sdk.metric_reader.collection.duration";
+	ATTR_ERROR_TYPE$1 = "error.type";
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricReaderMetrics.js
-var componentCounter, MetricReaderMetrics;
+var componentCounter$1, MetricReaderMetrics$1;
 var init_MetricReaderMetrics = __esmMin((() => {
 	init_semconv();
-	componentCounter = /* @__PURE__ */ new Map();
-	MetricReaderMetrics = class {
+	componentCounter$1 = /* @__PURE__ */ new Map();
+	MetricReaderMetrics$1 = class {
 		collectionDuration;
 		standardAttrs;
 		constructor(componentType, meter) {
-			const counter = componentCounter.get(componentType) ?? 0;
-			componentCounter.set(componentType, counter + 1);
+			const counter = componentCounter$1.get(componentType) ?? 0;
+			componentCounter$1.set(componentType, counter + 1);
 			this.standardAttrs = {
-				[ATTR_OTEL_COMPONENT_TYPE]: componentType,
-				[ATTR_OTEL_COMPONENT_NAME]: `${componentType}/${counter}`
+				[ATTR_OTEL_COMPONENT_TYPE$1]: componentType,
+				[ATTR_OTEL_COMPONENT_NAME$1]: `${componentType}/${counter}`
 			};
-			this.collectionDuration = meter.createHistogram(METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION, {
+			this.collectionDuration = meter.createHistogram(METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION$1, {
 				unit: "s",
 				description: "The duration of the collect operation of the metric reader.",
 				advice: { explicitBucketBoundaries: [] }
@@ -1534,7 +1534,7 @@ var init_MetricReaderMetrics = __esmMin((() => {
 		recordCollection(durationSecs, error) {
 			const attrs = error ? {
 				...this.standardAttrs,
-				[ATTR_ERROR_TYPE]: error
+				[ATTR_ERROR_TYPE$1]: error
 			} : this.standardAttrs;
 			this.collectionDuration.record(durationSecs, attrs);
 		}
@@ -1542,13 +1542,13 @@ var init_MetricReaderMetrics = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/version.js
-var VERSION;
+var VERSION$1;
 var init_version = __esmMin((() => {
-	VERSION = "2.10.0";
+	VERSION$1 = "2.10.0";
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricReader.js
-var MetricReader;
+var MetricReader$1;
 var init_MetricReader = __esmMin((() => {
 	init_esm$1();
 	init_utils();
@@ -1556,7 +1556,7 @@ var init_MetricReader = __esmMin((() => {
 	init_MetricReaderMetrics();
 	init_version();
 	init_esm$2();
-	MetricReader = class {
+	MetricReader$1 = class {
 		_shutdown = false;
 		_metricProducers;
 		_sdkMetricProducer;
@@ -1566,12 +1566,12 @@ var init_MetricReader = __esmMin((() => {
 		_cardinalitySelector;
 		_otelComponentType;
 		constructor(options) {
-			this._aggregationSelector = options?.aggregationSelector ?? DEFAULT_AGGREGATION_SELECTOR;
-			this._aggregationTemporalitySelector = options?.aggregationTemporalitySelector ?? DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR;
+			this._aggregationSelector = options?.aggregationSelector ?? DEFAULT_AGGREGATION_SELECTOR$1;
+			this._aggregationTemporalitySelector = options?.aggregationTemporalitySelector ?? DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR$1;
 			this._metricProducers = options?.metricProducers ?? [];
 			this._cardinalitySelector = options?.cardinalitySelector;
 			this._otelComponentType = options?.otelComponentType ?? this.constructor.name;
-			this._selfObsMetrics = new MetricReaderMetrics(this._otelComponentType, createNoopMeter());
+			this._selfObsMetrics = new MetricReaderMetrics$1(this._otelComponentType, createNoopMeter());
 		}
 		setMetricProducer(metricProducer) {
 			if (this._sdkMetricProducer) throw new Error("MetricReader can not be bound to a MeterProvider again.");
@@ -1579,8 +1579,8 @@ var init_MetricReader = __esmMin((() => {
 			this.onInitialized();
 		}
 		_setSelfObsMeterProvider(meterProvider) {
-			const meter = meterProvider.getMeter("@opentelemetry/sdk-metrics", VERSION);
-			this._selfObsMetrics = new MetricReaderMetrics(this._otelComponentType, meter);
+			const meter = meterProvider.getMeter("@opentelemetry/sdk-metrics", VERSION$1);
+			this._selfObsMetrics = new MetricReaderMetrics$1(this._otelComponentType, meter);
 		}
 		selectAggregation(instrumentType) {
 			return this._aggregationSelector(instrumentType);
@@ -1599,11 +1599,11 @@ var init_MetricReader = __esmMin((() => {
 		async collect(options) {
 			if (this._sdkMetricProducer === void 0) throw new Error("MetricReader is not bound to a MetricProducer");
 			if (this._shutdown) throw new Error("MetricReader is shutdown");
-			const startTime = hrTime();
+			const startTime = hrTime$1();
 			const [sdkCollectionResults, ...additionalCollectionResults] = await Promise.all([this._sdkMetricProducer.collect({ timeoutMillis: options?.timeoutMillis }), ...this._metricProducers.map((producer) => producer.collect({ timeoutMillis: options?.timeoutMillis }))]);
-			const endTime = hrTime();
+			const endTime = hrTime$1();
 			const errors = sdkCollectionResults.errors.concat(additionalCollectionResults.flatMap((result) => result.errors));
-			const collectDuration = hrTimeToSeconds(hrTimeDuration(startTime, endTime));
+			const collectDuration = hrTimeToSeconds$1(hrTimeDuration$1(startTime, endTime));
 			this._selfObsMetrics.recordCollection(collectDuration, errors.length > 0 ? errors[0].name ?? "collect_error" : void 0);
 			return {
 				resourceMetrics: {
@@ -1619,7 +1619,7 @@ var init_MetricReader = __esmMin((() => {
 				return;
 			}
 			if (options?.timeoutMillis == null) await this.onShutdown();
-			else await callWithTimeout(this.onShutdown(), options.timeoutMillis);
+			else await callWithTimeout$1(this.onShutdown(), options.timeoutMillis);
 			this._shutdown = true;
 		}
 		async forceFlush(options) {
@@ -1631,7 +1631,7 @@ var init_MetricReader = __esmMin((() => {
 				await this.onForceFlush();
 				return;
 			}
-			await callWithTimeout(this.onForceFlush(), options.timeoutMillis);
+			await callWithTimeout$1(this.onForceFlush(), options.timeoutMillis);
 		}
 	};
 }));
@@ -1714,7 +1714,7 @@ var init_PeriodicExportingMetricReader = __esmMin((() => {
 	init_MetricData();
 	init_MetricDataSplitter();
 	init_semconv();
-	PeriodicExportingMetricReader = class extends MetricReader {
+	PeriodicExportingMetricReader = class extends MetricReader$1 {
 		_interval;
 		_exporter;
 		_exportInterval;
@@ -1735,13 +1735,13 @@ var init_PeriodicExportingMetricReader = __esmMin((() => {
 						...cardinalityLimits
 					};
 					switch (instrumentType) {
-						case InstrumentType.COUNTER: return limits.counter ?? limits.default;
-						case InstrumentType.GAUGE: return limits.gauge ?? limits.default;
-						case InstrumentType.HISTOGRAM: return limits.histogram ?? limits.default;
-						case InstrumentType.OBSERVABLE_COUNTER: return limits.observableCounter ?? limits.default;
-						case InstrumentType.OBSERVABLE_UP_DOWN_COUNTER: return limits.observableUpDownCounter ?? limits.default;
-						case InstrumentType.OBSERVABLE_GAUGE: return limits.observableGauge ?? limits.default;
-						case InstrumentType.UP_DOWN_COUNTER: return limits.upDownCounter ?? limits.default;
+						case InstrumentType$1.COUNTER: return limits.counter ?? limits.default;
+						case InstrumentType$1.GAUGE: return limits.gauge ?? limits.default;
+						case InstrumentType$1.HISTOGRAM: return limits.histogram ?? limits.default;
+						case InstrumentType$1.OBSERVABLE_COUNTER: return limits.observableCounter ?? limits.default;
+						case InstrumentType$1.OBSERVABLE_UP_DOWN_COUNTER: return limits.observableUpDownCounter ?? limits.default;
+						case InstrumentType$1.OBSERVABLE_GAUGE: return limits.observableGauge ?? limits.default;
+						case InstrumentType$1.UP_DOWN_COUNTER: return limits.upDownCounter ?? limits.default;
 						default: return limits.default;
 					}
 				}
@@ -1749,10 +1749,12 @@ var init_PeriodicExportingMetricReader = __esmMin((() => {
 			if (exportIntervalMillis <= 0) throw Error("exportIntervalMillis must be greater than 0");
 			if (exportTimeoutMillis <= 0) throw Error("exportTimeoutMillis must be greater than 0");
 			if (maxExportBatchSize !== void 0 && (!Number.isInteger(maxExportBatchSize) || maxExportBatchSize <= 0)) throw Error("maxExportBatchSize must be a positive integer");
-			if (exportIntervalMillis < exportTimeoutMillis) if ("exportIntervalMillis" in options && "exportTimeoutMillis" in options) throw Error("exportIntervalMillis must be greater than or equal to exportTimeoutMillis");
-			else {
-				diag.info(`Timeout of ${exportTimeoutMillis} exceeds the interval of ${exportIntervalMillis}. Clamping timeout to interval duration.`);
-				exportTimeoutMillis = exportIntervalMillis;
+			if (exportIntervalMillis < exportTimeoutMillis) {
+				if ("exportIntervalMillis" in options && "exportTimeoutMillis" in options) throw Error("exportIntervalMillis must be greater than or equal to exportTimeoutMillis");
+				else {
+					diag.info(`Timeout of ${exportTimeoutMillis} exceeds the interval of ${exportIntervalMillis}. Clamping timeout to interval duration.`);
+					exportTimeoutMillis = exportIntervalMillis;
+				}
 			}
 			this._exportInterval = exportIntervalMillis;
 			this._exportTimeout = exportTimeoutMillis;
@@ -1784,10 +1786,10 @@ var init_PeriodicExportingMetricReader = __esmMin((() => {
 				const batches = this._maxExportBatchSize ? splitMetricData(resourceMetrics, this._maxExportBatchSize) : [resourceMetrics];
 				let anyErr = null;
 				for (const batch of batches) try {
-					const result = await callWithTimeout(internal._export(this._exporter, batch), this._exportTimeout);
+					const result = await callWithTimeout$1(internal._export(this._exporter, batch), this._exportTimeout);
 					if (result.code !== ExportResultCode.SUCCESS) anyErr = /* @__PURE__ */ new Error(`PeriodicExportingMetricReader: metrics export failed (error ${result.error})`);
 				} catch (e) {
-					if (e instanceof TimeoutError) {
+					if (e instanceof TimeoutError$1) {
 						diag.error(`PeriodicExportingMetricReader: metrics export timed out after ${this._exportTimeout}ms`);
 						break;
 					} else {
@@ -1890,7 +1892,7 @@ var init_ConsoleMetricExporter = __esmMin((() => {
 		_shutdown = false;
 		_temporalitySelector;
 		constructor(options) {
-			this._temporalitySelector = options?.temporalitySelector ?? DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR;
+			this._temporalitySelector = options?.temporalitySelector ?? DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR$1;
 		}
 		export(metrics, resultCallback) {
 			if (this._shutdown) {
@@ -1921,9 +1923,9 @@ var init_ConsoleMetricExporter = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/ViewRegistry.js
-var ViewRegistry;
+var ViewRegistry$1;
 var init_ViewRegistry = __esmMin((() => {
-	ViewRegistry = class {
+	ViewRegistry$1 = class {
 		_registeredViews = [];
 		addView(view) {
 			this._registeredViews.push(view);
@@ -1943,8 +1945,8 @@ var init_ViewRegistry = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/InstrumentDescriptor.js
-function createInstrumentDescriptor(name, type, options) {
-	if (!isValidName(name)) diag.warn(`Invalid metric name: "${name}". The metric name should be a ASCII string with a length no greater than 255 characters.`);
+function createInstrumentDescriptor$1(name, type, options) {
+	if (!isValidName$1(name)) diag.warn(`Invalid metric name: "${name}". The metric name should be a ASCII string with a length no greater than 255 characters.`);
 	return {
 		name,
 		type,
@@ -1954,7 +1956,7 @@ function createInstrumentDescriptor(name, type, options) {
 		advice: options?.advice ?? {}
 	};
 }
-function createInstrumentDescriptorWithView(view, instrument) {
+function createInstrumentDescriptorWithView$1(view, instrument) {
 	return {
 		name: view.name ?? instrument.name,
 		description: view.description ?? instrument.description,
@@ -1964,27 +1966,27 @@ function createInstrumentDescriptorWithView(view, instrument) {
 		advice: instrument.advice
 	};
 }
-function isDescriptorCompatibleWith(descriptor, otherDescriptor) {
-	return equalsCaseInsensitive(descriptor.name, otherDescriptor.name) && descriptor.unit === otherDescriptor.unit && descriptor.type === otherDescriptor.type && descriptor.valueType === otherDescriptor.valueType;
+function isDescriptorCompatibleWith$1(descriptor, otherDescriptor) {
+	return equalsCaseInsensitive$1(descriptor.name, otherDescriptor.name) && descriptor.unit === otherDescriptor.unit && descriptor.type === otherDescriptor.type && descriptor.valueType === otherDescriptor.valueType;
 }
-function isValidName(name) {
-	return NAME_REGEXP.test(name);
+function isValidName$1(name) {
+	return NAME_REGEXP$1.test(name);
 }
-var NAME_REGEXP;
+var NAME_REGEXP$1;
 var init_InstrumentDescriptor = __esmMin((() => {
 	init_esm$1();
 	init_utils();
-	NAME_REGEXP = /^[a-z][a-z0-9_.\-/]{0,254}$/i;
+	NAME_REGEXP$1 = /^[a-z][a-z0-9_.\-/]{0,254}$/i;
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/Instruments.js
-function isObservableInstrument(it) {
-	return it instanceof ObservableInstrument;
+function isObservableInstrument$1(it) {
+	return it instanceof ObservableInstrument$1;
 }
-var SyncInstrument, UpDownCounterInstrument, CounterInstrument, GaugeInstrument, HistogramInstrument, ObservableInstrument, ObservableCounterInstrument, ObservableGaugeInstrument, ObservableUpDownCounterInstrument;
+var SyncInstrument$1, UpDownCounterInstrument$1, CounterInstrument$1, GaugeInstrument$1, HistogramInstrument$1, ObservableInstrument$1, ObservableCounterInstrument$1, ObservableGaugeInstrument$1, ObservableUpDownCounterInstrument$1;
 var init_Instruments = __esmMin((() => {
 	init_esm$1();
-	SyncInstrument = class {
+	SyncInstrument$1 = class {
 		_writableMetricStorage;
 		_descriptor;
 		constructor(writableMetricStorage, descriptor) {
@@ -2004,7 +2006,7 @@ var init_Instruments = __esmMin((() => {
 			this._writableMetricStorage.record(value, attributes, context, Date.now());
 		}
 	};
-	UpDownCounterInstrument = class extends SyncInstrument {
+	UpDownCounterInstrument$1 = class extends SyncInstrument$1 {
 		/**
 		* Increment value of counter by the input. Inputs may be negative.
 		*/
@@ -2012,7 +2014,7 @@ var init_Instruments = __esmMin((() => {
 			this._record(value, attributes, ctx);
 		}
 	};
-	CounterInstrument = class extends SyncInstrument {
+	CounterInstrument$1 = class extends SyncInstrument$1 {
 		/**
 		* Increment value of counter by the input. Inputs may not be negative.
 		*/
@@ -2024,7 +2026,7 @@ var init_Instruments = __esmMin((() => {
 			this._record(value, attributes, ctx);
 		}
 	};
-	GaugeInstrument = class extends SyncInstrument {
+	GaugeInstrument$1 = class extends SyncInstrument$1 {
 		/**
 		* Records a measurement.
 		*/
@@ -2032,7 +2034,7 @@ var init_Instruments = __esmMin((() => {
 			this._record(value, attributes, ctx);
 		}
 	};
-	HistogramInstrument = class extends SyncInstrument {
+	HistogramInstrument$1 = class extends SyncInstrument$1 {
 		/**
 		* Records a measurement. Value of the measurement must not be negative.
 		*/
@@ -2044,7 +2046,7 @@ var init_Instruments = __esmMin((() => {
 			this._record(value, attributes, ctx);
 		}
 	};
-	ObservableInstrument = class {
+	ObservableInstrument$1 = class {
 		/** @internal */
 		_metricStorages;
 		/** @internal */
@@ -2068,18 +2070,18 @@ var init_Instruments = __esmMin((() => {
 			this._observableRegistry.removeCallback(callback, this);
 		}
 	};
-	ObservableCounterInstrument = class extends ObservableInstrument {};
-	ObservableGaugeInstrument = class extends ObservableInstrument {};
-	ObservableUpDownCounterInstrument = class extends ObservableInstrument {};
+	ObservableCounterInstrument$1 = class extends ObservableInstrument$1 {};
+	ObservableGaugeInstrument$1 = class extends ObservableInstrument$1 {};
+	ObservableUpDownCounterInstrument$1 = class extends ObservableInstrument$1 {};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/Meter.js
-var Meter;
+var Meter$1;
 var init_Meter = __esmMin((() => {
 	init_InstrumentDescriptor();
 	init_Instruments();
 	init_MetricData();
-	Meter = class {
+	Meter$1 = class {
 		_meterSharedState;
 		constructor(meterSharedState) {
 			this._meterSharedState = meterSharedState;
@@ -2088,57 +2090,57 @@ var init_Meter = __esmMin((() => {
 		* Create a {@link Gauge} instrument.
 		*/
 		createGauge(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.GAUGE, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.GAUGE, options);
 			const storage = this._meterSharedState.registerMetricStorage(descriptor);
-			return new GaugeInstrument(storage, descriptor);
+			return new GaugeInstrument$1(storage, descriptor);
 		}
 		/**
 		* Create a {@link Histogram} instrument.
 		*/
 		createHistogram(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.HISTOGRAM, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.HISTOGRAM, options);
 			const storage = this._meterSharedState.registerMetricStorage(descriptor);
-			return new HistogramInstrument(storage, descriptor);
+			return new HistogramInstrument$1(storage, descriptor);
 		}
 		/**
 		* Create a {@link Counter} instrument.
 		*/
 		createCounter(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.COUNTER, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.COUNTER, options);
 			const storage = this._meterSharedState.registerMetricStorage(descriptor);
-			return new CounterInstrument(storage, descriptor);
+			return new CounterInstrument$1(storage, descriptor);
 		}
 		/**
 		* Create a {@link UpDownCounter} instrument.
 		*/
 		createUpDownCounter(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.UP_DOWN_COUNTER, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.UP_DOWN_COUNTER, options);
 			const storage = this._meterSharedState.registerMetricStorage(descriptor);
-			return new UpDownCounterInstrument(storage, descriptor);
+			return new UpDownCounterInstrument$1(storage, descriptor);
 		}
 		/**
 		* Create a {@link ObservableGauge} instrument.
 		*/
 		createObservableGauge(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_GAUGE, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.OBSERVABLE_GAUGE, options);
 			const storages = this._meterSharedState.registerAsyncMetricStorage(descriptor);
-			return new ObservableGaugeInstrument(descriptor, storages, this._meterSharedState.observableRegistry);
+			return new ObservableGaugeInstrument$1(descriptor, storages, this._meterSharedState.observableRegistry);
 		}
 		/**
 		* Create a {@link ObservableCounter} instrument.
 		*/
 		createObservableCounter(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_COUNTER, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.OBSERVABLE_COUNTER, options);
 			const storages = this._meterSharedState.registerAsyncMetricStorage(descriptor);
-			return new ObservableCounterInstrument(descriptor, storages, this._meterSharedState.observableRegistry);
+			return new ObservableCounterInstrument$1(descriptor, storages, this._meterSharedState.observableRegistry);
 		}
 		/**
 		* Create a {@link ObservableUpDownCounter} instrument.
 		*/
 		createObservableUpDownCounter(name, options) {
-			const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_UP_DOWN_COUNTER, options);
+			const descriptor = createInstrumentDescriptor$1(name, InstrumentType$1.OBSERVABLE_UP_DOWN_COUNTER, options);
 			const storages = this._meterSharedState.registerAsyncMetricStorage(descriptor);
-			return new ObservableUpDownCounterInstrument(descriptor, storages, this._meterSharedState.observableRegistry);
+			return new ObservableUpDownCounterInstrument$1(descriptor, storages, this._meterSharedState.observableRegistry);
 		}
 		/**
 		* @see {@link Meter.addBatchObservableCallback}
@@ -2156,10 +2158,10 @@ var init_Meter = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricStorage.js
-var MetricStorage;
+var MetricStorage$1;
 var init_MetricStorage = __esmMin((() => {
 	init_InstrumentDescriptor();
-	MetricStorage = class {
+	MetricStorage$1 = class {
 		_instrumentDescriptor;
 		constructor(instrumentDescriptor) {
 			this._instrumentDescriptor = instrumentDescriptor;
@@ -2168,7 +2170,7 @@ var init_MetricStorage = __esmMin((() => {
 			return this._instrumentDescriptor;
 		}
 		updateDescription(description) {
-			this._instrumentDescriptor = createInstrumentDescriptor(this._instrumentDescriptor.name, this._instrumentDescriptor.type, {
+			this._instrumentDescriptor = createInstrumentDescriptor$1(this._instrumentDescriptor.name, this._instrumentDescriptor.type, {
 				description,
 				valueType: this._instrumentDescriptor.valueType,
 				unit: this._instrumentDescriptor.unit,
@@ -2179,10 +2181,10 @@ var init_MetricStorage = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/HashMap.js
-var HashMap, AttributeHashMap;
+var HashMap$1, AttributeHashMap$1;
 var init_HashMap = __esmMin((() => {
 	init_utils();
-	HashMap = class {
+	HashMap$1 = class {
 		_valueMap = /* @__PURE__ */ new Map();
 		_keyMap = /* @__PURE__ */ new Map();
 		_hash;
@@ -2234,22 +2236,22 @@ var init_HashMap = __esmMin((() => {
 			return this._valueMap.size;
 		}
 	};
-	AttributeHashMap = class extends HashMap {
+	AttributeHashMap$1 = class extends HashMap$1 {
 		constructor() {
-			super(hashAttributes);
+			super(hashAttributes$1);
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/DeltaMetricProcessor.js
-var DeltaMetricProcessor;
+var DeltaMetricProcessor$1;
 var init_DeltaMetricProcessor = __esmMin((() => {
 	init_esm$2();
 	init_utils();
 	init_HashMap();
-	DeltaMetricProcessor = class {
-		_activeCollectionStorage = new AttributeHashMap();
-		_cumulativeMemoStorage = new AttributeHashMap();
+	DeltaMetricProcessor$1 = class {
+		_activeCollectionStorage = new AttributeHashMap$1();
+		_cumulativeMemoStorage = new AttributeHashMap$1();
 		_cardinalityLimit;
 		_overflowAttributes = { "otel.metric.overflow": true };
 		_overflowHashCode;
@@ -2257,12 +2259,12 @@ var init_DeltaMetricProcessor = __esmMin((() => {
 		constructor(aggregator, aggregationCardinalityLimit) {
 			this._aggregator = aggregator;
 			this._cardinalityLimit = (aggregationCardinalityLimit ?? 2e3) - 1;
-			this._overflowHashCode = hashAttributes(this._overflowAttributes);
+			this._overflowHashCode = hashAttributes$1(this._overflowAttributes);
 		}
 		record(value, attributes, collectionTime) {
 			let accumulation = this._activeCollectionStorage.get(attributes);
 			if (!accumulation) {
-				const hrTime = millisToHrTime(collectionTime);
+				const hrTime = millisToHrTime$1(collectionTime);
 				if (this._activeCollectionStorage.size >= this._cardinalityLimit) {
 					this._activeCollectionStorage.getOrDefault(this._overflowAttributes, () => this._aggregator.createAccumulation(hrTime))?.record(value);
 					return;
@@ -2304,21 +2306,21 @@ var init_DeltaMetricProcessor = __esmMin((() => {
 		*/
 		collect() {
 			const unreportedDelta = this._activeCollectionStorage;
-			this._activeCollectionStorage = new AttributeHashMap();
+			this._activeCollectionStorage = new AttributeHashMap$1();
 			return unreportedDelta;
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/TemporalMetricProcessor.js
-function AttributesMapToAccumulationRecords(map) {
+function AttributesMapToAccumulationRecords$1(map) {
 	return Array.from(map.entries());
 }
-var TemporalMetricProcessor;
+var TemporalMetricProcessor$1;
 var init_TemporalMetricProcessor = __esmMin((() => {
 	init_AggregationTemporality();
 	init_HashMap();
-	TemporalMetricProcessor = class TemporalMetricProcessor {
+	TemporalMetricProcessor$1 = class TemporalMetricProcessor$1 {
 		_aggregator;
 		_unreportedAccumulations = /* @__PURE__ */ new Map();
 		_reportHistory = /* @__PURE__ */ new Map();
@@ -2346,15 +2348,15 @@ var init_TemporalMetricProcessor = __esmMin((() => {
 				const last = this._reportHistory.get(collector);
 				const lastCollectionTime = last.collectionTime;
 				aggregationTemporality = last.aggregationTemporality;
-				if (aggregationTemporality === AggregationTemporality.CUMULATIVE) result = TemporalMetricProcessor.merge(last.accumulations, unreportedAccumulations, this._aggregator);
-				else result = TemporalMetricProcessor.calibrateStartTime(last.accumulations, unreportedAccumulations, lastCollectionTime);
+				if (aggregationTemporality === AggregationTemporality$1.CUMULATIVE) result = TemporalMetricProcessor$1.merge(last.accumulations, unreportedAccumulations, this._aggregator);
+				else result = TemporalMetricProcessor$1.calibrateStartTime(last.accumulations, unreportedAccumulations, lastCollectionTime);
 			} else aggregationTemporality = collector.selectAggregationTemporality(instrumentDescriptor.type);
 			this._reportHistory.set(collector, {
 				accumulations: result,
 				collectionTime,
 				aggregationTemporality
 			});
-			const accumulationRecords = AttributesMapToAccumulationRecords(result);
+			const accumulationRecords = AttributesMapToAccumulationRecords$1(result);
 			if (accumulationRecords.length === 0) return;
 			return this._aggregator.toMetricData(instrumentDescriptor, aggregationTemporality, accumulationRecords, collectionTime);
 		}
@@ -2370,11 +2372,11 @@ var init_TemporalMetricProcessor = __esmMin((() => {
 			}
 		}
 		_getMergedUnreportedAccumulations(collector) {
-			let result = new AttributeHashMap();
+			let result = new AttributeHashMap$1();
 			const unreportedList = this._unreportedAccumulations.get(collector);
 			this._unreportedAccumulations.set(collector, []);
 			if (unreportedList === void 0) return result;
-			for (const it of unreportedList) result = TemporalMetricProcessor.merge(result, it, this._aggregator);
+			for (const it of unreportedList) result = TemporalMetricProcessor$1.merge(result, it, this._aggregator);
 			return result;
 		}
 		static merge(last, current, aggregator) {
@@ -2404,13 +2406,13 @@ var init_TemporalMetricProcessor = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/AsyncMetricStorage.js
-var AsyncMetricStorage;
+var AsyncMetricStorage$1;
 var init_AsyncMetricStorage = __esmMin((() => {
 	init_MetricStorage();
 	init_DeltaMetricProcessor();
 	init_TemporalMetricProcessor();
 	init_HashMap();
-	AsyncMetricStorage = class extends MetricStorage {
+	AsyncMetricStorage$1 = class extends MetricStorage$1 {
 		_aggregationCardinalityLimit;
 		_deltaMetricStorage;
 		_temporalMetricStorage;
@@ -2418,8 +2420,8 @@ var init_AsyncMetricStorage = __esmMin((() => {
 		constructor(_instrumentDescriptor, aggregator, attributesProcessor, collectorHandles, aggregationCardinalityLimit) {
 			super(_instrumentDescriptor);
 			this._aggregationCardinalityLimit = aggregationCardinalityLimit;
-			this._deltaMetricStorage = new DeltaMetricProcessor(aggregator, this._aggregationCardinalityLimit);
-			this._temporalMetricStorage = new TemporalMetricProcessor(aggregator, collectorHandles);
+			this._deltaMetricStorage = new DeltaMetricProcessor$1(aggregator, this._aggregationCardinalityLimit);
+			this._temporalMetricStorage = new TemporalMetricProcessor$1(aggregator, collectorHandles);
 			this._attributesProcessor = attributesProcessor;
 		}
 		record(measurements, observationTime) {
@@ -2427,7 +2429,7 @@ var init_AsyncMetricStorage = __esmMin((() => {
 				this._deltaMetricStorage.batchCumulate(measurements, observationTime);
 				return;
 			}
-			const processed = new AttributeHashMap();
+			const processed = new AttributeHashMap$1();
 			for (const [attributes, value] of measurements.entries()) processed.set(this._attributesProcessor.process(attributes), value);
 			this._deltaMetricStorage.batchCumulate(processed, observationTime);
 		}
@@ -2446,7 +2448,7 @@ var init_AsyncMetricStorage = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/RegistrationConflicts.js
-function getIncompatibilityDetails(existing, otherDescriptor) {
+function getIncompatibilityDetails$1(existing, otherDescriptor) {
 	let incompatibility = "";
 	if (existing.unit !== otherDescriptor.unit) incompatibility += `\t- Unit '${existing.unit}' does not match '${otherDescriptor.unit}'\n`;
 	if (existing.type !== otherDescriptor.type) incompatibility += `\t- Type '${existing.type}' does not match '${otherDescriptor.type}'\n`;
@@ -2454,13 +2456,13 @@ function getIncompatibilityDetails(existing, otherDescriptor) {
 	if (existing.description !== otherDescriptor.description) incompatibility += `\t- Description '${existing.description}' does not match '${otherDescriptor.description}'\n`;
 	return incompatibility;
 }
-function getValueTypeConflictResolutionRecipe(existing, otherDescriptor) {
+function getValueTypeConflictResolutionRecipe$1(existing, otherDescriptor) {
 	return `\t- use valueType '${existing.valueType}' on instrument creation or use an instrument name other than '${otherDescriptor.name}'`;
 }
-function getUnitConflictResolutionRecipe(existing, otherDescriptor) {
+function getUnitConflictResolutionRecipe$1(existing, otherDescriptor) {
 	return `\t- use unit '${existing.unit}' on instrument creation or use an instrument name other than '${otherDescriptor.name}'`;
 }
-function getTypeConflictResolutionRecipe(existing, otherDescriptor) {
+function getTypeConflictResolutionRecipe$1(existing, otherDescriptor) {
 	const selector = {
 		name: otherDescriptor.name,
 		type: otherDescriptor.type,
@@ -2469,7 +2471,7 @@ function getTypeConflictResolutionRecipe(existing, otherDescriptor) {
 	const selectorString = JSON.stringify(selector);
 	return `\t- create a new view with a name other than '${existing.name}' and InstrumentSelector '${selectorString}'`;
 }
-function getDescriptionResolutionRecipe(existing, otherDescriptor) {
+function getDescriptionResolutionRecipe$1(existing, otherDescriptor) {
 	const selector = {
 		name: otherDescriptor.name,
 		type: otherDescriptor.type,
@@ -2480,26 +2482,26 @@ function getDescriptionResolutionRecipe(existing, otherDescriptor) {
     \t- OR - create a new view with the name ${existing.name} and description '${existing.description}' and InstrumentSelector ${selectorString}
     \t- OR - create a new view with the name ${otherDescriptor.name} and description '${existing.description}' and InstrumentSelector ${selectorString}`;
 }
-function getConflictResolutionRecipe(existing, otherDescriptor) {
-	if (existing.valueType !== otherDescriptor.valueType) return getValueTypeConflictResolutionRecipe(existing, otherDescriptor);
-	if (existing.unit !== otherDescriptor.unit) return getUnitConflictResolutionRecipe(existing, otherDescriptor);
-	if (existing.type !== otherDescriptor.type) return getTypeConflictResolutionRecipe(existing, otherDescriptor);
-	if (existing.description !== otherDescriptor.description) return getDescriptionResolutionRecipe(existing, otherDescriptor);
+function getConflictResolutionRecipe$1(existing, otherDescriptor) {
+	if (existing.valueType !== otherDescriptor.valueType) return getValueTypeConflictResolutionRecipe$1(existing, otherDescriptor);
+	if (existing.unit !== otherDescriptor.unit) return getUnitConflictResolutionRecipe$1(existing, otherDescriptor);
+	if (existing.type !== otherDescriptor.type) return getTypeConflictResolutionRecipe$1(existing, otherDescriptor);
+	if (existing.description !== otherDescriptor.description) return getDescriptionResolutionRecipe$1(existing, otherDescriptor);
 	return "";
 }
 var init_RegistrationConflicts = __esmMin((() => {}));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricStorageRegistry.js
-var MetricStorageRegistry;
+var MetricStorageRegistry$1;
 var init_MetricStorageRegistry = __esmMin((() => {
 	init_InstrumentDescriptor();
 	init_esm$1();
 	init_RegistrationConflicts();
-	MetricStorageRegistry = class MetricStorageRegistry {
+	MetricStorageRegistry$1 = class MetricStorageRegistry$1 {
 		_sharedRegistry = /* @__PURE__ */ new Map();
 		_perCollectorRegistry = /* @__PURE__ */ new Map();
 		static create() {
-			return new MetricStorageRegistry();
+			return new MetricStorageRegistry$1();
 		}
 		getStorages(collector) {
 			let storages = [];
@@ -2544,13 +2546,13 @@ var init_MetricStorageRegistry = __esmMin((() => {
 			let compatibleStorage = null;
 			for (const existingStorage of existingStorages) {
 				const existingDescriptor = existingStorage.getInstrumentDescriptor();
-				if (isDescriptorCompatibleWith(existingDescriptor, expectedDescriptor)) {
+				if (isDescriptorCompatibleWith$1(existingDescriptor, expectedDescriptor)) {
 					if (existingDescriptor.description !== expectedDescriptor.description) {
 						if (expectedDescriptor.description.length > existingDescriptor.description.length) existingStorage.updateDescription(expectedDescriptor.description);
-						diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered, but has a different description and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails(existingDescriptor, expectedDescriptor), "The longer description will be used.\nTo resolve the conflict:", getConflictResolutionRecipe(existingDescriptor, expectedDescriptor));
+						diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered, but has a different description and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails$1(existingDescriptor, expectedDescriptor), "The longer description will be used.\nTo resolve the conflict:", getConflictResolutionRecipe$1(existingDescriptor, expectedDescriptor));
 					}
 					compatibleStorage = existingStorage;
-				} else diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails(existingDescriptor, expectedDescriptor), "To resolve the conflict:\n", getConflictResolutionRecipe(existingDescriptor, expectedDescriptor));
+				} else diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails$1(existingDescriptor, expectedDescriptor), "To resolve the conflict:\n", getConflictResolutionRecipe$1(existingDescriptor, expectedDescriptor));
 			}
 			return compatibleStorage;
 		}
@@ -2558,35 +2560,35 @@ var init_MetricStorageRegistry = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MultiWritableMetricStorage.js
-var MultiMetricStorage;
+var MultiMetricStorage$1;
 var init_MultiWritableMetricStorage = __esmMin((() => {
 	init_esm$1();
-	MultiMetricStorage = class {
+	MultiMetricStorage$1 = class {
 		_backingStorages;
 		hasAttributeProcessor;
 		constructor(backingStorages) {
 			this._backingStorages = backingStorages;
 			this.hasAttributeProcessor = backingStorages.some((s) => s.hasAttributeProcessor);
 		}
-		record(value, attributes, context$2, recordTime) {
-			if (this.hasAttributeProcessor && context$2 === void 0) context$2 = context.active();
+		record(value, attributes, context$4, recordTime) {
+			if (this.hasAttributeProcessor && context$4 === void 0) context$4 = context.active();
 			const storages = this._backingStorages;
-			for (let i = 0; i < storages.length; i++) storages[i].record(value, attributes, context$2, recordTime);
+			for (let i = 0; i < storages.length; i++) storages[i].record(value, attributes, context$4, recordTime);
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/ObservableResult.js
-var ObservableResultImpl, BatchObservableResultImpl;
+var ObservableResultImpl$1, BatchObservableResultImpl$1;
 var init_ObservableResult = __esmMin((() => {
 	init_esm$1();
 	init_HashMap();
 	init_Instruments();
-	ObservableResultImpl = class {
+	ObservableResultImpl$1 = class {
 		/**
 		* @internal
 		*/
-		_buffer = new AttributeHashMap();
+		_buffer = new AttributeHashMap$1();
 		_instrumentName;
 		_valueType;
 		constructor(instrumentName, valueType) {
@@ -2609,7 +2611,7 @@ var init_ObservableResult = __esmMin((() => {
 			this._buffer.set(attributes, value);
 		}
 	};
-	BatchObservableResultImpl = class {
+	BatchObservableResultImpl$1 = class {
 		/**
 		* @internal
 		*/
@@ -2618,10 +2620,10 @@ var init_ObservableResult = __esmMin((() => {
 		* Observe a measurement of the value associated with the given attributes.
 		*/
 		observe(metric, value, attributes = {}) {
-			if (!isObservableInstrument(metric)) return;
+			if (!isObservableInstrument$1(metric)) return;
 			let map = this._buffer.get(metric);
 			if (map == null) {
-				map = new AttributeHashMap();
+				map = new AttributeHashMap$1();
 				this._buffer.set(metric, map);
 			}
 			if (typeof value !== "number") {
@@ -2639,13 +2641,13 @@ var init_ObservableResult = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/ObservableRegistry.js
-var ObservableRegistry;
+var ObservableRegistry$1;
 var init_ObservableRegistry = __esmMin((() => {
 	init_esm$1();
 	init_Instruments();
 	init_ObservableResult();
 	init_utils();
-	ObservableRegistry = class {
+	ObservableRegistry$1 = class {
 		_callbacks = [];
 		_batchCallbacks = [];
 		addCallback(callback, instrument) {
@@ -2661,7 +2663,7 @@ var init_ObservableRegistry = __esmMin((() => {
 			this._callbacks.splice(idx, 1);
 		}
 		addBatchCallback(callback, instruments) {
-			const observableInstruments = new Set(instruments.filter(isObservableInstrument));
+			const observableInstruments = new Set(instruments.filter(isObservableInstrument$1));
 			if (observableInstruments.size === 0) {
 				diag.error("BatchObservableCallback is not associated with valid instruments", instruments);
 				return;
@@ -2673,7 +2675,7 @@ var init_ObservableRegistry = __esmMin((() => {
 			});
 		}
 		removeBatchCallback(callback, instruments) {
-			const observableInstruments = new Set(instruments.filter(isObservableInstrument));
+			const observableInstruments = new Set(instruments.filter(isObservableInstrument$1));
 			const idx = this._findBatchCallback(callback, observableInstruments);
 			if (idx < 0) return;
 			this._batchCallbacks.splice(idx, 1);
@@ -2688,9 +2690,9 @@ var init_ObservableRegistry = __esmMin((() => {
 		}
 		_observeCallbacks(observationTime, timeoutMillis) {
 			return this._callbacks.map(async ({ callback, instrument }) => {
-				const observableResult = new ObservableResultImpl(instrument._descriptor.name, instrument._descriptor.valueType);
+				const observableResult = new ObservableResultImpl$1(instrument._descriptor.name, instrument._descriptor.valueType);
 				let callPromise = Promise.resolve(callback(observableResult));
-				if (timeoutMillis != null) callPromise = callWithTimeout(callPromise, timeoutMillis);
+				if (timeoutMillis != null) callPromise = callWithTimeout$1(callPromise, timeoutMillis);
 				await callPromise;
 				instrument._metricStorages.forEach((metricStorage) => {
 					metricStorage.record(observableResult._buffer, observationTime);
@@ -2699,9 +2701,9 @@ var init_ObservableRegistry = __esmMin((() => {
 		}
 		_observeBatchCallbacks(observationTime, timeoutMillis) {
 			return this._batchCallbacks.map(async ({ callback, instruments }) => {
-				const observableResult = new BatchObservableResultImpl();
+				const observableResult = new BatchObservableResultImpl$1();
 				let callPromise = Promise.resolve(callback(observableResult));
-				if (timeoutMillis != null) callPromise = callWithTimeout(callPromise, timeoutMillis);
+				if (timeoutMillis != null) callPromise = callWithTimeout$1(callPromise, timeoutMillis);
 				await callPromise;
 				instruments.forEach((instrument) => {
 					const buffer = observableResult._buffer.get(instrument);
@@ -2719,20 +2721,20 @@ var init_ObservableRegistry = __esmMin((() => {
 		}
 		_findBatchCallback(callback, instruments) {
 			return this._batchCallbacks.findIndex((record) => {
-				return record.callback === callback && setEquals(record.instruments, instruments);
+				return record.callback === callback && setEquals$1(record.instruments, instruments);
 			});
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/SyncMetricStorage.js
-var SyncMetricStorage;
+var SyncMetricStorage$1;
 var init_SyncMetricStorage = __esmMin((() => {
 	init_esm$1();
 	init_MetricStorage();
 	init_DeltaMetricProcessor();
 	init_TemporalMetricProcessor();
-	SyncMetricStorage = class extends MetricStorage {
+	SyncMetricStorage$1 = class extends MetricStorage$1 {
 		_aggregationCardinalityLimit;
 		_deltaMetricStorage;
 		_temporalMetricStorage;
@@ -2740,14 +2742,14 @@ var init_SyncMetricStorage = __esmMin((() => {
 		constructor(instrumentDescriptor, aggregator, attributesProcessor, collectorHandles, aggregationCardinalityLimit) {
 			super(instrumentDescriptor);
 			this._aggregationCardinalityLimit = aggregationCardinalityLimit;
-			this._deltaMetricStorage = new DeltaMetricProcessor(aggregator, this._aggregationCardinalityLimit);
-			this._temporalMetricStorage = new TemporalMetricProcessor(aggregator, collectorHandles);
+			this._deltaMetricStorage = new DeltaMetricProcessor$1(aggregator, this._aggregationCardinalityLimit);
+			this._temporalMetricStorage = new TemporalMetricProcessor$1(aggregator, collectorHandles);
 			this._attributesProcessor = attributesProcessor;
 			this.hasAttributeProcessor = attributesProcessor !== void 0;
 		}
 		hasAttributeProcessor;
-		record(value, attributes, context$1, recordTime) {
-			if (this._attributesProcessor !== void 0) attributes = this._attributesProcessor.process(attributes, context$1 ?? context.active());
+		record(value, attributes, context$3, recordTime) {
+			if (this._attributesProcessor !== void 0) attributes = this._attributesProcessor.process(attributes, context$3 ?? context.active());
 			this._deltaMetricStorage.record(value, attributes, recordTime);
 		}
 		/**
@@ -2764,7 +2766,7 @@ var init_SyncMetricStorage = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MeterSharedState.js
-var MeterSharedState;
+var MeterSharedState$1;
 var init_MeterSharedState = __esmMin((() => {
 	init_InstrumentDescriptor();
 	init_Meter();
@@ -2773,24 +2775,24 @@ var init_MeterSharedState = __esmMin((() => {
 	init_MultiWritableMetricStorage();
 	init_ObservableRegistry();
 	init_SyncMetricStorage();
-	MeterSharedState = class {
-		metricStorageRegistry = new MetricStorageRegistry();
-		observableRegistry = new ObservableRegistry();
+	MeterSharedState$1 = class {
+		metricStorageRegistry = new MetricStorageRegistry$1();
+		observableRegistry = new ObservableRegistry$1();
 		meter;
 		_meterProviderSharedState;
 		_instrumentationScope;
 		constructor(meterProviderSharedState, instrumentationScope) {
-			this.meter = new Meter(this);
+			this.meter = new Meter$1(this);
 			this._meterProviderSharedState = meterProviderSharedState;
 			this._instrumentationScope = instrumentationScope;
 		}
 		registerMetricStorage(descriptor) {
-			const storages = this._registerMetricStorage(descriptor, SyncMetricStorage);
+			const storages = this._registerMetricStorage(descriptor, SyncMetricStorage$1);
 			if (storages.length === 1) return storages[0];
-			return new MultiMetricStorage(storages);
+			return new MultiMetricStorage$1(storages);
 		}
 		registerAsyncMetricStorage(descriptor) {
-			return this._registerMetricStorage(descriptor, AsyncMetricStorage);
+			return this._registerMetricStorage(descriptor, AsyncMetricStorage$1);
 		}
 		/**
 		* @param collector opaque handle of {@link MetricCollector} which initiated the collection.
@@ -2822,7 +2824,7 @@ var init_MeterSharedState = __esmMin((() => {
 		}
 		_registerMetricStorage(descriptor, MetricStorageType) {
 			let storages = this._meterProviderSharedState.viewRegistry.findViews(descriptor, this._instrumentationScope).map((view) => {
-				const viewDescriptor = createInstrumentDescriptorWithView(view, descriptor);
+				const viewDescriptor = createInstrumentDescriptorWithView$1(view, descriptor);
 				const compatibleStorage = this.metricStorageRegistry.findOrUpdateCompatibleStorage(viewDescriptor);
 				if (compatibleStorage != null) return compatibleStorage;
 				const viewStorage = new MetricStorageType(viewDescriptor, view.aggregation.createAggregator(viewDescriptor), view.attributesProcessor, this._meterProviderSharedState.metricCollectors, view.aggregationCardinalityLimit);
@@ -2847,14 +2849,14 @@ var init_MeterSharedState = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MeterProviderSharedState.js
-var MeterProviderSharedState;
+var MeterProviderSharedState$1;
 var init_MeterProviderSharedState = __esmMin((() => {
 	init_utils();
 	init_ViewRegistry();
 	init_MeterSharedState();
 	init_AggregationOption();
-	MeterProviderSharedState = class {
-		viewRegistry = new ViewRegistry();
+	MeterProviderSharedState$1 = class {
+		viewRegistry = new ViewRegistry$1();
 		metricCollectors = [];
 		meterSharedStates = /* @__PURE__ */ new Map();
 		resource;
@@ -2862,27 +2864,27 @@ var init_MeterProviderSharedState = __esmMin((() => {
 			this.resource = resource;
 		}
 		getMeterSharedState(instrumentationScope) {
-			const id = instrumentationScopeId(instrumentationScope);
+			const id = instrumentationScopeId$1(instrumentationScope);
 			let meterSharedState = this.meterSharedStates.get(id);
 			if (meterSharedState == null) {
-				meterSharedState = new MeterSharedState(this, instrumentationScope);
+				meterSharedState = new MeterSharedState$1(this, instrumentationScope);
 				this.meterSharedStates.set(id, meterSharedState);
 			}
 			return meterSharedState;
 		}
 		selectAggregations(instrumentType) {
 			const result = [];
-			for (const collector of this.metricCollectors) result.push([collector, toAggregation(collector.selectAggregation(instrumentType))]);
+			for (const collector of this.metricCollectors) result.push([collector, toAggregation$1(collector.selectAggregation(instrumentType))]);
 			return result;
 		}
 	};
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricCollector.js
-var MetricCollector;
+var MetricCollector$1;
 var init_MetricCollector = __esmMin((() => {
 	init_esm$2();
-	MetricCollector = class {
+	MetricCollector$1 = class {
 		_sharedState;
 		_metricReader;
 		constructor(sharedState, metricReader) {
@@ -2890,7 +2892,7 @@ var init_MetricCollector = __esmMin((() => {
 			this._metricReader = metricReader;
 		}
 		async collect(options) {
-			const collectionTime = millisToHrTime(Date.now());
+			const collectionTime = millisToHrTime$1(Date.now());
 			const scopeMetrics = [];
 			const errors = [];
 			const meterCollectionPromises = Array.from(this._sharedState.meterSharedStates.values()).map(async (meterSharedState) => {
@@ -2936,10 +2938,10 @@ var init_MetricCollector = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/Predicate.js
-var ESCAPE, PatternPredicate, ExactPredicate;
+var ESCAPE$1, PatternPredicate$1, ExactPredicate$1;
 var init_Predicate = __esmMin((() => {
-	ESCAPE = /[\^$\\.+?()[\]{}|]/g;
-	PatternPredicate = class PatternPredicate {
+	ESCAPE$1 = /[\^$\\.+?()[\]{}|]/g;
+	PatternPredicate$1 = class PatternPredicate$1 {
 		_matchAll;
 		_regexp;
 		constructor(pattern) {
@@ -2948,7 +2950,7 @@ var init_Predicate = __esmMin((() => {
 				this._regexp = /.*/;
 			} else {
 				this._matchAll = false;
-				this._regexp = new RegExp(PatternPredicate.escapePattern(pattern));
+				this._regexp = new RegExp(PatternPredicate$1.escapePattern(pattern));
 			}
 		}
 		match(str) {
@@ -2956,13 +2958,13 @@ var init_Predicate = __esmMin((() => {
 			return this._regexp.test(str);
 		}
 		static escapePattern(pattern) {
-			return `^${pattern.replace(ESCAPE, "\\$&").replace("*", ".*")}$`;
+			return `^${pattern.replace(ESCAPE$1, "\\$&").replace("*", ".*")}$`;
 		}
 		static hasWildcard(pattern) {
 			return pattern.includes("*");
 		}
 	};
-	ExactPredicate = class {
+	ExactPredicate$1 = class {
 		_matchAll;
 		_pattern;
 		constructor(pattern) {
@@ -2983,8 +2985,8 @@ var init_Predicate = __esmMin((() => {
 *
 * Create an {@link IAttributesProcessor} that acts as a simple pass-through for attributes.
 */
-function createNoopAttributesProcessor() {
-	return NOOP;
+function createNoopAttributesProcessor$1() {
+	return NOOP$1;
 }
 /**
 * @internal
@@ -2993,8 +2995,8 @@ function createNoopAttributesProcessor() {
 *
 * @param processors Processors to apply in order.
 */
-function createMultiAttributesProcessor(processors) {
-	return new MultiAttributesProcessor(processors);
+function createMultiAttributesProcessor$1(processors) {
+	return new MultiAttributesProcessor$1(processors);
 }
 /**
 * Create an {@link IAttributesProcessor} that filters by allowed attribute names and drops any names that are not in the
@@ -3009,14 +3011,14 @@ function createAllowListAttributesProcessor(attributeAllowList) {
 function createDenyListAttributesProcessor(attributeDenyList) {
 	return new DenyListProcessor(attributeDenyList);
 }
-var NoopAttributesProcessor, MultiAttributesProcessor, AllowListProcessor, DenyListProcessor, NOOP;
+var NoopAttributesProcessor$1, MultiAttributesProcessor$1, AllowListProcessor, DenyListProcessor, NOOP$1;
 var init_AttributesProcessor = __esmMin((() => {
-	NoopAttributesProcessor = class {
+	NoopAttributesProcessor$1 = class {
 		process(incoming, _context) {
 			return incoming;
 		}
 	};
-	MultiAttributesProcessor = class {
+	MultiAttributesProcessor$1 = class {
 		_processors;
 		constructor(processors) {
 			this._processors = processors;
@@ -3049,21 +3051,21 @@ var init_AttributesProcessor = __esmMin((() => {
 			return filteredAttributes;
 		}
 	};
-	NOOP = new NoopAttributesProcessor();
+	NOOP$1 = new NoopAttributesProcessor$1();
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/InstrumentSelector.js
-var InstrumentSelector;
+var InstrumentSelector$1;
 var init_InstrumentSelector = __esmMin((() => {
 	init_Predicate();
-	InstrumentSelector = class {
+	InstrumentSelector$1 = class {
 		_nameFilter;
 		_type;
 		_unitFilter;
 		constructor(criteria) {
-			this._nameFilter = new PatternPredicate(criteria?.name ?? "*");
+			this._nameFilter = new PatternPredicate$1(criteria?.name ?? "*");
 			this._type = criteria?.type;
-			this._unitFilter = new ExactPredicate(criteria?.unit);
+			this._unitFilter = new ExactPredicate$1(criteria?.unit);
 		}
 		getType() {
 			return this._type;
@@ -3078,17 +3080,17 @@ var init_InstrumentSelector = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/MeterSelector.js
-var MeterSelector;
+var MeterSelector$1;
 var init_MeterSelector = __esmMin((() => {
 	init_Predicate();
-	MeterSelector = class {
+	MeterSelector$1 = class {
 		_nameFilter;
 		_versionFilter;
 		_schemaUrlFilter;
 		constructor(criteria) {
-			this._nameFilter = new ExactPredicate(criteria?.name);
-			this._versionFilter = new ExactPredicate(criteria?.version);
-			this._schemaUrlFilter = new ExactPredicate(criteria?.schemaUrl);
+			this._nameFilter = new ExactPredicate$1(criteria?.name);
+			this._versionFilter = new ExactPredicate$1(criteria?.version);
+			this._schemaUrlFilter = new ExactPredicate$1(criteria?.schemaUrl);
 		}
 		getNameFilter() {
 			return this._nameFilter;
@@ -3106,21 +3108,21 @@ var init_MeterSelector = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/view/View.js
-function isSelectorNotProvided(options) {
+function isSelectorNotProvided$1(options) {
 	return options.instrumentName == null && options.instrumentType == null && options.instrumentUnit == null && options.meterName == null && options.meterVersion == null && options.meterSchemaUrl == null;
 }
-function validateViewOptions(viewOptions) {
-	if (isSelectorNotProvided(viewOptions)) throw new Error("Cannot create view with no selector arguments supplied");
-	if (viewOptions.name != null && (viewOptions?.instrumentName == null || PatternPredicate.hasWildcard(viewOptions.instrumentName))) throw new Error("Views with a specified name must be declared with an instrument selector that selects at most one instrument per meter.");
+function validateViewOptions$1(viewOptions) {
+	if (isSelectorNotProvided$1(viewOptions)) throw new Error("Cannot create view with no selector arguments supplied");
+	if (viewOptions.name != null && (viewOptions?.instrumentName == null || PatternPredicate$1.hasWildcard(viewOptions.instrumentName))) throw new Error("Views with a specified name must be declared with an instrument selector that selects at most one instrument per meter.");
 }
-var View;
+var View$1;
 var init_View = __esmMin((() => {
 	init_Predicate();
 	init_AttributesProcessor();
 	init_InstrumentSelector();
 	init_MeterSelector();
 	init_AggregationOption();
-	View = class {
+	View$1 = class {
 		name;
 		description;
 		aggregation;
@@ -3185,18 +3187,18 @@ var init_View = __esmMin((() => {
 		* })
 		*/
 		constructor(viewOptions) {
-			validateViewOptions(viewOptions);
-			if (viewOptions.attributesProcessors != null) this.attributesProcessor = createMultiAttributesProcessor(viewOptions.attributesProcessors);
-			else this.attributesProcessor = createNoopAttributesProcessor();
+			validateViewOptions$1(viewOptions);
+			if (viewOptions.attributesProcessors != null) this.attributesProcessor = createMultiAttributesProcessor$1(viewOptions.attributesProcessors);
+			else this.attributesProcessor = createNoopAttributesProcessor$1();
 			this.name = viewOptions.name;
 			this.description = viewOptions.description;
-			this.aggregation = toAggregation(viewOptions.aggregation ?? { type: AggregationType.DEFAULT });
-			this.instrumentSelector = new InstrumentSelector({
+			this.aggregation = toAggregation$1(viewOptions.aggregation ?? { type: AggregationType$1.DEFAULT });
+			this.instrumentSelector = new InstrumentSelector$1({
 				name: viewOptions.instrumentName,
 				type: viewOptions.instrumentType,
 				unit: viewOptions.instrumentUnit
 			});
-			this.meterSelector = new MeterSelector({
+			this.meterSelector = new MeterSelector$1({
 				name: viewOptions.meterName,
 				version: viewOptions.meterVersion,
 				schemaUrl: viewOptions.meterSchemaUrl
@@ -3207,7 +3209,7 @@ var init_View = __esmMin((() => {
 }));
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/MeterProvider.js
-var MeterProvider;
+var MeterProvider$1;
 var init_MeterProvider = __esmMin((() => {
 	init_esm$1();
 	init_esm$3();
@@ -3215,17 +3217,17 @@ var init_MeterProvider = __esmMin((() => {
 	init_MeterProviderSharedState();
 	init_MetricCollector();
 	init_View();
-	MeterProvider = class {
+	MeterProvider$1 = class {
 		_sharedState;
 		_shutdown = false;
 		constructor(options) {
-			this._sharedState = new MeterProviderSharedState(options?.resource ?? defaultResource());
-			if (options?.views != null && options.views.length > 0) for (const viewOption of options.views) this._sharedState.viewRegistry.addView(new View(viewOption));
+			this._sharedState = new MeterProviderSharedState$1(options?.resource ?? defaultResource());
+			if (options?.views != null && options.views.length > 0) for (const viewOption of options.views) this._sharedState.viewRegistry.addView(new View$1(viewOption));
 			if (options?.readers != null && options.readers.length > 0) for (const metricReader of options.readers) {
-				const collector = new MetricCollector(this._sharedState, metricReader);
+				const collector = new MetricCollector$1(this._sharedState, metricReader);
 				metricReader.setMetricProducer(collector);
 				this._sharedState.metricCollectors.push(collector);
-				if (options.sdkMetricsEnabled && metricReader instanceof MetricReader) metricReader._setSelfObsMeterProvider(this);
+				if (options.sdkMetricsEnabled && metricReader instanceof MetricReader$1) metricReader._setSelfObsMeterProvider(this);
 			}
 		}
 		/**
@@ -3277,16 +3279,16 @@ var init_MeterProvider = __esmMin((() => {
 //#endregion
 //#region ../node_modules/@opentelemetry/sdk-metrics/build/esm/index.js
 var esm_exports = /* @__PURE__ */ __exportAll({
-	AggregationTemporality: () => AggregationTemporality,
-	AggregationType: () => AggregationType,
+	AggregationTemporality: () => AggregationTemporality$1,
+	AggregationType: () => AggregationType$1,
 	ConsoleMetricExporter: () => ConsoleMetricExporter,
-	DataPointType: () => DataPointType,
+	DataPointType: () => DataPointType$1,
 	InMemoryMetricExporter: () => InMemoryMetricExporter,
-	InstrumentType: () => InstrumentType,
-	MeterProvider: () => MeterProvider,
-	MetricReader: () => MetricReader,
+	InstrumentType: () => InstrumentType$1,
+	MeterProvider: () => MeterProvider$1,
+	MetricReader: () => MetricReader$1,
 	PeriodicExportingMetricReader: () => PeriodicExportingMetricReader,
-	TimeoutError: () => TimeoutError,
+	TimeoutError: () => TimeoutError$1,
 	createAllowListAttributesProcessor: () => createAllowListAttributesProcessor,
 	createDenyListAttributesProcessor: () => createDenyListAttributesProcessor
 });
@@ -3302,6 +3304,71 @@ var init_esm = __esmMin((() => {
 	init_AttributesProcessor();
 	init_utils();
 }));
+//#endregion
+//#region node_modules/@opentelemetry/core/build/esm/platform/node/index.js
+/**
+* @deprecated Use performance directly.
+*/
+var otperformance = performance;
+//#endregion
+//#region node_modules/@opentelemetry/core/build/esm/common/time.js
+var NANOSECOND_DIGITS = 9;
+var MILLISECONDS_TO_NANOSECONDS = Math.pow(10, 6);
+var SECOND_TO_NANOSECONDS = Math.pow(10, NANOSECOND_DIGITS);
+/**
+* Converts a number of milliseconds from epoch to HrTime([seconds, remainder in nanoseconds]).
+* @param epochMillis
+*/
+function millisToHrTime(epochMillis) {
+	const epochSeconds = epochMillis / 1e3;
+	return [Math.trunc(epochSeconds), Math.round(epochMillis % 1e3 * MILLISECONDS_TO_NANOSECONDS)];
+}
+/**
+* Returns an hrtime calculated via performance component.
+* @param performanceNow
+*/
+function hrTime(performanceNow) {
+	return addHrTimes(millisToHrTime(otperformance.timeOrigin), millisToHrTime(typeof performanceNow === "number" ? performanceNow : otperformance.now()));
+}
+/**
+* Returns a duration of two hrTime.
+* @param startTime
+* @param endTime
+*/
+function hrTimeDuration(startTime, endTime) {
+	let seconds = endTime[0] - startTime[0];
+	let nanos = endTime[1] - startTime[1];
+	if (nanos < 0) {
+		seconds -= 1;
+		nanos += SECOND_TO_NANOSECONDS;
+	}
+	return [seconds, nanos];
+}
+/**
+* Convert hrTime to microseconds.
+* @param time
+*/
+function hrTimeToMicroseconds(time) {
+	return time[0] * 1e6 + time[1] / 1e3;
+}
+/**
+* Convert hrTime to seconds.
+* @param time
+*/
+function hrTimeToSeconds(time) {
+	return time[0] + time[1] / SECOND_TO_NANOSECONDS;
+}
+/**
+* Given 2 HrTime formatted times, return their sum as an HrTime.
+*/
+function addHrTimes(time1, time2) {
+	const out = [time1[0] + time2[0], time1[1] + time2[1]];
+	if (out[1] >= SECOND_TO_NANOSECONDS) {
+		out[1] -= SECOND_TO_NANOSECONDS;
+		out[0] += 1;
+	}
+	return out;
+}
 //#endregion
 //#region ../node_modules/object-assign/index.js
 /*
@@ -3864,15 +3931,16 @@ var require_common$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			let templateIndex = 0;
 			let starIndex = -1;
 			let matchIndex = 0;
-			while (searchIndex < search.length) if (templateIndex < template.length && (template[templateIndex] === search[searchIndex] || template[templateIndex] === "*")) if (template[templateIndex] === "*") {
-				starIndex = templateIndex;
-				matchIndex = searchIndex;
-				templateIndex++;
-			} else {
-				searchIndex++;
-				templateIndex++;
-			}
-			else if (starIndex !== -1) {
+			while (searchIndex < search.length) if (templateIndex < template.length && (template[templateIndex] === search[searchIndex] || template[templateIndex] === "*")) {
+				if (template[templateIndex] === "*") {
+					starIndex = templateIndex;
+					matchIndex = searchIndex;
+					templateIndex++;
+				} else {
+					searchIndex++;
+					templateIndex++;
+				}
+			} else if (starIndex !== -1) {
 				templateIndex = starIndex + 1;
 				matchIndex++;
 				searchIndex = matchIndex;
@@ -4142,9 +4210,11 @@ var require_supports_color = /* @__PURE__ */ __commonJSMin(((exports, module) =>
 	var forceColor;
 	if (hasFlag("no-color") || hasFlag("no-colors") || hasFlag("color=false") || hasFlag("color=never")) forceColor = 0;
 	else if (hasFlag("color") || hasFlag("colors") || hasFlag("color=true") || hasFlag("color=always")) forceColor = 1;
-	if ("FORCE_COLOR" in env) if (env.FORCE_COLOR === "true") forceColor = 1;
-	else if (env.FORCE_COLOR === "false") forceColor = 0;
-	else forceColor = env.FORCE_COLOR.length === 0 ? 1 : Math.min(parseInt(env.FORCE_COLOR, 10), 3);
+	if ("FORCE_COLOR" in env) {
+		if (env.FORCE_COLOR === "true") forceColor = 1;
+		else if (env.FORCE_COLOR === "false") forceColor = 0;
+		else forceColor = env.FORCE_COLOR.length === 0 ? 1 : Math.min(parseInt(env.FORCE_COLOR, 10), 3);
+	}
 	function translateLevel(level) {
 		if (level === 0) return false;
 		return {
@@ -5247,12 +5317,14 @@ var require_bytes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var decimalPlaces = options && options.decimalPlaces !== void 0 ? options.decimalPlaces : 2;
 		var fixedDecimals = Boolean(options && options.fixedDecimals);
 		var unit = options && options.unit || "";
-		if (!unit || !map[unit.toLowerCase()]) if (mag >= map.pb) unit = "PB";
-		else if (mag >= map.tb) unit = "TB";
-		else if (mag >= map.gb) unit = "GB";
-		else if (mag >= map.mb) unit = "MB";
-		else if (mag >= map.kb) unit = "KB";
-		else unit = "B";
+		if (!unit || !map[unit.toLowerCase()]) {
+			if (mag >= map.pb) unit = "PB";
+			else if (mag >= map.tb) unit = "TB";
+			else if (mag >= map.gb) unit = "GB";
+			else if (mag >= map.mb) unit = "MB";
+			else if (mag >= map.kb) unit = "KB";
+			else unit = "B";
+		}
 		var str = (value / map[unit.toLowerCase()]).toFixed(decimalPlaces);
 		if (!fixedDecimals) str = str.replace(formatDecimalsRegExp, "$1");
 		if (thousandsSeparator) str = str.split(".").map(function(s, i) {
@@ -5499,9 +5571,11 @@ var require_internal = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 				acc = acc << 6 | curByte & 63;
 				contBytes--;
 				accBytes++;
-				if (contBytes === 0) if (accBytes === 2 && acc < 128 && acc > 0) res += this.defaultCharUnicode;
-				else if (accBytes === 3 && acc < 2048) res += this.defaultCharUnicode;
-				else res += String.fromCharCode(acc);
+				if (contBytes === 0) {
+					if (accBytes === 2 && acc < 128 && acc > 0) res += this.defaultCharUnicode;
+					else if (accBytes === 3 && acc < 2048) res += this.defaultCharUnicode;
+					else res += String.fromCharCode(acc);
+				}
 			} else res += this.defaultCharUnicode;
 		}
 		this.acc = acc;
@@ -5567,22 +5641,24 @@ var require_utf32 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	}
 	Utf32Encoder.prototype.write = function(str) {
 		var src = Buffer.from(str, "ucs2");
-		var dst = Buffer.alloc(src.length * 2);
+		var dst = Buffer.alloc(src.length * 2 + 4);
 		var write32 = this.isLE ? dst.writeUInt32LE : dst.writeUInt32BE;
 		var offset = 0;
 		for (var i = 0; i < src.length; i += 2) {
 			var code = src.readUInt16LE(i);
 			var isHighSurrogate = code >= 55296 && code < 56320;
 			var isLowSurrogate = code >= 56320 && code < 57344;
-			if (this.highSurrogate) if (isHighSurrogate || !isLowSurrogate) {
-				write32.call(dst, this.highSurrogate, offset);
-				offset += 4;
-			} else {
-				var codepoint = (this.highSurrogate - 55296 << 10 | code - 56320) + 65536;
-				write32.call(dst, codepoint, offset);
-				offset += 4;
-				this.highSurrogate = 0;
-				continue;
+			if (this.highSurrogate) {
+				if (isHighSurrogate || !isLowSurrogate) {
+					write32.call(dst, this.highSurrogate, offset);
+					offset += 4;
+				} else {
+					var codepoint = (this.highSurrogate - 55296 << 10 | code - 56320) + 65536;
+					write32.call(dst, codepoint, offset);
+					offset += 4;
+					this.highSurrogate = 0;
+					continue;
+				}
 			}
 			if (isHighSurrogate) this.highSurrogate = code;
 			else {
@@ -5619,8 +5695,8 @@ var require_utf32 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		if (overflow.length > 0) {
 			for (; i < src.length && overflow.length < 4; i++) overflow.push(src[i]);
 			if (overflow.length === 4) {
-				if (isLE) codepoint = overflow[i] | overflow[i + 1] << 8 | overflow[i + 2] << 16 | overflow[i + 3] << 24;
-				else codepoint = overflow[i + 3] | overflow[i + 2] << 8 | overflow[i + 1] << 16 | overflow[i] << 24;
+				if (isLE) codepoint = overflow[0] | overflow[1] << 8 | overflow[2] << 16 | overflow[3] << 24;
+				else codepoint = overflow[3] | overflow[2] << 8 | overflow[1] << 16 | overflow[0] << 24;
 				overflow.length = 0;
 				offset = _writeCodepoint(dst, offset, codepoint, badChar);
 			}
@@ -5647,7 +5723,9 @@ var require_utf32 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		return offset;
 	}
 	Utf32Decoder.prototype.end = function() {
+		if (this.overflow.length === 0) return;
 		this.overflow.length = 0;
+		return String.fromCharCode(this.badChar);
 	};
 	exports.utf32 = Utf32AutoCodec;
 	exports.ucs4 = "utf32";
@@ -6185,6 +6263,8 @@ var require_sbcs_data = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		elot928: "iso88597",
 		hebrew: "iso88598",
 		hebrew8: "iso88598",
+		iso88598i: "iso88598",
+		iso88598e: "iso88598",
 		turkish: "iso88599",
 		turkish8: "iso88599",
 		thai: "iso885911",
@@ -6877,18 +6957,20 @@ var require_dbcs_codec = /* @__PURE__ */ __commonJSMin(((exports) => {
 				var uCode = nextChar;
 				nextChar = -1;
 			}
-			if (uCode >= 55296 && uCode < 57344) if (uCode < 56320) if (leadSurrogate === -1) {
-				leadSurrogate = uCode;
-				continue;
-			} else {
-				leadSurrogate = uCode;
-				uCode = UNASSIGNED;
-			}
-			else if (leadSurrogate !== -1) {
-				uCode = 65536 + (leadSurrogate - 55296) * 1024 + (uCode - 56320);
-				leadSurrogate = -1;
-			} else uCode = UNASSIGNED;
-			else if (leadSurrogate !== -1) {
+			if (uCode >= 55296 && uCode < 57344) {
+				if (uCode < 56320) {
+					if (leadSurrogate === -1) {
+						leadSurrogate = uCode;
+						continue;
+					} else {
+						leadSurrogate = uCode;
+						uCode = UNASSIGNED;
+					}
+				} else if (leadSurrogate !== -1) {
+					uCode = 65536 + (leadSurrogate - 55296) * 1024 + (uCode - 56320);
+					leadSurrogate = -1;
+				} else uCode = UNASSIGNED;
+			} else if (leadSurrogate !== -1) {
 				nextChar = uCode;
 				uCode = UNASSIGNED;
 				leadSurrogate = -1;
@@ -6956,10 +7038,12 @@ var require_dbcs_codec = /* @__PURE__ */ __commonJSMin(((exports) => {
 		var j = 0;
 		if (this.seqObj) {
 			var dbcsCode = this.seqObj[DEF_CHAR];
-			if (dbcsCode !== void 0) if (dbcsCode < 256) newBuf[j++] = dbcsCode;
-			else {
-				newBuf[j++] = dbcsCode >> 8;
-				newBuf[j++] = dbcsCode & 255;
+			if (dbcsCode !== void 0) {
+				if (dbcsCode < 256) newBuf[j++] = dbcsCode;
+				else {
+					newBuf[j++] = dbcsCode >> 8;
+					newBuf[j++] = dbcsCode & 255;
+				}
 			}
 			this.seqObj = void 0;
 		}
@@ -8630,7 +8714,7 @@ var require_on_finished = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 }));
 //#endregion
 //#region ../node_modules/type-is/node_modules/content-type/dist/index.js
-var require_dist$3 = /* @__PURE__ */ __commonJSMin(((exports) => {
+var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	/*!
 	* content-type
 	* Copyright(c) 2015 Douglas Christopher Wilson
@@ -16650,7 +16734,6 @@ var require_media_typer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	* @public
 	*/
 	function test(string) {
-		if (!string) throw new TypeError("argument string is required");
 		if (typeof string !== "string") throw new TypeError("argument string is required to be a string");
 		return TYPE_REGEXP.test(string.toLowerCase());
 	}
@@ -16662,7 +16745,6 @@ var require_media_typer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	* @public
 	*/
 	function parse(string) {
-		if (!string) throw new TypeError("argument string is required");
 		if (typeof string !== "string") throw new TypeError("argument string is required to be a string");
 		var match = TYPE_REGEXP.exec(string.toLowerCase());
 		if (!match) throw new TypeError("invalid media type");
@@ -16699,7 +16781,7 @@ var require_type_is = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module dependencies.
 	* @private
 	*/
-	var contentType = require_dist$3();
+	var contentType = require_dist$4();
 	var mime = require_mime_types();
 	var typer = require_media_typer();
 	/**
@@ -16844,7 +16926,7 @@ var require_type_is = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 }));
 //#endregion
 //#region ../node_modules/body-parser/node_modules/content-type/dist/index.js
-var require_dist$2 = /* @__PURE__ */ __commonJSMin(((exports) => {
+var require_dist$3 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	/*!
 	* content-type
 	* Copyright(c) 2015 Douglas Christopher Wilson
@@ -17006,7 +17088,7 @@ var require_utils$3 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module dependencies.
 	*/
 	var bytes = require_bytes();
-	var contentType = require_dist$2();
+	var contentType = require_dist$3();
 	var typeis = require_type_is();
 	/**
 	* Module exports.
@@ -18736,7 +18818,7 @@ var require_side_channel = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/** @type {Channel} */
 		var channel = {
 			assert: function(key) {
-				if (!channel.has(key)) throw new $TypeError("Side channel does not contain " + inspect(key));
+				if (!channel.has(key)) throw new $TypeError("Side channel does not contain " + (key && Object(key) === key ? "the given object key" : inspect(key)));
 			},
 			"delete": function(key) {
 				return !!$channelData && $channelData["delete"](key);
@@ -18783,6 +18865,7 @@ var require_formats$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var formats = require_formats$1();
 	var getSideChannel = require_side_channel();
+	var defineProperty = require_es_define_property();
 	var has = Object.prototype.hasOwnProperty;
 	var isArray = Array.isArray;
 	var overflowChannel = getSideChannel();
@@ -18820,12 +18903,24 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		for (var i = 0; i < source.length; ++i) if (typeof source[i] !== "undefined") obj[i] = source[i];
 		return obj;
 	};
+	var setProperty = function setProperty(obj, key, value) {
+		if (key === "__proto__" && defineProperty) defineProperty(obj, key, {
+			configurable: true,
+			enumerable: true,
+			value,
+			writable: true
+		});
+		else obj[key] = value;
+	};
 	var merge = function merge(target, source, options) {
 		if (!source) return target;
 		if (typeof source !== "object" && typeof source !== "function") {
 			if (isArray(target)) {
 				var nextIndex = target.length;
-				if (options && typeof options.arrayLimit === "number" && nextIndex > options.arrayLimit) return markOverflow(arrayToObject(target.concat(source), options), nextIndex);
+				if (options && typeof options.arrayLimit === "number" && nextIndex >= options.arrayLimit) {
+					if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+					return markOverflow(arrayToObject(target.concat(source), options), nextIndex);
+				}
 				target[nextIndex] = source;
 			} else if (target && typeof target === "object") {
 				if (isOverflow(target)) {
@@ -18851,7 +18946,10 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 				return markOverflow(result, getMaxIndex(source) + 1);
 			}
 			var combined = [target].concat(source);
-			if (options && typeof options.arrayLimit === "number" && combined.length > options.arrayLimit) return markOverflow(arrayToObject(combined, options), combined.length - 1);
+			if (options && typeof options.arrayLimit === "number" && combined.length > options.arrayLimit) {
+				if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+				return markOverflow(arrayToObject(combined, options), combined.length - 1);
+			}
 			return combined;
 		}
 		var mergeTarget = target;
@@ -18864,12 +18962,16 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 					else target[target.length] = item;
 				} else target[i] = item;
 			});
+			if (options && typeof options.arrayLimit === "number" && target.length > options.arrayLimit) {
+				if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+				return markOverflow(arrayToObject(target, options), target.length - 1);
+			}
 			return target;
 		}
 		return Object.keys(source).reduce(function(acc, key) {
 			var value = source[key];
-			if (has.call(acc, key)) acc[key] = merge(acc[key], value, options);
-			else acc[key] = value;
+			if (has.call(acc, key)) setProperty(acc, key, merge(acc[key], value, options));
+			else setProperty(acc, key, value);
 			if (isOverflow(source) && !isOverflow(acc)) markOverflow(acc, getMaxIndex(source));
 			if (isOverflow(acc)) {
 				var keyNum = parseInt(key, 10);
@@ -18880,7 +18982,7 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 	var assign = function assignSingleSource(target, source) {
 		return Object.keys(source).reduce(function(acc, key) {
-			acc[key] = source[key];
+			setProperty(acc, key, source[key]);
 			return acc;
 		}, target);
 	};
@@ -18897,15 +18999,23 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = {
 		arrayToObject,
 		assign,
-		combine: function combine(a, b, arrayLimit, plainObjects) {
+		combine: function combine(a, b, arrayLimit, plainObjects, throwOnLimitExceeded) {
 			if (isOverflow(a)) {
-				var newIndex = getMaxIndex(a) + 1;
-				a[newIndex] = b;
+				if (throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + arrayLimit + " element" + (arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+				var bValues = isArray(b) ? b : [b];
+				var newIndex = getMaxIndex(a);
+				for (var i = 0; i < bValues.length; ++i) {
+					newIndex += 1;
+					a[newIndex] = bValues[i];
+				}
 				setMaxIndex(a, newIndex);
 				return a;
 			}
 			var result = [].concat(a, b);
-			if (result.length > arrayLimit) return markOverflow(arrayToObject(result, { plainObjects }), result.length - 1);
+			if (result.length > arrayLimit) {
+				if (throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + arrayLimit + " element" + (arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+				return markOverflow(arrayToObject(result, { plainObjects }), result.length - 1);
+			}
 			return result;
 		},
 		compact: function compact(value) {
@@ -18913,7 +19023,7 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 				obj: { o: value },
 				prop: "o"
 			}];
-			var refs = [];
+			var refs = getSideChannel();
 			for (var i = 0; i < queue.length; ++i) {
 				var item = queue[i];
 				var obj = item.obj[item.prop];
@@ -18921,12 +19031,12 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 				for (var j = 0; j < keys.length; ++j) {
 					var key = keys[j];
 					var val = obj[key];
-					if (typeof val === "object" && val !== null && refs.indexOf(val) === -1) {
+					if (typeof val === "object" && val !== null && !refs.has(val)) {
 						queue[queue.length] = {
 							obj,
 							prop: key
 						};
-						refs[refs.length] = val;
+						refs.set(val, true);
 					}
 				}
 			}
@@ -18945,6 +19055,13 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			var out = "";
 			for (var j = 0; j < string.length; j += limit) {
 				var segment = string.length >= limit ? string.slice(j, j + limit) : string;
+				if (j + limit < string.length) {
+					var last = segment.charCodeAt(segment.length - 1);
+					if (last >= 55296 && last <= 56319) {
+						segment = segment.slice(0, -1);
+						j -= 1;
+					}
+				}
 				var arr = [];
 				for (var i = 0; i < segment.length; ++i) {
 					var c = segment.charCodeAt(i);
@@ -18974,7 +19091,7 @@ var require_utils$2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		},
 		isBuffer: function isBuffer(obj) {
 			if (!obj || typeof obj !== "object") return false;
-			return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+			return !!(obj.constructor && typeof obj.constructor.isBuffer === "function" && obj.constructor.isBuffer(obj));
 		},
 		isOverflow,
 		isRegExp: function isRegExp(obj) {
@@ -19027,6 +19144,7 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		charsetSentinel: false,
 		commaRoundTrip: false,
 		delimiter: "&",
+		depth: Infinity,
 		encode: true,
 		encodeDotInKeys: false,
 		encoder: utils.encode,
@@ -19045,20 +19163,23 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		return typeof v === "string" || typeof v === "number" || typeof v === "boolean" || typeof v === "symbol" || typeof v === "bigint";
 	};
 	var sentinel = {};
-	var stringify = function stringify(object, prefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, sideChannel) {
+	var stringify = function stringify(object, prefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, sideChannel, depth, currentDepth) {
 		var obj = object;
+		if (currentDepth > depth) throw new RangeError("Input depth exceeded depth option of " + depth);
 		var tmpSc = sideChannel;
 		var step = 0;
 		var findFlag = false;
 		while ((tmpSc = tmpSc.get(sentinel)) !== void 0 && !findFlag) {
 			var pos = tmpSc.get(object);
 			step += 1;
-			if (typeof pos !== "undefined") if (pos === step) throw new RangeError("Cyclic object value");
-			else findFlag = true;
+			if (typeof pos !== "undefined") {
+				if (pos === step) throw new RangeError("Cyclic object value");
+				else findFlag = true;
+			}
 			if (typeof tmpSc.get(sentinel) === "undefined") step = 0;
 		}
-		if (typeof filter === "function") obj = filter(prefix, obj);
-		else if (obj instanceof Date) obj = serializeDate(obj);
+		obj = typeof filter === "function" ? filter(prefix, obj) : obj;
+		if (obj instanceof Date) obj = serializeDate(obj);
 		else if (generateArrayPrefix === "comma" && isArray(obj)) obj = utils.maybeMap(obj, function(value) {
 			if (value instanceof Date) return serializeDate(value);
 			return value;
@@ -19086,7 +19207,7 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		}
 		var encodedPrefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
 		var adjustedPrefix = commaRoundTrip && isArray(obj) && obj.length === 1 ? encodedPrefix + "[]" : encodedPrefix;
-		if (allowEmptyArrays && isArray(obj) && obj.length === 0) return adjustedPrefix + "[]";
+		if (allowEmptyArrays && isArray(obj) && obj.length === 0 && Object.keys(obj).length === 0) return adjustedPrefix + "[]";
 		for (var j = 0; j < objKeys.length; ++j) {
 			var key = objKeys[j];
 			var value = typeof key === "object" && key && typeof key.value !== "undefined" ? key.value : obj[key];
@@ -19096,7 +19217,7 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			sideChannel.set(object, step);
 			var valueSideChannel = getSideChannel();
 			valueSideChannel.set(sentinel, sideChannel);
-			pushToArray(values, stringify(value, keyPrefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, generateArrayPrefix === "comma" && encodeValuesOnly && isArray(obj) ? null : encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, valueSideChannel));
+			pushToArray(values, stringify(value, keyPrefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, generateArrayPrefix === "comma" && encodeValuesOnly && isArray(obj) ? null : encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, valueSideChannel, depth, currentDepth + 1));
 		}
 		return values;
 	};
@@ -19130,6 +19251,7 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			charsetSentinel: typeof opts.charsetSentinel === "boolean" ? opts.charsetSentinel : defaults.charsetSentinel,
 			commaRoundTrip: !!opts.commaRoundTrip,
 			delimiter: typeof opts.delimiter === "undefined" ? defaults.delimiter : opts.delimiter,
+			depth: typeof opts.depth === "number" ? opts.depth : defaults.depth,
 			encode: typeof opts.encode === "boolean" ? opts.encode : defaults.encode,
 			encodeDotInKeys: typeof opts.encodeDotInKeys === "boolean" ? opts.encodeDotInKeys : defaults.encodeDotInKeys,
 			encoder: typeof opts.encoder === "function" ? opts.encoder : defaults.encoder,
@@ -19167,12 +19289,14 @@ var require_stringify = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			if (typeof key === "undefined" || key === null) continue;
 			var value = obj[key];
 			if (options.skipNulls && value === null) continue;
-			pushToArray(keys, stringify(value, key, generateArrayPrefix, commaRoundTrip, options.allowEmptyArrays, options.strictNullHandling, options.skipNulls, options.encodeDotInKeys, options.encode ? options.encoder : null, options.filter, options.sort, options.allowDots, options.serializeDate, options.format, options.formatter, options.encodeValuesOnly, options.charset, sideChannel));
+			pushToArray(keys, stringify(value, options.encodeDotInKeys ? String(key).replace(/\./g, "%2E") : String(key), generateArrayPrefix, commaRoundTrip, options.allowEmptyArrays, options.strictNullHandling, options.skipNulls, options.encodeDotInKeys, options.encode ? options.encoder : null, options.filter, options.sort, options.allowDots, options.serializeDate, options.format, options.formatter, options.encodeValuesOnly, options.charset, sideChannel, options.depth, 0));
 		}
 		var joined = keys.join(options.delimiter);
 		var prefix = options.addQueryPrefix === true ? "?" : "";
-		if (options.charsetSentinel) if (options.charset === "iso-8859-1") prefix += "utf8=%26%2310003%3B" + options.delimiter;
-		else prefix += "utf8=%E2%9C%93" + options.delimiter;
+		if (options.charsetSentinel) {
+			if (options.charset === "iso-8859-1") prefix += "utf8=%26%2310003%3B" + options.delimiter;
+			else prefix += "utf8=%E2%9C%93" + options.delimiter;
+		}
 		return joined.length > 0 ? prefix + joined : "";
 	};
 }));
@@ -19212,7 +19336,18 @@ var require_parse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		});
 	};
 	var parseArrayValue = function(val, options, currentArrayLength) {
-		if (val && typeof val === "string" && options.comma && val.indexOf(",") > -1) return val.split(",");
+		if (val && typeof val === "string" && options.comma && val.indexOf(",") > -1) {
+			if (options.throwOnLimitExceeded) {
+				var commaCount = 0;
+				var commaIndex = val.indexOf(",");
+				while (commaIndex > -1) {
+					commaCount += 1;
+					if (commaCount >= options.arrayLimit) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
+					commaIndex = val.indexOf(",", commaIndex + 1);
+				}
+			}
+			return val.split(",");
+		}
 		if (options.throwOnLimitExceeded && currentArrayLength >= options.arrayLimit) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
 		return val;
 	};
@@ -19254,13 +19389,10 @@ var require_parse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			}
 			if (val && options.interpretNumericEntities && charset === "iso-8859-1") val = interpretNumericEntities(String(val));
 			if (part.indexOf("[]=") > -1) val = isArray(val) ? [val] : val;
-			if (options.comma && isArray(val) && val.length > options.arrayLimit) {
-				if (options.throwOnLimitExceeded) throw new RangeError("Array limit exceeded. Only " + options.arrayLimit + " element" + (options.arrayLimit === 1 ? "" : "s") + " allowed in an array.");
-				val = utils.combine([], val, options.arrayLimit, options.plainObjects);
-			}
+			if (options.comma && isArray(val) && val.length > options.arrayLimit) val = utils.combine([], val, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
 			if (key !== null) {
 				var existing = has.call(obj, key);
-				if (existing && (options.duplicates === "combine" || part.indexOf("[]=") > -1)) obj[key] = utils.combine(obj[key], val, options.arrayLimit, options.plainObjects);
+				if (existing && (options.duplicates === "combine" || part.indexOf("[]=") > -1)) obj[key] = utils.combine(obj[key], val, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
 				else if (!existing || options.duplicates === "last") obj[key] = val;
 			}
 		}
@@ -19276,9 +19408,10 @@ var require_parse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		for (var i = chain.length - 1; i >= 0; --i) {
 			var obj;
 			var root = chain[i];
-			if (root === "[]" && options.parseArrays) if (utils.isOverflow(leaf)) obj = leaf;
-			else obj = options.allowEmptyArrays && (leaf === "" || options.strictNullHandling && leaf === null) ? [] : utils.combine([], leaf, options.arrayLimit, options.plainObjects);
-			else {
+			if (root === "[]" && options.parseArrays) {
+				if (utils.isOverflow(leaf)) obj = leaf;
+				else obj = options.allowEmptyArrays && (leaf === "" || options.strictNullHandling && leaf === null) ? [] : utils.combine([], leaf, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
+			} else {
 				obj = options.plainObjects ? { __proto__: null } : {};
 				var cleanRoot = root.charAt(0) === "[" && root.charAt(root.length - 1) === "]" ? root.slice(1, -1) : root;
 				var decodedRoot = options.decodeDotInKeys ? cleanRoot.replace(/%2E/g, ".") : cleanRoot;
@@ -19799,7 +19932,7 @@ var require_parseurl = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/finalhandler/index.js
+//#region ../node_modules/express/node_modules/finalhandler/index.js
 /*!
 * finalhandler
 * Copyright(c) 2014-2022 Douglas Christopher Wilson
@@ -20120,13 +20253,13 @@ var require_view = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/content-type/index.js
+//#region ../node_modules/express/node_modules/content-type/index.js
 /*!
 * content-type
 * Copyright(c) 2015 Douglas Christopher Wilson
 * MIT Licensed
 */
-var require_content_type = /* @__PURE__ */ __commonJSMin(((exports) => {
+var require_content_type$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	/**
 	* RegExp to match *( ";" parameter ) in RFC 7231 sec 3.1.1.1
 	*
@@ -20400,7 +20533,7 @@ var require_forwarded = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/ipaddr.js/lib/ipaddr.js
+//#region ../node_modules/proxy-addr/node_modules/ipaddr.js/lib/ipaddr.js
 var require_ipaddr = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	(function() {
 		var expandIPv6, ipaddr = {}, ipv4Part, ipv4Regexes, ipv6Part, ipv6Regexes, matchCIDR, root = this, zoneIndex;
@@ -21288,7 +21421,7 @@ var require_utils$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	* @api private
 	*/
 	var { METHODS: METHODS$2 } = __require("node:http");
-	var contentType = require_content_type();
+	var contentType = require_content_type$1();
 	var etag = require_etag();
 	var mime = require_mime_types();
 	var proxyaddr = require_proxy_addr();
@@ -21553,7 +21686,7 @@ var require_is_promise = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 }));
 //#endregion
 //#region ../node_modules/path-to-regexp/dist/index.js
-var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
+var require_dist$2 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.PathError = exports.TokenData = void 0;
 	exports.parse = parse;
@@ -21932,7 +22065,7 @@ var require_layer = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @private
 	*/
 	var isPromise = require_is_promise();
-	var pathRegexp = require_dist$1();
+	var pathRegexp = require_dist$2();
 	var debug = require_src$2()("router:layer");
 	var deprecate = require_depd()("router");
 	/**
@@ -23175,6 +23308,218 @@ var require_application = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
+//#region ../node_modules/content-type/dist/index.js
+var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
+	/*!
+	* content-type
+	* Copyright(c) 2015 Douglas Christopher Wilson
+	* MIT Licensed
+	*/
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.format = format;
+	exports.parse = parse;
+	var TEXT_REGEXP = /^[\u0009\u0020-\u007e\u0080-\u00ff]*$/;
+	var TOKEN_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
+	/**
+	* RegExp to match chars that must be quoted-pair in RFC 9110 sec 5.6.4
+	*/
+	var QUOTE_REGEXP = /[\\"]/g;
+	/**
+	* RegExp to match type in RFC 9110 sec 8.3.1
+	*
+	* media-type = type "/" subtype
+	* type       = token
+	* subtype    = token
+	*/
+	var TYPE_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
+	/**
+	* Null object perf optimization. Faster than `Object.create(null)` and `{ __proto__: null }`.
+	*/
+	var NullObject = /* @__PURE__ */ (() => {
+		const C = function() {};
+		C.prototype = Object.create(null);
+		return C;
+	})();
+	/**
+	* Format an object into a `Content-Type` header.
+	*/
+	function format(obj) {
+		const { type, parameters } = obj;
+		if (!type || !TYPE_REGEXP.test(type)) throw new TypeError(`Invalid type: ${type}`);
+		let result = type;
+		if (parameters) for (const param of Object.keys(parameters)) {
+			if (!TOKEN_REGEXP.test(param)) throw new TypeError(`Invalid parameter name: ${param}`);
+			result += `; ${param}=${qstring(parameters[param])}`;
+		}
+		return result;
+	}
+	/**
+	* Parse a `Content-Type` header.
+	*/
+	function parse(header, options) {
+		const stopChar = options?.comma === true ? COMMA : 65536;
+		const len = header.length;
+		let index = skipOWS(header, options?.start ?? 0, len);
+		const valueStart = index;
+		index = skipValue(header, index, len, stopChar);
+		const valueEnd = trailingOWS(header, valueStart, index);
+		const type = header.slice(valueStart, valueEnd).toLowerCase();
+		if (options?.parameters === false) return {
+			type,
+			index,
+			parameters: new NullObject()
+		};
+		return parseParameters(header, type, index, len, stopChar);
+	}
+	var SP = 32;
+	var HTAB = 9;
+	var SEMI = 59;
+	var EQ = 61;
+	var DQUOTE = 34;
+	var BSLASH = 92;
+	var COMMA = 44;
+	/**
+	* Parses the parameters of a `Content-Type` header starting at the given index.
+	*/
+	function parseParameters(header, type, index, len, stopChar) {
+		const parameters = new NullObject();
+		parameter: while (index < len) {
+			if (header.charCodeAt(index) === stopChar) break;
+			index = skipOWS(header, index + 1, len);
+			const keyStart = index;
+			while (index < len) {
+				const code = header.charCodeAt(index);
+				if (code === stopChar) break parameter;
+				if (code === SEMI) continue parameter;
+				if (code === EQ) {
+					const keyEnd = trailingOWS(header, keyStart, index);
+					const key = header.slice(keyStart, keyEnd).toLowerCase();
+					index = skipOWS(header, index + 1, len);
+					if (index < len && header.charCodeAt(index) === DQUOTE) {
+						index++;
+						let value = "";
+						while (index < len) {
+							const code = header.charCodeAt(index++);
+							if (code === DQUOTE) {
+								index = skipValue(header, index, len, stopChar);
+								if (parameters[key] === void 0) parameters[key] = value;
+								break;
+							}
+							if (code === BSLASH && index < len) {
+								value += header[index++];
+								continue;
+							}
+							value += String.fromCharCode(code);
+						}
+						continue parameter;
+					}
+					const valueStart = index;
+					index = skipValue(header, index, len, stopChar);
+					if (parameters[key] === void 0) {
+						const valueEnd = trailingOWS(header, valueStart, index);
+						parameters[key] = header.slice(valueStart, valueEnd);
+					}
+					continue parameter;
+				}
+				index++;
+			}
+		}
+		return {
+			type,
+			index,
+			parameters
+		};
+	}
+	/**
+	* Skip over characters until a semicolon or other exit character.
+	*/
+	function skipValue(str, index, len, stopChar) {
+		while (index < len) {
+			const code = str.charCodeAt(index);
+			if (code === SEMI || code === stopChar) break;
+			index++;
+		}
+		return index;
+	}
+	/**
+	* Skip optional whitespace (OWS) in an HTTP header value.
+	*
+	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
+	*/
+	function skipOWS(header, index, len) {
+		while (index < len) {
+			const char = header.charCodeAt(index);
+			if (char !== SP && char !== HTAB) break;
+			index++;
+		}
+		return index;
+	}
+	/**
+	* Trim optional whitespace (OWS) from the end of a substring.
+	*
+	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
+	*/
+	function trailingOWS(header, start, end) {
+		while (end > start) {
+			const char = header.charCodeAt(end - 1);
+			if (char !== SP && char !== HTAB) break;
+			end--;
+		}
+		return end;
+	}
+	/**
+	* Serialize a parameter value.
+	*/
+	function qstring(str) {
+		if (TOKEN_REGEXP.test(str)) return str;
+		if (TEXT_REGEXP.test(str)) return `"${str.replace(QUOTE_REGEXP, "\\$&")}"`;
+		throw new TypeError(`Invalid parameter value: ${str}`);
+	}
+}));
+//#endregion
+//#region ../node_modules/negotiator/lib/accept.js
+/*!
+* negotiator
+* Copyright(c) 2026 Blake Embrey
+* MIT Licensed
+*/
+var require_accept = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var contentType = require_dist$1();
+	/**
+	* Module exports.
+	* @private
+	*/
+	module.exports = parseAccept;
+	/**
+	* Parse an Accept-style header.
+	* @private
+	*/
+	function parseAccept(header) {
+		var values = [];
+		var index = 0;
+		while (index < header.length) {
+			var start = skipOptionalWhitespace(header, index);
+			var parsed = contentType.parse(header, {
+				comma: true,
+				start
+			});
+			parsed.type = header.slice(start, start + parsed.type.length);
+			values.push(parsed);
+			index = parsed.index + 1;
+		}
+		return values;
+	}
+	/**
+	* Skip optional whitespace.
+	* @private
+	*/
+	function skipOptionalWhitespace(header, index) {
+		var cursor = index;
+		while (header.charCodeAt(cursor) === 32 || header.charCodeAt(cursor) === 9) cursor++;
+		return cursor;
+	}
+}));
+//#endregion
 //#region ../node_modules/negotiator/lib/charset.js
 /**
 * negotiator
@@ -23184,6 +23529,7 @@ var require_application = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_charset = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var parseAccept = require_accept();
 	/**
 	* Module exports.
 	* @public
@@ -23194,42 +23540,24 @@ var require_charset = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module variables.
 	* @private
 	*/
-	var simpleCharsetRegExp = /^\s*([^\s;]+)\s*(?:;(.*))?$/;
-	/**
-	* Parse the Accept-Charset header.
-	* @private
-	*/
 	function parseAcceptCharset(accept) {
-		var accepts = accept.split(",");
+		var accepts = parseAccept(accept);
 		for (var i = 0, j = 0; i < accepts.length; i++) {
-			var charset = parseCharset(accepts[i].trim(), i);
+			var charset = formatCharset(accepts[i], i);
 			if (charset) accepts[j++] = charset;
 		}
 		accepts.length = j;
 		return accepts;
 	}
 	/**
-	* Parse a charset from the Accept-Charset header.
+	* Format a parsed charset for negotiation.
 	* @private
 	*/
-	function parseCharset(str, i) {
-		var match = simpleCharsetRegExp.exec(str);
-		if (!match) return null;
-		var charset = match[1];
-		var q = 1;
-		if (match[2]) {
-			var params = match[2].split(";");
-			for (var j = 0; j < params.length; j++) {
-				var p = params[j].trim().split("=");
-				if (p[0] === "q") {
-					q = parseFloat(p[1]);
-					break;
-				}
-			}
-		}
+	function formatCharset(parsed, i) {
+		if (!parsed.type) return null;
 		return {
-			charset,
-			q,
+			charset: parsed.type,
+			q: parsed.parameters.q ? parseFloat(parsed.parameters.q) : 1,
 			i
 		};
 	}
@@ -23310,6 +23638,7 @@ var require_charset = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_encoding = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var parseAccept = require_accept();
 	/**
 	* Module exports.
 	* @public
@@ -23320,17 +23649,12 @@ var require_encoding = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module variables.
 	* @private
 	*/
-	var simpleEncodingRegExp = /^\s*([^\s;]+)\s*(?:;(.*))?$/;
-	/**
-	* Parse the Accept-Encoding header.
-	* @private
-	*/
 	function parseAcceptEncoding(accept) {
-		var accepts = accept.split(",");
+		var accepts = parseAccept(accept);
 		var hasIdentity = false;
 		var minQuality = 1;
 		for (var i = 0, j = 0; i < accepts.length; i++) {
-			var encoding = parseEncoding(accepts[i].trim(), i);
+			var encoding = formatEncoding(accepts[i], i);
 			if (encoding) {
 				accepts[j++] = encoding;
 				hasIdentity = hasIdentity || specify("identity", encoding);
@@ -23346,27 +23670,14 @@ var require_encoding = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		return accepts;
 	}
 	/**
-	* Parse an encoding from the Accept-Encoding header.
+	* Format a parsed encoding for negotiation.
 	* @private
 	*/
-	function parseEncoding(str, i) {
-		var match = simpleEncodingRegExp.exec(str);
-		if (!match) return null;
-		var encoding = match[1];
-		var q = 1;
-		if (match[2]) {
-			var params = match[2].split(";");
-			for (var j = 0; j < params.length; j++) {
-				var p = params[j].trim().split("=");
-				if (p[0] === "q") {
-					q = parseFloat(p[1]);
-					break;
-				}
-			}
-		}
+	function formatEncoding(parsed, i) {
+		if (!parsed.type) return null;
 		return {
-			encoding,
-			q,
+			encoding: parsed.type,
+			q: parsed.parameters.q ? parseFloat(parsed.parameters.q) : 1,
 			i
 		};
 	}
@@ -23457,6 +23768,8 @@ var require_encoding = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var contentType = require_dist$1();
+	var parseAccept = require_accept();
 	/**
 	* Module exports.
 	* @public
@@ -23467,45 +23780,28 @@ var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module variables.
 	* @private
 	*/
-	var simpleLanguageRegExp = /^\s*([^\s\-;]+)(?:-([^\s;]+))?\s*(?:;(.*))?$/;
-	/**
-	* Parse the Accept-Language header.
-	* @private
-	*/
 	function parseAcceptLanguage(accept) {
-		var accepts = accept.split(",");
+		var accepts = parseAccept(accept);
 		for (var i = 0, j = 0; i < accepts.length; i++) {
-			var language = parseLanguage(accepts[i].trim(), i);
+			var language = formatLanguage(accepts[i], i);
 			if (language) accepts[j++] = language;
 		}
 		accepts.length = j;
 		return accepts;
 	}
 	/**
-	* Parse a language from the Accept-Language header.
+	* Format a parsed language for negotiation.
 	* @private
 	*/
-	function parseLanguage(str, i) {
-		var match = simpleLanguageRegExp.exec(str);
-		if (!match) return null;
-		var prefix = match[1];
-		var suffix = match[2];
-		var full = prefix;
-		if (suffix) full += "-" + suffix;
-		var q = 1;
-		if (match[3]) {
-			var params = match[3].split(";");
-			for (var j = 0; j < params.length; j++) {
-				var p = params[j].split("=");
-				if (p[0] === "q") q = parseFloat(p[1]);
-			}
-		}
+	function formatLanguage(parsed, i) {
+		if (!parsed.type) return null;
+		var hyphen = parsed.type.indexOf("-");
 		return {
-			prefix,
-			suffix,
-			q,
+			prefix: hyphen === -1 ? parsed.type : parsed.type.slice(0, hyphen),
+			suffix: hyphen === -1 ? void 0 : parsed.type.slice(hyphen + 1),
+			q: parsed.parameters.q ? parseFloat(parsed.parameters.q) : 1,
 			i,
-			full
+			full: parsed.type
 		};
 	}
 	/**
@@ -23529,7 +23825,7 @@ var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @private
 	*/
 	function specify(language, spec, index) {
-		var p = parseLanguage(language);
+		var p = formatLanguage(contentType.parse(language), 0);
 		if (!p) return null;
 		var s = 0;
 		if (spec.full.toLowerCase() === p.full.toLowerCase()) s |= 4;
@@ -23589,6 +23885,8 @@ var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	var contentType = require_dist$1();
+	var parseAcceptHeader = require_accept();
 	/**
 	* Module exports.
 	* @public
@@ -23599,49 +23897,28 @@ var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module variables.
 	* @private
 	*/
-	var simpleMediaTypeRegExp = /^\s*([^\s\/;]+)\/([^;\s]+)\s*(?:;(.*))?$/;
-	/**
-	* Parse the Accept header.
-	* @private
-	*/
 	function parseAccept(accept) {
-		var accepts = splitMediaTypes(accept);
+		var accepts = parseAcceptHeader(accept);
 		for (var i = 0, j = 0; i < accepts.length; i++) {
-			var mediaType = parseMediaType(accepts[i].trim(), i);
+			var mediaType = formatMediaType(accepts[i], i);
 			if (mediaType) accepts[j++] = mediaType;
 		}
 		accepts.length = j;
 		return accepts;
 	}
 	/**
-	* Parse a media type from the Accept header.
+	* Format a parsed content type for negotiation.
 	* @private
 	*/
-	function parseMediaType(str, i) {
-		var match = simpleMediaTypeRegExp.exec(str);
-		if (!match) return null;
-		var params = Object.create(null);
-		var q = 1;
-		var subtype = match[2];
-		var type = match[1];
-		if (match[3]) {
-			var kvps = splitParameters(match[3]).map(splitKeyValuePair);
-			for (var j = 0; j < kvps.length; j++) {
-				var pair = kvps[j];
-				var key = pair[0].toLowerCase();
-				var val = pair[1];
-				var value = val && val[0] === "\"" && val[val.length - 1] === "\"" ? val.slice(1, -1) : val;
-				if (key === "q") {
-					q = parseFloat(value);
-					break;
-				}
-				params[key] = value;
-			}
-		}
+	function formatMediaType(parsed, i) {
+		var slash = parsed.type.indexOf("/");
+		if (slash === -1) return null;
+		var q = parsed.parameters.q ? parseFloat(parsed.parameters.q) : 1;
+		delete parsed.parameters.q;
 		return {
-			type,
-			subtype,
-			params,
+			type: parsed.type.slice(0, slash),
+			subtype: parsed.type.slice(slash + 1),
+			params: parsed.parameters,
 			q,
 			i
 		};
@@ -23667,7 +23944,7 @@ var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @private
 	*/
 	function specify(type, spec, index) {
-		var p = parseMediaType(type);
+		var p = formatMediaType(contentType.parse(type), 0);
 		var s = 0;
 		if (!p) return null;
 		if (spec.type.toLowerCase() == p.type.toLowerCase()) s |= 4;
@@ -23675,10 +23952,12 @@ var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		if (spec.subtype.toLowerCase() == p.subtype.toLowerCase()) s |= 2;
 		else if (spec.subtype != "*") return null;
 		var keys = Object.keys(spec.params);
-		if (keys.length > 0) if (keys.every(function(k) {
-			return spec.params[k] == "*" || (spec.params[k] || "").toLowerCase() == (p.params[k] || "").toLowerCase();
-		})) s |= 1;
-		else return null;
+		if (keys.length > 0) {
+			if (keys.every(function(k) {
+				return spec.params[k] == "*" || (spec.params[k] || "").toLowerCase() == (p.params[k] || "").toLowerCase();
+			})) s |= 1;
+			else return null;
+		}
 		return {
 			i: index,
 			o: spec.i,
@@ -23720,57 +23999,6 @@ var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function isQuality(spec) {
 		return spec.q > 0;
-	}
-	/**
-	* Count the number of quotes in a string.
-	* @private
-	*/
-	function quoteCount(string) {
-		var count = 0;
-		var index = 0;
-		while ((index = string.indexOf("\"", index)) !== -1) {
-			count++;
-			index++;
-		}
-		return count;
-	}
-	/**
-	* Split a key value pair.
-	* @private
-	*/
-	function splitKeyValuePair(str) {
-		var index = str.indexOf("=");
-		var key;
-		var val;
-		if (index === -1) key = str;
-		else {
-			key = str.slice(0, index);
-			val = str.slice(index + 1);
-		}
-		return [key, val];
-	}
-	/**
-	* Split an Accept header into media types.
-	* @private
-	*/
-	function splitMediaTypes(accept) {
-		var accepts = accept.split(",");
-		for (var i = 1, j = 0; i < accepts.length; i++) if (quoteCount(accepts[j]) % 2 == 0) accepts[++j] = accepts[i];
-		else accepts[j] += "," + accepts[i];
-		accepts.length = j + 1;
-		return accepts;
-	}
-	/**
-	* Split a string of parameters.
-	* @private
-	*/
-	function splitParameters(str) {
-		var parameters = str.split(";");
-		for (var i = 1, j = 0; i < parameters.length; i++) if (quoteCount(parameters[j]) % 2 == 0) parameters[++j] = parameters[i];
-		else parameters[j] += ";" + parameters[i];
-		parameters.length = j + 1;
-		for (var i = 0; i < parameters.length; i++) parameters[i] = parameters[i].trim();
-		return parameters;
 	}
 }));
 //#endregion
@@ -24123,15 +24351,19 @@ var require_range_parser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		var ranges = [];
 		ranges.type = str.slice(0, index);
 		for (var i = 0; i < arr.length; i++) {
-			var range = arr[i].split("-");
-			var start = parseInt(range[0], 10);
-			var end = parseInt(range[1], 10);
-			if (isNaN(start)) {
+			var indexOf = arr[i].indexOf("-");
+			if (indexOf === -1) return -2;
+			var startStr = arr[i].slice(0, indexOf).trim();
+			var endStr = arr[i].slice(indexOf + 1).trim();
+			var start = parsePos(startStr);
+			var end = parsePos(endStr);
+			if (startStr.length === 0) {
 				start = size - end;
 				end = size - 1;
-			} else if (isNaN(end)) end = size - 1;
+			} else if (endStr.length === 0) end = size - 1;
 			if (end > size - 1) end = size - 1;
-			if (isNaN(start) || isNaN(end) || start > end || start < 0) continue;
+			if (isNaN(start) || isNaN(end)) return -2;
+			if (start > end || start < 0) continue;
 			ranges.push({
 				start,
 				end
@@ -24139,6 +24371,14 @@ var require_range_parser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		}
 		if (ranges.length < 1) return -1;
 		return options && options.combine ? combineRanges(ranges) : ranges;
+	}
+	/**
+	* Parse string to integer.
+	* @private
+	*/
+	function parsePos(str) {
+		if (/^\d+$/.test(str)) return Number(str);
+		return NaN;
 	}
 	/**
 	* Combine overlapping & adjacent ranges.
@@ -24978,7 +25218,7 @@ var require_cookie_signature = /* @__PURE__ */ __commonJSMin(((exports) => {
 	};
 }));
 //#endregion
-//#region ../node_modules/cookie/index.js
+//#region ../node_modules/express/node_modules/cookie/index.js
 /*!
 * cookie
 * Copyright(c) 2012-2014 Roman Shtylman
@@ -26646,7 +26886,7 @@ var require_response = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/serve-static/index.js
+//#region ../node_modules/express/node_modules/serve-static/index.js
 /*!
 * serve-static
 * Copyright(c) 2010 Sencha Inc.
@@ -26871,6 +27111,8 @@ var require_common$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.isInSubnet = isInSubnet;
 	exports.isHostInSubnet = isHostInSubnet;
+	exports.isGloballyReachable = isGloballyReachable;
+	exports.offsetBigInt = offsetBigInt;
 	exports.isCorrect = isCorrect;
 	exports.prefixLengthFromMask = prefixLengthFromMask;
 	exports.assertByteArray = assertByteArray;
@@ -26906,6 +27148,30 @@ var require_common$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	*/
 	function isHostInSubnet(address) {
 		return this.mask(address.subnetMask) === address.mask();
+	}
+	/**
+	* Returns whether the registry marks this address globally reachable: the
+	* answer of the most specific entry containing it that has one, or `true`
+	* when no entry contains it.
+	*/
+	function isGloballyReachable(entries) {
+		let best = null;
+		for (let i = 0; i < entries.length; i++) {
+			const entry = entries[i];
+			if (entry.reachable !== null && isHostInSubnet.call(this, entry.subnet) && (best === null || entry.subnet.subnetMask > best.subnet.subnetMask)) best = entry;
+		}
+		return best === null ? true : best.reachable;
+	}
+	/**
+	* Adds `n` to `value` and returns the result, throwing `AddressError` unless
+	* `n` is an integer and the result stays within `[0, 2**bits - 1]`.
+	*/
+	function offsetBigInt(value, n, bits, family) {
+		if (typeof n === "number" && !Number.isSafeInteger(n)) throw new address_error_1.AddressError(`${family} offset must be an integer`);
+		if (typeof n !== "number" && typeof n !== "bigint") throw new address_error_1.AddressError(`${family} offset must be an integer`);
+		const result = value + BigInt(n);
+		if (result < BigInt(0) || result > (BigInt(1) << BigInt(bits)) - BigInt(1)) throw new address_error_1.AddressError(`${family} offset leaves the address space`);
+		return result;
 	}
 	function isCorrect(defaultBits) {
 		return function isCorrectForm() {
@@ -26957,11 +27223,154 @@ var require_common$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 //#region ../node_modules/ip-address/dist/v4/constants.js
 var require_constants$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.RE_SUBNET_STRING = exports.RE_ADDRESS = exports.GROUPS = exports.BITS = void 0;
+	exports.SPECIAL_PURPOSE = exports.RE_SUBNET_STRING = exports.RE_ADDRESS = exports.GROUPS = exports.BITS = void 0;
 	exports.BITS = 32;
 	exports.GROUPS = 4;
 	exports.RE_ADDRESS = /^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$/g;
 	exports.RE_SUBNET_STRING = /\/\d{1,2}$/;
+	/**
+	* The IANA IPv4 Special-Purpose Address Registry
+	* (https://www.iana.org/assignments/iana-ipv4-special-registry/), one entry
+	* per block: `[cidr, name, globallyReachable]`. A `null` reachability means
+	* the registry leaves the column blank and the block inherits the answer of
+	* the block containing it (or is global when nothing contains it).
+	*
+	* `Address4.isGlobal()` answers from the most specific entry containing the
+	* address. `test/data/iana-corpus.json` is generated from the registry's CSV
+	* and pins this table to it.
+	*/
+	exports.SPECIAL_PURPOSE = [
+		[
+			"0.0.0.0/8",
+			"This network",
+			false
+		],
+		[
+			"0.0.0.0/32",
+			"This host on this network",
+			false
+		],
+		[
+			"10.0.0.0/8",
+			"Private-Use",
+			false
+		],
+		[
+			"100.64.0.0/10",
+			"Shared Address Space",
+			false
+		],
+		[
+			"127.0.0.0/8",
+			"Loopback",
+			false
+		],
+		[
+			"169.254.0.0/16",
+			"Link Local",
+			false
+		],
+		[
+			"172.16.0.0/12",
+			"Private-Use",
+			false
+		],
+		[
+			"192.0.0.0/24",
+			"IETF Protocol Assignments",
+			false
+		],
+		[
+			"192.0.0.0/29",
+			"IPv4 Service Continuity Prefix",
+			false
+		],
+		[
+			"192.0.0.8/32",
+			"IPv4 dummy address",
+			false
+		],
+		[
+			"192.0.0.9/32",
+			"Port Control Protocol Anycast",
+			true
+		],
+		[
+			"192.0.0.10/32",
+			"Traversal Using Relays around NAT Anycast",
+			true
+		],
+		[
+			"192.0.0.170/32",
+			"NAT64/DNS64 Discovery",
+			false
+		],
+		[
+			"192.0.0.171/32",
+			"NAT64/DNS64 Discovery",
+			false
+		],
+		[
+			"192.0.2.0/24",
+			"Documentation (TEST-NET-1)",
+			false
+		],
+		[
+			"192.31.196.0/24",
+			"AS112-v4",
+			true
+		],
+		[
+			"192.52.193.0/24",
+			"AMT",
+			true
+		],
+		[
+			"192.88.99.0/24",
+			"Deprecated (6to4 Relay Anycast)",
+			null
+		],
+		[
+			"192.88.99.2/32",
+			"6a44-relay anycast address",
+			false
+		],
+		[
+			"192.168.0.0/16",
+			"Private-Use",
+			false
+		],
+		[
+			"192.175.48.0/24",
+			"Direct Delegation AS112 Service",
+			true
+		],
+		[
+			"198.18.0.0/15",
+			"Benchmarking",
+			false
+		],
+		[
+			"198.51.100.0/24",
+			"Documentation (TEST-NET-2)",
+			false
+		],
+		[
+			"203.0.113.0/24",
+			"Documentation (TEST-NET-3)",
+			false
+		],
+		[
+			"240.0.0.0/4",
+			"Reserved",
+			false
+		],
+		[
+			"255.255.255.255/32",
+			"Limited Broadcast",
+			false
+		]
+	];
 }));
 //#endregion
 //#region ../node_modules/ip-address/dist/ipv4.js
@@ -27028,8 +27437,10 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			this.isInSubnet = common.isInSubnet;
 			/**
 			* Returns true if this address's host bits fall inside the given subnet,
-			* ignoring this address's own subnet mask. See
-			* {@link common.isHostInSubnet}.
+			* ignoring this address's own subnet mask. Prefer this over `isInSubnet`
+			* when classifying a single address, so the answer doesn't change with the
+			* CIDR suffix the caller happened to write — notably when the address came
+			* from untrusted input and the result backs a trust-boundary decision.
 			* @returns {boolean}
 			*/
 			this.isHostInSubnet = common.isHostInSubnet;
@@ -27191,8 +27602,8 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		*/
 		toGroup6() {
 			const output = [];
-			let i;
-			for (i = 0; i < constants.GROUPS; i += 2) output.push(`${common.stringToPaddedHex(this.parsedAddress[i])}${common.stringToPaddedHex(this.parsedAddress[i + 1])}`);
+			let i = 0;
+			for (; i < constants.GROUPS; i += 2) output.push(`${common.stringToPaddedHex(this.parsedAddress[i])}${common.stringToPaddedHex(this.parsedAddress[i + 1])}`);
 			return output.join(":");
 		}
 		/**
@@ -27225,6 +27636,33 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		startAddressExclusive() {
 			const adjust = BigInt("1");
 			return Address4.fromBigInt(this._startAddress() + adjust);
+		}
+		/**
+		* Returns the address `n` addresses after this one (or before, when `n` is
+		* negative), keeping this address's subnet mask. Throws `AddressError` when
+		* the result would fall outside the IPv4 address space or `n` is not an
+		* integer.
+		* @param {number | bigint} n
+		* @returns {Address4}
+		* @example
+		* new Address4('10.0.0.0/24').offset(1).correctForm(); // '10.0.0.1'
+		*/
+		offset(n) {
+			return Address4.fromBigInt(common.offsetBigInt(this.bigInt(), n, constants.BITS, "IPv4")).withSubnetMask(this.subnetMask);
+		}
+		/**
+		* Returns the network that follows this address's network: the address after
+		* {@link endAddress}, with the same subnet mask. Throws `AddressError` when
+		* this network is the last one in the address space.
+		* @returns {Address4}
+		* @example
+		* new Address4('10.0.0.0/24').nextNetwork().networkForm(); // '10.0.1.0/24'
+		*/
+		nextNetwork() {
+			return Address4.fromBigInt(common.offsetBigInt(this._endAddress(), 1, constants.BITS, "IPv4")).withSubnetMask(this.subnetMask);
+		}
+		withSubnetMask(subnetMask) {
+			return new Address4(`${this.correctForm()}/${subnetMask}`);
 		}
 		/**
 		* Helper function getting end address.
@@ -27287,7 +27725,10 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return Address4.fromHex(bigInt.toString(16).padStart(8, "0"));
 		}
 		/**
-		* Convert a byte array to an Address4 object.
+		* Convert a byte array to an Address4 object. Throws `AddressError` unless
+		* given exactly 4 integers from 0 to 255. Signed bytes are rejected, so
+		* this differs from `Address6.fromByteArray`, which folds them; the two
+		* contracts converge on this stricter form in the next major version.
 		*
 		* To convert from a Node.js `Buffer`, spread it: `Address4.fromByteArray([...buf])`.
 		* @param {Array<number>} bytes - an array of 4 bytes (0-255)
@@ -27298,7 +27739,12 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return this.fromUnsignedByteArray(bytes);
 		}
 		/**
-		* Convert an unsigned byte array to an Address4 object
+		* Convert an unsigned byte array to an Address4 object. Throws
+		* `AddressError` unless given exactly 4 bytes, and rejects values outside
+		* 0 to 255 when parsing the resulting address.
+		*
+		* To convert from a Node.js `Buffer`, spread it:
+		* `Address4.fromUnsignedByteArray([...buf])`.
 		* @param {Array<number>} bytes - an array of 4 unsigned bytes (0-255)
 		* @returns {Address4}
 		*/
@@ -27324,7 +27770,8 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return this.binaryZeroPad().slice(start, end);
 		}
 		/**
-		* Return the reversed ip6.arpa form of the address
+		* Return the reversed in-addr.arpa form of the address, e.g.
+		* `42.2.0.192.in-addr.arpa.` for `192.0.2.42`.
 		* @param {Object} options
 		* @param {boolean} options.omitSuffix - omit the "in-addr.arpa" suffix
 		* @returns {String}
@@ -27385,6 +27832,43 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return this.isHostInSubnet(CGNAT_V4);
 		}
 		/**
+		* Returns true if the address is in one of the documentation ranges
+		* `192.0.2.0/24`, `198.51.100.0/24`, or `203.0.113.0/24` ([RFC 5737](https://datatracker.ietf.org/doc/html/rfc5737)).
+		* @returns {boolean}
+		*/
+		isDocumentation() {
+			return DOCUMENTATION_V4.some((subnet) => this.isHostInSubnet(subnet));
+		}
+		/**
+		* Returns true if the address is in the benchmarking range `198.18.0.0/15` ([RFC 2544](https://datatracker.ietf.org/doc/html/rfc2544)).
+		* @returns {boolean}
+		*/
+		isBenchmarking() {
+			return this.isHostInSubnet(BENCHMARKING_V4);
+		}
+		/**
+		* Returns true if the address is in the reserved range `240.0.0.0/4` ([RFC 1112](https://datatracker.ietf.org/doc/html/rfc1112)),
+		* which includes the limited broadcast address.
+		* @returns {boolean}
+		*/
+		isReserved() {
+			return this.isHostInSubnet(RESERVED_V4);
+		}
+		/**
+		* Returns true if the address is globally reachable: not multicast, and not
+		* in any block the [IANA IPv4 Special-Purpose Address Registry](https://www.iana.org/assignments/iana-ipv4-special-registry/)
+		* marks as not globally reachable. That covers everything the individual
+		* classifiers name (private, loopback, link-local, CGNAT, unspecified,
+		* broadcast, documentation, benchmarking, reserved) and the blocks they do
+		* not, such as `0.0.0.0/8` and the IETF protocol assignments in
+		* `192.0.0.0/24`. This is the single predicate to use where a request must
+		* not reach an internal or special-purpose destination; see SECURITY.md.
+		* @returns {boolean}
+		*/
+		isGlobal() {
+			return !this.isMulticast() && common.isGloballyReachable.call(this, SPECIAL_PURPOSE_V4);
+		}
+		/**
 		* Returns a zero-padded base-2 string representation of the address
 		* @returns {string}
 		*/
@@ -27393,7 +27877,12 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return this._binaryZeroPad;
 		}
 		/**
-		* Groups an IPv4 address for inclusion at the end of an IPv6 address
+		* Groups an IPv4 address for inclusion at the end of an IPv6 address.
+		*
+		* Returns an HTML fragment: each half of the address is wrapped in a
+		* `<span>` carrying the group classes an address-inspector UI hovers on.
+		* The address content is HTML-escaped; anything you concatenate around it
+		* is your responsibility.
 		* @returns {String}
 		*/
 		groupForV6() {
@@ -27413,12 +27902,23 @@ var require_ipv4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	var UNSPECIFIED_V4 = new Address4("0.0.0.0/32");
 	var BROADCAST_V4 = new Address4("255.255.255.255/32");
 	var CGNAT_V4 = new Address4("100.64.0.0/10");
+	var DOCUMENTATION_V4 = [
+		new Address4("192.0.2.0/24"),
+		new Address4("198.51.100.0/24"),
+		new Address4("203.0.113.0/24")
+	];
+	var BENCHMARKING_V4 = new Address4("198.18.0.0/15");
+	var RESERVED_V4 = new Address4("240.0.0.0/4");
+	var SPECIAL_PURPOSE_V4 = constants.SPECIAL_PURPOSE.map(([cidr, , reachable]) => ({
+		subnet: new Address4(cidr),
+		reachable
+	}));
 }));
 //#endregion
 //#region ../node_modules/ip-address/dist/v6/constants.js
 var require_constants = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.RE_URL_WITH_PORT = exports.RE_URL = exports.RE_ZONE_STRING = exports.RE_SUBNET_STRING = exports.RE_BAD_ADDRESS = exports.RE_BAD_CHARACTERS = exports.TYPES = exports.SCOPES = exports.GROUPS = exports.BITS = void 0;
+	exports.SPECIAL_PURPOSE = exports.RE_URL_WITH_PORT = exports.RE_URL = exports.RE_ZONE_STRING = exports.RE_SUBNET_STRING = exports.RE_BAD_ADDRESS = exports.RE_BAD_CHARACTERS = exports.TYPES = exports.SCOPES = exports.GROUPS = exports.BITS = void 0;
 	exports.BITS = 128;
 	exports.GROUPS = 8;
 	/**
@@ -27466,8 +27966,14 @@ var require_constants = /* @__PURE__ */ __commonJSMin(((exports) => {
 		"ff00::/8": "Multicast",
 		"fe80::/10": "Link-local unicast",
 		"fc00::/7": "Unique local",
+		"2001::/32": "Teredo",
+		"2001:2::/48": "Benchmarking",
 		"2002::/16": "6to4",
 		"2001:db8::/32": "Documentation",
+		"3fff::/20": "Documentation",
+		"100::/64": "Discard-only",
+		"fec0::/10": "Site-local unicast (deprecated)",
+		"::/96": "IPv4-compatible (deprecated)",
 		"64:ff9b::/96": "NAT64 (well-known)",
 		"64:ff9b:1::/48": "NAT64 (local-use)"
 	};
@@ -27497,6 +28003,146 @@ var require_constants = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.RE_ZONE_STRING = /%.*$/;
 	exports.RE_URL = /^(?:\[([0-9a-f:.]+)\]|([0-9a-f:.]+))(?:[/?#].*)?$/i;
 	exports.RE_URL_WITH_PORT = /^\[([0-9a-f:.]+)\]:([0-9]{1,5})(?:[/?#].*)?$/i;
+	/**
+	* The IANA IPv6 Special-Purpose Address Registry
+	* (https://www.iana.org/assignments/iana-ipv6-special-registry/), one entry
+	* per block: `[cidr, name, globallyReachable]`. A `null` reachability means
+	* the registry says N/A or leaves the column blank; N/A blocks (Teredo, 6to4)
+	* are treated as not globally reachable, since a packet to one needs a relay,
+	* and blank blocks inherit the answer of the block containing them.
+	*
+	* `Address6.isGlobal()` answers from the most specific entry containing the
+	* address, after delegating IPv4-mapped and NAT64 well-known addresses to the
+	* embedded IPv4 address. `test/data/iana-corpus.json` is generated from the
+	* registry's CSV and pins this table to it.
+	*/
+	exports.SPECIAL_PURPOSE = [
+		[
+			"::1/128",
+			"Loopback Address",
+			false
+		],
+		[
+			"::/128",
+			"Unspecified Address",
+			false
+		],
+		[
+			"::ffff:0:0/96",
+			"IPv4-mapped Address",
+			false
+		],
+		[
+			"64:ff9b::/96",
+			"IPv4-IPv6 Translat.",
+			true
+		],
+		[
+			"64:ff9b:1::/48",
+			"IPv4-IPv6 Translat.",
+			false
+		],
+		[
+			"100::/64",
+			"Discard-Only Address Block",
+			false
+		],
+		[
+			"100:0:0:1::/64",
+			"Dummy IPv6 Prefix",
+			false
+		],
+		[
+			"2001::/23",
+			"IETF Protocol Assignments",
+			false
+		],
+		[
+			"2001::/32",
+			"TEREDO",
+			false
+		],
+		[
+			"2001:1::1/128",
+			"Port Control Protocol Anycast",
+			true
+		],
+		[
+			"2001:1::2/128",
+			"Traversal Using Relays around NAT Anycast",
+			true
+		],
+		[
+			"2001:1::3/128",
+			"DNS-SD Service Registration Protocol Anycast",
+			true
+		],
+		[
+			"2001:2::/48",
+			"Benchmarking",
+			false
+		],
+		[
+			"2001:3::/32",
+			"AMT",
+			true
+		],
+		[
+			"2001:4:112::/48",
+			"AS112-v6",
+			true
+		],
+		[
+			"2001:10::/28",
+			"Deprecated (previously ORCHID)",
+			null
+		],
+		[
+			"2001:20::/28",
+			"ORCHIDv2",
+			true
+		],
+		[
+			"2001:30::/28",
+			"Drone Remote ID Protocol Entity Tags (DETs) Prefix",
+			true
+		],
+		[
+			"2001:db8::/32",
+			"Documentation",
+			false
+		],
+		[
+			"2002::/16",
+			"6to4",
+			false
+		],
+		[
+			"2620:4f:8000::/48",
+			"Direct Delegation AS112 Service",
+			true
+		],
+		[
+			"3fff::/20",
+			"Documentation",
+			false
+		],
+		[
+			"5f00::/16",
+			"Segment Routing (SRv6) SIDs",
+			false
+		],
+		[
+			"fc00::/7",
+			"Unique-Local",
+			false
+		],
+		[
+			"fe80::/10",
+			"Link-Local Unicast",
+			false
+		]
+	];
 }));
 //#endregion
 //#region ../node_modules/ip-address/dist/v6/helpers.js
@@ -27681,8 +28327,8 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	function compact(address, slice) {
 		const s1 = [];
 		const s2 = [];
-		let i;
-		for (i = 0; i < address.length; i++) if (i < slice[0]) s1.push(address[i]);
+		let i = 0;
+		for (; i < address.length; i++) if (i < slice[0]) s1.push(address[i]);
 		else if (i > slice[1]) s2.push(address[i]);
 		return s1.concat(["compact"]).concat(s2);
 	}
@@ -27714,8 +28360,10 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			this.isInSubnet = common.isInSubnet;
 			/**
 			* Returns true if this address's host bits fall inside the given subnet,
-			* ignoring this address's own subnet mask. See
-			* {@link common.isHostInSubnet}.
+			* ignoring this address's own subnet mask. Prefer this over `isInSubnet`
+			* when classifying a single address, so the answer doesn't change with the
+			* CIDR suffix the caller happened to write — notably when the address came
+			* from untrusted input and the result backs a trust-boundary decision.
 			* @returns {boolean}
 			*/
 			this.isHostInSubnet = common.isHostInSubnet;
@@ -27791,20 +28439,23 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			let host;
 			let port = null;
 			let result;
+			let error;
 			const stripped = url.replace(/^[a-z][a-z0-9+.-]*:\/\//i, "");
 			if (stripped.indexOf("[") !== -1 && stripped.indexOf("]:") !== -1) {
+				error = "failed to parse address with port";
 				result = constants6.RE_URL_WITH_PORT.exec(stripped);
 				if (result === null) return {
-					error: "failed to parse address with port",
+					error,
 					address: null,
 					port: null
 				};
 				host = result[1];
 				port = result[2];
 			} else {
+				error = "failed to parse address from URL";
 				result = constants6.RE_URL.exec(stripped);
 				if (result === null) return {
-					error: "failed to parse address from URL",
+					error,
 					address: null,
 					port: null
 				};
@@ -27814,8 +28465,18 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 				port = parseInt(port, 10);
 				if (port < 0 || port > 65535) port = null;
 			} else port = null;
+			let address;
+			try {
+				address = new Address6(host);
+			} catch {
+				return {
+					error,
+					address: null,
+					port: null
+				};
+			}
 			return {
-				address: new Address6(host),
+				address,
 				port
 			};
 		}
@@ -27901,24 +28562,26 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return new Address6(`::ffff:${address4.correctForm()}/${mask6}`);
 		}
 		/**
-		* Return an address from ip6.arpa form
+		* Return an address from ip6.arpa form. A full 32-nibble name gives a /128
+		* address; a shorter name, as used for a delegated reverse zone, gives the
+		* network it covers, with a subnet mask of four bits per nibble, so
+		* `fromArpa(x.reverseForm())` round-trips {@link reverseForm} for any prefix.
 		* @param {string} arpaFormAddress - an 'ip6.arpa' form address
 		* @returns {Adress6}
 		* @example
 		* var address = Address6.fromArpa(e.f.f.f.3.c.2.6.f.f.f.e.6.6.8.e.1.0.6.7.9.4.e.c.0.0.0.0.1.0.0.2.ip6.arpa.)
 		* address.correctForm(); // '2001:0:ce49:7601:e866:efff:62c3:fffe'
+		* Address6.fromArpa('8.b.d.0.1.0.0.2.ip6.arpa.').networkForm(); // '2001:db8::/32'
 		*/
 		static fromArpa(arpaFormAddress) {
-			let address = arpaFormAddress.replace(/(\.ip6\.arpa)?\.$/, "");
-			const semicolonAmount = 7;
-			if (address.length !== 63) throw new address_error_1.AddressError("Invalid 'ip6.arpa' form.");
-			const parts = address.split(".").reverse();
-			for (let i = semicolonAmount; i > 0; i--) {
-				const insertIndex = i * 4;
-				parts.splice(insertIndex, 0, ":");
-			}
-			address = parts.join("");
-			return new Address6(address);
+			const nibbles = arpaFormAddress.replace(/(\.ip6\.arpa)?\.?$/, "");
+			if (!/^[0-9a-f](\.[0-9a-f]){0,31}$/i.test(nibbles)) throw new address_error_1.AddressError("Invalid 'ip6.arpa' form.");
+			const reversed = nibbles.split(".").reverse();
+			const subnetMask = reversed.length * 4;
+			const hex = reversed.join("").padEnd(32, "0");
+			const groups = [];
+			for (let i = 0; i < constants6.GROUPS; i++) groups.push(hex.slice(i * 4, (i + 1) * 4));
+			return new Address6(`${groups.join(":")}/${subnetMask}`);
 		}
 		/**
 		* Return the Microsoft UNC transcription of the address
@@ -27977,21 +28640,52 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return BigInt(`0b${this.mask() + "1".repeat(constants6.BITS - this.subnetMask)}`);
 		}
 		/**
-		* The last address in the range given by this address' subnet
-		* Often referred to as the Broadcast
+		* The last address in the range given by this address's subnet. IPv6 has
+		* no broadcast address, so this is an ordinary assignable address (in a
+		* 64-bit-interface-identifier subnet it falls inside the reserved
+		* subnet-anycast block of [RFC 2526](https://datatracker.ietf.org/doc/html/rfc2526)).
 		* @returns {Address6}
 		*/
 		endAddress() {
 			return Address6.fromBigInt(this._endAddress());
 		}
 		/**
-		* The last host address in the range given by this address's subnet ie
-		* the last address prior to the Broadcast Address
+		* The address one before {@link endAddress}. This is the IPv6 counterpart
+		* of the IPv4 method that skips the broadcast address; IPv6 has no broadcast,
+		* so it drops exactly one address and does not model the 128 reserved
+		* subnet-anycast identifiers of [RFC 2526](https://datatracker.ietf.org/doc/html/rfc2526).
 		* @returns {Address6}
 		*/
 		endAddressExclusive() {
 			const adjust = BigInt("1");
 			return Address6.fromBigInt(this._endAddress() - adjust);
+		}
+		/**
+		* Returns the address `n` addresses after this one (or before, when `n` is
+		* negative), keeping this address's subnet mask. Throws `AddressError` when
+		* the result would fall outside the IPv6 address space or `n` is not an
+		* integer.
+		* @param {number | bigint} n
+		* @returns {Address6}
+		* @example
+		* new Address6('2001:db8::/64').offset(1).correctForm(); // '2001:db8::1'
+		*/
+		offset(n) {
+			return Address6.fromBigInt(common.offsetBigInt(this.bigInt(), n, constants6.BITS, "IPv6")).withSubnetMask(this.subnetMask);
+		}
+		/**
+		* Returns the network that follows this address's network: the address after
+		* {@link endAddress}, with the same subnet mask. Throws `AddressError` when
+		* this network is the last one in the address space.
+		* @returns {Address6}
+		* @example
+		* new Address6('2001:db8::/64').nextNetwork().networkForm(); // '2001:db8:0:1::/64'
+		*/
+		nextNetwork() {
+			return Address6.fromBigInt(common.offsetBigInt(this._endAddress(), 1, constants6.BITS, "IPv6")).withSubnetMask(this.subnetMask);
+		}
+		withSubnetMask(subnetMask) {
+			return new Address6(`${this.correctForm()}/${subnetMask}`);
 		}
 		/**
 		* The hex form of the subnet mask, e.g. `ffff:ffff:ffff:ffff::` for a
@@ -28442,14 +29136,16 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return this.addressMinusSuffix === this.canonicalForm();
 		}
 		/**
-		* Returns true if the address is a link local address, false otherwise
+		* Returns true if the address is a link-local unicast address in `fe80::/10`
+		* ([RFC 4291 §2.4](https://datatracker.ietf.org/doc/html/rfc4291#section-2.4))
+		* or an IPv4-mapped / NAT64 address whose embedded IPv4 address is link-local
+		* (`169.254.0.0/16`, e.g. `::ffff:169.254.169.254`), false otherwise.
 		* @returns {boolean}
 		*/
 		isLinkLocal() {
 			const embedded = this.embeddedIPv4();
 			if (embedded) return embedded.isLinkLocal();
-			if (this.getBitsBase2(0, 64) === "1111111010000000000000000000000000000000000000000000000000000000") return true;
-			return false;
+			return this.isHostInSubnet(LINK_LOCAL_SUBNET);
 		}
 		/**
 		* Returns true if the address is a multicast address, false otherwise
@@ -28535,18 +29231,26 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		}
 		/**
 		* Returns true if the address is private, i.e. a Unique Local Address in
-		* `fc00::/7` ([RFC 4193](https://datatracker.ietf.org/doc/html/rfc4193)) or an
-		* IPv4-mapped / NAT64 address whose embedded IPv4 address is in one of the
-		* [RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918) private ranges
-		* (e.g. `::ffff:10.0.0.1`). This is the IPv6 counterpart to
+		* `fc00::/7` ([RFC 4193](https://datatracker.ietf.org/doc/html/rfc4193)), an
+		* address in the NAT64 local-use range `64:ff9b:1::/48`
+		* ([RFC 8215](https://datatracker.ietf.org/doc/html/rfc8215)), or an
+		* IPv4-mapped / NAT64 well-known address whose embedded IPv4 address is in
+		* one of the [RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918)
+		* private ranges (e.g. `::ffff:10.0.0.1`). This is the IPv6 counterpart to
 		* {@link Address4.isPrivate}; use it instead of {@link isULA} when you need to
 		* catch mapped RFC 1918 addresses as well as native ULAs.
+		*
+		* The local-use NAT64 range is reported private as a whole rather than by
+		* its embedded IPv4 address: an operator may carve a prefix of any RFC 6052
+		* length out of `64:ff9b:1::/48`, so the same bits decode to different IPv4
+		* addresses under different deployments and no single decoding is correct.
+		* Use {@link toAddress4Nat64} with the deployment's prefix to decode one.
 		* @returns {boolean}
 		*/
 		isPrivate() {
 			const embedded = this.embeddedIPv4();
 			if (embedded) return embedded.isPrivate();
-			return this.isULA();
+			return this.isULA() || this.isHostInSubnet(NAT64_LOCAL_USE_SUBNET);
 		}
 		/**
 		* Returns true if the address is an IPv4-mapped / NAT64 address whose embedded
@@ -28588,7 +29292,44 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		* @returns {boolean}
 		*/
 		isDocumentation() {
-			return this.isHostInSubnet(DOCUMENTATION_SUBNET);
+			return DOCUMENTATION_SUBNETS.some((subnet) => this.isHostInSubnet(subnet));
+		}
+		/**
+		* Returns true if the address is in the benchmarking range `2001:2::/48`
+		* ([RFC 5180](https://datatracker.ietf.org/doc/html/rfc5180)) or is an
+		* IPv4-mapped / NAT64 address whose embedded IPv4 address is in
+		* `198.18.0.0/15`, false otherwise.
+		* @returns {boolean}
+		*/
+		isBenchmarking() {
+			const embedded = this.embeddedIPv4();
+			if (embedded) return embedded.isBenchmarking();
+			return this.isHostInSubnet(BENCHMARKING_SUBNET);
+		}
+		/**
+		* Returns true if the address is globally reachable: inside the global
+		* unicast allocation `2000::/3` (the only range the [IANA IPv6 Address Space
+		* Registry](https://www.iana.org/assignments/ipv6-address-space/) assigns
+		* for global unicast; everything else is reserved, ULA, link-local, or
+		* multicast) and not in any block the [IANA IPv6 Special-Purpose Address Registry](https://www.iana.org/assignments/iana-ipv6-special-registry/)
+		* marks as not globally reachable. An IPv4-mapped or NAT64 well-known
+		* address answers for its embedded IPv4 address, so `::ffff:10.0.0.1` and
+		* `64:ff9b::7f00:1` are not global. Teredo (`2001::/32`) and 6to4
+		* (`2002::/16`) are not global either: the registry lists them as N/A and a
+		* packet to one needs a relay.
+		*
+		* This covers everything the individual classifiers name and the blocks they
+		* do not: the discard-only prefix `100::/64`, the IETF protocol assignments
+		* in `2001::/23`, the deprecated site-local `fec0::/10` and IPv4-compatible
+		* `::/96` ranges, and unallocated space such as `4000::/3`. It is the single
+		* predicate to use where a request must not reach an internal or
+		* special-purpose destination; see SECURITY.md.
+		* @returns {boolean}
+		*/
+		isGlobal() {
+			const embedded = this.embeddedIPv4();
+			if (embedded) return embedded.isGlobal();
+			return this.isHostInSubnet(GLOBAL_UNICAST_SUBNET) && common.isGloballyReachable.call(this, SPECIAL_PURPOSE_V6);
 		}
 		/**
 		* Returns the address as an HTTP URL with the host bracketed, e.g.
@@ -28622,7 +29363,12 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 			return `<a href="${safeHref}">${safeForm}</a>`;
 		}
 		/**
-		* Groups an address
+		* Groups an address.
+		*
+		* Returns an HTML fragment: each group is wrapped in a `<span>` carrying
+		* the group classes an address-inspector UI hovers on. The address content
+		* is HTML-escaped; anything you concatenate around it is your
+		* responsibility.
 		* @returns {String}
 		*/
 		group() {
@@ -28690,9 +29436,17 @@ var require_ipv6 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	var TEREDO_SUBNET = new Address6("2001::/32");
 	var SIX_TO_FOUR_SUBNET = new Address6("2002::/16");
 	var ULA_SUBNET = new Address6("fc00::/7");
-	var DOCUMENTATION_SUBNET = new Address6("2001:db8::/32");
+	var LINK_LOCAL_SUBNET = new Address6("fe80::/10");
+	var DOCUMENTATION_SUBNETS = [new Address6("2001:db8::/32"), new Address6("3fff::/20")];
+	var BENCHMARKING_SUBNET = new Address6("2001:2::/48");
+	var GLOBAL_UNICAST_SUBNET = new Address6("2000::/3");
+	var SPECIAL_PURPOSE_V6 = constants6.SPECIAL_PURPOSE.map(([cidr, , reachable]) => ({
+		subnet: new Address6(cidr),
+		reachable
+	}));
 	var IPV4_MAPPED_SUBNET = new Address6("::ffff:0:0/96");
 	var NAT64_WELL_KNOWN_SUBNET = new Address6("64:ff9b::/96");
+	var NAT64_LOCAL_USE_SUBNET = new Address6("64:ff9b:1::/48");
 }));
 //#endregion
 //#region ../node_modules/ip-address/dist/ip-address.js
@@ -28759,10 +29513,11 @@ var import_lib = /* @__PURE__ */ __toESM(require_lib$2(), 1);
 var import_express = /* @__PURE__ */ __toESM(require_express(), 1);
 var import_ip_address = require_ip_address();
 var import_src$2 = /* @__PURE__ */ __toESM(require_src$2(), 1);
+var ipv4CompatibleSubnet = new import_ip_address.Address6("::/96");
 function ipKeyGenerator(ip, ipv6Subnet = 56) {
 	if (isIPv6(ip)) {
 		const address = new import_ip_address.Address6(ip);
-		if (address.is4()) return address.to4().correctForm();
+		if (address.isMapped4() || address.is4() && address.isInSubnet(ipv4CompatibleSubnet)) return address.to4().correctForm();
 		if (ipv6Subnet) return new import_ip_address.Address6(`${ip}/${ipv6Subnet}`).networkForm();
 	}
 	return ip;
@@ -28984,9 +29739,9 @@ var setDraft8Headers = (response, info, windowMs, name, key) => {
 	response.append("RateLimit", `"${name}"; ${header}`);
 	response.append("RateLimit-Policy", `"${name}"; ${policy}`);
 };
-var setRetryAfterHeader = (response, info, windowMs) => {
+var setRetryAfterHeader = (response, info, windowMs, retryAfter) => {
 	if (response.headersSent) return;
-	const resetSeconds = getResetSeconds(windowMs, info.resetTime);
+	const resetSeconds = retryAfter ?? getResetSeconds(windowMs, info.resetTime);
 	response.setHeader("Retry-After", resetSeconds.toString());
 };
 var omitUndefinedProperties = (passedOptions) => {
@@ -29177,6 +29932,7 @@ var validations = {
 			legacyHeaders: true,
 			standardHeaders: true,
 			identifier: true,
+			retryAfter: true,
 			requestPropertyName: true,
 			skipFailedRequests: true,
 			skipSuccessfulRequests: true,
@@ -29499,7 +30255,8 @@ var rateLimit = (passedOptions) => {
 			debug("limit exceeded");
 			if (config.legacyHeaders || config.standardHeaders) {
 				debug("set retry-after header");
-				setRetryAfterHeader(response, info, config.windowMs);
+				const retryAfter = await (typeof config.retryAfter === "function" ? config.retryAfter(request, response) : config.retryAfter);
+				setRetryAfterHeader(response, info, config.windowMs, retryAfter);
 			}
 			config.handler(request, response, next, options);
 			return;
@@ -29522,6 +30279,154 @@ var RequestError = class extends Error {
 		this.name = "RequestError";
 	}
 };
+var nonJoinedHeaders = /* @__PURE__ */ new Set([
+	"age",
+	"authorization",
+	"content-length",
+	"content-type",
+	"etag",
+	"expires",
+	"from",
+	"host",
+	"if-modified-since",
+	"if-unmodified-since",
+	"last-modified",
+	"location",
+	"max-forwards",
+	"proxy-authorization",
+	"referer",
+	"retry-after",
+	"server",
+	"user-agent"
+]);
+var validHeaderName = /^[!#$%&'*+\-.^_`|~\dA-Za-z]+$/;
+var isHttpWhitespace = (code) => code === 9 || code === 10 || code === 13 || code === 32;
+var normalizeHeaderValue = (value) => {
+	if (!isHttpWhitespace(value.charCodeAt(0)) && !isHttpWhitespace(value.charCodeAt(value.length - 1))) return value;
+	let start = 0;
+	let end = value.length;
+	while (start < end && isHttpWhitespace(value.charCodeAt(start))) start++;
+	while (end > start && isHttpWhitespace(value.charCodeAt(end - 1))) end--;
+	return value.slice(start, end);
+};
+var forbiddenHeaderValue = /[\0\r\n]/;
+var GlobalHeaders = globalThis.Headers;
+var materializeHeaders = (rawHeaders, HeadersCtor = GlobalHeaders) => {
+	const headers = new HeadersCtor();
+	for (let i = 0; i < rawHeaders.length; i += 2) {
+		const name = rawHeaders[i];
+		if (!name.startsWith(":")) headers.append(name, rawHeaders[i + 1]);
+	}
+	return headers;
+};
+var RequestHeaders = class {
+	#incoming;
+	#rawHeaders;
+	#headers;
+	#invalidValue;
+	constructor(incoming) {
+		this.#incoming = incoming;
+		if (incoming instanceof Http2ServerRequest) this.#rawHeaders = incoming.rawHeaders.slice();
+	}
+	get #lazyRawHeaders() {
+		return this.#rawHeaders ??= this.#incoming.rawHeaders.slice();
+	}
+	get #native() {
+		if (!this.#headers) {
+			this.#headers = materializeHeaders(this.#lazyRawHeaders);
+			this.#rawHeaders = void 0;
+		}
+		return this.#headers;
+	}
+	#normalizedName(name) {
+		if (typeof name !== "string") return;
+		if (!validHeaderName.test(name)) throw new TypeError(`Invalid header name: ${name}`);
+		return name.toLowerCase();
+	}
+	#lookupHttp1(lowerName) {
+		const headers = this.#incoming instanceof Http2ServerRequest ? void 0 : this.#incoming.headers;
+		if (!headers || nonJoinedHeaders.has(lowerName) || lowerName === "set-cookie" || lowerName === "__proto__") return;
+		if (!Object.hasOwn(headers, lowerName)) return null;
+		const rawValue = headers[lowerName];
+		if (typeof rawValue === "string") {
+			const value = normalizeHeaderValue(rawValue);
+			return forbiddenHeaderValue.test(value) ? void 0 : value;
+		}
+	}
+	#lookup(rawHeaders, lowerName) {
+		const separator = lowerName === "cookie" ? "; " : ", ";
+		let value = null;
+		for (let i = 0; i < rawHeaders.length; i += 2) {
+			const rawName = rawHeaders[i];
+			if (rawName.length === lowerName.length && rawName.toLowerCase() === lowerName) {
+				const rawValue = normalizeHeaderValue(rawHeaders[i + 1]);
+				if (forbiddenHeaderValue.test(rawValue)) {
+					this.#invalidValue = true;
+					return;
+				}
+				value = value === null ? rawValue : value + separator + rawValue;
+			}
+		}
+		return value;
+	}
+	append(name, value) {
+		this.#native.append(name, value);
+	}
+	delete(name) {
+		this.#native.delete(name);
+	}
+	get(name) {
+		const lowerName = this.#normalizedName(name);
+		if (lowerName && !this.#headers && !this.#invalidValue) {
+			const http1Value = this.#lookupHttp1(lowerName);
+			if (http1Value !== void 0) return http1Value;
+			const value = this.#lookup(this.#lazyRawHeaders, lowerName);
+			if (value !== void 0) return value;
+		}
+		return this.#native.get(name);
+	}
+	has(name) {
+		const lowerName = this.#normalizedName(name);
+		if (lowerName && !this.#headers && !this.#invalidValue) {
+			const http1Value = this.#lookupHttp1(lowerName);
+			if (http1Value !== void 0) return http1Value !== null;
+			const value = this.#lookup(this.#lazyRawHeaders, lowerName);
+			if (value !== void 0) return value !== null;
+		}
+		return this.#native.has(name);
+	}
+	set(name, value) {
+		this.#native.set(name, value);
+	}
+	getSetCookie() {
+		return this.#native.getSetCookie();
+	}
+	keys() {
+		return this.#native.keys();
+	}
+	values() {
+		return this.#native.values();
+	}
+	entries() {
+		return this.#native.entries();
+	}
+	forEach(callback, thisArg) {
+		this.#native.forEach((value, key) => {
+			callback.call(thisArg, value, key, this);
+		});
+	}
+	[Symbol.iterator]() {
+		return this.entries();
+	}
+};
+Object.defineProperty(RequestHeaders.prototype, Symbol.for("nodejs.util.inspect.custom"), { value: function(depth, options, inspectFn) {
+	return `Headers (lightweight) ${inspectFn(Object.fromEntries(this), {
+		...options,
+		depth: depth == null ? null : depth - 1
+	})}`;
+} });
+Object.setPrototypeOf(RequestHeaders.prototype, GlobalHeaders.prototype);
+var newHeadersFromIncoming = (incoming) => globalThis.Headers === GlobalHeaders ? new RequestHeaders(incoming) : materializeHeaders(incoming.rawHeaders, globalThis.Headers);
 var reValidRequestUrl = /^\/[!#$&-;=?-\[\]_a-z~]*$/;
 var reDotSegment = /\/\.\.?(?:[/?#]|$)/;
 var reValidHost = /^[a-z0-9._-]+(?::(?:[1-5]\d{3,4}|[6-9]\d{3}))?$/;
@@ -29553,15 +30458,6 @@ var Request$1 = class extends GlobalRequest {
 		if (typeof (options?.body)?.getReader !== "undefined") options.duplex ??= "half";
 		super(input, options);
 	}
-};
-var newHeadersFromIncoming = (incoming) => {
-	const headerRecord = [];
-	const rawHeaders = incoming.rawHeaders;
-	for (let i = 0, len = rawHeaders.length; i < len; i += 2) {
-		const key = rawHeaders[i];
-		if (key.charCodeAt(0) !== 58) headerRecord.push([key, rawHeaders[i + 1]]);
-	}
-	return new Headers(headerRecord);
 };
 var wrapBodyStream = Symbol("wrapBodyStream");
 var byteExactEncodings = /* @__PURE__ */ new Set([
@@ -30402,9 +31298,103 @@ var getRequestListener = (fetchCallback, options = {}) => {
 };
 globalThis.CloseEvent;
 globalThis.ErrorEvent;
+/*!
+* content-type
+* Copyright(c) 2015 Douglas Christopher Wilson
+* MIT Licensed
+*/
 //#endregion
 //#region ../node_modules/@modelcontextprotocol/sdk/dist/esm/shared/mediaType.js
-var import_content_type = /* @__PURE__ */ __toESM(require_content_type(), 1);
+var import_content_type = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports) => {
+	/**
+	* RegExp to match *( ";" parameter ) in RFC 7231 sec 3.1.1.1
+	*
+	* parameter     = token "=" ( token / quoted-string )
+	* token         = 1*tchar
+	* tchar         = "!" / "#" / "$" / "%" / "&" / "'" / "*"
+	*               / "+" / "-" / "." / "^" / "_" / "`" / "|" / "~"
+	*               / DIGIT / ALPHA
+	*               ; any VCHAR, except delimiters
+	* quoted-string = DQUOTE *( qdtext / quoted-pair ) DQUOTE
+	* qdtext        = HTAB / SP / %x21 / %x23-5B / %x5D-7E / obs-text
+	* obs-text      = %x80-FF
+	* quoted-pair   = "\" ( HTAB / SP / VCHAR / obs-text )
+	*/
+	var PARAM_REGEXP = /; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) */g;
+	/**
+	* RegExp to match quoted-pair in RFC 7230 sec 3.2.6
+	*
+	* quoted-pair = "\" ( HTAB / SP / VCHAR / obs-text )
+	* obs-text    = %x80-FF
+	*/
+	var QESC_REGEXP = /\\([\u000b\u0020-\u00ff])/g;
+	/**
+	* RegExp to match type in RFC 7231 sec 3.1.1.1
+	*
+	* media-type = type "/" subtype
+	* type       = token
+	* subtype    = token
+	*/
+	var TYPE_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
+	exports.parse = parse;
+	/**
+	* Parse media type to object.
+	*
+	* @param {string|object} string
+	* @return {Object}
+	* @public
+	*/
+	function parse(string) {
+		if (!string) throw new TypeError("argument string is required");
+		var header = typeof string === "object" ? getcontenttype(string) : string;
+		if (typeof header !== "string") throw new TypeError("argument string is required to be a string");
+		var index = header.indexOf(";");
+		var type = index !== -1 ? header.slice(0, index).trim() : header.trim();
+		if (!TYPE_REGEXP.test(type)) throw new TypeError("invalid media type");
+		var obj = new ContentType(type.toLowerCase());
+		if (index !== -1) {
+			var key;
+			var match;
+			var value;
+			PARAM_REGEXP.lastIndex = index;
+			while (match = PARAM_REGEXP.exec(header)) {
+				if (match.index !== index) throw new TypeError("invalid parameter format");
+				index += match[0].length;
+				key = match[1].toLowerCase();
+				value = match[2];
+				if (value.charCodeAt(0) === 34) {
+					value = value.slice(1, -1);
+					if (value.indexOf("\\") !== -1) value = value.replace(QESC_REGEXP, "$1");
+				}
+				obj.parameters[key] = value;
+			}
+			if (index !== header.length) throw new TypeError("invalid parameter format");
+		}
+		return obj;
+	}
+	/**
+	* Get content-type from req/res objects.
+	*
+	* @param {object}
+	* @return {Object}
+	* @private
+	*/
+	function getcontenttype(obj) {
+		var header;
+		if (typeof obj.getHeader === "function") header = obj.getHeader("content-type");
+		else if (typeof obj.headers === "object") header = obj.headers && obj.headers["content-type"];
+		if (typeof header !== "string") throw new TypeError("content-type header is missing from object");
+		return header;
+	}
+	/**
+	* Class to represent a content type.
+	* @private
+	*/
+	function ContentType(type) {
+		this.parameters = Object.create(null);
+		this.type = type;
+	}
+})))(), 1);
 /**
 * Extracts the media type (the lowercased `type/subtype` pair, without
 * parameters) from a raw `Content-Type` header value, or `undefined` when the
@@ -34454,16 +35444,21 @@ var require_util$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 		if (parts[0]) {
 			if (parts[0].indexOf("/") >= 0) {
 				const dtparts = parts[0].split("/");
-				if (dtparts.length === 3) if (dtparts[0].length === 4) result.date = dtparts[0] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[2]).substr(-2);
-				else if (dtparts[2].length === 2) if (dateFormat.indexOf("/d/") > -1 || dateFormat.indexOf("/dd/") > -1) result.date = "20" + dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
-				else result.date = "20" + dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
-				else if ((dt.toLowerCase().indexOf("pm") > -1 || dt.toLowerCase().indexOf("p.m.") > -1 || dt.toLowerCase().indexOf("p. m.") > -1 || dt.toLowerCase().indexOf("am") > -1 || dt.toLowerCase().indexOf("a.m.") > -1 || dt.toLowerCase().indexOf("a. m.") > -1 || dateFormat.indexOf("/d/") > -1 || dateFormat.indexOf("/dd/") > -1) && dateFormat.indexOf("dd/") !== 0) result.date = dtparts[2] + "-" + ("0" + dtparts[0]).substr(-2) + "-" + ("0" + dtparts[1]).substr(-2);
-				else result.date = dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+				if (dtparts.length === 3) {
+					if (dtparts[0].length === 4) result.date = dtparts[0] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[2]).substr(-2);
+					else if (dtparts[2].length === 2) {
+						if (dateFormat.indexOf("/d/") > -1 || dateFormat.indexOf("/dd/") > -1) result.date = "20" + dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+						else result.date = "20" + dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+					} else if ((dt.toLowerCase().indexOf("pm") > -1 || dt.toLowerCase().indexOf("p.m.") > -1 || dt.toLowerCase().indexOf("p. m.") > -1 || dt.toLowerCase().indexOf("am") > -1 || dt.toLowerCase().indexOf("a.m.") > -1 || dt.toLowerCase().indexOf("a. m.") > -1 || dateFormat.indexOf("/d/") > -1 || dateFormat.indexOf("/dd/") > -1) && dateFormat.indexOf("dd/") !== 0) result.date = dtparts[2] + "-" + ("0" + dtparts[0]).substr(-2) + "-" + ("0" + dtparts[1]).substr(-2);
+					else result.date = dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+				}
 			}
 			if (parts[0].indexOf(".") >= 0) {
 				const dtparts = parts[0].split(".");
-				if (dtparts.length === 3) if (dateFormat.indexOf(".d.") > -1 || dateFormat.indexOf(".dd.") > -1) result.date = dtparts[2] + "-" + ("0" + dtparts[0]).substr(-2) + "-" + ("0" + dtparts[1]).substr(-2);
-				else result.date = dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+				if (dtparts.length === 3) {
+					if (dateFormat.indexOf(".d.") > -1 || dateFormat.indexOf(".dd.") > -1) result.date = dtparts[2] + "-" + ("0" + dtparts[0]).substr(-2) + "-" + ("0" + dtparts[1]).substr(-2);
+					else result.date = dtparts[2] + "-" + ("0" + dtparts[1]).substr(-2) + "-" + ("0" + dtparts[0]).substr(-2);
+				}
 			}
 			if (parts[0].indexOf("-") >= 0) {
 				const dtparts = parts[0].split("-");
@@ -34581,9 +35576,12 @@ var require_util$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 				_psPersistent = true;
 				_psChild.stdout.on("data", (data) => {
 					_psResult = _psResult + data.toString("utf8");
-					if (data.indexOf(_psCmdSeperator) >= 0) {
-						powerShellProceedResults(_psResult);
-						_psResult = "";
+					let sepIndex = _psResult.indexOf(_psCmdSeperator);
+					while (sepIndex >= 0) {
+						const end = sepIndex + 16;
+						powerShellProceedResults(_psResult.slice(0, end));
+						_psResult = _psResult.slice(end);
+						sepIndex = _psResult.indexOf(_psCmdSeperator);
 					}
 				});
 				_psChild.stderr.on("data", () => {
@@ -34625,7 +35623,7 @@ var require_util$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 						start: /* @__PURE__ */ new Date()
 					});
 					try {
-						if (_psChild && _psChild.pid) _psChild.stdin.write("$OutputEncoding = [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8 ; echo --###START###--" + id + "--##ID##--; " + os$1.EOL + cmd + os$1.EOL + "echo --###ENDCMD###--" + os$1.EOL);
+						if (_psChild && _psChild.pid) _psChild.stdin.write(_psToUTF8 + "echo " + _psCmdStart + id + "--##ID##--; " + os$1.EOL + cmd + os$1.EOL + "echo --###ENDCMD###--" + os$1.EOL);
 					} catch {
 						resolve("");
 					}
@@ -35318,28 +36316,30 @@ var require_util$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 				}
 				if (inTagEnd) {
 					inTagEnd = false;
-					if (metaData[depth].tagEnd && tags.indexOf(metaData[depth].tagEnd.substr(1)) >= 0) if (metaData[depth].tagEnd === "/dict" || metaData[depth].tagEnd === "/array") {
-						if (depth > 1 && metaData[depth - 2].tagStart === "array") metaData[depth - 2].data.push(metaData[depth - 1].data);
-						if (depth > 1 && metaData[depth - 2].tagStart === "dict" && !isProtoKey(metaData[depth - 1].key)) metaData[depth - 2].data[metaData[depth - 1].key] = metaData[depth - 1].data;
-						depth--;
-						metaData.pop();
-						metaData[depth].tagContent = "";
-						metaData[depth].tagStart = "";
-						metaData[depth].tagEnd = "";
-					} else {
-						if (metaData[depth].tagEnd === "/key" && metaData[depth].tagContent) metaData[depth].key = metaData[depth].tagContent;
-						else {
-							if (metaData[depth].tagEnd === "/real" && metaData[depth].tagContent) metaData[depth].data = parseFloat(metaData[depth].tagContent) || 0;
-							if (metaData[depth].tagEnd === "/integer" && metaData[depth].tagContent) metaData[depth].data = parseInt(metaData[depth].tagContent) || 0;
-							if (metaData[depth].tagEnd === "/string" && metaData[depth].tagContent) metaData[depth].data = metaData[depth].tagContent || "";
-							if (metaData[depth].tagEnd === "/boolean") metaData[depth].data = metaData[depth].tagContent || false;
-							if (metaData[depth].tagEnd === "/arrayEmpty") metaData[depth].data = metaData[depth].tagContent || [];
-							if (depth > 0 && metaData[depth - 1].tagStart === "array") metaData[depth - 1].data.push(metaData[depth].data);
-							if (depth > 0 && metaData[depth - 1].tagStart === "dict" && !isProtoKey(metaData[depth].key)) metaData[depth - 1].data[metaData[depth].key] = metaData[depth].data;
+					if (metaData[depth].tagEnd && tags.indexOf(metaData[depth].tagEnd.substr(1)) >= 0) {
+						if (metaData[depth].tagEnd === "/dict" || metaData[depth].tagEnd === "/array") {
+							if (depth > 1 && metaData[depth - 2].tagStart === "array") metaData[depth - 2].data.push(metaData[depth - 1].data);
+							if (depth > 1 && metaData[depth - 2].tagStart === "dict" && !isProtoKey(metaData[depth - 1].key)) metaData[depth - 2].data[metaData[depth - 1].key] = metaData[depth - 1].data;
+							depth--;
+							metaData.pop();
+							metaData[depth].tagContent = "";
+							metaData[depth].tagStart = "";
+							metaData[depth].tagEnd = "";
+						} else {
+							if (metaData[depth].tagEnd === "/key" && metaData[depth].tagContent) metaData[depth].key = metaData[depth].tagContent;
+							else {
+								if (metaData[depth].tagEnd === "/real" && metaData[depth].tagContent) metaData[depth].data = parseFloat(metaData[depth].tagContent) || 0;
+								if (metaData[depth].tagEnd === "/integer" && metaData[depth].tagContent) metaData[depth].data = parseInt(metaData[depth].tagContent) || 0;
+								if (metaData[depth].tagEnd === "/string" && metaData[depth].tagContent) metaData[depth].data = metaData[depth].tagContent || "";
+								if (metaData[depth].tagEnd === "/boolean") metaData[depth].data = metaData[depth].tagContent || false;
+								if (metaData[depth].tagEnd === "/arrayEmpty") metaData[depth].data = metaData[depth].tagContent || [];
+								if (depth > 0 && metaData[depth - 1].tagStart === "array") metaData[depth - 1].data.push(metaData[depth].data);
+								if (depth > 0 && metaData[depth - 1].tagStart === "dict" && !isProtoKey(metaData[depth].key)) metaData[depth - 1].data[metaData[depth].key] = metaData[depth].data;
+							}
+							metaData[depth].tagContent = "";
+							metaData[depth].tagStart = "";
+							metaData[depth].tagEnd = "";
 						}
-						metaData[depth].tagContent = "";
-						metaData[depth].tagStart = "";
-						metaData[depth].tagEnd = "";
 					}
 					metaData[depth].tagEnd = "";
 					inTagStart = false;
@@ -36980,17 +37980,19 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 					dnsSuffixes.primaryDNS = primaryDNS.trim();
 					if (!dnsSuffixes.primaryDNS) dnsSuffixes.primaryDNS = "Not defined";
 				}
-				if (index > 1) if (index % 2 === 0) {
-					const name = element.substring(element.lastIndexOf(" ") + 1).replace(":", "");
-					iface.name = name;
-				} else {
-					const connectionSpecificDNS = element.split("\r\n").filter((element) => {
-						return element.toUpperCase().includes("DNS");
-					});
-					const dnsSuffix = connectionSpecificDNS[0].substring(connectionSpecificDNS[0].lastIndexOf(":") + 1);
-					iface.dnsSuffix = dnsSuffix.trim();
-					dnsSuffixes.ifaces.push(iface);
-					iface = {};
+				if (index > 1) {
+					if (index % 2 === 0) {
+						const name = element.substring(element.lastIndexOf(" ") + 1).replace(":", "");
+						iface.name = name;
+					} else {
+						const connectionSpecificDNS = element.split("\r\n").filter((element) => {
+							return element.toUpperCase().includes("DNS");
+						});
+						const dnsSuffix = connectionSpecificDNS[0].substring(connectionSpecificDNS[0].lastIndexOf(":") + 1);
+						iface.dnsSuffix = dnsSuffix.trim();
+						dnsSuffixes.ifaces.push(iface);
+						iface = {};
+					}
 				}
 			});
 			return dnsSuffixes;
@@ -37026,7 +38028,12 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 	}
 	function getWindowsWirelessIfaceSSID(interfaceName) {
 		try {
-			return execSync(`netsh wlan show  interface name="${interfaceName}" | findstr "SSID"`, util.execOptsWin).split("\r\n").shift().split(":").pop().trim();
+			return (execFileSync("netsh", [
+				"wlan",
+				"show",
+				"interface",
+				`name=${util.sanitizeString(interfaceName)}`
+			], util.execOptsWin).toString().split("\r\n").find((l) => l.includes("SSID")) || "").split(":").pop().trim();
 		} catch {
 			return "Unknown";
 		}
@@ -37066,7 +38073,12 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 			try {
 				const SSID = getWindowsWirelessIfaceSSID(iface);
 				if (SSID !== "Unknown") {
-					const profiles = execSync(`netsh wlan show profiles "${util.sanitizeString(SSID)}"`, util.execOptsWin).split("\r\n");
+					const profiles = execFileSync("netsh", [
+						"wlan",
+						"show",
+						"profiles",
+						util.sanitizeString(SSID)
+					], util.execOptsWin).toString().split("\r\n");
 					i8021xState = (profiles.find((l) => l.indexOf("802.1X") >= 0) || "").trim();
 					i8021xProtocol = (profiles.find((l) => l.indexOf("EAP") >= 0) || "").trim();
 				}
@@ -37360,152 +38372,155 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 				let nics = [];
 				let dnsSuffixes = [];
 				let nics8021xInfo = [];
-				if (_darwin || _freebsd || _openbsd || _netbsd) if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
-					result = _networkInterfaces;
-					if (callback) callback(result);
-					resolve(result);
-				} else {
-					const defaultInterface = getDefaultNetworkInterface();
-					_ifaces = JSON.parse(JSON.stringify(ifaces));
-					nics = getDarwinNics();
-					nics.forEach((nic) => {
-						let ip4link = "";
-						let ip4linksubnet = "";
-						let ip6link = "";
-						let ip6linksubnet = "";
-						nic.ip4 = "";
-						nic.ip6 = "";
-						if ({}.hasOwnProperty.call(ifaces, nic.iface)) ifaces[nic.iface].forEach((details) => {
-							if (details.family === "IPv4" || details.family === 4) {
-								if (!nic.ip4 && !nic.ip4.match(/^169.254/i)) {
-									nic.ip4 = details.address;
-									nic.ip4subnet = details.netmask;
-								}
-								if (nic.ip4.match(/^169.254/i)) {
-									ip4link = details.address;
-									ip4linksubnet = details.netmask;
-								}
-							}
-							if (details.family === "IPv6" || details.family === 6) {
-								if (!nic.ip6 && !nic.ip6.match(/^fe80::/i)) {
-									nic.ip6 = details.address;
-									nic.ip6subnet = details.netmask;
-								}
-								if (nic.ip6.match(/^fe80::/i)) {
-									ip6link = details.address;
-									ip6linksubnet = details.netmask;
-								}
-							}
-						});
-						if (!nic.ip4 && ip4link) {
-							nic.ip4 = ip4link;
-							nic.ip4subnet = ip4linksubnet;
-						}
-						if (!nic.ip6 && ip6link) {
-							nic.ip6 = ip6link;
-							nic.ip6subnet = ip6linksubnet;
-						}
-						const ifaceSanitized = util.sanitizeString(nic.iface);
-						result.push({
-							iface: nic.iface,
-							ifaceName: nic.iface,
-							default: nic.iface === defaultInterface,
-							ip4: nic.ip4,
-							ip4subnet: nic.ip4subnet || "",
-							ip6: nic.ip6,
-							ip6subnet: nic.ip6subnet || "",
-							mac: nic.mac,
-							internal: nic.internal,
-							virtual: nic.internal ? false : testVirtualNic(nic.iface, nic.iface, nic.mac),
-							operstate: nic.operstate,
-							type: nic.type,
-							duplex: nic.duplex,
-							mtu: nic.mtu,
-							speed: nic.speed,
-							dhcp: getDarwinIfaceDHCPstatus(ifaceSanitized),
-							dnsSuffix: "",
-							ieee8021xAuth: "",
-							ieee8021xState: "",
-							carrierChanges: 0
-						});
-					});
-					_networkInterfaces = result;
-					if (defaultString.toLowerCase().indexOf("default") >= 0) {
-						result = result.filter((item) => item.default);
-						if (result.length > 0) result = result[0];
-						else result = [];
-					}
-					if (callback) callback(result);
-					resolve(result);
-				}
-				if (_linux) if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
-					result = _networkInterfaces;
-					if (callback) callback(result);
-					resolve(result);
-				} else {
-					_ifaces = JSON.parse(JSON.stringify(ifaces));
-					_dhcpNics = getLinuxDHCPNics();
-					const defaultInterface = getDefaultNetworkInterface();
-					for (let dev in ifaces) {
-						let ip4 = "";
-						let ip4subnet = "";
-						let ip6 = "";
-						let ip6subnet = "";
-						let mac = "";
-						let duplex = "";
-						let mtu = "";
-						let speed = null;
-						let carrierChanges = 0;
-						let dhcp = false;
-						let dnsSuffix = "";
-						let ieee8021xAuth = "";
-						let ieee8021xState = "";
-						let type = "";
-						let ip4link = "";
-						let ip4linksubnet = "";
-						let ip6link = "";
-						let ip6linksubnet = "";
-						if ({}.hasOwnProperty.call(ifaces, dev)) {
-							const ifaceName = dev;
-							ifaces[dev].forEach((details) => {
+				if (_darwin || _freebsd || _openbsd || _netbsd) {
+					if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
+						result = _networkInterfaces;
+						if (callback) callback(result);
+						resolve(result);
+					} else {
+						const defaultInterface = getDefaultNetworkInterface();
+						_ifaces = JSON.parse(JSON.stringify(ifaces));
+						nics = getDarwinNics();
+						nics.forEach((nic) => {
+							let ip4link = "";
+							let ip4linksubnet = "";
+							let ip6link = "";
+							let ip6linksubnet = "";
+							nic.ip4 = "";
+							nic.ip6 = "";
+							if ({}.hasOwnProperty.call(ifaces, nic.iface)) ifaces[nic.iface].forEach((details) => {
 								if (details.family === "IPv4" || details.family === 4) {
-									if (!ip4 && !ip4.match(/^169.254/i)) {
-										ip4 = details.address;
-										ip4subnet = details.netmask;
+									if (!nic.ip4 && !nic.ip4.match(/^169.254/i)) {
+										nic.ip4 = details.address;
+										nic.ip4subnet = details.netmask;
 									}
-									if (ip4.match(/^169.254/i)) {
+									if (nic.ip4.match(/^169.254/i)) {
 										ip4link = details.address;
 										ip4linksubnet = details.netmask;
 									}
 								}
 								if (details.family === "IPv6" || details.family === 6) {
-									if (!ip6 && !ip6.match(/^fe80::/i)) {
-										ip6 = details.address;
-										ip6subnet = details.netmask;
+									if (!nic.ip6 && !nic.ip6.match(/^fe80::/i)) {
+										nic.ip6 = details.address;
+										nic.ip6subnet = details.netmask;
 									}
-									if (ip6.match(/^fe80::/i)) {
+									if (nic.ip6.match(/^fe80::/i)) {
 										ip6link = details.address;
 										ip6linksubnet = details.netmask;
 									}
 								}
-								mac = details.mac;
-								const nodeMainVersion = parseInt(process.versions.node.split("."), 10);
-								if (mac.indexOf("00:00:0") > -1 && (_linux || _darwin) && !details.internal && nodeMainVersion >= 8 && nodeMainVersion <= 11) {
-									if (Object.keys(_mac).length === 0) _mac = getMacAddresses();
-									mac = _mac[dev] || "";
-								}
 							});
-							if (!ip4 && ip4link) {
-								ip4 = ip4link;
-								ip4subnet = ip4linksubnet;
+							if (!nic.ip4 && ip4link) {
+								nic.ip4 = ip4link;
+								nic.ip4subnet = ip4linksubnet;
 							}
-							if (!ip6 && ip6link) {
-								ip6 = ip6link;
-								ip6subnet = ip6linksubnet;
+							if (!nic.ip6 && ip6link) {
+								nic.ip6 = ip6link;
+								nic.ip6subnet = ip6linksubnet;
 							}
-							const iface = dev.split(":")[0].trim();
-							const ifaceSanitized = util.sanitizeString(iface);
-							const cmd = `echo -n "addr_assign_type: "; cat /sys/class/net/${ifaceSanitized}/addr_assign_type 2>/dev/null; echo;
+							const ifaceSanitized = util.sanitizeString(nic.iface);
+							result.push({
+								iface: nic.iface,
+								ifaceName: nic.iface,
+								default: nic.iface === defaultInterface,
+								ip4: nic.ip4,
+								ip4subnet: nic.ip4subnet || "",
+								ip6: nic.ip6,
+								ip6subnet: nic.ip6subnet || "",
+								mac: nic.mac,
+								internal: nic.internal,
+								virtual: nic.internal ? false : testVirtualNic(nic.iface, nic.iface, nic.mac),
+								operstate: nic.operstate,
+								type: nic.type,
+								duplex: nic.duplex,
+								mtu: nic.mtu,
+								speed: nic.speed,
+								dhcp: getDarwinIfaceDHCPstatus(ifaceSanitized),
+								dnsSuffix: "",
+								ieee8021xAuth: "",
+								ieee8021xState: "",
+								carrierChanges: 0
+							});
+						});
+						_networkInterfaces = result;
+						if (defaultString.toLowerCase().indexOf("default") >= 0) {
+							result = result.filter((item) => item.default);
+							if (result.length > 0) result = result[0];
+							else result = [];
+						}
+						if (callback) callback(result);
+						resolve(result);
+					}
+				}
+				if (_linux) {
+					if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
+						result = _networkInterfaces;
+						if (callback) callback(result);
+						resolve(result);
+					} else {
+						_ifaces = JSON.parse(JSON.stringify(ifaces));
+						_dhcpNics = getLinuxDHCPNics();
+						const defaultInterface = getDefaultNetworkInterface();
+						for (let dev in ifaces) {
+							let ip4 = "";
+							let ip4subnet = "";
+							let ip6 = "";
+							let ip6subnet = "";
+							let mac = "";
+							let duplex = "";
+							let mtu = "";
+							let speed = null;
+							let carrierChanges = 0;
+							let dhcp = false;
+							let dnsSuffix = "";
+							let ieee8021xAuth = "";
+							let ieee8021xState = "";
+							let type = "";
+							let ip4link = "";
+							let ip4linksubnet = "";
+							let ip6link = "";
+							let ip6linksubnet = "";
+							if ({}.hasOwnProperty.call(ifaces, dev)) {
+								const ifaceName = dev;
+								ifaces[dev].forEach((details) => {
+									if (details.family === "IPv4" || details.family === 4) {
+										if (!ip4 && !ip4.match(/^169.254/i)) {
+											ip4 = details.address;
+											ip4subnet = details.netmask;
+										}
+										if (ip4.match(/^169.254/i)) {
+											ip4link = details.address;
+											ip4linksubnet = details.netmask;
+										}
+									}
+									if (details.family === "IPv6" || details.family === 6) {
+										if (!ip6 && !ip6.match(/^fe80::/i)) {
+											ip6 = details.address;
+											ip6subnet = details.netmask;
+										}
+										if (ip6.match(/^fe80::/i)) {
+											ip6link = details.address;
+											ip6linksubnet = details.netmask;
+										}
+									}
+									mac = details.mac;
+									const nodeMainVersion = parseInt(process.versions.node.split("."), 10);
+									if (mac.indexOf("00:00:0") > -1 && (_linux || _darwin) && !details.internal && nodeMainVersion >= 8 && nodeMainVersion <= 11) {
+										if (Object.keys(_mac).length === 0) _mac = getMacAddresses();
+										mac = _mac[dev] || "";
+									}
+								});
+								if (!ip4 && ip4link) {
+									ip4 = ip4link;
+									ip4subnet = ip4linksubnet;
+								}
+								if (!ip6 && ip6link) {
+									ip6 = ip6link;
+									ip6subnet = ip6linksubnet;
+								}
+								const iface = dev.split(":")[0].trim();
+								const ifaceSanitized = util.sanitizeString(iface, true);
+								const cmd = `echo -n "addr_assign_type: "; cat /sys/class/net/${ifaceSanitized}/addr_assign_type 2>/dev/null; echo;
             echo -n "address: "; cat /sys/class/net/${ifaceSanitized}/address 2>/dev/null; echo;
             echo -n "addr_len: "; cat /sys/class/net/${ifaceSanitized}/addr_len 2>/dev/null; echo;
             echo -n "broadcast: "; cat /sys/class/net/${ifaceSanitized}/broadcast 2>/dev/null; echo;
@@ -37530,146 +38545,36 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
             echo -n "type: "; cat /sys/class/net/${ifaceSanitized}/type 2>/dev/null; echo;
             echo -n "wireless: "; cat /proc/net/wireless 2>/dev/null | grep ${ifaceSanitized}; echo;
             echo -n "wirelessspeed: "; iw dev ${ifaceSanitized} link 2>&1 | grep bitrate; echo;`;
-							let lines = [];
-							try {
-								lines = execSync(cmd, util.execOptsLinux).toString().split("\n");
-								const connectionName = getLinuxIfaceConnectionName(ifaceSanitized);
-								dhcp = getLinuxIfaceDHCPstatus(ifaceSanitized, connectionName, _dhcpNics);
-								dnsSuffix = getLinuxIfaceDNSsuffix(connectionName);
-								ieee8021xAuth = getLinuxIfaceIEEE8021xAuth(connectionName);
-								ieee8021xState = getLinuxIfaceIEEE8021xState(ieee8021xAuth);
-							} catch {
-								util.noop();
-							}
-							duplex = util.getValue(lines, "duplex");
-							duplex = duplex.startsWith("cat") ? "" : duplex;
-							mtu = parseInt(util.getValue(lines, "mtu"), 10);
-							let myspeed = parseInt(util.getValue(lines, "speed"), 10);
-							speed = isNaN(myspeed) ? null : myspeed;
-							const wirelessspeed = util.getValue(lines, "tx bitrate");
-							if (speed === null && wirelessspeed) {
-								myspeed = parseFloat(wirelessspeed);
+								let lines = [];
+								try {
+									lines = execSync(cmd, util.execOptsLinux).toString().split("\n");
+									const connectionName = getLinuxIfaceConnectionName(ifaceSanitized);
+									dhcp = getLinuxIfaceDHCPstatus(ifaceSanitized, connectionName, _dhcpNics);
+									dnsSuffix = getLinuxIfaceDNSsuffix(connectionName);
+									ieee8021xAuth = getLinuxIfaceIEEE8021xAuth(connectionName);
+									ieee8021xState = getLinuxIfaceIEEE8021xState(ieee8021xAuth);
+								} catch {
+									util.noop();
+								}
+								duplex = util.getValue(lines, "duplex");
+								duplex = duplex.startsWith("cat") ? "" : duplex;
+								mtu = parseInt(util.getValue(lines, "mtu"), 10);
+								let myspeed = parseInt(util.getValue(lines, "speed"), 10);
 								speed = isNaN(myspeed) ? null : myspeed;
-							}
-							carrierChanges = parseInt(util.getValue(lines, "carrier_changes"), 10);
-							const operstate = util.getValue(lines, "operstate");
-							type = operstate === "up" ? util.getValue(lines, "wireless").trim() ? "wireless" : "wired" : "unknown";
-							if (ifaceSanitized === "lo" || ifaceSanitized.startsWith("bond")) type = "virtual";
-							let internal = ifaces[dev] && ifaces[dev][0] ? ifaces[dev][0].internal : false;
-							if (dev.toLowerCase().indexOf("loopback") > -1 || ifaceName.toLowerCase().indexOf("loopback") > -1) internal = true;
-							const virtual = internal ? false : testVirtualNic(dev, ifaceName, mac);
-							result.push({
-								iface: ifaceSanitized,
-								ifaceName,
-								default: iface === defaultInterface,
-								ip4,
-								ip4subnet,
-								ip6,
-								ip6subnet,
-								mac,
-								internal,
-								virtual,
-								operstate,
-								type,
-								duplex,
-								mtu,
-								speed,
-								dhcp,
-								dnsSuffix,
-								ieee8021xAuth,
-								ieee8021xState,
-								carrierChanges
-							});
-						}
-					}
-					_networkInterfaces = result;
-					if (defaultString.toLowerCase().indexOf("default") >= 0) {
-						result = result.filter((item) => item.default);
-						if (result.length > 0) result = result[0];
-						else result = [];
-					}
-					if (callback) callback(result);
-					resolve(result);
-				}
-				if (_windows) if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
-					result = _networkInterfaces;
-					if (callback) callback(result);
-					resolve(result);
-				} else {
-					_ifaces = JSON.parse(JSON.stringify(ifaces));
-					const defaultInterface = getDefaultNetworkInterface();
-					getWindowsNics().then((nics) => {
-						nics.forEach((nic) => {
-							let found = false;
-							Object.keys(ifaces).forEach((key) => {
-								if (!found) ifaces[key].forEach((value) => {
-									if (Object.keys(value).indexOf("mac") >= 0) found = value["mac"] === nic.mac;
-								});
-							});
-							if (!found) ifaces[nic.name] = [{ mac: nic.mac }];
-						});
-						nics8021xInfo = getWindowsWiredProfilesInformation();
-						dnsSuffixes = getWindowsDNSsuffixes();
-						for (let dev in ifaces) {
-							const ifaceSanitized = util.sanitizeString(dev);
-							let iface = dev;
-							let ip4 = "";
-							let ip4subnet = "";
-							let ip6 = "";
-							let ip6subnet = "";
-							let mac = "";
-							let duplex = "";
-							let mtu = "";
-							let speed = null;
-							let carrierChanges = 0;
-							let operstate = "down";
-							let dhcp = false;
-							let dnsSuffix = "";
-							let ieee8021xAuth = "";
-							let ieee8021xState = "";
-							let type = "";
-							if ({}.hasOwnProperty.call(ifaces, dev)) {
-								let ifaceName = dev;
-								ifaces[dev].forEach((details) => {
-									if (details.family === "IPv4" || details.family === 4) {
-										ip4 = details.address;
-										ip4subnet = details.netmask;
-									}
-									if (details.family === "IPv6" || details.family === 6) {
-										if (!ip6 || ip6.match(/^fe80::/i)) {
-											ip6 = details.address;
-											ip6subnet = details.netmask;
-										}
-									}
-									mac = details.mac;
-									const nodeMainVersion = parseInt(process.versions.node.split("."), 10);
-									if (mac.indexOf("00:00:0") > -1 && (_linux || _darwin) && !details.internal && nodeMainVersion >= 8 && nodeMainVersion <= 11) {
-										if (Object.keys(_mac).length === 0) _mac = getMacAddresses();
-										mac = _mac[dev] || "";
-									}
-								});
-								dnsSuffix = getWindowsIfaceDNSsuffix(dnsSuffixes.ifaces, ifaceSanitized);
-								let foundFirst = false;
-								nics.forEach((detail) => {
-									if (detail.mac === mac && !foundFirst) {
-										iface = detail.iface || iface;
-										ifaceName = detail.name;
-										dhcp = detail.dhcp;
-										operstate = detail.operstate;
-										speed = operstate === "up" ? detail.speed : 0;
-										type = detail.type;
-										foundFirst = true;
-									}
-								});
-								if (dev.toLowerCase().indexOf("wlan") >= 0 || ifaceName.toLowerCase().indexOf("wlan") >= 0 || ifaceName.toLowerCase().indexOf("802.11n") >= 0 || ifaceName.toLowerCase().indexOf("wireless") >= 0 || ifaceName.toLowerCase().indexOf("wi-fi") >= 0 || ifaceName.toLowerCase().indexOf("wifi") >= 0) type = "wireless";
-								const IEEE8021x = getWindowsIEEE8021x(type, ifaceSanitized, nics8021xInfo);
-								ieee8021xAuth = IEEE8021x.protocol;
-								ieee8021xState = IEEE8021x.state;
+								const wirelessspeed = util.getValue(lines, "tx bitrate");
+								if (speed === null && wirelessspeed) {
+									myspeed = parseFloat(wirelessspeed);
+									speed = isNaN(myspeed) ? null : myspeed;
+								}
+								carrierChanges = parseInt(util.getValue(lines, "carrier_changes"), 10);
+								const operstate = util.getValue(lines, "operstate");
+								type = operstate === "up" ? util.getValue(lines, "wireless").trim() ? "wireless" : "wired" : "unknown";
+								if (ifaceSanitized === "lo" || ifaceSanitized.startsWith("bond")) type = "virtual";
 								let internal = ifaces[dev] && ifaces[dev][0] ? ifaces[dev][0].internal : false;
 								if (dev.toLowerCase().indexOf("loopback") > -1 || ifaceName.toLowerCase().indexOf("loopback") > -1) internal = true;
 								const virtual = internal ? false : testVirtualNic(dev, ifaceName, mac);
 								result.push({
-									iface,
+									iface: ifaceSanitized,
 									ifaceName,
 									default: iface === defaultInterface,
 									ip4,
@@ -37700,7 +38605,120 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 						}
 						if (callback) callback(result);
 						resolve(result);
-					});
+					}
+				}
+				if (_windows) {
+					if (JSON.stringify(ifaces) === JSON.stringify(_ifaces) && !rescan) {
+						result = _networkInterfaces;
+						if (callback) callback(result);
+						resolve(result);
+					} else {
+						_ifaces = JSON.parse(JSON.stringify(ifaces));
+						const defaultInterface = getDefaultNetworkInterface();
+						getWindowsNics().then((nics) => {
+							nics.forEach((nic) => {
+								let found = false;
+								Object.keys(ifaces).forEach((key) => {
+									if (!found) ifaces[key].forEach((value) => {
+										if (Object.keys(value).indexOf("mac") >= 0) found = value["mac"] === nic.mac;
+									});
+								});
+								if (!found) ifaces[nic.name] = [{ mac: nic.mac }];
+							});
+							nics8021xInfo = getWindowsWiredProfilesInformation();
+							dnsSuffixes = getWindowsDNSsuffixes();
+							for (let dev in ifaces) {
+								const ifaceSanitized = util.sanitizeString(dev);
+								let iface = dev;
+								let ip4 = "";
+								let ip4subnet = "";
+								let ip6 = "";
+								let ip6subnet = "";
+								let mac = "";
+								let duplex = "";
+								let mtu = "";
+								let speed = null;
+								let carrierChanges = 0;
+								let operstate = "down";
+								let dhcp = false;
+								let dnsSuffix = "";
+								let ieee8021xAuth = "";
+								let ieee8021xState = "";
+								let type = "";
+								if ({}.hasOwnProperty.call(ifaces, dev)) {
+									let ifaceName = dev;
+									ifaces[dev].forEach((details) => {
+										if (details.family === "IPv4" || details.family === 4) {
+											ip4 = details.address;
+											ip4subnet = details.netmask;
+										}
+										if (details.family === "IPv6" || details.family === 6) {
+											if (!ip6 || ip6.match(/^fe80::/i)) {
+												ip6 = details.address;
+												ip6subnet = details.netmask;
+											}
+										}
+										mac = details.mac;
+										const nodeMainVersion = parseInt(process.versions.node.split("."), 10);
+										if (mac.indexOf("00:00:0") > -1 && (_linux || _darwin) && !details.internal && nodeMainVersion >= 8 && nodeMainVersion <= 11) {
+											if (Object.keys(_mac).length === 0) _mac = getMacAddresses();
+											mac = _mac[dev] || "";
+										}
+									});
+									dnsSuffix = getWindowsIfaceDNSsuffix(dnsSuffixes.ifaces, ifaceSanitized);
+									let foundFirst = false;
+									nics.forEach((detail) => {
+										if (detail.mac === mac && !foundFirst) {
+											iface = detail.iface || iface;
+											ifaceName = detail.name;
+											dhcp = detail.dhcp;
+											operstate = detail.operstate;
+											speed = operstate === "up" ? detail.speed : 0;
+											type = detail.type;
+											foundFirst = true;
+										}
+									});
+									if (dev.toLowerCase().indexOf("wlan") >= 0 || ifaceName.toLowerCase().indexOf("wlan") >= 0 || ifaceName.toLowerCase().indexOf("802.11n") >= 0 || ifaceName.toLowerCase().indexOf("wireless") >= 0 || ifaceName.toLowerCase().indexOf("wi-fi") >= 0 || ifaceName.toLowerCase().indexOf("wifi") >= 0) type = "wireless";
+									const IEEE8021x = getWindowsIEEE8021x(type, ifaceSanitized, nics8021xInfo);
+									ieee8021xAuth = IEEE8021x.protocol;
+									ieee8021xState = IEEE8021x.state;
+									let internal = ifaces[dev] && ifaces[dev][0] ? ifaces[dev][0].internal : false;
+									if (dev.toLowerCase().indexOf("loopback") > -1 || ifaceName.toLowerCase().indexOf("loopback") > -1) internal = true;
+									const virtual = internal ? false : testVirtualNic(dev, ifaceName, mac);
+									result.push({
+										iface,
+										ifaceName,
+										default: iface === defaultInterface,
+										ip4,
+										ip4subnet,
+										ip6,
+										ip6subnet,
+										mac,
+										internal,
+										virtual,
+										operstate,
+										type,
+										duplex,
+										mtu,
+										speed,
+										dhcp,
+										dnsSuffix,
+										ieee8021xAuth,
+										ieee8021xState,
+										carrierChanges
+									});
+								}
+							}
+							_networkInterfaces = result;
+							if (defaultString.toLowerCase().indexOf("default") >= 0) {
+								result = result.filter((item) => item.default);
+								if (result.length > 0) result = result[0];
+								else result = [];
+							}
+							if (callback) callback(result);
+							resolve(result);
+						});
+					}
 				}
 			});
 		});
@@ -37840,23 +38858,25 @@ var require_network = /* @__PURE__ */ __commonJSMin(((exports) => {
 				let tx_errors = 0;
 				let cmd, lines, stats;
 				if (!_network[ifaceSanitized] || _network[ifaceSanitized] && !_network[ifaceSanitized].ms || _network[ifaceSanitized] && _network[ifaceSanitized].ms && Date.now() - _network[ifaceSanitized].ms >= 500) {
-					if (_linux) if (fs.existsSync("/sys/class/net/" + ifaceSanitized)) {
-						cmd = "cat /sys/class/net/" + ifaceSanitized + "/operstate; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_errors; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_errors; ";
-						exec(cmd, (error, stdout) => {
-							if (!error) {
-								lines = stdout.toString().split("\n");
-								operstate = lines[0].trim();
-								rx_bytes = parseInt(lines[1], 10);
-								tx_bytes = parseInt(lines[2], 10);
-								rx_dropped = parseInt(lines[3], 10);
-								rx_errors = parseInt(lines[4], 10);
-								tx_dropped = parseInt(lines[5], 10);
-								tx_errors = parseInt(lines[6], 10);
-								result = calcNetworkSpeed(ifaceSanitized, rx_bytes, tx_bytes, operstate, rx_dropped, rx_errors, tx_dropped, tx_errors);
-							}
-							resolve(result);
-						});
-					} else resolve(result);
+					if (_linux) {
+						if (fs.existsSync("/sys/class/net/" + ifaceSanitized)) {
+							cmd = "cat /sys/class/net/" + ifaceSanitized + "/operstate; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_errors; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_errors; ";
+							exec(cmd, (error, stdout) => {
+								if (!error) {
+									lines = stdout.toString().split("\n");
+									operstate = lines[0].trim();
+									rx_bytes = parseInt(lines[1], 10);
+									tx_bytes = parseInt(lines[2], 10);
+									rx_dropped = parseInt(lines[3], 10);
+									rx_errors = parseInt(lines[4], 10);
+									tx_dropped = parseInt(lines[5], 10);
+									tx_errors = parseInt(lines[6], 10);
+									result = calcNetworkSpeed(ifaceSanitized, rx_bytes, tx_bytes, operstate, rx_dropped, rx_errors, tx_dropped, tx_errors);
+								}
+								resolve(result);
+							});
+						} else resolve(result);
+					}
 					if (_freebsd || _openbsd || _netbsd) {
 						cmd = "netstat -ibndI " + ifaceSanitized;
 						exec(cmd, (error, stdout) => {
@@ -38502,8 +39522,2955 @@ var require_src = /* @__PURE__ */ __commonJSMin(((exports) => {
 	});
 }));
 //#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/export/AggregationTemporality.js
+/**
+* AggregationTemporality indicates the way additive quantities are expressed.
+*/
+var AggregationTemporality;
+(function(AggregationTemporality) {
+	AggregationTemporality[AggregationTemporality["DELTA"] = 0] = "DELTA";
+	AggregationTemporality[AggregationTemporality["CUMULATIVE"] = 1] = "CUMULATIVE";
+})(AggregationTemporality || (AggregationTemporality = {}));
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricData.js
+/**
+* Supported types of metric instruments.
+*/
+var InstrumentType;
+(function(InstrumentType) {
+	InstrumentType["COUNTER"] = "COUNTER";
+	InstrumentType["GAUGE"] = "GAUGE";
+	InstrumentType["HISTOGRAM"] = "HISTOGRAM";
+	InstrumentType["UP_DOWN_COUNTER"] = "UP_DOWN_COUNTER";
+	InstrumentType["OBSERVABLE_COUNTER"] = "OBSERVABLE_COUNTER";
+	InstrumentType["OBSERVABLE_GAUGE"] = "OBSERVABLE_GAUGE";
+	InstrumentType["OBSERVABLE_UP_DOWN_COUNTER"] = "OBSERVABLE_UP_DOWN_COUNTER";
+})(InstrumentType || (InstrumentType = {}));
+/**
+* The aggregated point data type.
+*/
+var DataPointType;
+(function(DataPointType) {
+	/**
+	* A histogram data point contains a histogram statistics of collected
+	* values with a list of explicit bucket boundaries and statistics such
+	* as min, max, count, and sum of all collected values.
+	*/
+	DataPointType[DataPointType["HISTOGRAM"] = 0] = "HISTOGRAM";
+	/**
+	* An exponential histogram data point contains a histogram statistics of
+	* collected values where bucket boundaries are automatically calculated
+	* using an exponential function, and statistics such as min, max, count,
+	* and sum of all collected values.
+	*/
+	DataPointType[DataPointType["EXPONENTIAL_HISTOGRAM"] = 1] = "EXPONENTIAL_HISTOGRAM";
+	/**
+	* A gauge metric data point has only a single numeric value.
+	*/
+	DataPointType[DataPointType["GAUGE"] = 2] = "GAUGE";
+	/**
+	* A sum metric data point has a single numeric value and a
+	* monotonicity-indicator.
+	*/
+	DataPointType[DataPointType["SUM"] = 3] = "SUM";
+})(DataPointType || (DataPointType = {}));
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/utils.js
+/**
+* Converting the unordered attributes into unique identifier string.
+* @param attributes user provided unordered Attributes.
+*/
+function hashAttributes(attributes) {
+	let keys = Object.keys(attributes);
+	if (keys.length === 0) return "";
+	keys = keys.sort();
+	return JSON.stringify(keys.map((key) => [key, attributes[key]]));
+}
+/**
+* Converting the instrumentation scope object to a unique identifier string.
+* @param instrumentationScope
+*/
+function instrumentationScopeId(instrumentationScope) {
+	return `${instrumentationScope.name}:${instrumentationScope.version ?? ""}:${instrumentationScope.schemaUrl ?? ""}`;
+}
+/**
+* Error that is thrown on timeouts.
+*/
+var TimeoutError = class TimeoutError extends Error {
+	constructor(message) {
+		super(message);
+		Object.setPrototypeOf(this, TimeoutError.prototype);
+	}
+};
+/**
+* Adds a timeout to a promise and rejects if the specified timeout has elapsed. Also rejects if the specified promise
+* rejects, and resolves if the specified promise resolves.
+*
+* <p> NOTE: this operation will continue even after it throws a {@link TimeoutError}.
+*
+* @param promise promise to use with timeout.
+* @param timeout the timeout in milliseconds until the returned promise is rejected.
+*/
+function callWithTimeout(promise, timeout) {
+	let timeoutHandle;
+	const timeoutPromise = new Promise(function timeoutFunction(_resolve, reject) {
+		timeoutHandle = setTimeout(function timeoutHandler() {
+			reject(new TimeoutError("Operation timed out."));
+		}, timeout);
+	});
+	return Promise.race([promise, timeoutPromise]).then((result) => {
+		clearTimeout(timeoutHandle);
+		return result;
+	}, (reason) => {
+		clearTimeout(timeoutHandle);
+		throw reason;
+	});
+}
+function setEquals(lhs, rhs) {
+	if (lhs.size !== rhs.size) return false;
+	for (const item of lhs) if (!rhs.has(item)) return false;
+	return true;
+}
+/**
+* Binary search the sorted array to the find upper bound for the value.
+* @param arr
+* @param value
+* @returns
+*/
+function binarySearchUB(arr, value) {
+	let lo = 0;
+	let hi = arr.length - 1;
+	let ret = arr.length;
+	while (hi >= lo) {
+		const mid = lo + Math.trunc((hi - lo) / 2);
+		if (arr[mid] < value) lo = mid + 1;
+		else {
+			ret = mid;
+			hi = mid - 1;
+		}
+	}
+	return ret;
+}
+function equalsCaseInsensitive(lhs, rhs) {
+	return lhs.toLowerCase() === rhs.toLowerCase();
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/types.js
+/** The kind of aggregator. */
+var AggregatorKind;
+(function(AggregatorKind) {
+	AggregatorKind[AggregatorKind["DROP"] = 0] = "DROP";
+	AggregatorKind[AggregatorKind["SUM"] = 1] = "SUM";
+	AggregatorKind[AggregatorKind["LAST_VALUE"] = 2] = "LAST_VALUE";
+	AggregatorKind[AggregatorKind["HISTOGRAM"] = 3] = "HISTOGRAM";
+	AggregatorKind[AggregatorKind["EXPONENTIAL_HISTOGRAM"] = 4] = "EXPONENTIAL_HISTOGRAM";
+})(AggregatorKind || (AggregatorKind = {}));
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Drop.js
+/** Basic aggregator for None which keeps no recorded value. */
+var DropAggregator = class {
+	kind = AggregatorKind.DROP;
+	createAccumulation() {}
+	merge(_previous, _delta) {}
+	diff(_previous, _current) {}
+	toMetricData(_descriptor, _aggregationTemporality, _accumulationByAttributes, _endTime) {}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Histogram.js
+function createNewEmptyCheckpoint(boundaries) {
+	const counts = boundaries.map(() => 0);
+	counts.push(0);
+	return {
+		buckets: {
+			boundaries,
+			counts
+		},
+		sum: 0,
+		count: 0,
+		hasMinMax: false,
+		min: Infinity,
+		max: -Infinity
+	};
+}
+var HistogramAccumulation = class {
+	startTime;
+	_boundaries;
+	_recordMinMax;
+	_current;
+	constructor(startTime, boundaries, recordMinMax = true, current = createNewEmptyCheckpoint(boundaries)) {
+		this.startTime = startTime;
+		this._boundaries = boundaries;
+		this._recordMinMax = recordMinMax;
+		this._current = current;
+	}
+	record(value) {
+		if (Number.isNaN(value)) return;
+		this._current.count += 1;
+		this._current.sum += value;
+		if (this._recordMinMax) {
+			this._current.min = Math.min(value, this._current.min);
+			this._current.max = Math.max(value, this._current.max);
+			this._current.hasMinMax = true;
+		}
+		const idx = binarySearchUB(this._boundaries, value);
+		this._current.buckets.counts[idx] += 1;
+	}
+	setStartTime(startTime) {
+		this.startTime = startTime;
+	}
+	toPointValue() {
+		return this._current;
+	}
+};
+/**
+* Basic aggregator which observes events and counts them in pre-defined buckets
+* and provides the total sum and count of all observations.
+*/
+var HistogramAggregator = class {
+	kind = AggregatorKind.HISTOGRAM;
+	_boundaries;
+	_recordMinMax;
+	/**
+	* @param _boundaries sorted upper bounds of recorded values.
+	* @param _recordMinMax If set to true, min and max will be recorded. Otherwise, min and max will not be recorded.
+	*/
+	constructor(boundaries, recordMinMax) {
+		this._boundaries = boundaries;
+		this._recordMinMax = recordMinMax;
+	}
+	createAccumulation(startTime) {
+		return new HistogramAccumulation(startTime, this._boundaries, this._recordMinMax);
+	}
+	/**
+	* Return the result of the merge of two histogram accumulations. As long as one Aggregator
+	* instance produces all Accumulations with constant boundaries we don't need to worry about
+	* merging accumulations with different boundaries.
+	*/
+	merge(previous, delta) {
+		const previousValue = previous.toPointValue();
+		const deltaValue = delta.toPointValue();
+		const previousCounts = previousValue.buckets.counts;
+		const deltaCounts = deltaValue.buckets.counts;
+		const mergedCounts = new Array(previousCounts.length);
+		for (let idx = 0; idx < previousCounts.length; idx++) mergedCounts[idx] = previousCounts[idx] + deltaCounts[idx];
+		let min = Infinity;
+		let max = -Infinity;
+		if (this._recordMinMax) {
+			if (previousValue.hasMinMax && deltaValue.hasMinMax) {
+				min = Math.min(previousValue.min, deltaValue.min);
+				max = Math.max(previousValue.max, deltaValue.max);
+			} else if (previousValue.hasMinMax) {
+				min = previousValue.min;
+				max = previousValue.max;
+			} else if (deltaValue.hasMinMax) {
+				min = deltaValue.min;
+				max = deltaValue.max;
+			}
+		}
+		return new HistogramAccumulation(previous.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
+			buckets: {
+				boundaries: previousValue.buckets.boundaries,
+				counts: mergedCounts
+			},
+			count: previousValue.count + deltaValue.count,
+			sum: previousValue.sum + deltaValue.sum,
+			hasMinMax: this._recordMinMax && (previousValue.hasMinMax || deltaValue.hasMinMax),
+			min,
+			max
+		});
+	}
+	/**
+	* Returns a new DELTA aggregation by comparing two cumulative measurements.
+	*/
+	diff(previous, current) {
+		const previousValue = previous.toPointValue();
+		const currentValue = current.toPointValue();
+		const previousCounts = previousValue.buckets.counts;
+		const currentCounts = currentValue.buckets.counts;
+		const diffedCounts = new Array(previousCounts.length);
+		for (let idx = 0; idx < previousCounts.length; idx++) diffedCounts[idx] = currentCounts[idx] - previousCounts[idx];
+		return new HistogramAccumulation(current.startTime, previousValue.buckets.boundaries, this._recordMinMax, {
+			buckets: {
+				boundaries: previousValue.buckets.boundaries,
+				counts: diffedCounts
+			},
+			count: currentValue.count - previousValue.count,
+			sum: currentValue.sum - previousValue.sum,
+			hasMinMax: false,
+			min: Infinity,
+			max: -Infinity
+		});
+	}
+	toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
+		return {
+			descriptor,
+			aggregationTemporality,
+			dataPointType: DataPointType.HISTOGRAM,
+			dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
+				const pointValue = accumulation.toPointValue();
+				const allowsNegativeValues = descriptor.type === InstrumentType.GAUGE || descriptor.type === InstrumentType.UP_DOWN_COUNTER || descriptor.type === InstrumentType.OBSERVABLE_GAUGE || descriptor.type === InstrumentType.OBSERVABLE_UP_DOWN_COUNTER;
+				return {
+					attributes,
+					startTime: accumulation.startTime,
+					endTime,
+					value: {
+						min: pointValue.hasMinMax ? pointValue.min : void 0,
+						max: pointValue.hasMinMax ? pointValue.max : void 0,
+						sum: !allowsNegativeValues ? pointValue.sum : void 0,
+						buckets: pointValue.buckets,
+						count: pointValue.count
+					}
+				};
+			})
+		};
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/Buckets.js
+var Buckets = class Buckets {
+	backing;
+	indexBase;
+	indexStart;
+	indexEnd;
+	/**
+	* The term index refers to the number of the exponential histogram bucket
+	* used to determine its boundaries. The lower boundary of a bucket is
+	* determined by base ** index and the upper boundary of a bucket is
+	* determined by base ** (index + 1). index values are signed to account
+	* for values less than or equal to 1.
+	*
+	* indexBase is the index of the 0th position in the
+	* backing array, i.e., backing[0] is the count
+	* in the bucket with index `indexBase`.
+	*
+	* indexStart is the smallest index value represented
+	* in the backing array.
+	*
+	* indexEnd is the largest index value represented in
+	* the backing array.
+	*/
+	constructor(backing = new BucketsBacking(), indexBase = 0, indexStart = 0, indexEnd = 0) {
+		this.backing = backing;
+		this.indexBase = indexBase;
+		this.indexStart = indexStart;
+		this.indexEnd = indexEnd;
+	}
+	/**
+	* Offset is the bucket index of the smallest entry in the counts array
+	* @returns {number}
+	*/
+	get offset() {
+		return this.indexStart;
+	}
+	/**
+	* Buckets is a view into the backing array.
+	* @returns {number}
+	*/
+	get length() {
+		if (this.backing.length === 0) return 0;
+		if (this.indexEnd === this.indexStart && this.at(0) === 0) return 0;
+		return this.indexEnd - this.indexStart + 1;
+	}
+	/**
+	* An array of counts, where count[i] carries the count
+	* of the bucket at index (offset+i).  count[i] is the count of
+	* values greater than base^(offset+i) and less than or equal to
+	* base^(offset+i+1).
+	* @returns {number} The logical counts based on the backing array
+	*/
+	counts() {
+		return Array.from({ length: this.length }, (_, i) => this.at(i));
+	}
+	/**
+	* At returns the count of the bucket at a position in the logical
+	* array of counts.
+	* @param position
+	* @returns {number}
+	*/
+	at(position) {
+		const bias = this.indexBase - this.indexStart;
+		if (position < bias) position += this.backing.length;
+		position -= bias;
+		return this.backing.countAt(position);
+	}
+	/**
+	* incrementBucket increments the backing array index by `increment`
+	* @param bucketIndex
+	* @param increment
+	*/
+	incrementBucket(bucketIndex, increment) {
+		this.backing.increment(bucketIndex, increment);
+	}
+	/**
+	* decrementBucket decrements the backing array index by `decrement`
+	* if decrement is greater than the current value, it's set to 0.
+	* @param bucketIndex
+	* @param decrement
+	*/
+	decrementBucket(bucketIndex, decrement) {
+		this.backing.decrement(bucketIndex, decrement);
+	}
+	/**
+	* trim removes leading and / or trailing zero buckets (which can occur
+	* after diffing two histos) and rotates the backing array so that the
+	* smallest non-zero index is in the 0th position of the backing array
+	*/
+	trim() {
+		for (let i = 0; i < this.length; i++) if (this.at(i) !== 0) {
+			this.indexStart += i;
+			break;
+		} else if (i === this.length - 1) {
+			this.indexStart = this.indexEnd = this.indexBase = 0;
+			return;
+		}
+		for (let i = this.length - 1; i >= 0; i--) if (this.at(i) !== 0) {
+			this.indexEnd -= this.length - i - 1;
+			break;
+		}
+		this._rotate();
+	}
+	/**
+	* downscale first rotates, then collapses 2**`by`-to-1 buckets.
+	* @param by
+	*/
+	downscale(by) {
+		this._rotate();
+		const size = 1 + this.indexEnd - this.indexStart;
+		const each = 1 << by;
+		let inpos = 0;
+		let outpos = 0;
+		for (let pos = this.indexStart; pos <= this.indexEnd;) {
+			let mod = pos % each;
+			if (mod < 0) mod += each;
+			for (let i = mod; i < each && inpos < size; i++) {
+				this._relocateBucket(outpos, inpos);
+				inpos++;
+				pos++;
+			}
+			outpos++;
+		}
+		this.indexStart >>= by;
+		this.indexEnd >>= by;
+		this.indexBase = this.indexStart;
+	}
+	/**
+	* Clone returns a deep copy of Buckets
+	* @returns {Buckets}
+	*/
+	clone() {
+		return new Buckets(this.backing.clone(), this.indexBase, this.indexStart, this.indexEnd);
+	}
+	/**
+	* _rotate shifts the backing array contents so that indexStart ==
+	* indexBase to simplify the downscale logic.
+	*/
+	_rotate() {
+		const bias = this.indexBase - this.indexStart;
+		if (bias === 0) return;
+		else if (bias > 0) {
+			this.backing.reverse(0, this.backing.length);
+			this.backing.reverse(0, bias);
+			this.backing.reverse(bias, this.backing.length);
+		} else {
+			this.backing.reverse(0, this.backing.length);
+			this.backing.reverse(0, this.backing.length + bias);
+		}
+		this.indexBase = this.indexStart;
+	}
+	/**
+	* _relocateBucket adds the count in counts[src] to counts[dest] and
+	* resets count[src] to zero.
+	*/
+	_relocateBucket(dest, src) {
+		if (dest === src) return;
+		this.incrementBucket(dest, this.backing.emptyBucket(src));
+	}
+};
+/**
+* BucketsBacking holds the raw buckets and some utility methods to
+* manage them.
+*/
+var BucketsBacking = class BucketsBacking {
+	_counts;
+	constructor(counts = [0]) {
+		this._counts = counts;
+	}
+	/**
+	* length returns the physical size of the backing array, which
+	* is >= buckets.length()
+	*/
+	get length() {
+		return this._counts.length;
+	}
+	/**
+	* countAt returns the count in a specific bucket
+	*/
+	countAt(pos) {
+		return this._counts[pos];
+	}
+	/**
+	* growTo grows a backing array and copies old entries
+	* into their correct new positions.
+	*/
+	growTo(newSize, oldPositiveLimit, newPositiveLimit) {
+		const tmp = new Array(newSize).fill(0);
+		tmp.splice(newPositiveLimit, this._counts.length - oldPositiveLimit, ...this._counts.slice(oldPositiveLimit));
+		tmp.splice(0, oldPositiveLimit, ...this._counts.slice(0, oldPositiveLimit));
+		this._counts = tmp;
+	}
+	/**
+	* reverse the items in the backing array in the range [from, limit).
+	*/
+	reverse(from, limit) {
+		const num = Math.floor((from + limit) / 2) - from;
+		for (let i = 0; i < num; i++) {
+			const tmp = this._counts[from + i];
+			this._counts[from + i] = this._counts[limit - i - 1];
+			this._counts[limit - i - 1] = tmp;
+		}
+	}
+	/**
+	* emptyBucket empties the count from a bucket, for
+	* moving into another.
+	*/
+	emptyBucket(src) {
+		const tmp = this._counts[src];
+		this._counts[src] = 0;
+		return tmp;
+	}
+	/**
+	* increments a bucket by `increment`
+	*/
+	increment(bucketIndex, increment) {
+		this._counts[bucketIndex] += increment;
+	}
+	/**
+	* decrements a bucket by `decrement`
+	*/
+	decrement(bucketIndex, decrement) {
+		if (this._counts[bucketIndex] >= decrement) this._counts[bucketIndex] -= decrement;
+		else this._counts[bucketIndex] = 0;
+	}
+	/**
+	* clone returns a deep copy of BucketsBacking
+	*/
+	clone() {
+		return new BucketsBacking([...this._counts]);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/ieee754.js
+/**
+* The functions and constants in this file allow us to interact
+* with the internal representation of an IEEE 64-bit floating point
+* number. We need to work with all 64-bits, thus, care needs to be
+* taken when working with Javascript's bitwise operators (<<, >>, &,
+* |, etc) as they truncate operands to 32-bits. In order to work around
+* this we work with the 64-bits as two 32-bit halves and perform bitwise
+* operations on each half independently.
+*/
+/**
+* EXPONENT_MASK is set to 1 for the hi 32-bits of an IEEE 754
+* floating point exponent: 0x7ff00000.
+*/
+var EXPONENT_MASK = 2146435072;
+/**
+* SIGNIFICAND_MASK is the mask for the significand portion of the hi 32-bits
+* of an IEEE 754 double-precision floating-point value: 0xfffff
+*/
+var SIGNIFICAND_MASK = 1048575;
+/**
+* EXPONENT_BIAS is the exponent bias specified for encoding
+* the IEEE 754 double-precision floating point exponent: 1023
+*/
+var EXPONENT_BIAS = 1023;
+/**
+* MIN_NORMAL_EXPONENT is the minimum exponent of a normalized
+* floating point: -1022.
+*/
+var MIN_NORMAL_EXPONENT = -1022;
+/**
+* MAX_NORMAL_EXPONENT is the maximum exponent of a normalized
+* floating point: 1023.
+*/
+var MAX_NORMAL_EXPONENT = EXPONENT_BIAS;
+/**
+* MIN_VALUE is the smallest normal number
+*/
+var MIN_VALUE = Math.pow(2, -1022);
+var dv = /* @__PURE__ */ new DataView(/* @__PURE__ */ new ArrayBuffer(8));
+/**
+* floatBits writes value into the shared buffer and returns its two 32-bit
+* halves.
+* @param {number} value - the floating point number to read
+* @returns {{hi: number, lo: number}} the high and low 32-bit halves
+*/
+function floatBits(value) {
+	dv.setFloat64(0, value);
+	return {
+		hi: dv.getUint32(0),
+		lo: dv.getUint32(4)
+	};
+}
+/**
+* getNormalBase2 extracts the normalized base-2 fractional exponent.
+* This returns k for the equation f x 2**k where f is
+* in the range [1, 2).  Note that this function is not called for
+* subnormal numbers.
+* @param {number} value - the value to determine normalized base-2 fractional
+*    exponent for
+* @returns {number} the normalized base-2 exponent
+*/
+function getNormalBase2(value) {
+	const { hi } = floatBits(value);
+	return ((hi & EXPONENT_MASK) >> 20) - EXPONENT_BIAS;
+}
+/**
+* isPowerOfTwo reports whether value is an exact power of two, e.g. its 52-bit
+* significand is all zeros. Only valid for positive, finite values.
+* @param {number} value - the floating point number to test
+* @returns {boolean} true if value is an exact power of two
+*/
+function isPowerOfTwo(value) {
+	const { hi, lo } = floatBits(value);
+	return (hi & SIGNIFICAND_MASK) === 0 && lo === 0;
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/util.js
+/**
+* Note: other languages provide this as a built in function. This is
+* a naive, but functionally correct implementation. This is used sparingly,
+* when creating a new mapping in a running application.
+*
+* ldexp returns frac × 2**exp. With the following special cases:
+*   ldexp(±0, exp) = ±0
+*   ldexp(±Inf, exp) = ±Inf
+*   ldexp(NaN, exp) = NaN
+* @param frac
+* @param exp
+* @returns {number}
+*/
+function ldexp(frac, exp) {
+	if (frac === 0 || frac === Number.POSITIVE_INFINITY || frac === Number.NEGATIVE_INFINITY || Number.isNaN(frac)) return frac;
+	return frac * Math.pow(2, exp);
+}
+/**
+* Computes the next power of two that is greater than or equal to v.
+* This implementation more efficient than, but functionally equivalent
+* to Math.pow(2, Math.ceil(Math.log(x)/Math.log(2))).
+* @param v
+* @returns {number}
+*/
+function nextGreaterSquare(v) {
+	v--;
+	v |= v >> 1;
+	v |= v >> 2;
+	v |= v >> 4;
+	v |= v >> 8;
+	v |= v >> 16;
+	v++;
+	return v;
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/types.js
+var MappingError = class extends Error {};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/ExponentMapping.js
+/**
+* ExponentMapping implements exponential mapping functions for
+* scales <=0. For scales > 0 LogarithmMapping should be used.
+*/
+var ExponentMapping = class {
+	_shift;
+	constructor(scale) {
+		this._shift = -scale;
+	}
+	/**
+	* Maps positive floating point values to indexes corresponding to scale
+	* @param value
+	* @returns {number} index for provided value at the current scale
+	*/
+	mapToIndex(value) {
+		if (value < MIN_VALUE) return this._minNormalLowerBoundaryIndex();
+		return getNormalBase2(value) + (isPowerOfTwo(value) ? -1 : 0) >> this._shift;
+	}
+	/**
+	* Returns the lower bucket boundary for the given index for scale
+	*
+	* @param index
+	* @returns {number}
+	*/
+	lowerBoundary(index) {
+		const minIndex = this._minNormalLowerBoundaryIndex();
+		if (index < minIndex) throw new MappingError(`underflow: ${index} is < minimum lower boundary: ${minIndex}`);
+		const maxIndex = this._maxNormalLowerBoundaryIndex();
+		if (index > maxIndex) throw new MappingError(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
+		return ldexp(1, index << this._shift);
+	}
+	/**
+	* The scale used by this mapping
+	* @returns {number}
+	*/
+	get scale() {
+		if (this._shift === 0) return 0;
+		return -this._shift;
+	}
+	_minNormalLowerBoundaryIndex() {
+		let index = MIN_NORMAL_EXPONENT >> this._shift;
+		if (this._shift < 2) index--;
+		return index;
+	}
+	_maxNormalLowerBoundaryIndex() {
+		return MAX_NORMAL_EXPONENT >> this._shift;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/LogarithmMapping.js
+/**
+* LogarithmMapping implements exponential mapping functions for scale > 0.
+* For scales <= 0 the exponent mapping should be used.
+*/
+var LogarithmMapping = class {
+	_scale;
+	_scaleFactor;
+	_inverseFactor;
+	constructor(scale) {
+		this._scale = scale;
+		this._scaleFactor = ldexp(Math.LOG2E, scale);
+		this._inverseFactor = ldexp(Math.LN2, -scale);
+	}
+	/**
+	* Maps positive floating point values to indexes corresponding to scale
+	* @param value
+	* @returns {number} index for provided value at the current scale
+	*/
+	mapToIndex(value) {
+		if (value <= MIN_VALUE) return this._minNormalLowerBoundaryIndex() - 1;
+		if (isPowerOfTwo(value)) return (getNormalBase2(value) << this._scale) - 1;
+		const index = Math.floor(Math.log(value) * this._scaleFactor);
+		const maxIndex = this._maxNormalLowerBoundaryIndex();
+		if (index >= maxIndex) return maxIndex;
+		return index;
+	}
+	/**
+	* Returns the lower bucket boundary for the given index for scale
+	*
+	* @param index
+	* @returns {number}
+	*/
+	lowerBoundary(index) {
+		const maxIndex = this._maxNormalLowerBoundaryIndex();
+		if (index >= maxIndex) {
+			if (index === maxIndex) return 2 * Math.exp((index - (1 << this._scale)) / this._scaleFactor);
+			throw new MappingError(`overflow: ${index} is > maximum lower boundary: ${maxIndex}`);
+		}
+		const minIndex = this._minNormalLowerBoundaryIndex();
+		if (index <= minIndex) {
+			if (index === minIndex) return MIN_VALUE;
+			else if (index === minIndex - 1) return Math.exp((index + (1 << this._scale)) / this._scaleFactor) / 2;
+			throw new MappingError(`overflow: ${index} is < minimum lower boundary: ${minIndex}`);
+		}
+		return Math.exp(index * this._inverseFactor);
+	}
+	/**
+	* The scale used by this mapping
+	* @returns {number}
+	*/
+	get scale() {
+		return this._scale;
+	}
+	_minNormalLowerBoundaryIndex() {
+		return MIN_NORMAL_EXPONENT << this._scale;
+	}
+	_maxNormalLowerBoundaryIndex() {
+		return (MAX_NORMAL_EXPONENT + 1 << this._scale) - 1;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/exponential-histogram/mapping/getMapping.js
+var MIN_SCALE = -10;
+var MAX_SCALE$1 = 20;
+var PREBUILT_MAPPINGS = Array.from({ length: 31 }, (_, i) => {
+	if (i > 10) return new LogarithmMapping(i - 10);
+	return new ExponentMapping(i - 10);
+});
+/**
+* getMapping returns an appropriate mapping for the given scale. For scales -10
+* to 0 the underlying type will be ExponentMapping. For scales 1 to 20 the
+* underlying type will be LogarithmMapping.
+* @param scale a number in the range [-10, 20]
+* @returns {Mapping}
+*/
+function getMapping(scale) {
+	if (scale > MAX_SCALE$1 || scale < MIN_SCALE) throw new MappingError(`expected scale >= ${MIN_SCALE} && <= ${MAX_SCALE$1}, got: ${scale}`);
+	return PREBUILT_MAPPINGS[scale + 10];
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/ExponentialHistogram.js
+init_esm$1();
+var HighLow = class HighLow {
+	static combine(h1, h2) {
+		return new HighLow(Math.min(h1.low, h2.low), Math.max(h1.high, h2.high));
+	}
+	low;
+	high;
+	constructor(low, high) {
+		this.low = low;
+		this.high = high;
+	}
+};
+var MAX_SCALE = 20;
+var DEFAULT_MAX_SIZE = 160;
+var MIN_MAX_SIZE = 2;
+var ExponentialHistogramAccumulation = class ExponentialHistogramAccumulation {
+	startTime;
+	_maxSize;
+	_recordMinMax;
+	_sum;
+	_count;
+	_zeroCount;
+	_min;
+	_max;
+	_positive;
+	_negative;
+	_mapping;
+	constructor(startTime, maxSize = DEFAULT_MAX_SIZE, recordMinMax = true, sum = 0, count = 0, zeroCount = 0, min = Number.POSITIVE_INFINITY, max = Number.NEGATIVE_INFINITY, positive = new Buckets(), negative = new Buckets(), mapping = getMapping(MAX_SCALE)) {
+		this.startTime = startTime;
+		this._maxSize = maxSize;
+		this._recordMinMax = recordMinMax;
+		this._sum = sum;
+		this._count = count;
+		this._zeroCount = zeroCount;
+		this._min = min;
+		this._max = max;
+		this._positive = positive;
+		this._negative = negative;
+		this._mapping = mapping;
+		if (this._maxSize < MIN_MAX_SIZE) {
+			diag.warn(`Exponential Histogram Max Size set to ${this._maxSize}, \
+                changing to the minimum size of: ${MIN_MAX_SIZE}`);
+			this._maxSize = MIN_MAX_SIZE;
+		}
+	}
+	/**
+	* record updates a histogram with a single count
+	* @param {Number} value
+	*/
+	record(value) {
+		this.updateByIncrement(value, 1);
+	}
+	/**
+	* Sets the start time for this accumulation
+	* @param {HrTime} startTime
+	*/
+	setStartTime(startTime) {
+		this.startTime = startTime;
+	}
+	/**
+	* Returns the datapoint representation of this accumulation
+	* @param {HrTime} startTime
+	*/
+	toPointValue() {
+		return {
+			hasMinMax: this._recordMinMax,
+			min: this.min,
+			max: this.max,
+			sum: this.sum,
+			positive: {
+				offset: this.positive.offset,
+				bucketCounts: this.positive.counts()
+			},
+			negative: {
+				offset: this.negative.offset,
+				bucketCounts: this.negative.counts()
+			},
+			count: this.count,
+			scale: this.scale,
+			zeroCount: this.zeroCount
+		};
+	}
+	/**
+	* @returns {Number} The sum of values recorded by this accumulation
+	*/
+	get sum() {
+		return this._sum;
+	}
+	/**
+	* @returns {Number} The minimum value recorded by this accumulation
+	*/
+	get min() {
+		return this._min;
+	}
+	/**
+	* @returns {Number} The maximum value recorded by this accumulation
+	*/
+	get max() {
+		return this._max;
+	}
+	/**
+	* @returns {Number} The count of values recorded by this accumulation
+	*/
+	get count() {
+		return this._count;
+	}
+	/**
+	* @returns {Number} The number of 0 values recorded by this accumulation
+	*/
+	get zeroCount() {
+		return this._zeroCount;
+	}
+	/**
+	* @returns {Number} The scale used by this accumulation
+	*/
+	get scale() {
+		if (this._count === this._zeroCount) return 0;
+		return this._mapping.scale;
+	}
+	/**
+	* positive holds the positive values
+	* @returns {Buckets}
+	*/
+	get positive() {
+		return this._positive;
+	}
+	/**
+	* negative holds the negative values by their absolute value
+	* @returns {Buckets}
+	*/
+	get negative() {
+		return this._negative;
+	}
+	/**
+	* updateByIncr supports updating a histogram with a non-negative
+	* increment.
+	* @param value
+	* @param increment
+	*/
+	updateByIncrement(value, increment) {
+		if (!Number.isFinite(value)) return;
+		if (value > this._max) this._max = value;
+		if (value < this._min) this._min = value;
+		this._count += increment;
+		if (value === 0) {
+			this._zeroCount += increment;
+			return;
+		}
+		this._sum += value * increment;
+		if (value > 0) this._updateBuckets(this._positive, value, increment);
+		else this._updateBuckets(this._negative, -value, increment);
+	}
+	/**
+	* merge combines data from previous value into self
+	* @param {ExponentialHistogramAccumulation} previous
+	*/
+	merge(previous) {
+		if (this._count === 0) {
+			this._min = previous.min;
+			this._max = previous.max;
+		} else if (previous.count !== 0) {
+			if (previous.min < this.min) this._min = previous.min;
+			if (previous.max > this.max) this._max = previous.max;
+		}
+		this.startTime = previous.startTime;
+		this._sum += previous.sum;
+		this._count += previous.count;
+		this._zeroCount += previous.zeroCount;
+		const minScale = this._minScale(previous);
+		this._downscale(this.scale - minScale);
+		this._mergeBuckets(this.positive, previous, previous.positive, minScale);
+		this._mergeBuckets(this.negative, previous, previous.negative, minScale);
+	}
+	/**
+	* diff subtracts other from self
+	* @param {ExponentialHistogramAccumulation} other
+	*/
+	diff(other) {
+		this._min = Infinity;
+		this._max = -Infinity;
+		this._sum -= other.sum;
+		this._count -= other.count;
+		this._zeroCount -= other.zeroCount;
+		const minScale = this._minScale(other);
+		this._downscale(this.scale - minScale);
+		this._diffBuckets(this.positive, other, other.positive, minScale);
+		this._diffBuckets(this.negative, other, other.negative, minScale);
+	}
+	/**
+	* clone returns a deep copy of self
+	* @returns {ExponentialHistogramAccumulation}
+	*/
+	clone() {
+		return new ExponentialHistogramAccumulation(this.startTime, this._maxSize, this._recordMinMax, this._sum, this._count, this._zeroCount, this._min, this._max, this.positive.clone(), this.negative.clone(), this._mapping);
+	}
+	/**
+	* _updateBuckets maps the incoming value to a bucket index for the current
+	* scale. If the bucket index is outside of the range of the backing array,
+	* it will rescale the backing array and update the mapping for the new scale.
+	*/
+	_updateBuckets(buckets, value, increment) {
+		let index = this._mapping.mapToIndex(value);
+		let rescalingNeeded = false;
+		let high = 0;
+		let low = 0;
+		if (buckets.length === 0) {
+			buckets.indexStart = index;
+			buckets.indexEnd = buckets.indexStart;
+			buckets.indexBase = buckets.indexStart;
+		} else if (index < buckets.indexStart && buckets.indexEnd - index >= this._maxSize) {
+			rescalingNeeded = true;
+			low = index;
+			high = buckets.indexEnd;
+		} else if (index > buckets.indexEnd && index - buckets.indexStart >= this._maxSize) {
+			rescalingNeeded = true;
+			low = buckets.indexStart;
+			high = index;
+		}
+		if (rescalingNeeded) {
+			const change = this._changeScale(high, low);
+			this._downscale(change);
+			index = this._mapping.mapToIndex(value);
+		}
+		this._incrementIndexBy(buckets, index, increment);
+	}
+	/**
+	* _incrementIndexBy increments the count of the bucket specified by `index`.
+	* If the index is outside of the range [buckets.indexStart, buckets.indexEnd]
+	* the boundaries of the backing array will be adjusted and more buckets will
+	* be added if needed.
+	*/
+	_incrementIndexBy(buckets, index, increment) {
+		if (increment === 0) return;
+		if (buckets.length === 0) buckets.indexStart = buckets.indexEnd = buckets.indexBase = index;
+		if (index < buckets.indexStart) {
+			const span = buckets.indexEnd - index;
+			if (span >= buckets.backing.length) this._grow(buckets, span + 1);
+			buckets.indexStart = index;
+		} else if (index > buckets.indexEnd) {
+			const span = index - buckets.indexStart;
+			if (span >= buckets.backing.length) this._grow(buckets, span + 1);
+			buckets.indexEnd = index;
+		}
+		let bucketIndex = index - buckets.indexBase;
+		if (bucketIndex < 0) bucketIndex += buckets.backing.length;
+		buckets.incrementBucket(bucketIndex, increment);
+	}
+	/**
+	* grow resizes the backing array by doubling in size up to maxSize.
+	* This extends the array with a bunch of zeros and copies the
+	* existing counts to the same position.
+	*/
+	_grow(buckets, needed) {
+		const size = buckets.backing.length;
+		const bias = buckets.indexBase - buckets.indexStart;
+		const oldPositiveLimit = size - bias;
+		let newSize = nextGreaterSquare(needed);
+		if (newSize > this._maxSize) newSize = this._maxSize;
+		const newPositiveLimit = newSize - bias;
+		buckets.backing.growTo(newSize, oldPositiveLimit, newPositiveLimit);
+	}
+	/**
+	* _changeScale computes how much downscaling is needed by shifting the
+	* high and low values until they are separated by no more than size.
+	*/
+	_changeScale(high, low) {
+		let change = 0;
+		while (high - low >= this._maxSize) {
+			high >>= 1;
+			low >>= 1;
+			change++;
+		}
+		return change;
+	}
+	/**
+	* _downscale subtracts `change` from the current mapping scale.
+	*/
+	_downscale(change) {
+		if (change === 0) return;
+		if (change < 0) throw new Error(`impossible change of scale: ${this.scale}`);
+		const newScale = this._mapping.scale - change;
+		this._positive.downscale(change);
+		this._negative.downscale(change);
+		this._mapping = getMapping(newScale);
+	}
+	/**
+	* _minScale is used by diff and merge to compute an ideal combined scale
+	*/
+	_minScale(other) {
+		const minScale = Math.min(this.scale, other.scale);
+		const highLowPos = HighLow.combine(this._highLowAtScale(this.positive, this.scale, minScale), this._highLowAtScale(other.positive, other.scale, minScale));
+		const highLowNeg = HighLow.combine(this._highLowAtScale(this.negative, this.scale, minScale), this._highLowAtScale(other.negative, other.scale, minScale));
+		return Math.min(minScale - this._changeScale(highLowPos.high, highLowPos.low), minScale - this._changeScale(highLowNeg.high, highLowNeg.low));
+	}
+	/**
+	* _highLowAtScale is used by diff and merge to compute an ideal combined scale.
+	*/
+	_highLowAtScale(buckets, currentScale, newScale) {
+		if (buckets.length === 0) return new HighLow(0, -1);
+		const shift = currentScale - newScale;
+		return new HighLow(buckets.indexStart >> shift, buckets.indexEnd >> shift);
+	}
+	/**
+	* _mergeBuckets translates index values from another histogram and
+	* adds the values into the corresponding buckets of this histogram.
+	*/
+	_mergeBuckets(ours, other, theirs, scale) {
+		const theirOffset = theirs.offset;
+		const theirChange = other.scale - scale;
+		for (let i = 0; i < theirs.length; i++) this._incrementIndexBy(ours, theirOffset + i >> theirChange, theirs.at(i));
+	}
+	/**
+	* _diffBuckets translates index values from another histogram and
+	* subtracts the values in the corresponding buckets of this histogram.
+	*/
+	_diffBuckets(ours, other, theirs, scale) {
+		const theirOffset = theirs.offset;
+		const theirChange = other.scale - scale;
+		for (let i = 0; i < theirs.length; i++) {
+			let bucketIndex = (theirOffset + i >> theirChange) - ours.indexBase;
+			if (bucketIndex < 0) bucketIndex += ours.backing.length;
+			ours.decrementBucket(bucketIndex, theirs.at(i));
+		}
+		ours.trim();
+	}
+};
+/**
+* Aggregator for ExponentialHistogramAccumulations
+*/
+var ExponentialHistogramAggregator = class {
+	kind = AggregatorKind.EXPONENTIAL_HISTOGRAM;
+	_maxSize;
+	_recordMinMax;
+	/**
+	* @param _maxSize Maximum number of buckets for each of the positive
+	*    and negative ranges, exclusive of the zero-bucket.
+	* @param _recordMinMax If set to true, min and max will be recorded.
+	*    Otherwise, min and max will not be recorded.
+	*/
+	constructor(maxSize, recordMinMax) {
+		this._maxSize = maxSize;
+		this._recordMinMax = recordMinMax;
+	}
+	createAccumulation(startTime) {
+		return new ExponentialHistogramAccumulation(startTime, this._maxSize, this._recordMinMax);
+	}
+	/**
+	* Return the result of the merge of two exponential histogram accumulations.
+	*/
+	merge(previous, delta) {
+		const result = delta.clone();
+		result.merge(previous);
+		return result;
+	}
+	/**
+	* Returns a new DELTA aggregation by comparing two cumulative measurements.
+	*/
+	diff(previous, current) {
+		const result = current.clone();
+		result.diff(previous);
+		return result;
+	}
+	toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
+		return {
+			descriptor,
+			aggregationTemporality,
+			dataPointType: DataPointType.EXPONENTIAL_HISTOGRAM,
+			dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
+				const pointValue = accumulation.toPointValue();
+				const allowsNegativeValues = descriptor.type === InstrumentType.GAUGE || descriptor.type === InstrumentType.UP_DOWN_COUNTER || descriptor.type === InstrumentType.OBSERVABLE_GAUGE || descriptor.type === InstrumentType.OBSERVABLE_UP_DOWN_COUNTER;
+				return {
+					attributes,
+					startTime: accumulation.startTime,
+					endTime,
+					value: {
+						min: pointValue.hasMinMax ? pointValue.min : void 0,
+						max: pointValue.hasMinMax ? pointValue.max : void 0,
+						sum: !allowsNegativeValues ? pointValue.sum : void 0,
+						positive: {
+							offset: pointValue.positive.offset,
+							bucketCounts: pointValue.positive.bucketCounts
+						},
+						negative: {
+							offset: pointValue.negative.offset,
+							bucketCounts: pointValue.negative.bucketCounts
+						},
+						count: pointValue.count,
+						scale: pointValue.scale,
+						zeroCount: pointValue.zeroCount
+					}
+				};
+			})
+		};
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/LastValue.js
+var LastValueAccumulation = class {
+	startTime;
+	_current;
+	sampleTime;
+	constructor(startTime, current = 0, sampleTime = [0, 0]) {
+		this.startTime = startTime;
+		this._current = current;
+		this.sampleTime = sampleTime;
+	}
+	record(value) {
+		this._current = value;
+		this.sampleTime = millisToHrTime(Date.now());
+	}
+	setStartTime(startTime) {
+		this.startTime = startTime;
+	}
+	toPointValue() {
+		return this._current;
+	}
+};
+/** Basic aggregator which calculates a LastValue from individual measurements. */
+var LastValueAggregator = class {
+	kind = AggregatorKind.LAST_VALUE;
+	createAccumulation(startTime) {
+		return new LastValueAccumulation(startTime);
+	}
+	/**
+	* Returns the result of the merge of the given accumulations.
+	*
+	* Return the newly captured (delta) accumulation for LastValueAggregator.
+	*/
+	merge(previous, delta) {
+		const latestAccumulation = hrTimeToMicroseconds(delta.sampleTime) >= hrTimeToMicroseconds(previous.sampleTime) ? delta : previous;
+		return new LastValueAccumulation(previous.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
+	}
+	/**
+	* Returns a new DELTA aggregation by comparing two cumulative measurements.
+	*
+	* A delta aggregation is not meaningful to LastValueAggregator, just return
+	* the newly captured (delta) accumulation for LastValueAggregator.
+	*/
+	diff(previous, current) {
+		const latestAccumulation = hrTimeToMicroseconds(current.sampleTime) >= hrTimeToMicroseconds(previous.sampleTime) ? current : previous;
+		return new LastValueAccumulation(current.startTime, latestAccumulation.toPointValue(), latestAccumulation.sampleTime);
+	}
+	toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
+		return {
+			descriptor,
+			aggregationTemporality,
+			dataPointType: DataPointType.GAUGE,
+			dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
+				return {
+					attributes,
+					startTime: accumulation.startTime,
+					endTime,
+					value: accumulation.toPointValue()
+				};
+			})
+		};
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/aggregator/Sum.js
+var SumAccumulation = class {
+	startTime;
+	monotonic;
+	_current;
+	reset;
+	constructor(startTime, monotonic, current = 0, reset = false) {
+		this.startTime = startTime;
+		this.monotonic = monotonic;
+		this._current = current;
+		this.reset = reset;
+	}
+	record(value) {
+		if (this.monotonic && value < 0) return;
+		this._current += value;
+	}
+	setStartTime(startTime) {
+		this.startTime = startTime;
+	}
+	toPointValue() {
+		return this._current;
+	}
+};
+/** Basic aggregator which calculates a Sum from individual measurements. */
+var SumAggregator = class {
+	kind = AggregatorKind.SUM;
+	monotonic;
+	constructor(monotonic) {
+		this.monotonic = monotonic;
+	}
+	createAccumulation(startTime) {
+		return new SumAccumulation(startTime, this.monotonic);
+	}
+	/**
+	* Returns the result of the merge of the given accumulations.
+	*/
+	merge(previous, delta) {
+		const prevPv = previous.toPointValue();
+		const deltaPv = delta.toPointValue();
+		if (delta.reset) return new SumAccumulation(delta.startTime, this.monotonic, deltaPv, delta.reset);
+		return new SumAccumulation(previous.startTime, this.monotonic, prevPv + deltaPv);
+	}
+	/**
+	* Returns a new DELTA aggregation by comparing two cumulative measurements.
+	*/
+	diff(previous, current) {
+		const prevPv = previous.toPointValue();
+		const currPv = current.toPointValue();
+		/**
+		* If the SumAggregator is a monotonic one and the previous point value is
+		* greater than the current one, a reset is deemed to be happened.
+		* Return the current point value to prevent the value from been reset.
+		*/
+		if (this.monotonic && prevPv > currPv) return new SumAccumulation(current.startTime, this.monotonic, currPv, true);
+		return new SumAccumulation(current.startTime, this.monotonic, currPv - prevPv);
+	}
+	toMetricData(descriptor, aggregationTemporality, accumulationByAttributes, endTime) {
+		return {
+			descriptor,
+			aggregationTemporality,
+			dataPointType: DataPointType.SUM,
+			dataPoints: accumulationByAttributes.map(([attributes, accumulation]) => {
+				return {
+					attributes,
+					startTime: accumulation.startTime,
+					endTime,
+					value: accumulation.toPointValue()
+				};
+			}),
+			isMonotonic: this.monotonic
+		};
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/Aggregation.js
+init_esm$1();
+/**
+* The default drop aggregation.
+*/
+var DropAggregation = class DropAggregation {
+	static DEFAULT_INSTANCE = new DropAggregator();
+	createAggregator(_instrument) {
+		return DropAggregation.DEFAULT_INSTANCE;
+	}
+};
+/**
+* The default sum aggregation.
+*/
+var SumAggregation = class SumAggregation {
+	static MONOTONIC_INSTANCE = new SumAggregator(true);
+	static NON_MONOTONIC_INSTANCE = new SumAggregator(false);
+	createAggregator(instrument) {
+		switch (instrument.type) {
+			case InstrumentType.COUNTER:
+			case InstrumentType.OBSERVABLE_COUNTER:
+			case InstrumentType.HISTOGRAM: return SumAggregation.MONOTONIC_INSTANCE;
+			default: return SumAggregation.NON_MONOTONIC_INSTANCE;
+		}
+	}
+};
+/**
+* The default last value aggregation.
+*/
+var LastValueAggregation = class LastValueAggregation {
+	static DEFAULT_INSTANCE = new LastValueAggregator();
+	createAggregator(_instrument) {
+		return LastValueAggregation.DEFAULT_INSTANCE;
+	}
+};
+/**
+* The default histogram aggregation.
+
+*/
+var HistogramAggregation = class HistogramAggregation {
+	static DEFAULT_INSTANCE = new HistogramAggregator([
+		0,
+		5,
+		10,
+		25,
+		50,
+		75,
+		100,
+		250,
+		500,
+		750,
+		1e3,
+		2500,
+		5e3,
+		7500,
+		1e4
+	], true);
+	createAggregator(_instrument) {
+		return HistogramAggregation.DEFAULT_INSTANCE;
+	}
+};
+/**
+* The explicit bucket histogram aggregation.
+*/
+var ExplicitBucketHistogramAggregation = class {
+	_boundaries;
+	_recordMinMax;
+	/**
+	* @param boundaries the bucket boundaries of the histogram aggregation
+	* @param _recordMinMax If set to true, min and max will be recorded. Otherwise, min and max will not be recorded.
+	*/
+	constructor(boundaries, recordMinMax = true) {
+		if (boundaries == null) throw new Error("ExplicitBucketHistogramAggregation should be created with explicit boundaries, if a single bucket histogram is required, please pass an empty array");
+		boundaries = boundaries.concat();
+		boundaries = boundaries.sort((a, b) => a - b);
+		const minusInfinityIndex = boundaries.lastIndexOf(-Infinity);
+		let infinityIndex = boundaries.indexOf(Infinity);
+		if (infinityIndex === -1) infinityIndex = void 0;
+		this._boundaries = boundaries.slice(minusInfinityIndex + 1, infinityIndex);
+		this._recordMinMax = recordMinMax;
+	}
+	createAggregator(_instrument) {
+		return new HistogramAggregator(this._boundaries, this._recordMinMax);
+	}
+};
+var ExponentialHistogramAggregation = class {
+	_maxSize;
+	_recordMinMax;
+	constructor(maxSize = 160, recordMinMax = true) {
+		this._maxSize = maxSize;
+		this._recordMinMax = recordMinMax;
+	}
+	createAggregator(_instrument) {
+		return new ExponentialHistogramAggregator(this._maxSize, this._recordMinMax);
+	}
+};
+/**
+* The default aggregation.
+*/
+var DefaultAggregation = class {
+	_resolve(instrument) {
+		switch (instrument.type) {
+			case InstrumentType.COUNTER:
+			case InstrumentType.UP_DOWN_COUNTER:
+			case InstrumentType.OBSERVABLE_COUNTER:
+			case InstrumentType.OBSERVABLE_UP_DOWN_COUNTER: return SUM_AGGREGATION;
+			case InstrumentType.GAUGE:
+			case InstrumentType.OBSERVABLE_GAUGE: return LAST_VALUE_AGGREGATION;
+			case InstrumentType.HISTOGRAM:
+				if (instrument.advice.explicitBucketBoundaries) return new ExplicitBucketHistogramAggregation(instrument.advice.explicitBucketBoundaries);
+				return HISTOGRAM_AGGREGATION;
+		}
+		diag.warn(`Unable to recognize instrument type: ${instrument.type}`);
+		return DROP_AGGREGATION;
+	}
+	createAggregator(instrument) {
+		return this._resolve(instrument).createAggregator(instrument);
+	}
+};
+var DROP_AGGREGATION = new DropAggregation();
+var SUM_AGGREGATION = new SumAggregation();
+var LAST_VALUE_AGGREGATION = new LastValueAggregation();
+var HISTOGRAM_AGGREGATION = new HistogramAggregation();
+new ExponentialHistogramAggregation();
+var DEFAULT_AGGREGATION = new DefaultAggregation();
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/AggregationOption.js
+var AggregationType;
+(function(AggregationType) {
+	AggregationType[AggregationType["DEFAULT"] = 0] = "DEFAULT";
+	AggregationType[AggregationType["DROP"] = 1] = "DROP";
+	AggregationType[AggregationType["SUM"] = 2] = "SUM";
+	AggregationType[AggregationType["LAST_VALUE"] = 3] = "LAST_VALUE";
+	AggregationType[AggregationType["EXPLICIT_BUCKET_HISTOGRAM"] = 4] = "EXPLICIT_BUCKET_HISTOGRAM";
+	AggregationType[AggregationType["EXPONENTIAL_HISTOGRAM"] = 5] = "EXPONENTIAL_HISTOGRAM";
+})(AggregationType || (AggregationType = {}));
+function toAggregation(option) {
+	switch (option.type) {
+		case AggregationType.DEFAULT: return DEFAULT_AGGREGATION;
+		case AggregationType.DROP: return DROP_AGGREGATION;
+		case AggregationType.SUM: return SUM_AGGREGATION;
+		case AggregationType.LAST_VALUE: return LAST_VALUE_AGGREGATION;
+		case AggregationType.EXPONENTIAL_HISTOGRAM: {
+			const expOption = option;
+			return new ExponentialHistogramAggregation(expOption.options?.maxSize, expOption.options?.recordMinMax);
+		}
+		case AggregationType.EXPLICIT_BUCKET_HISTOGRAM: {
+			const expOption = option;
+			if (expOption.options == null) return HISTOGRAM_AGGREGATION;
+			else return new ExplicitBucketHistogramAggregation(expOption.options?.boundaries, expOption.options?.recordMinMax);
+		}
+		default: throw new Error("Unsupported Aggregation");
+	}
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/export/AggregationSelector.js
+var DEFAULT_AGGREGATION_SELECTOR = (_instrumentType) => {
+	return { type: AggregationType.DEFAULT };
+};
+var DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR = (_instrumentType) => AggregationTemporality.CUMULATIVE;
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/semconv.js
+/**
+* A name uniquely identifying the instance of the OpenTelemetry component within its containing SDK instance.
+*
+* @example otlp_grpc_span_exporter/0
+* @example custom-name
+*
+* @note Implementations **SHOULD** ensure a low cardinality for this attribute, even across application or SDK restarts.
+* E.g. implementations **MUST NOT** use UUIDs as values for this attribute.
+*
+* Implementations **MAY** achieve these goals by following a `<otel.component.type>/<instance-counter>` pattern, e.g. `batching_span_processor/0`.
+* Hereby `otel.component.type` refers to the corresponding attribute value of the component.
+*
+* The value of `instance-counter` **MAY** be automatically assigned by the component and uniqueness within the enclosing SDK instance **MUST** be guaranteed.
+* For example, `<instance-counter>` **MAY** be implemented by using a monotonically increasing counter (starting with `0`), which is incremented every time an
+* instance of the given component type is started.
+*
+* With this implementation, for example the first Batching Span Processor would have `batching_span_processor/0`
+* as `otel.component.name`, the second one `batching_span_processor/1` and so on.
+* These values will therefore be reused in the case of an application restart.
+*
+* @experimental This attribute is experimental and is subject to breaking changes in minor releases of `@opentelemetry/semantic-conventions`.
+*/
+var ATTR_OTEL_COMPONENT_NAME = "otel.component.name";
+/**
+* A name identifying the type of the OpenTelemetry component.
+*
+* @example batching_span_processor
+* @example com.example.MySpanExporter
+*
+* @note If none of the standardized values apply, implementations **SHOULD** use the language-defined name of the type.
+* E.g. for Java the fully qualified classname **SHOULD** be used in this case.
+*
+* @experimental This attribute is experimental and is subject to breaking changes in minor releases of `@opentelemetry/semantic-conventions`.
+*/
+var ATTR_OTEL_COMPONENT_TYPE = "otel.component.type";
+/**
+* The duration of the collect operation of the metric reader.
+*
+* @note For successful collections, `error.type` **MUST NOT** be set. For failed collections, `error.type` **SHOULD** contain the failure cause.
+* It can happen that metrics collection is successful for some MetricProducers, while others fail. In that case `error.type` **SHOULD** be set to any of the failure causes.
+*
+* @experimental This metric is experimental and is subject to breaking changes in minor releases of `@opentelemetry/semantic-conventions`.
+*/
+var METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION = "otel.sdk.metric_reader.collection.duration";
+/**
+* Describes a class of error the operation ended with.
+*
+* @example timeout
+* @example java.net.UnknownHostException
+* @example server_certificate_invalid
+* @example 500
+*
+* @note The `error.type` **SHOULD** be predictable, and **SHOULD** have low cardinality.
+*
+* When `error.type` is set to a type (e.g., an exception type), its
+* canonical class name identifying the type within the artifact **SHOULD** be used.
+*
+* Instrumentations **SHOULD** document the list of errors they report.
+*
+* The cardinality of `error.type` within one instrumentation library **SHOULD** be low.
+* Telemetry consumers that aggregate data from multiple instrumentation libraries and applications
+* should be prepared for `error.type` to have high cardinality at query time when no
+* additional filters are applied.
+*
+* If the operation has completed successfully, instrumentations **SHOULD NOT** set `error.type`.
+*
+* If a specific domain defines its own set of error identifiers (such as HTTP or RPC status codes),
+* it's **RECOMMENDED** to:
+*
+*   - Use a domain-specific attribute
+*   - Set `error.type` to capture all errors, regardless of whether they are defined within the domain-specific set or not.
+*/
+var ATTR_ERROR_TYPE = "error.type";
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricReaderMetrics.js
+var componentCounter = /* @__PURE__ */ new Map();
+/**
+* Generates `otel.sdk.metric_reader.*` self-observability metrics.
+* https://opentelemetry.io/docs/specs/semconv/otel/sdk-metrics/#metric-otelsdkmetric_readercollectionduration
+*/
+var MetricReaderMetrics = class {
+	collectionDuration;
+	standardAttrs;
+	constructor(componentType, meter) {
+		const counter = componentCounter.get(componentType) ?? 0;
+		componentCounter.set(componentType, counter + 1);
+		this.standardAttrs = {
+			[ATTR_OTEL_COMPONENT_TYPE]: componentType,
+			[ATTR_OTEL_COMPONENT_NAME]: `${componentType}/${counter}`
+		};
+		this.collectionDuration = meter.createHistogram(METRIC_OTEL_SDK_METRIC_READER_COLLECTION_DURATION, {
+			unit: "s",
+			description: "The duration of the collect operation of the metric reader.",
+			advice: { explicitBucketBoundaries: [] }
+		});
+	}
+	recordCollection(durationSecs, error) {
+		const attrs = error ? {
+			...this.standardAttrs,
+			[ATTR_ERROR_TYPE]: error
+		} : this.standardAttrs;
+		this.collectionDuration.record(durationSecs, attrs);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/version.js
+var VERSION = "2.11.0";
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/export/MetricReader.js
+init_esm$1();
+/**
+* A registered reader of metrics that, when linked to a {@link MetricProducer}, offers global
+* control over metrics.
+*/
+var MetricReader = class {
+	_shutdown = false;
+	_metricProducers;
+	_sdkMetricProducer;
+	_selfObsMetrics;
+	_aggregationTemporalitySelector;
+	_aggregationSelector;
+	_cardinalitySelector;
+	_otelComponentType;
+	constructor(options) {
+		this._aggregationSelector = options?.aggregationSelector ?? DEFAULT_AGGREGATION_SELECTOR;
+		this._aggregationTemporalitySelector = options?.aggregationTemporalitySelector ?? DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR;
+		this._metricProducers = options?.metricProducers ?? [];
+		this._cardinalitySelector = options?.cardinalitySelector;
+		this._otelComponentType = options?.otelComponentType ?? this.constructor.name;
+		this._selfObsMetrics = new MetricReaderMetrics(this._otelComponentType, createNoopMeter());
+	}
+	setMetricProducer(metricProducer) {
+		if (this._sdkMetricProducer) throw new Error("MetricReader can not be bound to a MeterProvider again.");
+		this._sdkMetricProducer = metricProducer;
+		this.onInitialized();
+	}
+	_setSelfObsMeterProvider(meterProvider) {
+		const meter = meterProvider.getMeter("@opentelemetry/sdk-metrics", VERSION);
+		this._selfObsMetrics = new MetricReaderMetrics(this._otelComponentType, meter);
+	}
+	selectAggregation(instrumentType) {
+		return this._aggregationSelector(instrumentType);
+	}
+	selectAggregationTemporality(instrumentType) {
+		return this._aggregationTemporalitySelector(instrumentType);
+	}
+	selectCardinalityLimit(instrumentType) {
+		return this._cardinalitySelector ? this._cardinalitySelector(instrumentType) : 2e3;
+	}
+	/**
+	* Handle once the SDK has initialized this {@link MetricReader}
+	* Overriding this method is optional.
+	*/
+	onInitialized() {}
+	async collect(options) {
+		if (this._sdkMetricProducer === void 0) throw new Error("MetricReader is not bound to a MetricProducer");
+		if (this._shutdown) throw new Error("MetricReader is shutdown");
+		const startTime = hrTime();
+		const [sdkCollectionResults, ...additionalCollectionResults] = await Promise.all([this._sdkMetricProducer.collect({ timeoutMillis: options?.timeoutMillis }), ...this._metricProducers.map((producer) => producer.collect({ timeoutMillis: options?.timeoutMillis }))]);
+		const endTime = hrTime();
+		const errors = sdkCollectionResults.errors.concat(additionalCollectionResults.flatMap((result) => result.errors));
+		const collectDuration = hrTimeToSeconds(hrTimeDuration(startTime, endTime));
+		this._selfObsMetrics.recordCollection(collectDuration, errors.length > 0 ? errors[0].name ?? "collect_error" : void 0);
+		return {
+			resourceMetrics: {
+				resource: sdkCollectionResults.resourceMetrics.resource,
+				scopeMetrics: sdkCollectionResults.resourceMetrics.scopeMetrics.concat(additionalCollectionResults.flatMap((result) => result.resourceMetrics.scopeMetrics))
+			},
+			errors
+		};
+	}
+	async shutdown(options) {
+		if (this._shutdown) {
+			diag.error("Cannot call shutdown twice.");
+			return;
+		}
+		if (options?.timeoutMillis == null) await this.onShutdown();
+		else await callWithTimeout(this.onShutdown(), options.timeoutMillis);
+		this._shutdown = true;
+	}
+	async forceFlush(options) {
+		if (this._shutdown) {
+			diag.warn("Cannot forceFlush on already shutdown MetricReader.");
+			return;
+		}
+		if (options?.timeoutMillis == null) {
+			await this.onForceFlush();
+			return;
+		}
+		await callWithTimeout(this.onForceFlush(), options.timeoutMillis);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/ViewRegistry.js
+var ViewRegistry = class {
+	_registeredViews = [];
+	addView(view) {
+		this._registeredViews.push(view);
+	}
+	findViews(instrument, meter) {
+		return this._registeredViews.filter((registeredView) => {
+			return this._matchInstrument(registeredView.instrumentSelector, instrument) && this._matchMeter(registeredView.meterSelector, meter);
+		});
+	}
+	_matchInstrument(selector, instrument) {
+		return (selector.getType() === void 0 || instrument.type === selector.getType()) && selector.getNameFilter().match(instrument.name) && selector.getUnitFilter().match(instrument.unit);
+	}
+	_matchMeter(selector, meter) {
+		return selector.getNameFilter().match(meter.name) && (meter.version === void 0 || selector.getVersionFilter().match(meter.version)) && (meter.schemaUrl === void 0 || selector.getSchemaUrlFilter().match(meter.schemaUrl));
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/InstrumentDescriptor.js
+init_esm$1();
+function createInstrumentDescriptor(name, type, options) {
+	if (!isValidName(name)) diag.warn(`Invalid metric name: "${name}". The metric name should be a ASCII string with a length no greater than 255 characters.`);
+	return {
+		name,
+		type,
+		description: options?.description ?? "",
+		unit: options?.unit ?? "",
+		valueType: options?.valueType ?? ValueType.DOUBLE,
+		advice: options?.advice ?? {}
+	};
+}
+function createInstrumentDescriptorWithView(view, instrument) {
+	return {
+		name: view.name ?? instrument.name,
+		description: view.description ?? instrument.description,
+		type: instrument.type,
+		unit: instrument.unit,
+		valueType: instrument.valueType,
+		advice: instrument.advice
+	};
+}
+function isDescriptorCompatibleWith(descriptor, otherDescriptor) {
+	return equalsCaseInsensitive(descriptor.name, otherDescriptor.name) && descriptor.unit === otherDescriptor.unit && descriptor.type === otherDescriptor.type && descriptor.valueType === otherDescriptor.valueType;
+}
+var NAME_REGEXP = /^[a-z][a-z0-9_.\-/]{0,254}$/i;
+function isValidName(name) {
+	return NAME_REGEXP.test(name);
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/Instruments.js
+init_esm$1();
+var SyncInstrument = class {
+	_writableMetricStorage;
+	_descriptor;
+	constructor(writableMetricStorage, descriptor) {
+		this._writableMetricStorage = writableMetricStorage;
+		this._descriptor = descriptor;
+	}
+	_record(value, attributes = {}, context) {
+		if (typeof value !== "number") {
+			diag.warn(`non-number value provided to metric ${this._descriptor.name}: ${value}`);
+			return;
+		}
+		if (this._descriptor.valueType === ValueType.INT && !Number.isInteger(value)) {
+			diag.warn(`INT value type cannot accept a floating-point value for ${this._descriptor.name}, ignoring the fractional digits.`);
+			value = Math.trunc(value);
+			if (!Number.isInteger(value)) return;
+		}
+		this._writableMetricStorage.record(value, attributes, context, Date.now());
+	}
+};
+/**
+* The class implements {@link UpDownCounter} interface.
+*/
+var UpDownCounterInstrument = class extends SyncInstrument {
+	/**
+	* Increment value of counter by the input. Inputs may be negative.
+	*/
+	add(value, attributes, ctx) {
+		this._record(value, attributes, ctx);
+	}
+};
+/**
+* The class implements {@link Counter} interface.
+*/
+var CounterInstrument = class extends SyncInstrument {
+	/**
+	* Increment value of counter by the input. Inputs may not be negative.
+	*/
+	add(value, attributes, ctx) {
+		if (value < 0) {
+			diag.warn(`negative value provided to counter ${this._descriptor.name}: ${value}`);
+			return;
+		}
+		this._record(value, attributes, ctx);
+	}
+};
+/**
+* The class implements {@link Gauge} interface.
+*/
+var GaugeInstrument = class extends SyncInstrument {
+	/**
+	* Records a measurement.
+	*/
+	record(value, attributes, ctx) {
+		this._record(value, attributes, ctx);
+	}
+};
+/**
+* The class implements {@link Histogram} interface.
+*/
+var HistogramInstrument = class extends SyncInstrument {
+	/**
+	* Records a measurement. Value of the measurement must not be negative.
+	*/
+	record(value, attributes, ctx) {
+		if (value < 0) {
+			diag.warn(`negative value provided to histogram ${this._descriptor.name}: ${value}`);
+			return;
+		}
+		this._record(value, attributes, ctx);
+	}
+};
+var ObservableInstrument = class {
+	/** @internal */
+	_metricStorages;
+	/** @internal */
+	_descriptor;
+	_observableRegistry;
+	constructor(descriptor, metricStorages, observableRegistry) {
+		this._descriptor = descriptor;
+		this._metricStorages = metricStorages;
+		this._observableRegistry = observableRegistry;
+	}
+	/**
+	* @see {Observable.addCallback}
+	*/
+	addCallback(callback) {
+		this._observableRegistry.addCallback(callback, this);
+	}
+	/**
+	* @see {Observable.removeCallback}
+	*/
+	removeCallback(callback) {
+		this._observableRegistry.removeCallback(callback, this);
+	}
+};
+var ObservableCounterInstrument = class extends ObservableInstrument {};
+var ObservableGaugeInstrument = class extends ObservableInstrument {};
+var ObservableUpDownCounterInstrument = class extends ObservableInstrument {};
+function isObservableInstrument(it) {
+	return it instanceof ObservableInstrument;
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/Meter.js
+/**
+* This class implements the {@link IMeter} interface.
+*/
+var Meter = class {
+	_meterSharedState;
+	constructor(meterSharedState) {
+		this._meterSharedState = meterSharedState;
+	}
+	/**
+	* Create a {@link Gauge} instrument.
+	*/
+	createGauge(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.GAUGE, options);
+		return new GaugeInstrument(this._meterSharedState.registerMetricStorage(descriptor), descriptor);
+	}
+	/**
+	* Create a {@link Histogram} instrument.
+	*/
+	createHistogram(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.HISTOGRAM, options);
+		return new HistogramInstrument(this._meterSharedState.registerMetricStorage(descriptor), descriptor);
+	}
+	/**
+	* Create a {@link Counter} instrument.
+	*/
+	createCounter(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.COUNTER, options);
+		return new CounterInstrument(this._meterSharedState.registerMetricStorage(descriptor), descriptor);
+	}
+	/**
+	* Create a {@link UpDownCounter} instrument.
+	*/
+	createUpDownCounter(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.UP_DOWN_COUNTER, options);
+		return new UpDownCounterInstrument(this._meterSharedState.registerMetricStorage(descriptor), descriptor);
+	}
+	/**
+	* Create a {@link ObservableGauge} instrument.
+	*/
+	createObservableGauge(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_GAUGE, options);
+		return new ObservableGaugeInstrument(descriptor, this._meterSharedState.registerAsyncMetricStorage(descriptor), this._meterSharedState.observableRegistry);
+	}
+	/**
+	* Create a {@link ObservableCounter} instrument.
+	*/
+	createObservableCounter(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_COUNTER, options);
+		return new ObservableCounterInstrument(descriptor, this._meterSharedState.registerAsyncMetricStorage(descriptor), this._meterSharedState.observableRegistry);
+	}
+	/**
+	* Create a {@link ObservableUpDownCounter} instrument.
+	*/
+	createObservableUpDownCounter(name, options) {
+		const descriptor = createInstrumentDescriptor(name, InstrumentType.OBSERVABLE_UP_DOWN_COUNTER, options);
+		return new ObservableUpDownCounterInstrument(descriptor, this._meterSharedState.registerAsyncMetricStorage(descriptor), this._meterSharedState.observableRegistry);
+	}
+	/**
+	* @see {@link Meter.addBatchObservableCallback}
+	*/
+	addBatchObservableCallback(callback, observables) {
+		this._meterSharedState.observableRegistry.addBatchCallback(callback, observables);
+	}
+	/**
+	* @see {@link Meter.removeBatchObservableCallback}
+	*/
+	removeBatchObservableCallback(callback, observables) {
+		this._meterSharedState.observableRegistry.removeBatchCallback(callback, observables);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricStorage.js
+/**
+* Internal interface.
+*
+* Represents a storage from which we can collect metrics.
+*/
+var MetricStorage = class {
+	_instrumentDescriptor;
+	constructor(instrumentDescriptor) {
+		this._instrumentDescriptor = instrumentDescriptor;
+	}
+	getInstrumentDescriptor() {
+		return this._instrumentDescriptor;
+	}
+	updateDescription(description) {
+		this._instrumentDescriptor = createInstrumentDescriptor(this._instrumentDescriptor.name, this._instrumentDescriptor.type, {
+			description,
+			valueType: this._instrumentDescriptor.valueType,
+			unit: this._instrumentDescriptor.unit,
+			advice: this._instrumentDescriptor.advice
+		});
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/HashMap.js
+var HashMap = class {
+	_valueMap = /* @__PURE__ */ new Map();
+	_keyMap = /* @__PURE__ */ new Map();
+	_hash;
+	constructor(hash) {
+		this._hash = hash;
+	}
+	get(key, hashCode) {
+		hashCode ??= this._hash(key);
+		return this._valueMap.get(hashCode);
+	}
+	getOrDefault(key, defaultFactory) {
+		const hash = this._hash(key);
+		if (this._valueMap.has(hash)) return this._valueMap.get(hash);
+		const val = defaultFactory();
+		if (!this._keyMap.has(hash)) this._keyMap.set(hash, key);
+		this._valueMap.set(hash, val);
+		return val;
+	}
+	set(key, value, hashCode) {
+		hashCode ??= this._hash(key);
+		if (!this._keyMap.has(hashCode)) this._keyMap.set(hashCode, key);
+		this._valueMap.set(hashCode, value);
+	}
+	has(key, hashCode) {
+		hashCode ??= this._hash(key);
+		return this._valueMap.has(hashCode);
+	}
+	*keys() {
+		const keyIterator = this._keyMap.entries();
+		let next = keyIterator.next();
+		while (next.done !== true) {
+			yield [next.value[1], next.value[0]];
+			next = keyIterator.next();
+		}
+	}
+	*entries() {
+		const valueIterator = this._valueMap.entries();
+		let next = valueIterator.next();
+		while (next.done !== true) {
+			yield [
+				this._keyMap.get(next.value[0]),
+				next.value[1],
+				next.value[0]
+			];
+			next = valueIterator.next();
+		}
+	}
+	get size() {
+		return this._valueMap.size;
+	}
+};
+var AttributeHashMap = class extends HashMap {
+	constructor() {
+		super(hashAttributes);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/DeltaMetricProcessor.js
+/**
+* Internal interface.
+*
+* Allows synchronous collection of metrics. This processor should allow
+* allocation of new aggregation cells for metrics and convert cumulative
+* recording to delta data points.
+*/
+var DeltaMetricProcessor = class {
+	_activeCollectionStorage = new AttributeHashMap();
+	_cumulativeMemoStorage = new AttributeHashMap();
+	_cardinalityLimit;
+	_overflowAttributes = { "otel.metric.overflow": true };
+	_overflowHashCode;
+	_aggregator;
+	constructor(aggregator, aggregationCardinalityLimit) {
+		this._aggregator = aggregator;
+		this._cardinalityLimit = (aggregationCardinalityLimit ?? 2e3) - 1;
+		this._overflowHashCode = hashAttributes(this._overflowAttributes);
+	}
+	record(value, attributes, collectionTime) {
+		let accumulation = this._activeCollectionStorage.get(attributes);
+		if (!accumulation) {
+			const hrTime = millisToHrTime(collectionTime);
+			if (this._activeCollectionStorage.size >= this._cardinalityLimit) {
+				this._activeCollectionStorage.getOrDefault(this._overflowAttributes, () => this._aggregator.createAccumulation(hrTime))?.record(value);
+				return;
+			}
+			accumulation = this._aggregator.createAccumulation(hrTime);
+			this._activeCollectionStorage.set(attributes, accumulation);
+		}
+		accumulation?.record(value);
+	}
+	batchCumulate(measurements, collectionTime) {
+		for (const [originalAttributes, value, originalHashCode] of measurements.entries()) {
+			let attributes = originalAttributes;
+			let hashCode = originalHashCode;
+			const accumulation = this._aggregator.createAccumulation(collectionTime);
+			accumulation?.record(value);
+			let delta = accumulation;
+			if (this._cumulativeMemoStorage.has(attributes, hashCode)) {
+				const previous = this._cumulativeMemoStorage.get(attributes, hashCode);
+				delta = this._aggregator.diff(previous, accumulation);
+			} else if (this._cumulativeMemoStorage.size >= this._cardinalityLimit) {
+				attributes = this._overflowAttributes;
+				hashCode = this._overflowHashCode;
+				if (this._cumulativeMemoStorage.has(attributes, hashCode)) {
+					const previous = this._cumulativeMemoStorage.get(attributes, hashCode);
+					delta = this._aggregator.diff(previous, accumulation);
+				}
+			}
+			if (this._activeCollectionStorage.has(attributes, hashCode)) {
+				const active = this._activeCollectionStorage.get(attributes, hashCode);
+				delta = this._aggregator.merge(active, delta);
+			}
+			this._cumulativeMemoStorage.set(attributes, accumulation, hashCode);
+			this._activeCollectionStorage.set(attributes, delta, hashCode);
+		}
+	}
+	/**
+	* Returns a collection of delta metrics. Start time is the when first
+	* time event collected.
+	*/
+	collect() {
+		const unreportedDelta = this._activeCollectionStorage;
+		this._activeCollectionStorage = new AttributeHashMap();
+		return unreportedDelta;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/TemporalMetricProcessor.js
+/**
+* Internal interface.
+*
+* Provides unique reporting for each collector. Allows synchronous collection
+* of metrics and reports given temporality values.
+*/
+var TemporalMetricProcessor = class TemporalMetricProcessor {
+	_aggregator;
+	_unreportedAccumulations = /* @__PURE__ */ new Map();
+	_reportHistory = /* @__PURE__ */ new Map();
+	constructor(aggregator, collectorHandles) {
+		this._aggregator = aggregator;
+		collectorHandles.forEach((handle) => {
+			this._unreportedAccumulations.set(handle, []);
+		});
+	}
+	/**
+	* Builds the {@link MetricData} streams to report against a specific MetricCollector.
+	* @param collector The information of the MetricCollector.
+	* @param collectors The registered collectors.
+	* @param instrumentDescriptor The instrumentation descriptor that these metrics generated with.
+	* @param currentAccumulations The current accumulation of metric data from instruments.
+	* @param collectionTime The current collection timestamp.
+	* @returns The {@link MetricData} points or `null`.
+	*/
+	buildMetrics(collector, instrumentDescriptor, currentAccumulations, collectionTime) {
+		this._stashAccumulations(currentAccumulations);
+		const unreportedAccumulations = this._getMergedUnreportedAccumulations(collector);
+		let result = unreportedAccumulations;
+		let aggregationTemporality;
+		if (this._reportHistory.has(collector)) {
+			const last = this._reportHistory.get(collector);
+			const lastCollectionTime = last.collectionTime;
+			aggregationTemporality = last.aggregationTemporality;
+			if (aggregationTemporality === AggregationTemporality.CUMULATIVE) result = TemporalMetricProcessor.merge(last.accumulations, unreportedAccumulations, this._aggregator);
+			else result = TemporalMetricProcessor.calibrateStartTime(last.accumulations, unreportedAccumulations, lastCollectionTime);
+		} else aggregationTemporality = collector.selectAggregationTemporality(instrumentDescriptor.type);
+		this._reportHistory.set(collector, {
+			accumulations: result,
+			collectionTime,
+			aggregationTemporality
+		});
+		const accumulationRecords = AttributesMapToAccumulationRecords(result);
+		if (accumulationRecords.length === 0) return;
+		return this._aggregator.toMetricData(instrumentDescriptor, aggregationTemporality, accumulationRecords, collectionTime);
+	}
+	_stashAccumulations(currentAccumulation) {
+		const registeredCollectors = this._unreportedAccumulations.keys();
+		for (const collector of registeredCollectors) {
+			let stash = this._unreportedAccumulations.get(collector);
+			if (stash === void 0) {
+				stash = [];
+				this._unreportedAccumulations.set(collector, stash);
+			}
+			stash.push(currentAccumulation);
+		}
+	}
+	_getMergedUnreportedAccumulations(collector) {
+		let result = new AttributeHashMap();
+		const unreportedList = this._unreportedAccumulations.get(collector);
+		this._unreportedAccumulations.set(collector, []);
+		if (unreportedList === void 0) return result;
+		for (const it of unreportedList) result = TemporalMetricProcessor.merge(result, it, this._aggregator);
+		return result;
+	}
+	static merge(last, current, aggregator) {
+		const result = last;
+		const iterator = current.entries();
+		let next = iterator.next();
+		while (next.done !== true) {
+			const [key, record, hash] = next.value;
+			if (last.has(key, hash)) {
+				const lastAccumulation = last.get(key, hash);
+				const accumulation = aggregator.merge(lastAccumulation, record);
+				result.set(key, accumulation, hash);
+			} else result.set(key, record, hash);
+			next = iterator.next();
+		}
+		return result;
+	}
+	/**
+	* Calibrate the reported metric streams' startTime to lastCollectionTime. Leaves
+	* the new stream to be the initial observation time unchanged.
+	*/
+	static calibrateStartTime(last, current, lastCollectionTime) {
+		for (const [key, hash] of last.keys()) current.get(key, hash)?.setStartTime(lastCollectionTime);
+		return current;
+	}
+};
+function AttributesMapToAccumulationRecords(map) {
+	return Array.from(map.entries());
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/AsyncMetricStorage.js
+/**
+* Internal interface.
+*
+* Stores and aggregates {@link MetricData} for asynchronous instruments.
+*/
+var AsyncMetricStorage = class extends MetricStorage {
+	_aggregationCardinalityLimit;
+	_deltaMetricStorage;
+	_temporalMetricStorage;
+	_attributesProcessor;
+	constructor(_instrumentDescriptor, aggregator, attributesProcessor, collectorHandles, aggregationCardinalityLimit) {
+		super(_instrumentDescriptor);
+		this._aggregationCardinalityLimit = aggregationCardinalityLimit;
+		this._deltaMetricStorage = new DeltaMetricProcessor(aggregator, this._aggregationCardinalityLimit);
+		this._temporalMetricStorage = new TemporalMetricProcessor(aggregator, collectorHandles);
+		this._attributesProcessor = attributesProcessor;
+	}
+	record(measurements, observationTime) {
+		if (this._attributesProcessor === void 0) {
+			this._deltaMetricStorage.batchCumulate(measurements, observationTime);
+			return;
+		}
+		const processed = new AttributeHashMap();
+		for (const [attributes, value] of measurements.entries()) processed.set(this._attributesProcessor.process(attributes), value);
+		this._deltaMetricStorage.batchCumulate(processed, observationTime);
+	}
+	/**
+	* Collects the metrics from this storage. The ObservableCallback is invoked
+	* during the collection.
+	*
+	* Note: This is a stateful operation and may reset any interval-related
+	* state for the MetricCollector.
+	*/
+	collect(collector, collectionTime) {
+		const accumulations = this._deltaMetricStorage.collect();
+		return this._temporalMetricStorage.buildMetrics(collector, this._instrumentDescriptor, accumulations, collectionTime);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/RegistrationConflicts.js
+function getIncompatibilityDetails(existing, otherDescriptor) {
+	let incompatibility = "";
+	if (existing.unit !== otherDescriptor.unit) incompatibility += `\t- Unit '${existing.unit}' does not match '${otherDescriptor.unit}'\n`;
+	if (existing.type !== otherDescriptor.type) incompatibility += `\t- Type '${existing.type}' does not match '${otherDescriptor.type}'\n`;
+	if (existing.valueType !== otherDescriptor.valueType) incompatibility += `\t- Value Type '${existing.valueType}' does not match '${otherDescriptor.valueType}'\n`;
+	if (existing.description !== otherDescriptor.description) incompatibility += `\t- Description '${existing.description}' does not match '${otherDescriptor.description}'\n`;
+	return incompatibility;
+}
+function getValueTypeConflictResolutionRecipe(existing, otherDescriptor) {
+	return `\t- use valueType '${existing.valueType}' on instrument creation or use an instrument name other than '${otherDescriptor.name}'`;
+}
+function getUnitConflictResolutionRecipe(existing, otherDescriptor) {
+	return `\t- use unit '${existing.unit}' on instrument creation or use an instrument name other than '${otherDescriptor.name}'`;
+}
+function getTypeConflictResolutionRecipe(existing, otherDescriptor) {
+	const selector = {
+		name: otherDescriptor.name,
+		type: otherDescriptor.type,
+		unit: otherDescriptor.unit
+	};
+	const selectorString = JSON.stringify(selector);
+	return `\t- create a new view with a name other than '${existing.name}' and InstrumentSelector '${selectorString}'`;
+}
+function getDescriptionResolutionRecipe(existing, otherDescriptor) {
+	const selector = {
+		name: otherDescriptor.name,
+		type: otherDescriptor.type,
+		unit: otherDescriptor.unit
+	};
+	const selectorString = JSON.stringify(selector);
+	return `\t- create a new view with a name other than '${existing.name}' and InstrumentSelector '${selectorString}'
+    \t- OR - create a new view with the name ${existing.name} and description '${existing.description}' and InstrumentSelector ${selectorString}
+    \t- OR - create a new view with the name ${otherDescriptor.name} and description '${existing.description}' and InstrumentSelector ${selectorString}`;
+}
+function getConflictResolutionRecipe(existing, otherDescriptor) {
+	if (existing.valueType !== otherDescriptor.valueType) return getValueTypeConflictResolutionRecipe(existing, otherDescriptor);
+	if (existing.unit !== otherDescriptor.unit) return getUnitConflictResolutionRecipe(existing, otherDescriptor);
+	if (existing.type !== otherDescriptor.type) return getTypeConflictResolutionRecipe(existing, otherDescriptor);
+	if (existing.description !== otherDescriptor.description) return getDescriptionResolutionRecipe(existing, otherDescriptor);
+	return "";
+}
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricStorageRegistry.js
+init_esm$1();
+/**
+* Internal class for storing {@link MetricStorage}
+*/
+var MetricStorageRegistry = class MetricStorageRegistry {
+	_sharedRegistry = /* @__PURE__ */ new Map();
+	_perCollectorRegistry = /* @__PURE__ */ new Map();
+	static create() {
+		return new MetricStorageRegistry();
+	}
+	getStorages(collector) {
+		let storages = [];
+		for (const metricStorages of this._sharedRegistry.values()) storages = storages.concat(metricStorages);
+		const perCollectorStorages = this._perCollectorRegistry.get(collector);
+		if (perCollectorStorages != null) for (const metricStorages of perCollectorStorages.values()) storages = storages.concat(metricStorages);
+		return storages;
+	}
+	register(storage) {
+		this._registerStorage(storage, this._sharedRegistry);
+	}
+	registerForCollector(collector, storage) {
+		let storageMap = this._perCollectorRegistry.get(collector);
+		if (storageMap == null) {
+			storageMap = /* @__PURE__ */ new Map();
+			this._perCollectorRegistry.set(collector, storageMap);
+		}
+		this._registerStorage(storage, storageMap);
+	}
+	findOrUpdateCompatibleStorage(expectedDescriptor) {
+		const storages = this._sharedRegistry.get(expectedDescriptor.name);
+		if (storages === void 0) return null;
+		return this._findOrUpdateCompatibleStorage(expectedDescriptor, storages);
+	}
+	findOrUpdateCompatibleCollectorStorage(collector, expectedDescriptor) {
+		const storageMap = this._perCollectorRegistry.get(collector);
+		if (storageMap === void 0) return null;
+		const storages = storageMap.get(expectedDescriptor.name);
+		if (storages === void 0) return null;
+		return this._findOrUpdateCompatibleStorage(expectedDescriptor, storages);
+	}
+	_registerStorage(storage, storageMap) {
+		const descriptor = storage.getInstrumentDescriptor();
+		const storages = storageMap.get(descriptor.name);
+		if (storages === void 0) {
+			storageMap.set(descriptor.name, [storage]);
+			return;
+		}
+		storages.push(storage);
+	}
+	_findOrUpdateCompatibleStorage(expectedDescriptor, existingStorages) {
+		let compatibleStorage = null;
+		for (const existingStorage of existingStorages) {
+			const existingDescriptor = existingStorage.getInstrumentDescriptor();
+			if (isDescriptorCompatibleWith(existingDescriptor, expectedDescriptor)) {
+				if (existingDescriptor.description !== expectedDescriptor.description) {
+					if (expectedDescriptor.description.length > existingDescriptor.description.length) existingStorage.updateDescription(expectedDescriptor.description);
+					diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered, but has a different description and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails(existingDescriptor, expectedDescriptor), "The longer description will be used.\nTo resolve the conflict:", getConflictResolutionRecipe(existingDescriptor, expectedDescriptor));
+				}
+				compatibleStorage = existingStorage;
+			} else diag.warn("A view or instrument with the name ", expectedDescriptor.name, " has already been registered and is incompatible with another registered view.\n", "Details:\n", getIncompatibilityDetails(existingDescriptor, expectedDescriptor), "To resolve the conflict:\n", getConflictResolutionRecipe(existingDescriptor, expectedDescriptor));
+		}
+		return compatibleStorage;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MultiWritableMetricStorage.js
+init_esm$1();
+/**
+* Internal interface.
+*/
+var MultiMetricStorage = class {
+	_backingStorages;
+	hasAttributeProcessor;
+	constructor(backingStorages) {
+		this._backingStorages = backingStorages;
+		this.hasAttributeProcessor = backingStorages.some((s) => s.hasAttributeProcessor);
+	}
+	record(value, attributes, context$2, recordTime) {
+		if (this.hasAttributeProcessor && context$2 === void 0) context$2 = context.active();
+		const storages = this._backingStorages;
+		for (let i = 0; i < storages.length; i++) storages[i].record(value, attributes, context$2, recordTime);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/ObservableResult.js
+init_esm$1();
+/**
+* The class implements {@link ObservableResult} interface.
+*/
+var ObservableResultImpl = class {
+	/**
+	* @internal
+	*/
+	_buffer = new AttributeHashMap();
+	_instrumentName;
+	_valueType;
+	constructor(instrumentName, valueType) {
+		this._instrumentName = instrumentName;
+		this._valueType = valueType;
+	}
+	/**
+	* Observe a measurement of the value associated with the given attributes.
+	*/
+	observe(value, attributes = {}) {
+		if (typeof value !== "number") {
+			diag.warn(`non-number value provided to metric ${this._instrumentName}: ${value}`);
+			return;
+		}
+		if (this._valueType === ValueType.INT && !Number.isInteger(value)) {
+			diag.warn(`INT value type cannot accept a floating-point value for ${this._instrumentName}, ignoring the fractional digits.`);
+			value = Math.trunc(value);
+			if (!Number.isInteger(value)) return;
+		}
+		this._buffer.set(attributes, value);
+	}
+};
+/**
+* The class implements {@link BatchObservableCallback} interface.
+*/
+var BatchObservableResultImpl = class {
+	/**
+	* @internal
+	*/
+	_buffer = /* @__PURE__ */ new Map();
+	/**
+	* Observe a measurement of the value associated with the given attributes.
+	*/
+	observe(metric, value, attributes = {}) {
+		if (!isObservableInstrument(metric)) return;
+		let map = this._buffer.get(metric);
+		if (map == null) {
+			map = new AttributeHashMap();
+			this._buffer.set(metric, map);
+		}
+		if (typeof value !== "number") {
+			diag.warn(`non-number value provided to metric ${metric._descriptor.name}: ${value}`);
+			return;
+		}
+		if (metric._descriptor.valueType === ValueType.INT && !Number.isInteger(value)) {
+			diag.warn(`INT value type cannot accept a floating-point value for ${metric._descriptor.name}, ignoring the fractional digits.`);
+			value = Math.trunc(value);
+			if (!Number.isInteger(value)) return;
+		}
+		map.set(attributes, value);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/ObservableRegistry.js
+init_esm$1();
+/**
+* An internal interface for managing ObservableCallbacks.
+*
+* Every registered callback associated with a set of instruments are be evaluated
+* exactly once during collection prior to reading data for that instrument.
+*/
+var ObservableRegistry = class {
+	_callbacks = [];
+	_batchCallbacks = [];
+	addCallback(callback, instrument) {
+		if (this._findCallback(callback, instrument) >= 0) return;
+		this._callbacks.push({
+			callback,
+			instrument
+		});
+	}
+	removeCallback(callback, instrument) {
+		const idx = this._findCallback(callback, instrument);
+		if (idx < 0) return;
+		this._callbacks.splice(idx, 1);
+	}
+	addBatchCallback(callback, instruments) {
+		const observableInstruments = new Set(instruments.filter(isObservableInstrument));
+		if (observableInstruments.size === 0) {
+			diag.error("BatchObservableCallback is not associated with valid instruments", instruments);
+			return;
+		}
+		if (this._findBatchCallback(callback, observableInstruments) >= 0) return;
+		this._batchCallbacks.push({
+			callback,
+			instruments: observableInstruments
+		});
+	}
+	removeBatchCallback(callback, instruments) {
+		const observableInstruments = new Set(instruments.filter(isObservableInstrument));
+		const idx = this._findBatchCallback(callback, observableInstruments);
+		if (idx < 0) return;
+		this._batchCallbacks.splice(idx, 1);
+	}
+	/**
+	* @returns a promise of rejected reasons for invoking callbacks.
+	*/
+	async observe(collectionTime, timeoutMillis) {
+		const callbackFutures = this._observeCallbacks(collectionTime, timeoutMillis);
+		const batchCallbackFutures = this._observeBatchCallbacks(collectionTime, timeoutMillis);
+		return (await Promise.allSettled([...callbackFutures, ...batchCallbackFutures])).filter((result) => result.status === "rejected").map((result) => result.reason);
+	}
+	_observeCallbacks(observationTime, timeoutMillis) {
+		return this._callbacks.map(async ({ callback, instrument }) => {
+			const observableResult = new ObservableResultImpl(instrument._descriptor.name, instrument._descriptor.valueType);
+			let callPromise = Promise.resolve(callback(observableResult));
+			if (timeoutMillis != null) callPromise = callWithTimeout(callPromise, timeoutMillis);
+			await callPromise;
+			instrument._metricStorages.forEach((metricStorage) => {
+				metricStorage.record(observableResult._buffer, observationTime);
+			});
+		});
+	}
+	_observeBatchCallbacks(observationTime, timeoutMillis) {
+		return this._batchCallbacks.map(async ({ callback, instruments }) => {
+			const observableResult = new BatchObservableResultImpl();
+			let callPromise = Promise.resolve(callback(observableResult));
+			if (timeoutMillis != null) callPromise = callWithTimeout(callPromise, timeoutMillis);
+			await callPromise;
+			instruments.forEach((instrument) => {
+				const buffer = observableResult._buffer.get(instrument);
+				if (buffer == null) return;
+				instrument._metricStorages.forEach((metricStorage) => {
+					metricStorage.record(buffer, observationTime);
+				});
+			});
+		});
+	}
+	_findCallback(callback, instrument) {
+		return this._callbacks.findIndex((record) => {
+			return record.callback === callback && record.instrument === instrument;
+		});
+	}
+	_findBatchCallback(callback, instruments) {
+		return this._batchCallbacks.findIndex((record) => {
+			return record.callback === callback && setEquals(record.instruments, instruments);
+		});
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/SyncMetricStorage.js
+init_esm$1();
+/**
+* Internal interface.
+*
+* Stores and aggregates {@link MetricData} for synchronous instruments.
+*/
+var SyncMetricStorage = class extends MetricStorage {
+	_aggregationCardinalityLimit;
+	_deltaMetricStorage;
+	_temporalMetricStorage;
+	_attributesProcessor;
+	constructor(instrumentDescriptor, aggregator, attributesProcessor, collectorHandles, aggregationCardinalityLimit) {
+		super(instrumentDescriptor);
+		this._aggregationCardinalityLimit = aggregationCardinalityLimit;
+		this._deltaMetricStorage = new DeltaMetricProcessor(aggregator, this._aggregationCardinalityLimit);
+		this._temporalMetricStorage = new TemporalMetricProcessor(aggregator, collectorHandles);
+		this._attributesProcessor = attributesProcessor;
+		this.hasAttributeProcessor = attributesProcessor !== void 0;
+	}
+	hasAttributeProcessor;
+	record(value, attributes, context$1, recordTime) {
+		if (this._attributesProcessor !== void 0) attributes = this._attributesProcessor.process(attributes, context$1 ?? context.active());
+		this._deltaMetricStorage.record(value, attributes, recordTime);
+	}
+	/**
+	* Collects the metrics from this storage.
+	*
+	* Note: This is a stateful operation and may reset any interval-related
+	* state for the MetricCollector.
+	*/
+	collect(collector, collectionTime) {
+		const accumulations = this._deltaMetricStorage.collect();
+		return this._temporalMetricStorage.buildMetrics(collector, this._instrumentDescriptor, accumulations, collectionTime);
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MeterSharedState.js
+/**
+* An internal record for shared meter provider states.
+*/
+var MeterSharedState = class {
+	metricStorageRegistry = new MetricStorageRegistry();
+	observableRegistry = new ObservableRegistry();
+	meter;
+	_meterProviderSharedState;
+	_instrumentationScope;
+	constructor(meterProviderSharedState, instrumentationScope) {
+		this.meter = new Meter(this);
+		this._meterProviderSharedState = meterProviderSharedState;
+		this._instrumentationScope = instrumentationScope;
+	}
+	registerMetricStorage(descriptor) {
+		const storages = this._registerMetricStorage(descriptor, SyncMetricStorage);
+		if (storages.length === 1) return storages[0];
+		return new MultiMetricStorage(storages);
+	}
+	registerAsyncMetricStorage(descriptor) {
+		return this._registerMetricStorage(descriptor, AsyncMetricStorage);
+	}
+	/**
+	* @param collector opaque handle of {@link MetricCollector} which initiated the collection.
+	* @param collectionTime the HrTime at which the collection was initiated.
+	* @param options options for collection.
+	* @returns the list of metric data collected.
+	*/
+	async collect(collector, collectionTime, options) {
+		/**
+		* 1. Call all observable callbacks first.
+		* 2. Collect metric result for the collector.
+		*/
+		const errors = await this.observableRegistry.observe(collectionTime, options?.timeoutMillis);
+		const storages = this.metricStorageRegistry.getStorages(collector);
+		if (storages.length === 0) return null;
+		const metricDataList = [];
+		storages.forEach((metricStorage) => {
+			const metricData = metricStorage.collect(collector, collectionTime);
+			if (metricData != null) metricDataList.push(metricData);
+		});
+		if (metricDataList.length === 0) return { errors };
+		return {
+			scopeMetrics: {
+				scope: this._instrumentationScope,
+				metrics: metricDataList
+			},
+			errors
+		};
+	}
+	_registerMetricStorage(descriptor, MetricStorageType) {
+		let storages = this._meterProviderSharedState.viewRegistry.findViews(descriptor, this._instrumentationScope).map((view) => {
+			const viewDescriptor = createInstrumentDescriptorWithView(view, descriptor);
+			const compatibleStorage = this.metricStorageRegistry.findOrUpdateCompatibleStorage(viewDescriptor);
+			if (compatibleStorage != null) return compatibleStorage;
+			const viewStorage = new MetricStorageType(viewDescriptor, view.aggregation.createAggregator(viewDescriptor), view.attributesProcessor, this._meterProviderSharedState.metricCollectors, view.aggregationCardinalityLimit);
+			this.metricStorageRegistry.register(viewStorage);
+			return viewStorage;
+		});
+		if (storages.length === 0) {
+			const collectorStorages = this._meterProviderSharedState.selectAggregations(descriptor.type).map(([collector, aggregation]) => {
+				const compatibleStorage = this.metricStorageRegistry.findOrUpdateCompatibleCollectorStorage(collector, descriptor);
+				if (compatibleStorage != null) return compatibleStorage;
+				const aggregator = aggregation.createAggregator(descriptor);
+				const cardinalityLimit = collector.selectCardinalityLimit(descriptor.type);
+				const storage = new MetricStorageType(descriptor, aggregator, void 0, [collector], cardinalityLimit);
+				this.metricStorageRegistry.registerForCollector(collector, storage);
+				return storage;
+			});
+			storages = storages.concat(collectorStorages);
+		}
+		return storages;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MeterProviderSharedState.js
+/**
+* An internal record for shared meter provider states.
+*/
+var MeterProviderSharedState = class {
+	viewRegistry = new ViewRegistry();
+	metricCollectors = [];
+	meterSharedStates = /* @__PURE__ */ new Map();
+	resource;
+	constructor(resource) {
+		this.resource = resource;
+	}
+	getMeterSharedState(instrumentationScope) {
+		const id = instrumentationScopeId(instrumentationScope);
+		let meterSharedState = this.meterSharedStates.get(id);
+		if (meterSharedState == null) {
+			meterSharedState = new MeterSharedState(this, instrumentationScope);
+			this.meterSharedStates.set(id, meterSharedState);
+		}
+		return meterSharedState;
+	}
+	selectAggregations(instrumentType) {
+		const result = [];
+		for (const collector of this.metricCollectors) result.push([collector, toAggregation(collector.selectAggregation(instrumentType))]);
+		return result;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/state/MetricCollector.js
+/**
+* An internal opaque interface that the MetricReader receives as
+* MetricProducer. It acts as the storage key to the internal metric stream
+* state for each MetricReader.
+*/
+var MetricCollector = class {
+	_sharedState;
+	_metricReader;
+	constructor(sharedState, metricReader) {
+		this._sharedState = sharedState;
+		this._metricReader = metricReader;
+	}
+	async collect(options) {
+		const collectionTime = millisToHrTime(Date.now());
+		const scopeMetrics = [];
+		const errors = [];
+		const meterCollectionPromises = Array.from(this._sharedState.meterSharedStates.values()).map(async (meterSharedState) => {
+			const current = await meterSharedState.collect(this, collectionTime, options);
+			if (current?.scopeMetrics != null) scopeMetrics.push(current.scopeMetrics);
+			if (current?.errors != null) errors.push(...current.errors);
+		});
+		await Promise.all(meterCollectionPromises);
+		return {
+			resourceMetrics: {
+				resource: this._sharedState.resource,
+				scopeMetrics
+			},
+			errors
+		};
+	}
+	/**
+	* Delegates for MetricReader.forceFlush.
+	*/
+	async forceFlush(options) {
+		await this._metricReader.forceFlush(options);
+	}
+	/**
+	* Delegates for MetricReader.shutdown.
+	*/
+	async shutdown(options) {
+		await this._metricReader.shutdown(options);
+	}
+	selectAggregationTemporality(instrumentType) {
+		return this._metricReader.selectAggregationTemporality(instrumentType);
+	}
+	selectAggregation(instrumentType) {
+		return this._metricReader.selectAggregation(instrumentType);
+	}
+	/**
+	* Select the cardinality limit for the given {@link InstrumentType} for this
+	* collector.
+	*/
+	selectCardinalityLimit(instrumentType) {
+		return this._metricReader.selectCardinalityLimit?.(instrumentType) ?? 2e3;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/Predicate.js
+var ESCAPE = /[\^$\\.+?()[\]{}|]/g;
+/**
+* Wildcard pattern predicate, supports patterns like `*`, `foo*`, `*bar`.
+*/
+var PatternPredicate = class PatternPredicate {
+	_matchAll;
+	_regexp;
+	constructor(pattern) {
+		if (pattern === "*") {
+			this._matchAll = true;
+			this._regexp = /.*/;
+		} else {
+			this._matchAll = false;
+			this._regexp = new RegExp(PatternPredicate.escapePattern(pattern));
+		}
+	}
+	match(str) {
+		if (this._matchAll) return true;
+		return this._regexp.test(str);
+	}
+	static escapePattern(pattern) {
+		return `^${pattern.replace(ESCAPE, "\\$&").replace("*", ".*")}$`;
+	}
+	static hasWildcard(pattern) {
+		return pattern.includes("*");
+	}
+};
+var ExactPredicate = class {
+	_matchAll;
+	_pattern;
+	constructor(pattern) {
+		this._matchAll = pattern === void 0;
+		this._pattern = pattern;
+	}
+	match(str) {
+		if (this._matchAll) return true;
+		if (str === this._pattern) return true;
+		return false;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/AttributesProcessor.js
+var NoopAttributesProcessor = class {
+	process(incoming, _context) {
+		return incoming;
+	}
+};
+var MultiAttributesProcessor = class {
+	_processors;
+	constructor(processors) {
+		this._processors = processors;
+	}
+	process(incoming, context) {
+		let filteredAttributes = incoming;
+		for (const processor of this._processors) filteredAttributes = processor.process(filteredAttributes, context);
+		return filteredAttributes;
+	}
+};
+/**
+* @internal
+*
+* Create an {@link IAttributesProcessor} that acts as a simple pass-through for attributes.
+*/
+function createNoopAttributesProcessor() {
+	return NOOP;
+}
+/**
+* @internal
+*
+* Create an {@link IAttributesProcessor} that applies all processors from the provided list in order.
+*
+* @param processors Processors to apply in order.
+*/
+function createMultiAttributesProcessor(processors) {
+	return new MultiAttributesProcessor(processors);
+}
+var NOOP = new NoopAttributesProcessor();
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/InstrumentSelector.js
+var InstrumentSelector = class {
+	_nameFilter;
+	_type;
+	_unitFilter;
+	constructor(criteria) {
+		this._nameFilter = new PatternPredicate(criteria?.name ?? "*");
+		this._type = criteria?.type;
+		this._unitFilter = new ExactPredicate(criteria?.unit);
+	}
+	getType() {
+		return this._type;
+	}
+	getNameFilter() {
+		return this._nameFilter;
+	}
+	getUnitFilter() {
+		return this._unitFilter;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/MeterSelector.js
+var MeterSelector = class {
+	_nameFilter;
+	_versionFilter;
+	_schemaUrlFilter;
+	constructor(criteria) {
+		this._nameFilter = new ExactPredicate(criteria?.name);
+		this._versionFilter = new ExactPredicate(criteria?.version);
+		this._schemaUrlFilter = new ExactPredicate(criteria?.schemaUrl);
+	}
+	getNameFilter() {
+		return this._nameFilter;
+	}
+	/**
+	* TODO: semver filter? no spec yet.
+	*/
+	getVersionFilter() {
+		return this._versionFilter;
+	}
+	getSchemaUrlFilter() {
+		return this._schemaUrlFilter;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/view/View.js
+function isSelectorNotProvided(options) {
+	return options.instrumentName == null && options.instrumentType == null && options.instrumentUnit == null && options.meterName == null && options.meterVersion == null && options.meterSchemaUrl == null;
+}
+function validateViewOptions(viewOptions) {
+	if (isSelectorNotProvided(viewOptions)) throw new Error("Cannot create view with no selector arguments supplied");
+	if (viewOptions.name != null && (viewOptions?.instrumentName == null || PatternPredicate.hasWildcard(viewOptions.instrumentName))) throw new Error("Views with a specified name must be declared with an instrument selector that selects at most one instrument per meter.");
+}
+/**
+* Can be passed to a {@link MeterProvider} to select instruments and alter their metric stream.
+*/
+var View = class {
+	name;
+	description;
+	aggregation;
+	attributesProcessor;
+	instrumentSelector;
+	meterSelector;
+	aggregationCardinalityLimit;
+	/**
+	* Create a new {@link View} instance.
+	*
+	* Parameters can be categorized as two types:
+	*  Instrument selection criteria: Used to describe the instrument(s) this view will be applied to.
+	*  Will be treated as additive (the Instrument has to meet all the provided criteria to be selected).
+	*
+	*  Metric stream altering: Alter the metric stream of instruments selected by instrument selection criteria.
+	*
+	* @param viewOptions {@link ViewOptions} for altering the metric stream and instrument selection.
+	* @param viewOptions.name
+	* Alters the metric stream:
+	*  This will be used as the name of the metrics stream.
+	*  If not provided, the original Instrument name will be used.
+	* @param viewOptions.description
+	* Alters the metric stream:
+	*  This will be used as the description of the metrics stream.
+	*  If not provided, the original Instrument description will be used by default.
+	* @param viewOptions.attributesProcessors
+	* Alters the metric stream:
+	*  If provided, the attributes will be modified as defined by the added processors.
+	*  If not provided, all attribute keys will be used by default.
+	* @param viewOptions.aggregationCardinalityLimit
+	* Alters the metric stream:
+	*  Sets a limit on the number of unique attribute combinations (cardinality) that can be aggregated.
+	*  If not provided, the default limit of 2000 will be used.
+	* @param viewOptions.aggregation
+	* Alters the metric stream:
+	*  Alters the {@link Aggregation} of the metric stream.
+	* @param viewOptions.instrumentName
+	* Instrument selection criteria:
+	*  Original name of the Instrument(s) with wildcard support.
+	* @param viewOptions.instrumentType
+	* Instrument selection criteria:
+	*  The original type of the Instrument(s).
+	* @param viewOptions.instrumentUnit
+	* Instrument selection criteria:
+	*  The unit of the Instrument(s).
+	* @param viewOptions.meterName
+	* Instrument selection criteria:
+	*  The name of the Meter. No wildcard support, name must match the meter exactly.
+	* @param viewOptions.meterVersion
+	* Instrument selection criteria:
+	*  The version of the Meter. No wildcard support, version must match exactly.
+	* @param viewOptions.meterSchemaUrl
+	* Instrument selection criteria:
+	*  The schema URL of the Meter. No wildcard support, schema URL must match exactly.
+	*
+	* @example
+	* // Create a view that changes the Instrument 'my.instrument' to use to an
+	* // ExplicitBucketHistogramAggregation with the boundaries [20, 30, 40]
+	* new View({
+	*   aggregation: new ExplicitBucketHistogramAggregation([20, 30, 40]),
+	*   instrumentName: 'my.instrument'
+	* })
+	*/
+	constructor(viewOptions) {
+		validateViewOptions(viewOptions);
+		if (viewOptions.attributesProcessors != null) this.attributesProcessor = createMultiAttributesProcessor(viewOptions.attributesProcessors);
+		else this.attributesProcessor = createNoopAttributesProcessor();
+		this.name = viewOptions.name;
+		this.description = viewOptions.description;
+		this.aggregation = toAggregation(viewOptions.aggregation ?? { type: AggregationType.DEFAULT });
+		this.instrumentSelector = new InstrumentSelector({
+			name: viewOptions.instrumentName,
+			type: viewOptions.instrumentType,
+			unit: viewOptions.instrumentUnit
+		});
+		this.meterSelector = new MeterSelector({
+			name: viewOptions.meterName,
+			version: viewOptions.meterVersion,
+			schemaUrl: viewOptions.meterSchemaUrl
+		});
+		this.aggregationCardinalityLimit = viewOptions.aggregationCardinalityLimit;
+	}
+};
+//#endregion
+//#region node_modules/@opentelemetry/sdk-metrics/build/esm/MeterProvider.js
+init_esm$1();
+/**
+* This class implements the {@link MeterProvider} interface.
+*/
+var MeterProvider = class {
+	_sharedState;
+	_shutdown = false;
+	constructor(options) {
+		this._sharedState = new MeterProviderSharedState(options?.resource ?? defaultResource$1());
+		if (options?.views != null && options.views.length > 0) for (const viewOption of options.views) this._sharedState.viewRegistry.addView(new View(viewOption));
+		if (options?.readers != null && options.readers.length > 0) for (const metricReader of options.readers) {
+			const collector = new MetricCollector(this._sharedState, metricReader);
+			metricReader.setMetricProducer(collector);
+			this._sharedState.metricCollectors.push(collector);
+			if (options.sdkMetricsEnabled && metricReader instanceof MetricReader) metricReader._setSelfObsMeterProvider(this);
+		}
+	}
+	/**
+	* Get a meter with the configuration of the MeterProvider.
+	*/
+	getMeter(name, version = "", options = {}) {
+		if (this._shutdown) {
+			diag.warn("A shutdown MeterProvider cannot provide a Meter");
+			return createNoopMeter();
+		}
+		return this._sharedState.getMeterSharedState({
+			name,
+			version,
+			schemaUrl: options.schemaUrl
+		}).meter;
+	}
+	/**
+	* Shut down the MeterProvider and all registered
+	* MetricReaders.
+	*
+	* Returns a promise which is resolved when all flushes are complete.
+	*/
+	async shutdown(options) {
+		if (this._shutdown) {
+			diag.warn("shutdown may only be called once per MeterProvider");
+			return;
+		}
+		this._shutdown = true;
+		await Promise.all(this._sharedState.metricCollectors.map((collector) => {
+			return collector.shutdown(options);
+		}));
+	}
+	/**
+	* Notifies all registered MetricReaders to flush any buffered data.
+	*
+	* Returns a promise which is resolved when all flushes are complete.
+	*/
+	async forceFlush(options) {
+		if (this._shutdown) {
+			diag.warn("invalid attempt to force flush after MeterProvider shutdown");
+			return;
+		}
+		await Promise.all(this._sharedState.metricCollectors.map((collector) => {
+			return collector.forceFlush(options);
+		}));
+	}
+};
+//#endregion
 //#region http-credentials.ts
-init_esm();
 var import_src = require_src$1();
 var import_src$1 = require_src();
 var BEARER_PREFIX = "bearer ";
@@ -38517,7 +42484,6 @@ function parseBearerToken(authorization) {
 //#endregion
 //#region metrics.ts
 init_esm$1();
-init_esm$3();
 /**
 * Prometheus-scrape metrics for the MCP server.
 *  - Mirrors back-end /actuator/prometheus auth (Bearer CLIENT_SECRET) so the same
@@ -38849,13 +42815,14 @@ var errorMap = (issue, _ctx) => {
 			message = `Invalid date`;
 			break;
 		case ZodIssueCode.invalid_string:
-			if (typeof issue.validation === "object") if ("includes" in issue.validation) {
-				message = `Invalid input: must include "${issue.validation.includes}"`;
-				if (typeof issue.validation.position === "number") message = `${message} at one or more positions greater than or equal to ${issue.validation.position}`;
-			} else if ("startsWith" in issue.validation) message = `Invalid input: must start with "${issue.validation.startsWith}"`;
-			else if ("endsWith" in issue.validation) message = `Invalid input: must end with "${issue.validation.endsWith}"`;
-			else util.assertNever(issue.validation);
-			else if (issue.validation !== "regex") message = `Invalid ${issue.validation}`;
+			if (typeof issue.validation === "object") {
+				if ("includes" in issue.validation) {
+					message = `Invalid input: must include "${issue.validation.includes}"`;
+					if (typeof issue.validation.position === "number") message = `${message} at one or more positions greater than or equal to ${issue.validation.position}`;
+				} else if ("startsWith" in issue.validation) message = `Invalid input: must start with "${issue.validation.startsWith}"`;
+				else if ("endsWith" in issue.validation) message = `Invalid input: must end with "${issue.validation.endsWith}"`;
+				else util.assertNever(issue.validation);
+			} else if (issue.validation !== "regex") message = `Invalid ${issue.validation}`;
 			else message = "Invalid";
 			break;
 		case ZodIssueCode.too_small:
@@ -39020,8 +42987,10 @@ var ParseInputLazyPath = class {
 		this._key = key;
 	}
 	get path() {
-		if (!this._cachedPath.length) if (Array.isArray(this._key)) this._cachedPath.push(...this._path, ...this._key);
-		else this._cachedPath.push(...this._path, this._key);
+		if (!this._cachedPath.length) {
+			if (Array.isArray(this._key)) this._cachedPath.push(...this._path, ...this._key);
+			else this._cachedPath.push(...this._path, this._key);
+		}
 		return this._cachedPath;
 	}
 };
@@ -41832,30 +45801,32 @@ var ZodEffects = class extends ZodType {
 				});
 			});
 		}
-		if (effect.type === "transform") if (ctx.common.async === false) {
-			const base = this._def.schema._parseSync({
+		if (effect.type === "transform") {
+			if (ctx.common.async === false) {
+				const base = this._def.schema._parseSync({
+					data: ctx.data,
+					path: ctx.path,
+					parent: ctx
+				});
+				if (!isValid(base)) return INVALID;
+				const result = effect.transform(base.value, checkCtx);
+				if (result instanceof Promise) throw new Error(`Asynchronous transform encountered during synchronous parse operation. Use .parseAsync instead.`);
+				return {
+					status: status.value,
+					value: result
+				};
+			} else return this._def.schema._parseAsync({
 				data: ctx.data,
 				path: ctx.path,
 				parent: ctx
+			}).then((base) => {
+				if (!isValid(base)) return INVALID;
+				return Promise.resolve(effect.transform(base.value, checkCtx)).then((result) => ({
+					status: status.value,
+					value: result
+				}));
 			});
-			if (!isValid(base)) return INVALID;
-			const result = effect.transform(base.value, checkCtx);
-			if (result instanceof Promise) throw new Error(`Asynchronous transform encountered during synchronous parse operation. Use .parseAsync instead.`);
-			return {
-				status: status.value,
-				value: result
-			};
-		} else return this._def.schema._parseAsync({
-			data: ctx.data,
-			path: ctx.path,
-			parent: ctx
-		}).then((base) => {
-			if (!isValid(base)) return INVALID;
-			return Promise.resolve(effect.transform(base.value, checkCtx)).then((result) => ({
-				status: status.value,
-				value: result
-			}));
-		});
+		}
 		util.assertNever(effect);
 	}
 };
@@ -42461,17 +46432,19 @@ function parseBigintDef(def, refs) {
 	if (!def.checks) return res;
 	for (const check of def.checks) switch (check.kind) {
 		case "min":
-			if (refs.target === "jsonSchema7") if (check.inclusive) setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
-			else setResponseValueAndErrors(res, "exclusiveMinimum", check.value, check.message, refs);
-			else {
+			if (refs.target === "jsonSchema7") {
+				if (check.inclusive) setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
+				else setResponseValueAndErrors(res, "exclusiveMinimum", check.value, check.message, refs);
+			} else {
 				if (!check.inclusive) res.exclusiveMinimum = true;
 				setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
 			}
 			break;
 		case "max":
-			if (refs.target === "jsonSchema7") if (check.inclusive) setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
-			else setResponseValueAndErrors(res, "exclusiveMaximum", check.value, check.message, refs);
-			else {
+			if (refs.target === "jsonSchema7") {
+				if (check.inclusive) setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
+				else setResponseValueAndErrors(res, "exclusiveMaximum", check.value, check.message, refs);
+			} else {
 				if (!check.inclusive) res.exclusiveMaximum = true;
 				setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
 			}
@@ -43081,17 +47054,19 @@ function parseNumberDef(def, refs) {
 			addErrorMessage(res, "type", check.message, refs);
 			break;
 		case "min":
-			if (refs.target === "jsonSchema7") if (check.inclusive) setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
-			else setResponseValueAndErrors(res, "exclusiveMinimum", check.value, check.message, refs);
-			else {
+			if (refs.target === "jsonSchema7") {
+				if (check.inclusive) setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
+				else setResponseValueAndErrors(res, "exclusiveMinimum", check.value, check.message, refs);
+			} else {
 				if (!check.inclusive) res.exclusiveMinimum = true;
 				setResponseValueAndErrors(res, "minimum", check.value, check.message, refs);
 			}
 			break;
 		case "max":
-			if (refs.target === "jsonSchema7") if (check.inclusive) setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
-			else setResponseValueAndErrors(res, "exclusiveMaximum", check.value, check.message, refs);
-			else {
+			if (refs.target === "jsonSchema7") {
+				if (check.inclusive) setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
+				else setResponseValueAndErrors(res, "exclusiveMaximum", check.value, check.message, refs);
+			} else {
 				if (!check.inclusive) res.exclusiveMaximum = true;
 				setResponseValueAndErrors(res, "maximum", check.value, check.message, refs);
 			}
@@ -46134,7 +50109,7 @@ var require_fast_deep_equal = /* @__PURE__ */ __commonJSMin(((exports, module) =
 	};
 }));
 //#endregion
-//#region ../node_modules/json-schema-traverse/index.js
+//#region ../node_modules/ajv/node_modules/json-schema-traverse/index.js
 var require_json_schema_traverse = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var traverse = module.exports = function(schema, opts, cb) {
 		if (typeof opts == "function") {
@@ -46312,10 +50287,12 @@ var require_resolve = /* @__PURE__ */ __commonJSMin(((exports) => {
 				let schOrRef = this.refs[ref];
 				if (typeof schOrRef == "string") schOrRef = this.refs[schOrRef];
 				if (typeof schOrRef == "object") checkAmbiguosRef(sch, schOrRef.schema, ref);
-				else if (ref !== normalizeId(fullPath)) if (ref[0] === "#") {
-					checkAmbiguosRef(sch, localRefs[ref], ref);
-					localRefs[ref] = sch;
-				} else this.refs[ref] = fullPath;
+				else if (ref !== normalizeId(fullPath)) {
+					if (ref[0] === "#") {
+						checkAmbiguosRef(sch, localRefs[ref], ref);
+						localRefs[ref] = sch;
+					} else this.refs[ref] = fullPath;
+				}
 				return ref;
 			}
 			function addAnchor(anchor) {
@@ -47032,11 +51009,27 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/** @type {(value: string) => boolean} */
 	var isIPv4 = RegExp.prototype.test.bind(/^(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)$/u);
 	/** @type {(value: string) => boolean} */
+	var isPort = RegExp.prototype.test.bind(/^\d*$/u);
+	/** @type {(value: string) => boolean} */
 	var isHexPair = RegExp.prototype.test.bind(/^[\da-f]{2}$/iu);
 	/** @type {(value: string) => boolean} */
 	var isUnreserved = RegExp.prototype.test.bind(/^[\da-z\-._~]$/iu);
 	/** @type {(value: string) => boolean} */
-	var isPathCharacter = RegExp.prototype.test.bind(/^[\da-z\-._~!$&'()*+,;=:@/]$/iu);
+	var isPathCharacter = RegExp.prototype.test.bind(/^[A-Za-z0-9\-._~!$&'()*+,;=:@/]$/u);
+	/** @type {(value: string) => boolean} */
+	var isQueryFragmentCharacter = RegExp.prototype.test.bind(/^[A-Za-z0-9\-._~!$&'()*+,;=:@/?]$/u);
+	/** @type {(value: string) => boolean} */
+	var isUserinfoCharacter = RegExp.prototype.test.bind(/^[A-Za-z0-9\-._~!$&'()*+,;=:]$/u);
+	var BYTE_HEX = new Array(256);
+	{
+		const HEX_DIGITS = "0123456789ABCDEF";
+		for (let i = 0; i < 256; i++) BYTE_HEX[i] = "%" + HEX_DIGITS[i >> 4] + HEX_DIGITS[i & 15];
+	}
+	function percentEncodeNonAscii(cp) {
+		if (cp < 2048) return BYTE_HEX[192 | cp >> 6] + BYTE_HEX[128 | cp & 63];
+		if (cp < 65536) return BYTE_HEX[224 | cp >> 12] + BYTE_HEX[128 | cp >> 6 & 63] + BYTE_HEX[128 | cp & 63];
+		return BYTE_HEX[240 | cp >> 18] + BYTE_HEX[128 | cp >> 12 & 63] + BYTE_HEX[128 | cp >> 6 & 63] + BYTE_HEX[128 | cp & 63];
+	}
 	/**
 	* @param {Array<string>} input
 	* @returns {string}
@@ -47059,119 +51052,162 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		}
 		return acc;
 	}
-	/**
-	* @typedef {Object} GetIPV6Result
-	* @property {boolean} error - Indicates if there was an error parsing the IPv6 address.
-	* @property {string} address - The parsed IPv6 address.
-	* @property {string} [zone] - The zone identifier, if present.
-	*/
+	/** @type {(value: string) => boolean} */
+	var isHextet = RegExp.prototype.test.bind(/^[\dA-Fa-f]{1,4}$/);
+	/** @type {(value: string) => boolean} */
+	var isIPvFuture = RegExp.prototype.test.bind(/^[vV][\dA-Fa-f]+\.[A-Za-z\d\-._~!$&'()*+,;=:]+$/);
+	/** @type {(value: string) => boolean} */
+	var isZoneCharacter = RegExp.prototype.test.bind(/^[A-Za-z\d\-._~]$/);
 	/**
 	* @param {string} value
 	* @returns {boolean}
 	*/
 	var nonSimpleDomain = RegExp.prototype.test.bind(/[^!"$&'()*+,\-.;=_`a-z{}~]/u);
 	/**
-	* @param {Array<string>} buffer
+	* @param {string} zone
 	* @returns {boolean}
 	*/
-	function consumeIsZone(buffer) {
-		buffer.length = 0;
-		return true;
-	}
-	/**
-	* @param {Array<string>} buffer
-	* @param {Array<string>} address
-	* @param {GetIPV6Result} output
-	* @returns {boolean}
-	*/
-	function consumeHextets(buffer, address, output) {
-		if (buffer.length) {
-			const hex = stringArrayToHexStripped(buffer);
-			if (hex !== "") address.push(hex);
-			else {
-				output.error = true;
-				return false;
+	function isZoneIdentifier(zone) {
+		if (zone.length === 0) return false;
+		for (let i = 0; i < zone.length; i++) {
+			if (isZoneCharacter(zone[i])) continue;
+			if (zone[i] === "%" && i + 2 < zone.length && isHexPair(zone.slice(i + 1, i + 3))) {
+				i += 2;
+				continue;
 			}
-			buffer.length = 0;
+			return false;
 		}
 		return true;
 	}
 	/**
+	* Compresses the longest run of zero hextets to "::" per RFC 5952. A run of a
+	* single zero hextet is left uncompressed. On ties the leftmost run wins.
+	*
+	* @param {string[]} hextets
+	* @returns {string}
+	*/
+	function compressIPv6ZeroRun(hextets) {
+		let bestStart = -1;
+		let bestLength = 0;
+		let runStart = -1;
+		let runLength = 0;
+		for (let i = 0; i < hextets.length; i++) if (hextets[i] === "0") {
+			if (runStart === -1) runStart = i;
+			runLength++;
+			if (runLength > bestLength) {
+				bestLength = runLength;
+				bestStart = runStart;
+			}
+		} else {
+			runStart = -1;
+			runLength = 0;
+		}
+		if (bestLength < 2) return hextets.join(":");
+		const head = hextets.slice(0, bestStart).join(":");
+		const tail = hextets.slice(bestStart + bestLength).join(":");
+		return head + "::" + tail;
+	}
+	/**
+	* Validates an IPv6 address against the alternatives in RFC 3986 section
+	* 3.2.2 and returns the same address with leading hextet zeroes removed.
+	* An embedded IPv4 address counts as two hextets and is only valid at the end.
+	*
 	* @param {string} input
-	* @returns {GetIPV6Result}
+	* @returns {string|undefined}
 	*/
-	function getIPV6(input) {
-		let tokenCount = 0;
-		const output = {
-			error: false,
-			address: "",
-			zone: ""
-		};
-		/** @type {Array<string>} */
-		const address = [];
-		/** @type {Array<string>} */
-		const buffer = [];
-		let endipv6Encountered = false;
-		let endIpv6 = false;
-		let consume = consumeHextets;
-		for (let i = 0; i < input.length; i++) {
-			const cursor = input[i];
-			if (cursor === "[" || cursor === "]") continue;
-			if (cursor === ":") {
-				if (endipv6Encountered === true) endIpv6 = true;
-				if (!consume(buffer, address, output)) break;
-				if (++tokenCount > 7) {
-					output.error = true;
-					break;
-				}
-				if (i > 0 && input[i - 1] === ":") endipv6Encountered = true;
-				address.push(":");
-				continue;
-			} else if (cursor === "%") {
-				if (!consume(buffer, address, output)) break;
-				consume = consumeIsZone;
-			} else {
-				buffer.push(cursor);
+	function normalizeIPv6Address(input) {
+		const compression = input.indexOf("::");
+		if (compression !== -1 && input.indexOf("::", compression + 1) !== -1) return void 0;
+		const left = compression === -1 ? input.split(":") : input.slice(0, compression).split(":");
+		const right = compression === -1 ? [] : input.slice(compression + 2).split(":");
+		if (compression !== -1) {
+			if (left.length === 1 && left[0] === "") left.length = 0;
+			if (right.length === 1 && right[0] === "") right.length = 0;
+		}
+		const parts = left.concat(right);
+		let hextetCount = 0;
+		for (let i = 0; i < parts.length; i++) {
+			const part = parts[i];
+			if (part === "") return void 0;
+			if (part.indexOf(".") !== -1) {
+				if (i !== parts.length - 1 || compression !== -1 && right.length === 0 || !isIPv4(part)) return void 0;
+				hextetCount += 2;
 				continue;
 			}
+			if (!isHextet(part)) return void 0;
+			parts[i] = parseInt(part, 16).toString(16);
+			hextetCount++;
 		}
-		if (buffer.length) if (consume === consumeIsZone) output.zone = buffer.join("");
-		else if (endIpv6) address.push(buffer.join(""));
-		else address.push(stringArrayToHexStripped(buffer));
-		output.address = address.join("");
-		return output;
+		if (compression === -1) {
+			if (hextetCount !== 8) return void 0;
+			return compressIPv6ZeroRun(parts);
+		}
+		if (hextetCount >= 8) return void 0;
+		const expanded = parts.slice(0, left.length);
+		for (let i = hextetCount; i < 8; i++) expanded.push("0");
+		for (let i = left.length; i < parts.length; i++) expanded.push(parts[i]);
+		return compressIPv6ZeroRun(expanded);
 	}
 	/**
 	* @typedef {Object} NormalizeIPv6Result
 	* @property {string} host - The normalized host.
 	* @property {string} [escapedHost] - The escaped host.
 	* @property {boolean} isIPV6 - Indicates if the host is an IPv6 address.
+	* @property {boolean} [isIPVFuture] - Indicates if the host is an IPvFuture literal.
+	* @property {boolean} [error] - Indicates if a bracketed IP literal is malformed.
 	*/
 	/**
+	* Validates and normalizes a bracketed IP literal. Raw zone separators remain
+	* accepted for backwards compatibility, while encoded separators and zone
+	* contents follow RFC 6874.
+	*
 	* @param {string} host
 	* @returns {NormalizeIPv6Result}
 	*/
 	function normalizeIPv6(host) {
-		if (findToken(host, ":") < 2) return {
+		const bracketed = host[0] === "[" && host[host.length - 1] === "]";
+		if ((host[0] === "[" || host[host.length - 1] === "]") && !bracketed) return {
 			host,
-			isIPV6: false
+			isIPV6: false,
+			error: true
 		};
-		const ipv6 = getIPV6(host);
-		if (!ipv6.error) {
-			let newHost = ipv6.address;
-			let escapedHost = ipv6.address;
-			if (ipv6.zone) {
-				newHost += "%" + ipv6.zone;
-				escapedHost += "%25" + ipv6.zone;
-			}
+		let input = bracketed ? host.slice(1, -1) : host;
+		if (bracketed && isIPvFuture(input)) {
+			input = input.toLowerCase();
 			return {
-				host: newHost,
-				isIPV6: true,
-				escapedHost
+				host: `[${input}]`,
+				escapedHost: input,
+				isIPV6: false,
+				isIPVFuture: true
 			};
-		} else return {
+		}
+		if (findToken(input, ":") < 2) return {
 			host,
-			isIPV6: false
+			isIPV6: false,
+			error: bracketed
+		};
+		let zoneIdentifier = "";
+		const zoneSeparator = input.indexOf("%");
+		if (zoneSeparator !== -1) {
+			const separatorLength = input.slice(zoneSeparator, zoneSeparator + 3).toLowerCase() === "%25" ? 3 : 1;
+			zoneIdentifier = input.slice(zoneSeparator + separatorLength);
+			if (!isZoneIdentifier(zoneIdentifier)) return {
+				host,
+				isIPV6: false,
+				error: true
+			};
+			input = input.slice(0, zoneSeparator);
+		}
+		const address = normalizeIPv6Address(input);
+		if (address === void 0) return {
+			host,
+			isIPV6: false,
+			error: true
+		};
+		return {
+			host: address + (zoneIdentifier ? "%" + zoneIdentifier : ""),
+			escapedHost: address + (zoneIdentifier ? "%25" + zoneIdentifier : ""),
+			isIPV6: true
 		};
 	}
 	/**
@@ -47196,15 +51232,16 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		let nextSlash = -1;
 		let len = 0;
 		while (len = input.length) {
-			if (len === 1) if (input === ".") break;
-			else if (input === "/") {
-				output.push("/");
-				break;
-			} else {
-				output.push(input);
-				break;
-			}
-			else if (len === 2) {
+			if (len === 1) {
+				if (input === ".") break;
+				else if (input === "/") {
+					output.push("/");
+					break;
+				} else {
+					output.push(input);
+					break;
+				}
+			} else if (len === 2) {
 				if (input[0] === ".") {
 					if (input[1] === ".") break;
 					else if (input[1] === "/") {
@@ -47284,7 +51321,7 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 	/**
 	* Normalizes percent escapes and optionally decodes only unreserved ASCII bytes.
-	* Reserved delimiters such as `%2F` and `%2E` stay escaped.
+	* Reserved delimiters such as `%2F` stay escaped; `%2E` is unreserved.
 	*
 	* @param {string} input
 	* @param {boolean} [decodeUnreserved=false]
@@ -47320,7 +51357,8 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function normalizePathEncoding(input) {
 		let output = "";
 		for (let i = 0; i < input.length; i++) {
-			if (input[i] === "%" && i + 2 < input.length) {
+			const ch = input[i];
+			if (ch === "%" && i + 2 < input.length) {
 				const hex = input.slice(i + 1, i + 3);
 				if (isHexPair(hex)) {
 					const normalizedHex = hex.toUpperCase();
@@ -47331,8 +51369,168 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 					continue;
 				}
 			}
-			if (isPathCharacter(input[i])) output += input[i];
-			else output += escape(input[i]);
+			if (isPathCharacter(ch)) output += ch;
+			else {
+				const code = input.charCodeAt(i);
+				if (code < 128) output += isEscapeSafe(code) ? ch : BYTE_HEX[code];
+				else if (code < 55296 || code > 57343) output += percentEncodeNonAscii(code);
+				else if (code <= 56319 && i + 1 < input.length) {
+					const low = input.charCodeAt(i + 1);
+					if (low >= 56320 && low <= 57343) {
+						output += percentEncodeNonAscii(65536 + (code - 55296 << 10) + (low - 56320));
+						i++;
+					} else output += percentEncodeNonAscii(65533);
+				} else output += percentEncodeNonAscii(65533);
+			}
+		}
+		return output;
+	}
+	/**
+	* Serializes a path without rewriting reserved data. Raw RFC 3986 path
+	* characters remain literal, valid escapes are preserved and uppercased, and
+	* everything else is UTF-8 percent-encoded. In a path-noscheme, a colon in the
+	* first segment must be escaped so the result cannot be parsed as a scheme.
+	*
+	* @param {string} input
+	* @param {boolean} [pathNoScheme=false]
+	* @returns {string}
+	*/
+	function serializePathEncoding(input, pathNoScheme = false) {
+		let output = "";
+		let firstSegment = pathNoScheme && input[0] !== "/";
+		for (let i = 0; i < input.length; i++) {
+			const ch = input[i];
+			if (ch === "%" && i + 2 < input.length) {
+				const hex = input.slice(i + 1, i + 3);
+				if (isHexPair(hex)) {
+					output += "%" + hex.toUpperCase();
+					i += 2;
+					continue;
+				}
+			}
+			if (ch === "/") firstSegment = false;
+			if (isPathCharacter(ch) && (ch !== ":" || !firstSegment)) output += ch;
+			else {
+				const code = input.charCodeAt(i);
+				if (code < 128) output += BYTE_HEX[code];
+				else if (code < 55296 || code > 57343) output += percentEncodeNonAscii(code);
+				else if (code <= 56319 && i + 1 < input.length) {
+					const low = input.charCodeAt(i + 1);
+					if (low >= 56320 && low <= 57343) {
+						output += percentEncodeNonAscii(65536 + (code - 55296 << 10) + (low - 56320));
+						i++;
+					} else output += percentEncodeNonAscii(65533);
+				} else output += percentEncodeNonAscii(65533);
+			}
+		}
+		return output;
+	}
+	/**
+	* Percent-encodes a URI component using its RFC 3986 literal character set.
+	* Existing valid escapes are preserved and normalized to uppercase hex.
+	*
+	* @param {string} input
+	* @param {(value: string) => boolean} isAllowed
+	* @returns {string}
+	*/
+	function encodeComponent(input, isAllowed) {
+		let output = "";
+		for (let i = 0; i < input.length; i++) {
+			const ch = input[i];
+			if (ch === "%" && i + 2 < input.length) {
+				const hex = input.slice(i + 1, i + 3);
+				if (isHexPair(hex)) {
+					output += "%" + hex.toUpperCase();
+					i += 2;
+					continue;
+				}
+			}
+			if (isAllowed(ch)) output += ch;
+			else {
+				const code = input.charCodeAt(i);
+				if (code < 128) output += BYTE_HEX[code];
+				else if (code < 55296 || code > 57343) output += percentEncodeNonAscii(code);
+				else if (code <= 56319 && i + 1 < input.length) {
+					const low = input.charCodeAt(i + 1);
+					if (low >= 56320 && low <= 57343) {
+						output += percentEncodeNonAscii(65536 + (code - 55296 << 10) + (low - 56320));
+						i++;
+					} else output += percentEncodeNonAscii(65533);
+				} else output += percentEncodeNonAscii(65533);
+			}
+		}
+		return output;
+	}
+	/**
+	* Encodes userinfo while preserving its RFC 3986 §3.2.1 literal characters.
+	* In particular, authority delimiters such as `@`, `/`, `?`, and `#` are data.
+	*
+	* @param {string} input
+	* @returns {string}
+	*/
+	function encodeUserinfo(input) {
+		return encodeComponent(input, isUserinfoCharacter);
+	}
+	/**
+	* Encodes query data using the RFC 3986 §3.4 grammar. A literal `#` must be
+	* escaped because it would otherwise begin the fragment component.
+	*
+	* @param {string} input
+	* @returns {string}
+	*/
+	function encodeQuery(input) {
+		return encodeComponent(input, isQueryFragmentCharacter);
+	}
+	/**
+	* Encodes fragment data using the RFC 3986 §3.5 grammar.
+	*
+	* @param {string} input
+	* @returns {string}
+	*/
+	function encodeFragment(input) {
+		return encodeComponent(input, isQueryFragmentCharacter);
+	}
+	function isEscapeSafe(cp) {
+		return cp >= 48 && cp <= 57 || cp >= 65 && cp <= 90 || cp >= 97 && cp <= 122 || cp === 42 || cp === 43 || cp === 45 || cp === 46 || cp === 47 || cp === 64 || cp === 95;
+	}
+	/**
+	* Normalizes the percent-encoding of a query or fragment component.
+	*
+	* Like `normalizePathEncoding`, but uses the query/fragment character set
+	* (which additionally allows `?`) and decodes `.` since it has no dot-segment
+	* meaning outside of a path.
+	*
+	* @param {string} input
+	* @returns {string}
+	*/
+	function normalizeQueryFragmentEncoding(input) {
+		let output = "";
+		for (let i = 0; i < input.length; i++) {
+			const ch = input[i];
+			if (ch === "%" && i + 2 < input.length) {
+				const hex = input.slice(i + 1, i + 3);
+				if (isHexPair(hex)) {
+					const normalizedHex = hex.toUpperCase();
+					const decoded = String.fromCharCode(parseInt(normalizedHex, 16));
+					if (isUnreserved(decoded)) output += decoded;
+					else output += "%" + normalizedHex;
+					i += 2;
+					continue;
+				}
+			}
+			if (isQueryFragmentCharacter(ch)) output += ch;
+			else {
+				const code = input.charCodeAt(i);
+				if (code < 128) output += isEscapeSafe(code) ? ch : BYTE_HEX[code];
+				else if (code < 55296 || code > 57343) output += percentEncodeNonAscii(code);
+				else if (code <= 56319 && i + 1 < input.length) {
+					const low = input.charCodeAt(i + 1);
+					if (low >= 56320 && low <= 57343) {
+						output += percentEncodeNonAscii(65536 + (code - 55296 << 10) + (low - 56320));
+						i++;
+					} else output += percentEncodeNonAscii(65533);
+				} else output += percentEncodeNonAscii(65533);
+			}
 		}
 		return output;
 	}
@@ -47364,21 +51562,27 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function recomposeAuthority(component) {
 		const uriTokens = [];
 		if (component.userinfo !== void 0) {
-			uriTokens.push(component.userinfo);
+			uriTokens.push(encodeUserinfo(component.userinfo));
 			uriTokens.push("@");
 		}
 		if (component.host !== void 0) {
-			let host = unescape(component.host);
+			let host = component.host;
 			if (!isIPv4(host)) {
-				const ipV6res = normalizeIPv6(host);
-				if (ipV6res.isIPV6 === true) host = `[${ipV6res.escapedHost}]`;
+				let ipV6res = normalizeIPv6(host);
+				if (ipV6res.isIPV6 !== true && ipV6res.isIPVFuture !== true) {
+					host = normalizePercentEncoding(host, true);
+					ipV6res = normalizeIPv6(host);
+				}
+				if (ipV6res.isIPV6 === true || ipV6res.isIPVFuture === true) host = `[${ipV6res.escapedHost}]`;
 				else host = reescapeHostDelimiters(host, false);
 			}
 			uriTokens.push(host);
 		}
 		if (typeof component.port === "number" || typeof component.port === "string") {
+			const port = String(component.port);
+			if (!isPort(port)) throw new TypeError("URI port is malformed.");
 			uriTokens.push(":");
-			uriTokens.push(String(component.port));
+			uriTokens.push(port);
 		}
 		return uriTokens.length ? uriTokens.join("") : void 0;
 	}
@@ -47388,6 +51592,11 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		reescapeHostDelimiters,
 		normalizePercentEncoding,
 		normalizePathEncoding,
+		serializePathEncoding,
+		normalizeQueryFragmentEncoding,
+		encodeUserinfo,
+		encodeQuery,
+		encodeFragment,
 		escapePreservingEscapes,
 		removeDotSegments,
 		isIPv4,
@@ -47400,7 +51609,7 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 //#region ../node_modules/fast-uri/lib/schemes.js
 var require_schemes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var { isUUID } = require_utils();
-	var URN_REG = /([\da-z][\d\-a-z]{0,31}):((?:[\w!$'()*+,\-.:;=@]|%[\da-f]{2})+)/iu;
+	var URN_REG = /^([\da-z][\d\-a-z]{0,31}):((?:[\w!$'()*+,\-./:;=@]|%[\da-f]{2})+)$/iu;
 	var supportedSchemeNames = [
 		"http",
 		"https",
@@ -47471,9 +51680,10 @@ var require_schemes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			wsComponent.secure = void 0;
 		}
 		if (wsComponent.resourceName) {
-			const [path, query] = wsComponent.resourceName.split("?");
+			const queryIndex = wsComponent.resourceName.indexOf("?");
+			const path = queryIndex === -1 ? wsComponent.resourceName : wsComponent.resourceName.slice(0, queryIndex);
 			wsComponent.path = path && path !== "/" ? path : void 0;
-			wsComponent.query = query;
+			wsComponent.query = queryIndex === -1 ? void 0 : wsComponent.resourceName.slice(queryIndex + 1);
 			wsComponent.resourceName = void 0;
 		}
 		wsComponent.fragment = void 0;
@@ -47486,7 +51696,7 @@ var require_schemes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			return urnComponent;
 		}
 		const matches = urnComponent.path.match(URN_REG);
-		if (matches) {
+		if (matches && matches[0] === urnComponent.path) {
 			const scheme = options.scheme || urnComponent.scheme || "urn";
 			urnComponent.nid = matches[1].toLowerCase();
 			urnComponent.nss = matches[2];
@@ -47582,8 +51792,19 @@ var require_schemes = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 //#endregion
 //#region ../node_modules/fast-uri/index.js
 var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	var { normalizeIPv6, removeDotSegments, recomposeAuthority, normalizePercentEncoding, normalizePathEncoding, escapePreservingEscapes, reescapeHostDelimiters, isIPv4, nonSimpleDomain } = require_utils();
+	var { normalizeIPv6, removeDotSegments, recomposeAuthority, normalizePercentEncoding, normalizePathEncoding, serializePathEncoding, normalizeQueryFragmentEncoding, encodeQuery, encodeFragment, reescapeHostDelimiters, isIPv4, nonSimpleDomain } = require_utils();
 	var { SCHEMES, getSchemeHandler } = require_schemes();
+	var VALID_SCHEME = /^[A-Za-z][A-Za-z0-9+.-]*$/u;
+	var MALFORMED_SCHEME_ERROR = "URI scheme is malformed.";
+	/**
+	* @param {string} scheme
+	* @returns {string}
+	*/
+	function decodeValidScheme(scheme) {
+		const decodedScheme = unescape(String(scheme));
+		if (!VALID_SCHEME.test(decodedScheme)) throw new TypeError(MALFORMED_SCHEME_ERROR);
+		return decodedScheme;
+	}
 	/**
 	* @template {import('./types/index').URIComponent|string} T
 	* @param {T} uri
@@ -47603,10 +51824,16 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	*/
 	function resolve(baseURI, relativeURI, options) {
 		const schemelessOptions = options ? Object.assign({ scheme: "null" }, options) : { scheme: "null" };
-		const { parsed: baseParsed, malformedAuthorityOrPort: baseMalformed } = parseWithStatus(baseURI, schemelessOptions);
-		const { parsed: relativeParsed, malformedAuthorityOrPort: relativeMalformed } = parseWithStatus(relativeURI, schemelessOptions);
-		if (baseMalformed || relativeMalformed) throw new Error(baseParsed.error || relativeParsed.error || "URI is malformed.");
+		const { parsed: baseParsed, malformedAuthorityOrPort: baseMalformed, malformedPercentEncoding: baseMalformedPercentEncoding, malformedSchemeSpecific: baseMalformedSchemeSpecific, malformedHost: baseMalformedHost, malformedScheme: baseMalformedScheme } = parseWithStatus(baseURI, schemelessOptions);
+		const { parsed: relativeParsed, malformedAuthorityOrPort: relativeMalformed, malformedPercentEncoding: relativeMalformedPercentEncoding, malformedSchemeSpecific: relativeMalformedSchemeSpecific, malformedHost: relativeMalformedHost, malformedScheme: relativeMalformedScheme } = parseWithStatus(relativeURI, schemelessOptions);
+		if (baseMalformed || relativeMalformed || baseMalformedPercentEncoding || relativeMalformedPercentEncoding || baseMalformedSchemeSpecific || relativeMalformedSchemeSpecific || baseMalformedHost || relativeMalformedHost || baseMalformedScheme || relativeMalformedScheme) throw new Error(baseParsed.error || relativeParsed.error || "URI is malformed.");
 		const resolved = resolveComponent(baseParsed, relativeParsed, schemelessOptions, true);
+		const resolvedSchemeHandler = getSchemeHandler(options && options.scheme || resolved.scheme);
+		const resolvedHost = resolved.host;
+		const resolvedHostIsIP = resolvedHost !== void 0 && resolvedHost !== "" && (isIPv4(resolvedHost) || normalizeIPv6(resolvedHost).isIPV6);
+		canonicalizeHost(resolved, options || {}, resolvedSchemeHandler, resolvedHostIsIP);
+		const encodedASCIIHost = resolvedHost && resolvedHost.indexOf("%") !== -1 && !/\P{ASCII}/u.test(resolvedHost);
+		if (resolved.error && !encodedASCIIHost) throw new Error(resolved.error);
 		schemelessOptions.skipEscape = true;
 		return serialize(resolved, schemelessOptions);
 	}
@@ -47672,7 +51899,7 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function equal(uriA, uriB, options) {
 		const normalizedA = normalizeComparableURI(uriA, options);
 		const normalizedB = normalizeComparableURI(uriB, options);
-		return normalizedA !== void 0 && normalizedB !== void 0 && normalizedA.toLowerCase() === normalizedB.toLowerCase();
+		return normalizedA !== void 0 && normalizedB !== void 0 && normalizedA === normalizedB;
 	}
 	/**
 	* @param {Readonly<import('./types/index').URIComponent>} cmpts
@@ -47698,13 +51925,19 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		};
 		const options = Object.assign({}, opts);
 		const uriTokens = [];
+		if (component.scheme) component.scheme = decodeValidScheme(component.scheme);
 		const schemeHandler = getSchemeHandler(options.scheme || component.scheme);
 		if (schemeHandler && schemeHandler.serialize) schemeHandler.serialize(component, options);
-		if (component.path !== void 0) if (!options.skipEscape) {
-			component.path = escapePreservingEscapes(component.path);
-			if (component.scheme !== void 0) component.path = component.path.split("%3A").join(":");
-		} else component.path = normalizePercentEncoding(component.path);
-		if (options.reference !== "suffix" && component.scheme) uriTokens.push(component.scheme, ":");
+		const hasAuthority = component.userinfo !== void 0 || component.host !== void 0 || component.port !== void 0;
+		const pathNoScheme = !options.skipEscape && component.scheme === void 0 && !hasAuthority;
+		if (component.path !== void 0) {
+			if (!options.skipEscape) component.path = serializePathEncoding(component.path, pathNoScheme);
+			else component.path = normalizePercentEncoding(component.path);
+		}
+		if (options.reference !== "suffix" && component.scheme) {
+			component.scheme = decodeValidScheme(component.scheme);
+			uriTokens.push(component.scheme, ":");
+		}
 		const authority = recomposeAuthority(component);
 		if (authority !== void 0) {
 			if (options.reference !== "suffix") uriTokens.push("//");
@@ -47714,11 +51947,12 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		if (component.path !== void 0) {
 			let s = component.path;
 			if (!options.absolutePath && (!schemeHandler || !schemeHandler.absolutePath)) s = removeDotSegments(s);
+			if (pathNoScheme) s = serializePathEncoding(s, true);
 			if (authority === void 0 && s[0] === "/" && s[1] === "/") s = "/%2F" + s.slice(2);
 			uriTokens.push(s);
 		}
-		if (component.query !== void 0) uriTokens.push("?", component.query);
-		if (component.fragment !== void 0) uriTokens.push("#", component.fragment);
+		if (component.query !== void 0) uriTokens.push("?", encodeQuery(component.query));
+		if (component.fragment !== void 0) uriTokens.push("#", encodeFragment(component.fragment));
 		return uriTokens.join("");
 	}
 	var URI_PARSE = /^(?:([^#/:?]+):)?(?:\/\/((?:([^#/?@]*)@)?(\[[^#/?\]]+\]|[^#/:?]*)(?::(\d*))?))?([^#?]*)(?:\?([^#]*))?(?:#((?:.|[\n\r])*))?/u;
@@ -47734,9 +51968,61 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		if (typeof parsed.port === "number" && (parsed.port < 0 || parsed.port > 65535)) return "URI port is malformed.";
 	}
 	/**
+	* Checks percent syntax without decoding the represented octets. RFC 3986
+	* percent-encoding is byte-oriented, so sequences such as `%FF` are valid even
+	* though they are not independently valid UTF-8.
+	*
+	* @param {string|undefined} component
+	* @returns {boolean}
+	*/
+	function hasMalformedPercentEncoding(component) {
+		if (component === void 0) return false;
+		let percent = component.indexOf("%");
+		while (percent !== -1) {
+			if (percent + 2 >= component.length || !/^[\da-f]{2}$/iu.test(component.slice(percent + 1, percent + 3))) return true;
+			percent = component.indexOf("%", percent + 3);
+		}
+		return false;
+	}
+	/**
+	* Whether the host is a bracketed IP literal (RFC 3986 `IP-literal`).
+	* An unterminated `[` is not a literal, so it must still be validated as a
+	* reg-name instead of being waved through as an IP.
+	*
+	* @param {string} host
+	* @returns {boolean}
+	*/
+	function isIPLiteral(host) {
+		return host[0] === "[" && host[host.length - 1] === "]";
+	}
+	/**
+	* @param {RegExpMatchArray} matches
+	* @returns {boolean}
+	*/
+	function hasMalformedComponentPercentEncoding(matches) {
+		const host = matches[4];
+		return hasMalformedPercentEncoding(matches[3]) || host !== void 0 && !isIPLiteral(host) && hasMalformedPercentEncoding(host) || hasMalformedPercentEncoding(matches[6]) || hasMalformedPercentEncoding(matches[7]) || hasMalformedPercentEncoding(matches[8]);
+	}
+	/**
+	* @param {import('./types/index').URIComponent} parsed
+	* @param {import('./types/index').Options} options
+	* @param {{ domainHost?: boolean, unicodeSupport?: boolean }|undefined} schemeHandler
+	* @param {boolean} isIP
+	* @returns {boolean} whether host conversion failed
+	*/
+	function canonicalizeHost(parsed, options, schemeHandler, isIP) {
+		if (!options.unicodeSupport && (!schemeHandler || !schemeHandler.unicodeSupport) && parsed.host && !isIPLiteral(parsed.host) && (options.domainHost || schemeHandler && schemeHandler.domainHost) && isIP === false && nonSimpleDomain(parsed.host)) try {
+			parsed.host = new URL("http://" + parsed.host).hostname;
+		} catch (e) {
+			parsed.error = parsed.error || "Host's domain name can not be converted to ASCII: " + e;
+			return true;
+		}
+		return false;
+	}
+	/**
 	* @param {string} uri
 	* @param {import('./types/index').Options} [opts]
-	* @returns {{ parsed: import('./types/index').URIComponent, malformedAuthorityOrPort: boolean }}
+	* @returns {{ parsed: import('./types/index').URIComponent, malformedAuthorityOrPort: boolean, malformedPercentEncoding: boolean, malformedSchemeSpecific: boolean, malformedHost: boolean, malformedScheme: boolean }}
 	*/
 	function parseWithStatus(uri, opts) {
 		const options = Object.assign({}, opts);
@@ -47751,9 +52037,16 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			fragment: void 0
 		};
 		let malformedAuthorityOrPort = false;
+		let malformedPercentEncoding = false;
+		let malformedSchemeSpecific = false;
+		let malformedHost = false;
+		let malformedIPLiteral = false;
+		let malformedScheme = false;
 		let isIP = false;
-		if (options.reference === "suffix") if (options.scheme) uri = options.scheme + ":" + uri;
-		else uri = "//" + uri;
+		if (options.reference === "suffix") {
+			if (options.scheme) uri = options.scheme + ":" + uri;
+			else uri = "//" + uri;
+		}
 		const authorityMatch = uri.match(AUTHORITY_PREFIX);
 		if (authorityMatch !== null && authorityMatch[1].indexOf("\\") !== -1) {
 			parsed.error = "URI authority must not contain a literal backslash.";
@@ -47782,47 +52075,63 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 			parsed.path = matches[6] || "";
 			parsed.query = matches[7];
 			parsed.fragment = matches[8];
+			if (parsed.scheme !== void 0) {
+				const decodedScheme = unescape(parsed.scheme);
+				if (VALID_SCHEME.test(decodedScheme)) parsed.scheme = decodedScheme.toLowerCase();
+				else {
+					parsed.error = parsed.error || MALFORMED_SCHEME_ERROR;
+					malformedScheme = true;
+				}
+			}
+			malformedPercentEncoding = hasMalformedComponentPercentEncoding(matches);
+			if (malformedPercentEncoding) parsed.error = parsed.error || "URI contains malformed percent-encoding.";
 			if (isNaN(parsed.port)) parsed.port = matches[5];
 			const parseError = getParseError(parsed, matches);
 			if (parseError !== void 0) {
 				parsed.error = parsed.error || parseError;
 				malformedAuthorityOrPort = true;
 			}
-			if (parsed.host) if (isIPv4(parsed.host) === false) {
-				const ipv6result = normalizeIPv6(parsed.host);
-				parsed.host = ipv6result.host.toLowerCase();
-				isIP = ipv6result.isIPV6;
-			} else isIP = true;
+			if (parsed.host) {
+				if (isIPv4(parsed.host) === false) {
+					const bracketedIPLiteral = isIPLiteral(parsed.host);
+					const hasIPLiteralBracket = parsed.host.indexOf("[") !== -1 || parsed.host.indexOf("]") !== -1;
+					const ipv6result = normalizeIPv6(parsed.host);
+					isIP = ipv6result.isIPV6 || ipv6result.isIPVFuture === true;
+					malformedIPLiteral = hasIPLiteralBracket && (!bracketedIPLiteral || ipv6result.error === true);
+					parsed.host = isIP ? ipv6result.host : ipv6result.host.toLowerCase();
+					if (malformedIPLiteral) {
+						parsed.error = parsed.error || "URI host is malformed.";
+						malformedAuthorityOrPort = true;
+					}
+				} else isIP = true;
+			}
 			if (parsed.scheme === void 0 && parsed.userinfo === void 0 && parsed.host === void 0 && parsed.port === void 0 && parsed.query === void 0 && !parsed.path) parsed.reference = "same-document";
 			else if (parsed.scheme === void 0) parsed.reference = "relative";
 			else if (parsed.fragment === void 0) parsed.reference = "absolute";
 			else parsed.reference = "uri";
 			if (options.reference && options.reference !== "suffix" && options.reference !== parsed.reference) parsed.error = parsed.error || "URI is not a " + options.reference + " reference.";
 			const schemeHandler = getSchemeHandler(options.scheme || parsed.scheme);
-			if (!options.unicodeSupport && (!schemeHandler || !schemeHandler.unicodeSupport)) {
-				if (parsed.host && (options.domainHost || schemeHandler && schemeHandler.domainHost) && isIP === false && nonSimpleDomain(parsed.host)) try {
-					parsed.host = new URL("http://" + parsed.host).hostname;
-				} catch (e) {
-					parsed.error = parsed.error || "Host's domain name can not be converted to ASCII: " + e;
-				}
-			}
+			if (!malformedIPLiteral) malformedHost = canonicalizeHost(parsed, options, schemeHandler, isIP);
 			if (!schemeHandler || schemeHandler && !schemeHandler.skipNormalize) {
 				if (uri.indexOf("%") !== -1) {
-					if (parsed.scheme !== void 0) parsed.scheme = unescape(parsed.scheme);
-					if (parsed.host !== void 0) parsed.host = reescapeHostDelimiters(unescape(parsed.host), isIP);
+					if (parsed.host !== void 0 && !malformedIPLiteral) parsed.host = reescapeHostDelimiters(isIP ? parsed.host : normalizePercentEncoding(parsed.host, true), isIP);
 				}
 				if (parsed.path) parsed.path = normalizePathEncoding(parsed.path);
-				if (parsed.fragment) try {
-					parsed.fragment = encodeURI(decodeURIComponent(parsed.fragment));
-				} catch {
-					parsed.error = parsed.error || "URI malformed";
-				}
+				if (parsed.query) parsed.query = normalizeQueryFragmentEncoding(parsed.query);
+				if (parsed.fragment) parsed.fragment = normalizeQueryFragmentEncoding(parsed.fragment);
 			}
-			if (schemeHandler && schemeHandler.parse) schemeHandler.parse(parsed, options);
+			if (schemeHandler && schemeHandler.parse) {
+				schemeHandler.parse(parsed, options);
+				if (schemeHandler === SCHEMES.urn && parsed.nid === void 0) malformedSchemeSpecific = true;
+			}
 		} else parsed.error = parsed.error || "URI can not be parsed.";
 		return {
 			parsed,
-			malformedAuthorityOrPort
+			malformedAuthorityOrPort,
+			malformedPercentEncoding,
+			malformedSchemeSpecific,
+			malformedHost,
+			malformedScheme
 		};
 	}
 	/**
@@ -47844,13 +52153,17 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/**
 	* @param {string} uri
 	* @param {import('./types/index').Options} [opts]
-	* @returns {{ normalized: string, malformedAuthorityOrPort: boolean }}
+	* @returns {{ normalized: string, malformedAuthorityOrPort: boolean, malformedPercentEncoding: boolean, malformedSchemeSpecific: boolean, malformedHost: boolean, malformedScheme: boolean }}
 	*/
 	function normalizeStringWithStatus(uri, opts) {
-		const { parsed, malformedAuthorityOrPort } = parseWithStatus(uri, opts);
+		const { parsed, malformedAuthorityOrPort, malformedPercentEncoding, malformedSchemeSpecific, malformedHost, malformedScheme } = parseWithStatus(uri, opts);
 		return {
-			normalized: malformedAuthorityOrPort ? uri : serialize(parsed, opts),
-			malformedAuthorityOrPort
+			normalized: malformedAuthorityOrPort || malformedPercentEncoding || malformedSchemeSpecific || malformedHost || malformedScheme ? uri : serialize(parsed, opts),
+			malformedAuthorityOrPort,
+			malformedPercentEncoding,
+			malformedSchemeSpecific,
+			malformedHost,
+			malformedScheme
 		};
 	}
 	/**
@@ -47859,11 +52172,15 @@ var require_fast_uri = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @returns {string|undefined}
 	*/
 	function normalizeComparableURI(uri, opts) {
-		if (typeof uri === "string") {
-			const { normalized, malformedAuthorityOrPort } = normalizeStringWithStatus(uri, opts);
-			return malformedAuthorityOrPort ? void 0 : normalized;
+		if (typeof uri !== "string" && typeof uri !== "object") return;
+		let value;
+		try {
+			value = typeof uri === "string" ? uri : serialize(uri, opts);
+		} catch {
+			return;
 		}
-		if (typeof uri === "object") return serialize(uri, opts);
+		const { normalized, malformedAuthorityOrPort, malformedPercentEncoding, malformedSchemeSpecific, malformedHost, malformedScheme } = normalizeStringWithStatus(value, opts);
+		return malformedAuthorityOrPort || malformedPercentEncoding || malformedSchemeSpecific || malformedHost || malformedScheme ? void 0 : normalized;
 	}
 	var fastUri = {
 		SCHEMES,
@@ -48552,17 +52869,21 @@ var require_ref = /* @__PURE__ */ __commonJSMin(((exports) => {
 			var _a;
 			if (!it.opts.unevaluated) return;
 			const schEvaluated = (_a = sch === null || sch === void 0 ? void 0 : sch.validate) === null || _a === void 0 ? void 0 : _a.evaluated;
-			if (it.props !== true) if (schEvaluated && !schEvaluated.dynamicProps) {
-				if (schEvaluated.props !== void 0) it.props = util_1.mergeEvaluated.props(gen, schEvaluated.props, it.props);
-			} else {
-				const props = gen.var("props", (0, codegen_1._)`${source}.evaluated.props`);
-				it.props = util_1.mergeEvaluated.props(gen, props, it.props, codegen_1.Name);
+			if (it.props !== true) {
+				if (schEvaluated && !schEvaluated.dynamicProps) {
+					if (schEvaluated.props !== void 0) it.props = util_1.mergeEvaluated.props(gen, schEvaluated.props, it.props);
+				} else {
+					const props = gen.var("props", (0, codegen_1._)`${source}.evaluated.props`);
+					it.props = util_1.mergeEvaluated.props(gen, props, it.props, codegen_1.Name);
+				}
 			}
-			if (it.items !== true) if (schEvaluated && !schEvaluated.dynamicItems) {
-				if (schEvaluated.items !== void 0) it.items = util_1.mergeEvaluated.items(gen, schEvaluated.items, it.items);
-			} else {
-				const items = gen.var("items", (0, codegen_1._)`${source}.evaluated.items`);
-				it.items = util_1.mergeEvaluated.items(gen, items, it.items, codegen_1.Name);
+			if (it.items !== true) {
+				if (schEvaluated && !schEvaluated.dynamicItems) {
+					if (schEvaluated.items !== void 0) it.items = util_1.mergeEvaluated.items(gen, schEvaluated.items, it.items);
+				} else {
+					const items = gen.var("items", (0, codegen_1._)`${source}.evaluated.items`);
+					it.items = util_1.mergeEvaluated.items(gen, items, it.items, codegen_1.Name);
+				}
 			}
 		}
 	}
