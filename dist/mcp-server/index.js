@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { At as __exportAll, Ct as ValueType, Dt as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toCommonJS, N as logWarn, Nt as __toESM, Ot as __commonJSMin, P as otelResourceAttributes, Q as defaultResource, T as materializeAuth, Tt as createNoopMeter, W as capEnvelope, X as resourceFromAttributes, Y as defaultResource$1, Z as init_esm$3, at as hrTime$1, ct as hrTimeToSeconds$1, d as flagName, dt as esm_exports$3, et as esm_exports$2, f as mcpToolForIntent, ft as init_esm$4, gt as init_esm$1, ht as esm_exports$1, j as logError, jt as __require, k as describeError, kt as __esmMin, l as cliShellQuote, nt as internal, ot as hrTimeDuration$1, pt as globalErrorHandler, rt as ExportResultCode, st as hrTimeToMicroseconds$1, tt as init_esm$2, ut as millisToHrTime$1, vt as metrics, xt as context, yt as diag } from "../chunks/cli-help-policy-C-YXYlYA.js";
-import { A as datetime, B as defineLazy, D as url$2, E as unknown, F as parse, H as $constructor, I as parseAsync, L as safeParse$1, M as _coercedNumber, N as $ZodObject, P as $ZodType, R as safeParseAsync$1, S as record, T as union, U as NEVER, V as normalizeParams, _ as looseObject, a as ZodOptional$1, b as optional, c as any, d as custom, f as discriminatedUnion, g as literal, i as ZodNumber$1, j as toJSONSchema, l as array, m as intersection, o as _enum, p as int, s as _null, u as boolean, v as number$1, w as string, x as preprocess, y as object$1, z as clone } from "../chunks/data-source-type-CEoBo_qP.js";
-import { S as mcpServerUrlFromApiHost, _ as runOpenApiCall, a as addWithInflections, c as meaningfulTokens, d as queryTermForms, f as cliBodyParameterInputName, g as resolveOpenApiOperationSelector, l as normalize, n as asCliResponseText, o as coversEveryQueryTerm, p as cliParameterInputName, r as visibleMcpGenerationContracts, s as expandedTokens, t as MCP_GENERATION_CONTRACT, u as queryMutationIntent, v as verifyUserBearerToken, y as withUserBearerToken } from "../chunks/mcp-generation-contract-CZ4CX0Dg.js";
+import { At as __exportAll, Ct as ValueType, Dt as JsonValueSchema, G as failure, H as readEnv, I as shutdownLogging, J as success, M as logInfo, Mt as __toCommonJS, N as logWarn, Nt as __toESM, Ot as __commonJSMin, P as otelResourceAttributes, Q as defaultResource, T as materializeAuth, Tt as createNoopMeter, W as capEnvelope, X as resourceFromAttributes, Y as defaultResource$1, Z as init_esm$3, at as hrTime$1, ct as hrTimeToSeconds$1, d as flagName, dt as esm_exports$3, et as esm_exports$2, f as mcpToolForIntent, ft as init_esm$4, gt as init_esm$1, ht as esm_exports$1, j as logError, jt as __require, k as describeError, kt as __esmMin, l as cliShellQuote, nt as internal, ot as hrTimeDuration$1, pt as globalErrorHandler, rt as ExportResultCode, st as hrTimeToMicroseconds$1, tt as init_esm$2, ut as millisToHrTime$1, vt as metrics, xt as context, yt as diag } from "../chunks/cli-help-policy-DjLY08wr.js";
+import { A as datetime, B as defineLazy, D as url$2, E as unknown, F as parse, H as $constructor, I as parseAsync, L as safeParse$1, M as _coercedNumber, N as $ZodObject, P as $ZodType, R as safeParseAsync$1, S as record, T as union, U as NEVER, V as normalizeParams, _ as looseObject, a as ZodOptional$1, b as optional, c as any, d as custom, f as discriminatedUnion, g as literal, i as ZodNumber$1, j as toJSONSchema, l as array, m as intersection, o as _enum, p as int, s as _null, u as boolean, v as number$1, w as string, x as preprocess, y as object$1, z as clone } from "../chunks/data-source-type-DD0mQARk.js";
+import { S as mcpServerUrlFromApiHost, _ as runOpenApiCall, a as addWithInflections, c as meaningfulTokens, d as queryTermForms, f as cliBodyParameterInputName, g as resolveOpenApiOperationSelector, l as normalize, n as asCliResponseText, o as coversEveryQueryTerm, p as cliParameterInputName, r as visibleMcpGenerationContracts, s as expandedTokens, t as MCP_GENERATION_CONTRACT, u as queryMutationIntent, v as verifyUserBearerToken, y as withUserBearerToken } from "../chunks/mcp-generation-contract-BZuETs4O.js";
 import { createHash, randomUUID, timingSafeEqual } from "node:crypto";
 import { Buffer as Buffer$1 } from "node:buffer";
 import { isIP, isIPv6 } from "node:net";
@@ -8713,8 +8713,8 @@ var require_on_finished = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/type-is/node_modules/content-type/dist/index.js
-var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
+//#region ../node_modules/content-type/dist/index.js
+var require_dist$2 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	/*!
 	* content-type
 	* Copyright(c) 2015 Douglas Christopher Wilson
@@ -8762,15 +8762,19 @@ var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	* Parse a `Content-Type` header.
 	*/
 	function parse(header, options) {
+		const stopChar = options?.comma === true ? COMMA : 65536;
 		const len = header.length;
-		let index = skipOWS(header, 0, len);
+		let index = skipOWS(header, options?.start ?? 0, len);
 		const valueStart = index;
-		index = skipValue(header, index, len);
+		index = skipValue(header, index, len, stopChar);
 		const valueEnd = trailingOWS(header, valueStart, index);
-		return {
-			type: header.slice(valueStart, valueEnd).toLowerCase(),
-			parameters: options?.parameters === false ? new NullObject() : parseParameters(header, index, len)
+		const type = header.slice(valueStart, valueEnd).toLowerCase();
+		if (options?.parameters === false) return {
+			type,
+			index,
+			parameters: new NullObject()
 		};
+		return parseParameters(header, type, index, len, stopChar);
 	}
 	var SP = 32;
 	var HTAB = 9;
@@ -8778,16 +8782,19 @@ var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	var EQ = 61;
 	var DQUOTE = 34;
 	var BSLASH = 92;
+	var COMMA = 44;
 	/**
 	* Parses the parameters of a `Content-Type` header starting at the given index.
 	*/
-	function parseParameters(header, index, len) {
+	function parseParameters(header, type, index, len, stopChar) {
 		const parameters = new NullObject();
 		parameter: while (index < len) {
+			if (header.charCodeAt(index) === stopChar) break;
 			index = skipOWS(header, index + 1, len);
 			const keyStart = index;
 			while (index < len) {
 				const code = header.charCodeAt(index);
+				if (code === stopChar) break parameter;
 				if (code === SEMI) continue parameter;
 				if (code === EQ) {
 					const keyEnd = trailingOWS(header, keyStart, index);
@@ -8799,7 +8806,7 @@ var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 						while (index < len) {
 							const code = header.charCodeAt(index++);
 							if (code === DQUOTE) {
-								index = skipValue(header, index, len);
+								index = skipValue(header, index, len, stopChar);
 								if (parameters[key] === void 0) parameters[key] = value;
 								break;
 							}
@@ -8812,7 +8819,7 @@ var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 						continue parameter;
 					}
 					const valueStart = index;
-					index = skipValue(header, index, len);
+					index = skipValue(header, index, len, stopChar);
 					if (parameters[key] === void 0) {
 						const valueEnd = trailingOWS(header, valueStart, index);
 						parameters[key] = header.slice(valueStart, valueEnd);
@@ -8822,14 +8829,19 @@ var require_dist$4 = /* @__PURE__ */ __commonJSMin(((exports) => {
 				index++;
 			}
 		}
-		return parameters;
+		return {
+			type,
+			index,
+			parameters
+		};
 	}
 	/**
-	* Skip over characters until a semicolon.
+	* Skip over characters until a semicolon or other exit character.
 	*/
-	function skipValue(str, index, len) {
+	function skipValue(str, index, len, stopChar) {
 		while (index < len) {
-			if (str.charCodeAt(index) === SEMI) break;
+			const code = str.charCodeAt(index);
+			if (code === SEMI || code === stopChar) break;
 			index++;
 		}
 		return index;
@@ -16781,7 +16793,7 @@ var require_type_is = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* Module dependencies.
 	* @private
 	*/
-	var contentType = require_dist$4();
+	var contentType = require_dist$2();
 	var mime = require_mime_types();
 	var typer = require_media_typer();
 	/**
@@ -16925,170 +16937,13 @@ var require_type_is = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/body-parser/node_modules/content-type/dist/index.js
-var require_dist$3 = /* @__PURE__ */ __commonJSMin(((exports) => {
-	/*!
-	* content-type
-	* Copyright(c) 2015 Douglas Christopher Wilson
-	* MIT Licensed
-	*/
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.format = format;
-	exports.parse = parse;
-	var TEXT_REGEXP = /^[\u0009\u0020-\u007e\u0080-\u00ff]*$/;
-	var TOKEN_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
-	/**
-	* RegExp to match chars that must be quoted-pair in RFC 9110 sec 5.6.4
-	*/
-	var QUOTE_REGEXP = /[\\"]/g;
-	/**
-	* RegExp to match type in RFC 9110 sec 8.3.1
-	*
-	* media-type = type "/" subtype
-	* type       = token
-	* subtype    = token
-	*/
-	var TYPE_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
-	/**
-	* Null object perf optimization. Faster than `Object.create(null)` and `{ __proto__: null }`.
-	*/
-	var NullObject = /* @__PURE__ */ (() => {
-		const C = function() {};
-		C.prototype = Object.create(null);
-		return C;
-	})();
-	/**
-	* Format an object into a `Content-Type` header.
-	*/
-	function format(obj) {
-		const { type, parameters } = obj;
-		if (!type || !TYPE_REGEXP.test(type)) throw new TypeError(`Invalid type: ${type}`);
-		let result = type;
-		if (parameters) for (const param of Object.keys(parameters)) {
-			if (!TOKEN_REGEXP.test(param)) throw new TypeError(`Invalid parameter name: ${param}`);
-			result += `; ${param}=${qstring(parameters[param])}`;
-		}
-		return result;
-	}
-	/**
-	* Parse a `Content-Type` header.
-	*/
-	function parse(header, options) {
-		const len = header.length;
-		let index = skipOWS(header, 0, len);
-		const valueStart = index;
-		index = skipValue(header, index, len);
-		const valueEnd = trailingOWS(header, valueStart, index);
-		return {
-			type: header.slice(valueStart, valueEnd).toLowerCase(),
-			parameters: options?.parameters === false ? new NullObject() : parseParameters(header, index, len)
-		};
-	}
-	var SP = 32;
-	var HTAB = 9;
-	var SEMI = 59;
-	var EQ = 61;
-	var DQUOTE = 34;
-	var BSLASH = 92;
-	/**
-	* Parses the parameters of a `Content-Type` header starting at the given index.
-	*/
-	function parseParameters(header, index, len) {
-		const parameters = new NullObject();
-		parameter: while (index < len) {
-			index = skipOWS(header, index + 1, len);
-			const keyStart = index;
-			while (index < len) {
-				const code = header.charCodeAt(index);
-				if (code === SEMI) continue parameter;
-				if (code === EQ) {
-					const keyEnd = trailingOWS(header, keyStart, index);
-					const key = header.slice(keyStart, keyEnd).toLowerCase();
-					index = skipOWS(header, index + 1, len);
-					if (index < len && header.charCodeAt(index) === DQUOTE) {
-						index++;
-						let value = "";
-						while (index < len) {
-							const code = header.charCodeAt(index++);
-							if (code === DQUOTE) {
-								index = skipValue(header, index, len);
-								if (parameters[key] === void 0) parameters[key] = value;
-								break;
-							}
-							if (code === BSLASH && index < len) {
-								value += header[index++];
-								continue;
-							}
-							value += String.fromCharCode(code);
-						}
-						continue parameter;
-					}
-					const valueStart = index;
-					index = skipValue(header, index, len);
-					if (parameters[key] === void 0) {
-						const valueEnd = trailingOWS(header, valueStart, index);
-						parameters[key] = header.slice(valueStart, valueEnd);
-					}
-					continue parameter;
-				}
-				index++;
-			}
-		}
-		return parameters;
-	}
-	/**
-	* Skip over characters until a semicolon.
-	*/
-	function skipValue(str, index, len) {
-		while (index < len) {
-			if (str.charCodeAt(index) === SEMI) break;
-			index++;
-		}
-		return index;
-	}
-	/**
-	* Skip optional whitespace (OWS) in an HTTP header value.
-	*
-	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
-	*/
-	function skipOWS(header, index, len) {
-		while (index < len) {
-			const char = header.charCodeAt(index);
-			if (char !== SP && char !== HTAB) break;
-			index++;
-		}
-		return index;
-	}
-	/**
-	* Trim optional whitespace (OWS) from the end of a substring.
-	*
-	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
-	*/
-	function trailingOWS(header, start, end) {
-		while (end > start) {
-			const char = header.charCodeAt(end - 1);
-			if (char !== SP && char !== HTAB) break;
-			end--;
-		}
-		return end;
-	}
-	/**
-	* Serialize a parameter value.
-	*/
-	function qstring(str) {
-		if (TOKEN_REGEXP.test(str)) return str;
-		if (TEXT_REGEXP.test(str)) return `"${str.replace(QUOTE_REGEXP, "\\$&")}"`;
-		throw new TypeError(`Invalid parameter value: ${str}`);
-	}
-}));
-//#endregion
 //#region ../node_modules/body-parser/lib/utils.js
 var require_utils$3 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/**
 	* Module dependencies.
 	*/
 	var bytes = require_bytes();
-	var contentType = require_dist$3();
+	var contentType = require_dist$2();
 	var typeis = require_type_is();
 	/**
 	* Module exports.
@@ -21686,7 +21541,7 @@ var require_is_promise = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 }));
 //#endregion
 //#region ../node_modules/path-to-regexp/dist/index.js
-var require_dist$2 = /* @__PURE__ */ __commonJSMin(((exports) => {
+var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.PathError = exports.TokenData = void 0;
 	exports.parse = parse;
@@ -22065,7 +21920,7 @@ var require_layer = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	* @private
 	*/
 	var isPromise = require_is_promise();
-	var pathRegexp = require_dist$2();
+	var pathRegexp = require_dist$1();
 	var debug = require_src$2()("router:layer");
 	var deprecate = require_depd()("router");
 	/**
@@ -23308,175 +23163,6 @@ var require_application = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region ../node_modules/content-type/dist/index.js
-var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
-	/*!
-	* content-type
-	* Copyright(c) 2015 Douglas Christopher Wilson
-	* MIT Licensed
-	*/
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.format = format;
-	exports.parse = parse;
-	var TEXT_REGEXP = /^[\u0009\u0020-\u007e\u0080-\u00ff]*$/;
-	var TOKEN_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
-	/**
-	* RegExp to match chars that must be quoted-pair in RFC 9110 sec 5.6.4
-	*/
-	var QUOTE_REGEXP = /[\\"]/g;
-	/**
-	* RegExp to match type in RFC 9110 sec 8.3.1
-	*
-	* media-type = type "/" subtype
-	* type       = token
-	* subtype    = token
-	*/
-	var TYPE_REGEXP = /^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$/;
-	/**
-	* Null object perf optimization. Faster than `Object.create(null)` and `{ __proto__: null }`.
-	*/
-	var NullObject = /* @__PURE__ */ (() => {
-		const C = function() {};
-		C.prototype = Object.create(null);
-		return C;
-	})();
-	/**
-	* Format an object into a `Content-Type` header.
-	*/
-	function format(obj) {
-		const { type, parameters } = obj;
-		if (!type || !TYPE_REGEXP.test(type)) throw new TypeError(`Invalid type: ${type}`);
-		let result = type;
-		if (parameters) for (const param of Object.keys(parameters)) {
-			if (!TOKEN_REGEXP.test(param)) throw new TypeError(`Invalid parameter name: ${param}`);
-			result += `; ${param}=${qstring(parameters[param])}`;
-		}
-		return result;
-	}
-	/**
-	* Parse a `Content-Type` header.
-	*/
-	function parse(header, options) {
-		const stopChar = options?.comma === true ? COMMA : 65536;
-		const len = header.length;
-		let index = skipOWS(header, options?.start ?? 0, len);
-		const valueStart = index;
-		index = skipValue(header, index, len, stopChar);
-		const valueEnd = trailingOWS(header, valueStart, index);
-		const type = header.slice(valueStart, valueEnd).toLowerCase();
-		if (options?.parameters === false) return {
-			type,
-			index,
-			parameters: new NullObject()
-		};
-		return parseParameters(header, type, index, len, stopChar);
-	}
-	var SP = 32;
-	var HTAB = 9;
-	var SEMI = 59;
-	var EQ = 61;
-	var DQUOTE = 34;
-	var BSLASH = 92;
-	var COMMA = 44;
-	/**
-	* Parses the parameters of a `Content-Type` header starting at the given index.
-	*/
-	function parseParameters(header, type, index, len, stopChar) {
-		const parameters = new NullObject();
-		parameter: while (index < len) {
-			if (header.charCodeAt(index) === stopChar) break;
-			index = skipOWS(header, index + 1, len);
-			const keyStart = index;
-			while (index < len) {
-				const code = header.charCodeAt(index);
-				if (code === stopChar) break parameter;
-				if (code === SEMI) continue parameter;
-				if (code === EQ) {
-					const keyEnd = trailingOWS(header, keyStart, index);
-					const key = header.slice(keyStart, keyEnd).toLowerCase();
-					index = skipOWS(header, index + 1, len);
-					if (index < len && header.charCodeAt(index) === DQUOTE) {
-						index++;
-						let value = "";
-						while (index < len) {
-							const code = header.charCodeAt(index++);
-							if (code === DQUOTE) {
-								index = skipValue(header, index, len, stopChar);
-								if (parameters[key] === void 0) parameters[key] = value;
-								break;
-							}
-							if (code === BSLASH && index < len) {
-								value += header[index++];
-								continue;
-							}
-							value += String.fromCharCode(code);
-						}
-						continue parameter;
-					}
-					const valueStart = index;
-					index = skipValue(header, index, len, stopChar);
-					if (parameters[key] === void 0) {
-						const valueEnd = trailingOWS(header, valueStart, index);
-						parameters[key] = header.slice(valueStart, valueEnd);
-					}
-					continue parameter;
-				}
-				index++;
-			}
-		}
-		return {
-			type,
-			index,
-			parameters
-		};
-	}
-	/**
-	* Skip over characters until a semicolon or other exit character.
-	*/
-	function skipValue(str, index, len, stopChar) {
-		while (index < len) {
-			const code = str.charCodeAt(index);
-			if (code === SEMI || code === stopChar) break;
-			index++;
-		}
-		return index;
-	}
-	/**
-	* Skip optional whitespace (OWS) in an HTTP header value.
-	*
-	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
-	*/
-	function skipOWS(header, index, len) {
-		while (index < len) {
-			const char = header.charCodeAt(index);
-			if (char !== SP && char !== HTAB) break;
-			index++;
-		}
-		return index;
-	}
-	/**
-	* Trim optional whitespace (OWS) from the end of a substring.
-	*
-	* OWS is defined in RFC 9110 sec 5.6.3 as SP (" ") or HTAB ("\t").
-	*/
-	function trailingOWS(header, start, end) {
-		while (end > start) {
-			const char = header.charCodeAt(end - 1);
-			if (char !== SP && char !== HTAB) break;
-			end--;
-		}
-		return end;
-	}
-	/**
-	* Serialize a parameter value.
-	*/
-	function qstring(str) {
-		if (TOKEN_REGEXP.test(str)) return str;
-		if (TEXT_REGEXP.test(str)) return `"${str.replace(QUOTE_REGEXP, "\\$&")}"`;
-		throw new TypeError(`Invalid parameter value: ${str}`);
-	}
-}));
-//#endregion
 //#region ../node_modules/negotiator/lib/accept.js
 /*!
 * negotiator
@@ -23484,7 +23170,7 @@ var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 * MIT Licensed
 */
 var require_accept = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	var contentType = require_dist$1();
+	var contentType = require_dist$2();
 	/**
 	* Module exports.
 	* @private
@@ -23768,7 +23454,7 @@ var require_encoding = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	var contentType = require_dist$1();
+	var contentType = require_dist$2();
 	var parseAccept = require_accept();
 	/**
 	* Module exports.
@@ -23885,7 +23571,7 @@ var require_language = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 * MIT Licensed
 */
 var require_mediaType = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	var contentType = require_dist$1();
+	var contentType = require_dist$2();
 	var parseAcceptHeader = require_accept();
 	/**
 	* Module exports.
