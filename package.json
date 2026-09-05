@@ -1,6 +1,6 @@
 {
   "name": "@aventurevc/mcp-server",
-  "version": "0.7.261",
+  "version": "0.7.263",
   "private": false,
   "description": "Public aVenture Streamable HTTP MCP server.",
   "license": "Apache-2.0",
