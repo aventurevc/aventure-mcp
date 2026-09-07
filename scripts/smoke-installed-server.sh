@@ -35,7 +35,7 @@ health="$(curl -s -o /dev/null -w '%{http_code}' "$base/health")"
 unauthenticated="$(curl -s -o /dev/null -w '%{http_code}' "${headers[@]}" -d "$request" "$base/mcp")"
 [ "$unauthenticated" = "401" ] || { echo "unauthenticated tools/list returned $unauthenticated" >&2; exit 1; }
 
-tools="$(curl -sf "${headers[@]}" -H "X-Client-Secret: $secret" -d "$request" "$base/mcp" | sed -n 's/^data: //p; /^{/p' | head -1)"
+tools="$(curl -sf "${headers[@]}" -H "X-Client-Secret: $secret" -d "$request" "$base/mcp" | sed -n 's/^data: //p; /^{/p')"
 grep -q '"aventure_read"' <<<"$tools" || { echo "authenticated tools/list did not expose aventure_read: $tools" >&2; exit 1; }
 
 echo "mcp smoke: health=200 unauthenticated=401 authenticated tools/list exposes aventure_read"
