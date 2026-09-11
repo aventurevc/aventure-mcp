@@ -43,28 +43,35 @@ interpolation syntax may differ.
 
 ## Authenticate with native OAuth
 
-An OAuth-capable MCP client can use the same URL without an `Authorization`
-header and follow the sign-in flow advertised by the server's protected-resource
-metadata. Use either this flow or the personal-key header for a client registration.
+Connect to the hosted server at `https://mcp.aventure.vc/mcp` with an
+OAuth-capable client. Configure the public client ID `KL7mINzGk0le0QiD`;
+no client secret is required. The client discovers the authorization server
+from the MCP endpoint and uses authorization code with PKCE. Dynamic client
+registration is disabled.
 
-### Codex discovery
+The registered redirect URIs are:
 
-Read the public OAuth configuration from
-`https://api.aventure.vc/v1/auth/providers`. Use `oauthClient.clientId` and
-`oauthClient.redirectUri` for the two placeholders below in your Codex configuration:
+- `http://127.0.0.1/callback`
+- `http://localhost/callback`
+- `https://chatgpt.com/connector_platform_oauth_redirect`
+- `https://claude.ai/api/mcp/auth_callback`
 
-```toml
-[mcp_servers.aventure]
-url = "http://localhost:3333/mcp"
+Loopback redirects may use an available port, such as
+`http://127.0.0.1:6276/callback`; keep the `/callback` path. A client using
+another callback path needs its own registered OAuth application.
 
-[mcp_servers.aventure.oauth]
-client_id = "<oauthClient.clientId>"
-callback_url = "<oauthClient.redirectUri>"
+For example, MCP Inspector 2.6.0 supports these settings:
+
+```sh
+npx @modelcontextprotocol/inspector@2.6.0 --cli \
+  --server-url https://mcp.aventure.vc/mcp \
+  --client-id KL7mINzGk0le0QiD \
+  --callback-url http://127.0.0.1:6276/callback \
+  --method tools/list
 ```
 
-With the server running, run `codex mcp login aventure` and complete browser
-sign-in. Codex discovers the OAuth resource from the endpoint; omit a separate
-`oauth_resource` entry.
+Run it in an interactive terminal, sign in to aVenture, and approve access.
+The Inspector exchanges the authorization code and lists the MCP tools.
 
 ## Verify access
 
