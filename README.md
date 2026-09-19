@@ -1,6 +1,9 @@
 # aventure-mcp
 
-Public aVenture Streamable HTTP MCP server.
+Public aVenture Streamable HTTP MCP server. Most clients need no install: the
+[MCP quickstart](https://docs.aventure.vc/mcp) connects them to the hosted server
+at `https://mcp.aventure.vc/mcp`. Self-host with this package when your client
+cannot complete an OAuth flow.
 
 Requires Node.js 24.18 or later in the 24.x series.
 
