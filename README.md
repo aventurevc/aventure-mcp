@@ -10,7 +10,7 @@ Requires Node.js 24.18 or later in the 24.x series.
 ## Install and start
 
 ```sh
-npm install --global @aventurevc/mcp-server --registry=https://registry.npmjs.org/
+npm install --global @aventurevc/mcp-server --@aventurevc:registry=https://registry.npmjs.org/
 aventure-mcp-server --help
 aventure-mcp-server
 ```
