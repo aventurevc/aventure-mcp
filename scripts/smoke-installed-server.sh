@@ -1,22 +1,28 @@
 #!/usr/bin/env bash
-# Prove an installed aventure-mcp-server's transport discovery without any real
-# credential or backend: start it against an unreachable loopback API with a
-# synthetic client secret, then require /health 200, unauthenticated /mcp 401,
-# and an authenticated tools/list that exposes aventure_read.
-#   scripts/smoke-installed-server.sh <path-to-aventure-mcp-server-bin>
+# Prove an installed aventure-mcp-server's transport discovery: start it holding no
+# credential of its own, then require /health 200, unauthenticated /mcp 401, and a
+# first-party X-Client-Secret still 401. The public server has no first-party lane, so
+# that header must read as no credential at all. With AUTH_TOKEN set it also requires an
+# authenticated tools/list exposing aventure_read, using the only credential a public
+# user holds: a personal API key from aventure.vc sent as Authorization: Bearer and
+# verified against the public API the installed server defaults to. Without AUTH_TOKEN
+# that leg is reported as skipped, never as passed.
+#   [AUTH_TOKEN=<personal-api-key>] scripts/smoke-installed-server.sh <path-to-aventure-mcp-server-bin>
 set -euo pipefail
 
 server_bin="${1:?usage: $0 <path-to-aventure-mcp-server-bin>}"
+auth_token="${AUTH_TOKEN:-}"
 port="${SMOKE_PORT:-43333}"
-secret="smoke-synthetic-client-secret"
 log="$(mktemp)"
+bearer_header="$(mktemp)"
+response="$(mktemp)"
 config_home="$(mktemp -d)"
 
-API_URL="127.0.0.1:9" API_ENV="" CLIENT_SECRET="$secret" ADMIN_API_KEY="" \
+API_URL="" API_ENV="" AUTH_TOKEN="" \
   AVENTURE_MCP_PORT="$port" XDG_CONFIG_HOME="$config_home" \
   "$server_bin" >"$log" 2>&1 &
 server_pid=$!
-trap 'kill "$server_pid" 2>/dev/null || true; rm -rf "$log" "$config_home"' EXIT
+trap 'kill "$server_pid" 2>/dev/null || true; rm -rf "$log" "$bearer_header" "$response" "$config_home"' EXIT
 
 for _ in $(seq 1 100); do
   grep -q "listening" "$log" && break
@@ -35,7 +41,18 @@ health="$(curl -s -o /dev/null -w '%{http_code}' "$base/health")"
 unauthenticated="$(curl -s -o /dev/null -w '%{http_code}' "${headers[@]}" -d "$request" "$base/mcp")"
 [ "$unauthenticated" = "401" ] || { echo "unauthenticated tools/list returned $unauthenticated" >&2; exit 1; }
 
-tools="$(curl -sf "${headers[@]}" -H "X-Client-Secret: $secret" -d "$request" "$base/mcp" | sed -n 's/^data: //p; /^{/p')"
-grep -q '"aventure_read"' <<<"$tools" || { echo "authenticated tools/list did not expose aventure_read: $tools" >&2; exit 1; }
+first_party="$(curl -s -o /dev/null -w '%{http_code}' "${headers[@]}" -H "X-Client-Secret: smoke-synthetic-client-secret" -d "$request" "$base/mcp")"
+[ "$first_party" = "401" ] || { echo "first-party X-Client-Secret tools/list returned $first_party; the public server must carry no first-party credential lane" >&2; exit 1; }
 
-echo "mcp smoke: health=200 unauthenticated=401 authenticated tools/list exposes aventure_read"
+if [ -n "$auth_token" ]; then
+  printf 'Authorization: Bearer %s\n' "$auth_token" >"$bearer_header"
+  authenticated="$(curl -s -o "$response" -w '%{http_code}' "${headers[@]}" -H "@$bearer_header" -d "$request" "$base/mcp")"
+  [ "$authenticated" = "200" ] || { echo "authenticated tools/list returned $authenticated; AUTH_TOKEN must be an unexpired personal API key from aventure.vc with read access" >&2; exit 1; }
+  tools="$(sed -n 's/^data: //p; /^{/p' "$response")"
+  grep -q '"aventure_read"' <<<"$tools" || { echo "authenticated tools/list did not expose aventure_read: $tools" >&2; exit 1; }
+  authenticated_result="authenticated tools/list exposes aventure_read"
+else
+  authenticated_result="authenticated tools/list NOT PROVEN: set AUTH_TOKEN to a personal API key from aventure.vc"
+fi
+
+echo "mcp smoke: health=200 unauthenticated=401 first-party=401; $authenticated_result"
