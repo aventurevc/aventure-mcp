@@ -22,7 +22,7 @@ of a stdio command.
 
 ## Connect with a personal API key
 
-Sign in at [aventure.vc](https://aventure.vc), open **Settings → API keys**,
+Sign in, open [aventure.vc/settings/api-keys](https://aventure.vc/settings/api-keys),
 and choose **Add new key**. Store the key in your MCP client's secret storage.
 The HTTP request must carry `Authorization: Bearer <personal-api-key>`.
 
