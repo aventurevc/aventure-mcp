@@ -47,34 +47,16 @@ interpolation syntax may differ.
 ## Authenticate with native OAuth
 
 Connect to the hosted server at `https://mcp.aventure.vc/mcp` with an
-OAuth-capable client. Configure the public client ID `KL7mINzGk0le0QiD`;
-no client secret is required. The client discovers the authorization server
-from the MCP endpoint and uses authorization code with PKCE. Dynamic client
-registration is disabled.
+OAuth-capable client and leave the client ID and secret empty. The client
+discovers the authorization server from the MCP endpoint, registers itself,
+and signs you in with authorization code and PKCE. Every call runs with your
+aVenture account's permissions.
 
-The registered redirect URIs are:
-
-- `http://127.0.0.1/callback`
-- `http://localhost/callback`
-- `https://chatgpt.com/connector_platform_oauth_redirect`
-- `https://claude.ai/api/mcp/auth_callback`
-
-Loopback redirects may use an available port, such as
-`http://127.0.0.1:6276/callback`; keep the `/callback` path. A client using
-another callback path needs its own registered OAuth application.
-
-For example, MCP Inspector 2.6.0 supports these settings:
+In Claude or ChatGPT, add the URL as a custom connector. In Claude Code:
 
 ```sh
-npx @modelcontextprotocol/inspector@2.6.0 --cli \
-  --server-url https://mcp.aventure.vc/mcp \
-  --client-id KL7mINzGk0le0QiD \
-  --callback-url http://127.0.0.1:6276/callback \
-  --method tools/list
+claude mcp add --scope user --transport http aventure https://mcp.aventure.vc/mcp
 ```
-
-Run it in an interactive terminal, sign in to aVenture, and approve access.
-The Inspector exchanges the authorization code and lists the MCP tools.
 
 ## Verify access
 
