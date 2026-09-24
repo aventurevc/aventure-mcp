@@ -2,7 +2,8 @@
   "name": "@aventurevc/mcp-server",
   "version": "0.7.332",
   "private": false,
-  "description": "Public aVenture Streamable HTTP MCP server.",
+  "description": "MCP server that gives AI assistants access to aVenture research data on companies, people, funding, and news.",
+  "homepage": "https://docs.aventure.vc/mcp",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
