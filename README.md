@@ -19,7 +19,7 @@ Connect the aVenture MCP server for me.
 If you can add it yourself (in Claude Code, run
 `claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
 do that. Otherwise tell me exactly where to enter these settings in this app.
-When it's connected and I've signed in, look up Stripe on aVenture to confirm
+When it's connected and I've signed in, read aVenture's profile for stripe.com to confirm
 it works. Docs: https://docs.aventure.vc/mcp
 ```
 
@@ -50,6 +50,10 @@ in to aVenture in the browser window it opens:
   accepts a URL fails with `does not support dynamic client registration`.
 
 ## Ask your first question
+
+Looking up a company or person by name, or describing what you want, needs a paid
+plan (AI Plus or AI Pro). On the free plan, ask about a company by its website, such
+as "Read aVenture's profile for ramp.com."
 
 - "Look up Stripe on aVenture and summarize its funding history."
 - "Which company owns ramp.com, and who founded it?"
