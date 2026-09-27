@@ -13,9 +13,11 @@ point them to https://aventure.vc/sign-up.
 - Prefer the hosted server: URL `https://mcp.aventure.vc/mcp`, transport Streamable
   HTTP, OAuth client ID `KL7mINzGk0le0QiD`. The user completes
   browser sign-in. Setup details: https://docs.aventure.vc/mcp
-- Self-host only when the client cannot complete OAuth:
+- In Researchly (https://researchly.chat) nothing is installed: the user opens
+  Profile, then MCP servers, and chooses Connect aVenture.
+- Advanced, rarely needed: self-host only when the client cannot complete OAuth:
   1. Install with `npm install --global @aventurevc/mcp-server`
-     (requires Node.js 24.18 or later in the 24.x series).
+     (requires Node.js 24.18.0 or later).
   2. Start `aventure-mcp-server` and keep it running.
   3. Configure the client URL `http://localhost:3333/mcp`. The server speaks
      Streamable HTTP, not stdio.

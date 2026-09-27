@@ -1,68 +1,74 @@
 # aVenture MCP server
 
 Give Claude, ChatGPT, or any MCP client access to aVenture research on private
-companies, founders, investors, funding rounds, and news.
+companies, founders, investors, funding rounds, and news. aVenture hosts the
+server, so there is nothing to install.
 
-The MCP server requires an aVenture account. Free and paid plans both work;
-[create an account](https://aventure.vc/sign-up) before you connect.
+You need an aVenture account; free and paid plans both work.
+[Create an account](https://aventure.vc/sign-up).
 
-## Connect to the hosted server
+## Get started in one step
 
-Most clients need no install. Configure your client with:
+Paste this into Claude, ChatGPT, Claude Code, or your AI app:
 
-- URL: `https://mcp.aventure.vc/mcp`
+```text
+Connect the aVenture MCP server for me.
+- URL: https://mcp.aventure.vc/mcp
 - Transport: Streamable HTTP
-- OAuth client ID: `KL7mINzGk0le0QiD`
-
-Then sign in to aVenture in the browser window the client opens.
-
-In Claude or ChatGPT, add the URL as a custom connector. In Claude Code:
-
-```sh
-claude mcp add --scope user --transport http \
-  --client-id KL7mINzGk0le0QiD --callback-port 6276 \
-  aventure https://mcp.aventure.vc/mcp
+- OAuth client ID: KL7mINzGk0le0QiD
+If you can add it yourself (in Claude Code, run
+`claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
+do that. Otherwise tell me exactly where to enter these settings in this app.
+When it's connected and I've signed in, look up Stripe on aVenture to confirm
+it works. Docs: https://docs.aventure.vc/mcp
 ```
 
-Then run `/mcp`, select `aventure`, and complete sign-in.
+## MCP, CLI, or Researchly?
 
-Clients that need a redirect URI can use `http://127.0.0.1:<port>/callback`,
-`http://localhost:<port>/callback`,
-`https://claude.ai/api/mcp/auth_callback`, or
-`https://chatgpt.com/connector_platform_oauth_redirect`.
+| Where you work | Use |
+| --- | --- |
+| Claude, ChatGPT, or another desktop, web, or cloud AI app | This MCP server |
+| A terminal, shell scripts, or a coding agent with a shell | The [aVenture CLI](https://docs.aventure.vc/cli) |
+| [Researchly](https://researchly.chat) | Nothing to install: open [Profile, then MCP servers](https://researchly.chat/profile/mcp-servers) and choose **Connect aVenture** |
+
+## Connect by hand
+
+Add a custom connector (or MCP server) in your app with these settings, then sign
+in to aVenture in the browser window it opens:
+
+| Setting | Value |
+| --- | --- |
+| URL | `https://mcp.aventure.vc/mcp` |
+| Transport | Streamable HTTP |
+| OAuth client ID | `KL7mINzGk0le0QiD` |
+
+- **Claude and ChatGPT**: add the URL as a custom connector, and enter the client
+  ID if the app asks for one.
+- **Claude Code**: run the `claude mcp add` command from the prompt above, then run
+  `/mcp`, select `aventure`, and sign in.
+- **Other clients**: enter the client ID in the OAuth settings. A client that only
+  accepts a URL fails with `does not support dynamic client registration`.
 
 ## Ask your first question
-
-Once connected, ask your assistant things like:
 
 - "Look up Stripe on aVenture and summarize its funding history."
 - "Which company owns ramp.com, and who founded it?"
 - "Find seed-stage climate software companies in Austin."
-- "Who is Patrick Collison, and what companies is he connected to?"
-- "Find fintech founders who previously worked at PayPal."
-
-The assistant uses these tools:
-
-| Tool | What it does |
-| --- | --- |
-| `aventure_lookup` | Finds a company or person by name, website, or LinkedIn URL |
-| `aventure_search` | Finds companies, people, and news from a description |
-| `aventure_read` | Reads a full profile and its funding rounds, people, and news |
-| `aventure_help` | Finds the right operation for a task |
-| `aventure_status` | Confirms the connection and your sign-in |
+- "Who is Patrick Collison, and which companies is he connected to?"
 
 ## Plans and usage
 
 Profile views, searches, and web searches count toward your plan's monthly
-allowance. When an allowance runs out, the tool answer says which limit you reached
-and how to upgrade. Ask your assistant to list the plans and prices, or to upgrade
-you, and it can do that from the conversation. You can also manage your plan in
+allowance. When one runs out, the answer says which limit you reached and how to
+upgrade. Ask your assistant to list aVenture plans with monthly and annual
+prices, or to upgrade you. You can also manage your plan in
 [subscription settings](https://aventure.vc/settings/subscription).
 
-## Run the server yourself
+## Advanced: run the server locally
 
-Use this when your client cannot complete an OAuth sign-in. The server requires
-Node.js 24.18 or later in the 24.x series.
+Most people never need this. Run the server yourself only when your client can't
+complete an OAuth sign-in or you need it inside your own network. It requires
+Node.js 24.18.0 or later.
 
 ```sh
 npm install --global @aventurevc/mcp-server
@@ -70,8 +76,8 @@ aventure-mcp-server
 ```
 
 The server listens at `http://localhost:3333/mcp`. Create a key in
-[API key settings](https://aventure.vc/settings/api-keys) and configure your
-client to send it with every request:
+[API key settings](https://aventure.vc/settings/api-keys) and have your client send
+it with every request:
 
 ```json
 {
@@ -79,25 +85,17 @@ client to send it with every request:
     "aventure": {
       "type": "http",
       "url": "http://localhost:3333/mcp",
-      "headers": {
-        "Authorization": "Bearer <your-api-key>"
-      }
+      "headers": { "Authorization": "Bearer <your-api-key>" }
     }
   }
 }
 ```
 
 Store the key in your client's secret storage, not in a file you commit.
-
-| Setting | What it changes |
-| --- | --- |
-| `AVENTURE_MCP_PORT` | Listening port (default `3333`) |
-| `AVENTURE_MCP_PATH` | MCP route (default `/mcp`) |
-| `AVENTURE_MCP_JSON_LIMIT` | Maximum request body size |
-| `--host <address>` | Address to bind instead of `127.0.0.1` |
+`AVENTURE_MCP_PORT` and `AVENTURE_MCP_PATH` change the port and route.
 
 ## Documentation
 
 - [MCP quickstart](https://docs.aventure.vc/mcp)
-- [Authentication](https://docs.aventure.vc/authentication)
+- [Authentication and plans](https://docs.aventure.vc/authentication)
 - [Errors](https://docs.aventure.vc/errors)
