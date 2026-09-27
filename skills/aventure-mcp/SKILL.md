@@ -7,16 +7,21 @@ description: Use when connecting an MCP client to aVenture, or when calling aVen
 
 ## Connect
 
+The MCP server requires an aVenture account (free or paid). If the user has none,
+point them to https://aventure.vc/sign-up.
+
 - Prefer the hosted server: URL `https://mcp.aventure.vc/mcp`, transport Streamable
-  HTTP, OAuth client ID `KL7mINzGk0le0QiD`, no client secret. The user completes
+  HTTP, OAuth client ID `KL7mINzGk0le0QiD`. The user completes
   browser sign-in. Setup details: https://docs.aventure.vc/mcp
-- Self-host only when the client cannot complete OAuth:
-  1. Install with `npm install --global @aventurevc/mcp-server --@aventurevc:registry=https://registry.npmjs.org/`
-     (requires Node.js 24.18 or later in the 24.x series).
+- In Researchly (https://researchly.chat) nothing is installed: the user opens
+  Profile, then MCP servers, and chooses Connect aVenture.
+- Advanced, rarely needed: self-host only when the client cannot complete OAuth:
+  1. Install with `npm install --global @aventurevc/mcp-server`
+     (requires Node.js 24.18.0 or later).
   2. Start `aventure-mcp-server` and keep it running.
   3. Configure the client URL `http://localhost:3333/mcp`. The server speaks
      Streamable HTTP, not stdio.
-  4. Send `Authorization: Bearer <personal-api-key>` on every request. The user
+  4. Send `Authorization: Bearer <api-key>` on every request. The user
      creates the key at https://aventure.vc/settings/api-keys and stores it in the
      client's secret storage. Never print, log, or echo the key.
 
@@ -35,8 +40,12 @@ or an earlier result. `aventure_write` and `aventure_delete` appear only for
 accounts with write permission and change shared data immediately; call them only
 when the user asked for that change.
 
-## Usage
+## Usage limits
 
-Calls count toward the user's plan usage. A `402` response means the operation
-needs a plan that includes it; point the user to https://aventure.vc/pricing and
-https://aventure.vc/settings/subscription instead of retrying.
+Profile views, web searches, and research requests count toward the user's monthly plan
+allowance. A `429` with code `billing_allowance_exhausted` means the user reached
+it; do not retry. Tell the user which limit they reached, then offer to upgrade:
+ask `aventure_help` for the billing plan list, show each plan's monthly and annual
+price, and after the user confirms, run the plan change (paid plans, card on file)
+or create a checkout session (free plan) and give the user the returned link. The
+user can also upgrade at https://aventure.vc/settings/subscription.
