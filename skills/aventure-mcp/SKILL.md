@@ -42,7 +42,7 @@ when the user asked for that change.
 
 ## Usage limits
 
-Profile views, searches, and web searches count toward the user's monthly plan
+Profile views, web searches, and research requests count toward the user's monthly plan
 allowance. A `429` with code `billing_allowance_exhausted` means the user reached
 it; do not retry. Tell the user which limit they reached, then offer to upgrade:
 ask `aventure_help` for the billing plan list, show each plan's monthly and annual

@@ -58,7 +58,7 @@ in to aVenture in the browser window it opens:
 
 ## Plans and usage
 
-Profile views, searches, and web searches count toward your plan's monthly
+Profile views, web searches, and research requests count toward your plan's monthly
 allowance. When one runs out, the answer says which limit you reached and how to
 upgrade. Ask your assistant to list aVenture plans with monthly and annual
 prices, or to upgrade you. You can also manage your plan in
@@ -75,7 +75,8 @@ npm install --global @aventurevc/mcp-server
 aventure-mcp-server
 ```
 
-The server listens at `http://localhost:3333/mcp`. Create a key in
+The server listens at `http://localhost:3333/mcp`, which only clients on the same
+machine can reach; a cloud app such as ChatGPT cannot. Create a key in
 [API key settings](https://aventure.vc/settings/api-keys) and have your client send
 it with every request:
 
