@@ -19,8 +19,8 @@ Connect the aVenture MCP server for me.
 If you can add it yourself (in Claude Code, run
 `claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
 do that. Otherwise tell me exactly where to enter these settings in this app.
-When it's connected and I've signed in, read aVenture's profile for stripe.com to confirm
-it works. Docs: https://docs.aventure.vc/mcp
+When it's connected and I've signed in, call aventure_status, then read aVenture's
+profile for stripe.com to confirm it works. Docs: https://docs.aventure.vc/mcp
 ```
 
 ## MCP, CLI, or Researchly?
@@ -42,12 +42,21 @@ in to aVenture in the browser window it opens:
 | Transport | Streamable HTTP |
 | OAuth client ID | `KL7mINzGk0le0QiD` |
 
-- **Claude and ChatGPT**: add the URL as a custom connector, and enter the client
-  ID if the app asks for one.
+- **Claude and ChatGPT**: add the URL as a custom connector. When the connector
+  form has an OAuth client ID field (usually under advanced settings), enter the
+  client ID.
 - **Claude Code**: run the `claude mcp add` command from the prompt above, then run
   `/mcp`, select `aventure`, and sign in.
 - **Other clients**: enter the client ID in the OAuth settings. A client that only
   accepts a URL fails with `does not support dynamic client registration`.
+
+## If sign-in fails
+
+- `does not support dynamic client registration`: enter the client ID above in
+  the client's OAuth settings.
+- `401` on a server that worked before: the sign-in expired. Reconnect the server
+  in your client; in Claude Code, run `/mcp`, select `aventure`, and sign in.
+- More fixes: [MCP troubleshooting](https://docs.aventure.vc/mcp#troubleshooting).
 
 ## Ask your first question
 
