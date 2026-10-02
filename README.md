@@ -1,4 +1,4 @@
-# aVenture MCP server
+# aVenture MCP Server
 
 Give Claude, ChatGPT, or any MCP client access to aVenture research on private
 companies, founders, investors, funding rounds, and news. aVenture hosts the
@@ -7,7 +7,7 @@ server, so there is nothing to install.
 You need an aVenture account; free and paid plans both work.
 [Create an account](https://aventure.vc/sign-up).
 
-## Get started in one step
+## Get Started in One Step
 
 Paste this into Claude, ChatGPT, Claude Code, or your AI app:
 
@@ -31,7 +31,7 @@ profile for stripe.com to confirm it works. Docs: https://docs.aventure.vc/mcp
 | A terminal, shell scripts, or a coding agent with a shell | The [aVenture CLI](https://docs.aventure.vc/cli) |
 | [Researchly](https://researchly.chat) | Nothing to install: open [Profile, then MCP servers](https://researchly.chat/profile/mcp-servers) and choose **Connect aVenture** |
 
-## Connect by hand
+## Connect by Hand
 
 Add a custom connector (or MCP server) in your app with these settings, then sign
 in to aVenture in the browser window it opens:
@@ -50,7 +50,7 @@ in to aVenture in the browser window it opens:
 - **Other clients**: enter the client ID in the OAuth settings. A client that only
   accepts a URL fails with `does not support dynamic client registration`.
 
-## If sign-in fails
+## If Sign-In Fails
 
 - `does not support dynamic client registration`: enter the client ID above in
   the client's OAuth settings.
@@ -58,7 +58,7 @@ in to aVenture in the browser window it opens:
   in your client; in Claude Code, run `/mcp`, select `aventure`, and sign in.
 - More fixes: [MCP troubleshooting](https://docs.aventure.vc/mcp#troubleshooting).
 
-## Ask your first question
+## Ask Your First Question
 
 Looking up a company or person by name, or describing what you want, needs a paid
 plan (AI Plus or AI Pro). On the free plan, ask about a company by its website, such
@@ -69,7 +69,7 @@ as "Read aVenture's profile for ramp.com."
 - "Find seed-stage climate software companies in Austin."
 - "Who is Patrick Collison, and which companies is he connected to?"
 
-## Plans and usage
+## Plans and Usage
 
 Profile views, web searches, and research requests count toward your plan's monthly
 allowance. When one runs out, the answer says which limit you reached and how to
@@ -77,7 +77,7 @@ upgrade. Ask your assistant to list aVenture plans with monthly and annual
 prices, or to upgrade you. You can also manage your plan in
 [subscription settings](https://aventure.vc/settings/subscription).
 
-## Advanced: run the server locally
+## Advanced: Run the Server Locally
 
 Most people never need this. Run the server yourself only when your client can't
 complete an OAuth sign-in or you need it inside your own network. It requires
