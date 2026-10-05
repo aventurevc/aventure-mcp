@@ -15,7 +15,8 @@ Paste this into Claude, ChatGPT, Claude Code, or your AI app:
 Connect the aVenture MCP server for me.
 - URL: https://mcp.aventure.vc/mcp
 - Transport: Streamable HTTP
-- OAuth client ID: KL7mINzGk0le0QiD
+- OAuth: leave client fields blank when the app supports dynamic registration;
+  use client ID KL7mINzGk0le0QiD when it requires a pre-registered client.
 If you can add it yourself (in Claude Code, run
 `claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
 do that. Otherwise tell me exactly where to enter these settings in this app.
@@ -40,15 +41,16 @@ in to aVenture in the browser window it opens:
 | --- | --- |
 | URL | `https://mcp.aventure.vc/mcp` |
 | Transport | Streamable HTTP |
-| OAuth client ID | `KL7mINzGk0le0QiD` |
+| OAuth client ID | Leave blank for dynamic registration; otherwise `KL7mINzGk0le0QiD` |
 
-- **Claude and ChatGPT**: add the URL as a custom connector. When the connector
-  form has an OAuth client ID field (usually under advanced settings), enter the
-  client ID.
+- **Claude and ChatGPT**: add the URL as a custom connector. Leave client fields
+  blank when the app supports the advertised dynamic registration flow. If it
+  requires a pre-registered client, enter the client ID under advanced settings.
 - **Claude Code**: run the `claude mcp add` command from the prompt above, then run
   `/mcp`, select `aventure`, and sign in.
-- **Other clients**: enter the client ID in the OAuth settings. A client that only
-  accepts a URL fails with `does not support dynamic client registration`.
+- **Other clients**: follow the app's OAuth setup. URL-only clients can use the
+  advertised registration endpoint; clients requiring pre-registration use the
+  client ID above.
 
 ## If Sign-In Fails
 
