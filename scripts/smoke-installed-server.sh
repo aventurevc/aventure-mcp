@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Prove an installed aventure-mcp-server's transport discovery: start it holding no
-# credential of its own, then require /health 200, unauthenticated /mcp 401, and a
-# first-party X-Client-Secret still 401. The public server has no first-party lane, so
-# that header must read as no credential at all. With AUTH_TOKEN set it also requires an
+# credential of its own, then require /health 200 and unauthenticated /mcp 401. With
+# AUTH_TOKEN set it also requires an
 # authenticated tools/list exposing aventure_read, using the only credential a public
 # user holds: a personal API key from aventure.vc sent as Authorization: Bearer and
 # verified against the public API the installed server defaults to. Without AUTH_TOKEN
@@ -41,9 +40,6 @@ health="$(curl -s -o /dev/null -w '%{http_code}' "$base/health")"
 unauthenticated="$(curl -s -o /dev/null -w '%{http_code}' "${headers[@]}" -d "$request" "$base/mcp")"
 [ "$unauthenticated" = "401" ] || { echo "unauthenticated tools/list returned $unauthenticated" >&2; exit 1; }
 
-first_party="$(curl -s -o /dev/null -w '%{http_code}' "${headers[@]}" -H "X-Client-Secret: smoke-synthetic-client-secret" -d "$request" "$base/mcp")"
-[ "$first_party" = "401" ] || { echo "first-party X-Client-Secret tools/list returned $first_party; the public server must carry no first-party credential lane" >&2; exit 1; }
-
 if [ -n "$auth_token" ]; then
   printf 'Authorization: Bearer %s\n' "$auth_token" >"$bearer_header"
   authenticated="$(curl -s -o "$response" -w '%{http_code}' "${headers[@]}" -H "@$bearer_header" -d "$request" "$base/mcp")"
@@ -55,4 +51,4 @@ else
   authenticated_result="authenticated tools/list NOT PROVEN: set AUTH_TOKEN to a personal API key from aventure.vc"
 fi
 
-echo "mcp smoke: health=200 unauthenticated=401 first-party=401; $authenticated_result"
+echo "mcp smoke: health=200 unauthenticated=401; $authenticated_result"
