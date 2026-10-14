@@ -20,7 +20,7 @@ Connect the aVenture MCP server for me.
 If you can add it yourself (in Claude Code, run
 `claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
 do that. Otherwise tell me exactly where to enter these settings in this app.
-When it's connected and I've signed in, call aventure_status, then read aVenture's
+When it's connected and I've signed in, call aventure_help, then read aVenture's
 profile for stripe.com to confirm it works. Docs: https://docs.aventure.vc/mcp
 ```
 
