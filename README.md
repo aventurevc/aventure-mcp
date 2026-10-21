@@ -45,9 +45,9 @@ settings.
 
 - Free account: 25 company and 25 person profile reads a month and 20 name
   lookups a day. [Create an account](https://aventure.vc/sign-up).
-- Plus, $49/mo: plain-English questions, competitor and investor-activity
+- AI Plus, $49/mo: plain-English questions, competitor and investor-activity
   questions, 500 company and 500 person profile reads, and 30 company and 30
-  person research requests a month. [Get Plus](https://aventure.vc/pricing).
+  person research requests a month. [Get AI Plus](https://aventure.vc/pricing).
 
 ## MCP, CLI, or Researchly?
 
