@@ -80,7 +80,7 @@ settings.
 Profile views, web searches, and research requests count toward your plan's monthly
 allowance. When one runs out, the answer says which limit you reached and how to
 upgrade. Ask your assistant to list aVenture plans with monthly and annual
-prices, or to upgrade you. You can also manage your plan in
+prices. You can also manage your plan in
 [subscription settings](https://aventure.vc/settings/subscription).
 
 ## Advanced: Run the Server Locally
