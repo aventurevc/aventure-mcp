@@ -1,6 +1,7 @@
 {
   "name": "@aventurevc/mcp-server",
   "version": "0.8.220",
+  "mcpName": "io.github.aventurevc/aventure-mcp",
   "private": false,
   "description": "MCP server that gives AI assistants access to aVenture research data on companies, people, funding, and news.",
   "homepage": "https://docs.aventure.vc/mcp",

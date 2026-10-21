@@ -1,0 +1,59 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aventurevc/aventure-mcp",
+  "title": "aVenture",
+  "description": "Research private companies, founders, investors, funding rounds, and news with aVenture",
+  "version": "0.8.220",
+  "websiteUrl": "https://docs.aventure.vc/mcp",
+  "repository": {
+    "url": "https://github.com/aventurevc/aventure-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://aventure.vc/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://aventure.vc/favicon-512x512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aventure.vc/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <aVenture API key>; omit it to sign in with OAuth",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@aventurevc/mcp-server",
+      "version": "0.8.220",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "streamable-http",
+        "url": "http://localhost:3333/mcp",
+        "headers": [
+          {
+            "name": "Authorization",
+            "description": "Bearer <aVenture API key>",
+            "isRequired": true,
+            "isSecret": true
+          }
+        ]
+      }
+    }
+  ]
+}
