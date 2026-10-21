@@ -29,7 +29,7 @@ jobs:
   list:
     if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && !contains(github.event.workflow_run.display_title, '(dry run)')) }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       PACKAGE_NAME: "@aventurevc/mcp-server"
       # publish's run name is "publish <version>"; a dispatch names its version or takes npm's latest.
@@ -45,10 +45,10 @@ jobs:
           version="${REQUESTED_VERSION#publish }"
           version="${version:-$(npm view "$PACKAGE_NAME" version)}"
           [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]] || { echo "invalid version: $version"; exit 1; }
-          for attempt in $(seq 1 24); do
+          for attempt in $(seq 1 60); do
             [ "$(npm view "$PACKAGE_NAME@$version" mcpName 2>/dev/null)" = "$name" ] && break
-            [ "$attempt" -eq 24 ] && { echo "$PACKAGE_NAME@$version is not on npm with mcpName $name"; exit 1; }
-            sleep 5
+            [ "$attempt" -eq 60 ] && { echo "$PACKAGE_NAME@$version is not on npm with mcpName $name"; exit 1; }
+            sleep 10
           done
           status="$(curl -sS -o /dev/null -w '%{http_code}' "https://registry.modelcontextprotocol.io/v0.1/servers/${name/\//%2F}/versions/$version")"
           case "$status" in
