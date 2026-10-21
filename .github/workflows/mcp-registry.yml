@@ -1,0 +1,67 @@
+name: mcp-registry
+
+run-name: mcp-registry ${{ inputs.version || 'latest' }}
+
+# Lists each npm release in the MCP Registry. It runs after publish succeeds, or by hand
+# for a version that publish already put on npm, and skips a version already listed, so a
+# failed run is repaired by running it again. The registry grants io.github.aventurevc/*
+# to this repository's GitHub OIDC identity and reads mcpName from the npm version.
+on:
+  workflow_run:
+    workflows: [publish]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Published npm version to list; empty lists npm's latest
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  list:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && !contains(github.event.workflow_run.display_title, '(dry run)')) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PACKAGE_NAME: "@aventurevc/mcp-server"
+      # publish's run name is "publish <version>"; a dispatch names its version or takes npm's latest.
+      REQUESTED_VERSION: ${{ inputs.version || github.event.workflow_run.display_title }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Resolve the npm version and its listing
+        run: |
+          name="$(jq -r .name server.json)"
+          version="${REQUESTED_VERSION#publish }"
+          version="${version:-$(npm view "$PACKAGE_NAME" version)}"
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]] || { echo "invalid version: $version"; exit 1; }
+          for attempt in $(seq 1 24); do
+            [ "$(npm view "$PACKAGE_NAME@$version" mcpName 2>/dev/null)" = "$name" ] && break
+            [ "$attempt" -eq 24 ] && { echo "$PACKAGE_NAME@$version is not on npm with mcpName $name"; exit 1; }
+            sleep 5
+          done
+          status="$(curl -sS -o /dev/null -w '%{http_code}' "https://registry.modelcontextprotocol.io/v0.1/servers/${name/\//%2F}/versions/$version")"
+          case "$status" in
+            200) echo "$name@$version is already listed"; echo "LISTED=true" >>"$GITHUB_ENV" ;;
+            404) echo "LISTED=false" >>"$GITHUB_ENV" ;;
+            *) echo "registry lookup returned HTTP $status"; exit 1 ;;
+          esac
+          echo "VERSION=$version" >>"$GITHUB_ENV"
+      - name: Publish to the MCP Registry
+        if: ${{ env.LISTED == 'false' }}
+        run: |
+          jq --arg v "$VERSION" '.version = $v | .packages[0].version = $v' server.json >"$RUNNER_TEMP/server.json"
+          mv "$RUNNER_TEMP/server.json" server.json
+          curl -fsSL https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz | tar xz mcp-publisher
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish
