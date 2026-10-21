@@ -1,13 +1,10 @@
 # aVenture MCP Server
 
-Give Claude, ChatGPT, or any MCP client access to aVenture research on private
+Give Claude, ChatGPT, Cursor, or any MCP client aVenture data on private
 companies, founders, investors, funding rounds, and news. aVenture hosts the
-server, so there is nothing to install.
+server; you sign in with your aVenture account.
 
-You need an aVenture account; free and paid plans both work.
-[Create an account](https://aventure.vc/sign-up).
-
-## Get Started in One Step
+## Connect by Pasting One Prompt
 
 Paste this into Claude, ChatGPT, Claude Code, or your AI app:
 
@@ -24,33 +21,41 @@ When it's connected and I've signed in, read aVenture's profile for stripe.com
 to confirm it works. Docs: https://docs.aventure.vc/mcp
 ```
 
+## Connect by Hand
+
+1. In Claude, ChatGPT, or Cursor, open the settings for custom connectors (MCP
+   servers).
+2. Add the aVenture server: URL `https://mcp.aventure.vc/mcp`, transport
+   Streamable HTTP.
+3. Leave the OAuth client fields blank when the app supports dynamic
+   registration; enter client ID `KL7mINzGk0le0QiD` when it requires a
+   pre-registered client.
+4. Sign in to aVenture in the browser window that opens.
+
+Claude Code: run
+`claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`,
+then `/mcp`, select `aventure`, and sign in.
+
+Other MCP clients: follow the app's OAuth setup. URL-only clients can use the
+advertised registration endpoint; clients requiring pre-registration use the
+client ID from step 3. In Claude and ChatGPT, the client ID goes under advanced
+settings.
+
+## Free vs. Paid
+
+- Free account: 25 company and 25 person profile reads a month and 20 name
+  lookups a day. [Create an account](https://aventure.vc/sign-up).
+- Plus, $49/mo: plain-English questions, competitor and investor-activity
+  questions, 500 company and 500 person profile reads, and 30 company and 30
+  person research requests a month. [Get Plus](https://aventure.vc/pricing).
+
 ## MCP, CLI, or Researchly?
 
 | Where you work | Use |
 | --- | --- |
 | Claude, ChatGPT, or another desktop, web, or cloud AI app | This MCP server |
 | A terminal, shell scripts, or a coding agent with a shell | The [aVenture CLI](https://docs.aventure.vc/cli) |
-| [Researchly](https://researchly.chat) | Nothing to install: open [Profile, then MCP servers](https://researchly.chat/profile/mcp-servers) and choose **Connect aVenture** |
-
-## Connect by Hand
-
-Add a custom connector (or MCP server) in your app with these settings, then sign
-in to aVenture in the browser window it opens:
-
-| Setting | Value |
-| --- | --- |
-| URL | `https://mcp.aventure.vc/mcp` |
-| Transport | Streamable HTTP |
-| OAuth client ID | Leave blank for dynamic registration; otherwise `KL7mINzGk0le0QiD` |
-
-- **Claude and ChatGPT**: add the URL as a custom connector. Leave client fields
-  blank when the app supports the advertised dynamic registration flow. If it
-  requires a pre-registered client, enter the client ID under advanced settings.
-- **Claude Code**: run the `claude mcp add` command from the prompt above, then run
-  `/mcp`, select `aventure`, and sign in.
-- **Other clients**: follow the app's OAuth setup. URL-only clients can use the
-  advertised registration endpoint; clients requiring pre-registration use the
-  client ID above.
+| [Researchly](https://researchly.chat) | Open [Profile, then MCP servers](https://researchly.chat/profile/mcp-servers) and choose **Connect aVenture** |
 
 ## If Sign-In Fails
 
@@ -62,14 +67,11 @@ in to aVenture in the browser window it opens:
 
 ## Ask Your First Question
 
-Looking up a company or person by name, or describing what you want, needs a paid
-plan (AI Plus or AI Pro). On the free plan, ask about a company by its website, such
-as "Read aVenture's profile for ramp.com."
-
+- "Read aVenture's profile for ramp.com."
 - "Look up Stripe on aVenture and summarize its funding history."
+- "Who is Patrick Collison, and which companies is he connected to?"
 - "Which company owns ramp.com, and who founded it?"
 - "Find seed-stage climate software companies in Austin."
-- "Who is Patrick Collison, and which companies is he connected to?"
 
 ## Plans and Usage
 
@@ -81,9 +83,8 @@ prices, or to upgrade you. You can also manage your plan in
 
 ## Advanced: Run the Server Locally
 
-Most people never need this. Run the server yourself only when your client can't
-complete an OAuth sign-in or you need it inside your own network. It requires
-Node.js 24.18.0 or later.
+Run the server yourself only when your client can't complete an OAuth sign-in or
+you need it inside your own network. It requires Node.js 24.18.0 or later.
 
 ```sh
 npm install --global @aventurevc/mcp-server
