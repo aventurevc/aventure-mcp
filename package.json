@@ -1,6 +1,6 @@
 {
   "name": "@aventurevc/mcp-server",
-  "version": "0.8.236",
+  "version": "0.8.237",
   "mcpName": "io.github.aventurevc/aventure-mcp",
   "private": false,
   "description": "MCP server that gives AI assistants access to aVenture research data on companies, people, funding, and news.",
@@ -29,9 +29,9 @@
   },
   "aventurePublicApi": {
     "repository": "aventurevc/aventure-docs",
-    "commit": "fe4ee16693b35653b951cc2766d3ecc32e7ba77c",
+    "commit": "26c800876cf9a9d76315042f61811441eb67b3ec",
     "openapiPath": "openapi/openapi.json",
-    "openapiSha256": "b9ef29533f841006a55c3b378485ee0ecb2574cb5369fd23cd927114cfa914e2"
+    "openapiSha256": "888943d126d15b66f57c146fb7db027889a490d8bfdac53ffbcf3c4dee477d28"
   },
   "scripts": {}
 }
