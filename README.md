@@ -71,8 +71,7 @@ prices. You can also manage your plan in
 
 ## Advanced: Run the Server Locally
 
-Run the server yourself only when your client can't complete an OAuth sign-in or
-you need it inside your own network. It requires Node.js 24.18.0 or later.
+Run the server yourself when you need it inside your own network. It requires Node.js 24.18.0 or later.
 
 ```sh
 npm install --global @aventurevc/mcp-server
