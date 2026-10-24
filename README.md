@@ -10,14 +10,10 @@ you sign in with a free aVenture account ([sign up](https://aventure.vc/sign-up)
 Paste this into Claude, ChatGPT, Claude Code, or your AI app:
 
 ```text
-Connect the aVenture MCP server for me.
-- URL: https://mcp.aventure.vc/mcp
-- Transport: Streamable HTTP
-- OAuth: leave client fields blank when the app supports dynamic registration;
-  use client ID KL7mINzGk0le0QiD when it requires a pre-registered client.
-If you can add it yourself (in Claude Code, run
-`claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`),
-do that. Otherwise tell me exactly where to enter these settings in this app.
+Connect the aVenture MCP server for me: URL https://mcp.aventure.vc/mcp,
+transport Streamable HTTP, OAuth sign-in. If you can add it yourself (in
+Claude Code, run `claude mcp add --scope user --transport http aventure https://mcp.aventure.vc/mcp`),
+do that. Otherwise tell me exactly where to add it in this app.
 When it's connected and I've signed in, read aVenture's profile for stripe.com
 to confirm it works. Docs: https://docs.aventure.vc/mcp
 ```
@@ -28,19 +24,11 @@ to confirm it works. Docs: https://docs.aventure.vc/mcp
    servers).
 2. Add the aVenture server: URL `https://mcp.aventure.vc/mcp`, transport
    Streamable HTTP.
-3. Leave the OAuth client fields blank when the app supports dynamic
-   registration; enter client ID `KL7mINzGk0le0QiD` when it requires a
-   pre-registered client.
-4. Sign in to aVenture in the browser window that opens.
+3. Sign in to aVenture in the browser window that opens.
 
 Claude Code: run
-`claude mcp add --scope user --transport http --client-id KL7mINzGk0le0QiD --callback-port 6276 aventure https://mcp.aventure.vc/mcp`,
+`claude mcp add --scope user --transport http aventure https://mcp.aventure.vc/mcp`,
 then `/mcp`, select `aventure`, and sign in.
-
-Other MCP clients: follow the app's OAuth setup. URL-only clients can use the
-advertised registration endpoint; clients requiring pre-registration use the
-client ID from step 3. In Claude and ChatGPT, the client ID goes under advanced
-settings.
 
 ## Free vs. Paid
 
@@ -61,8 +49,6 @@ settings.
 
 ## If Sign-In Fails
 
-- `does not support dynamic client registration`: enter the client ID above in
-  the client's OAuth settings.
 - `401` on a server that worked before: the sign-in expired. Reconnect the server
   in your client; in Claude Code, run `/mcp`, select `aventure`, and sign in.
 - More fixes: [MCP troubleshooting](https://docs.aventure.vc/mcp#troubleshooting).
