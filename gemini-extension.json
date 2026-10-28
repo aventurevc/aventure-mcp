@@ -1,0 +1,10 @@
+{
+  "name": "aventure",
+  "version": "1.0.0",
+  "description": "Research private companies, founders, investors, funding rounds, and news with aVenture",
+  "mcpServers": {
+    "aventure": {
+      "httpUrl": "https://mcp.aventure.vc/mcp"
+    }
+  }
+}
