@@ -17,7 +17,7 @@
   },
   "files": [
     "dist/mcp-server/index.js",
-    "dist/chunks/*.js",
+    "dist/chunks",
     "README.md"
   ],
   "publishConfig": {
