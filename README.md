@@ -73,7 +73,7 @@ prices. You can also manage your plan in
 
 ## Advanced: Run the Server Locally
 
-Run the server yourself when you need it inside your own network. It requires Node.js 24.18.0 or later.
+Run the server yourself when you need it inside your own network. It requires Node.js 24.22.1 or newer within the 24.x release line; Node.js 25 is not supported.
 
 ```sh
 npm install --global @aventurevc/mcp-server
