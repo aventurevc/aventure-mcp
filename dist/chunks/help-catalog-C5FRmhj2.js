@@ -1,4 +1,4 @@
-import{a as e}from"./package-DEeHDoOT.js";import{C as t,S as n,_ as r,c as i,d as a,g as o,i as s,s as c}from"./iso-DzqMxtky.js";import{t as l}from"./task-no-write-outcome-BDqB8HQA.js";import{t as u}from"./confidence-CjeYTBnf.js";import{c as d,d as f,l as ee,s as p,u as m}from"./tool-policy-DYjF2wFZ.js";import{i as h}from"./text-field-jFKOGMzr.js";import{Buffer as g}from"node:buffer";var _=16e3,v=(e,t=_)=>e.length<=120&&g.byteLength(`${e.join(`
+import{a as e}from"./package-DEeHDoOT.js";import{C as t,S as n,_ as r,c as i,d as a,g as o,i as s,s as c}from"./iso-DzqMxtky.js";import{t as l}from"./task-no-write-outcome-BDqB8HQA.js";import{t as u}from"./confidence-CjeYTBnf.js";import{c as d,d as f,l as ee,s as p,u as m}from"./tool-policy-2xra0JlD.js";import{i as h}from"./text-field-jFKOGMzr.js";import{Buffer as g}from"node:buffer";var _=16e3,v=(e,t=_)=>e.length<=120&&g.byteLength(`${e.join(`
 `)}\n`,`utf8`)<=t,y=(e,{appendNewline:t=!1,preservedTrailerLines:n,transport:r=`cli`,...i}={})=>{let a=h(e),o=t||a.endsWith(`
 `),s=a.endsWith(`
 `)?a.slice(0,-1):a,c=s.length===0?[]:s.split(`
